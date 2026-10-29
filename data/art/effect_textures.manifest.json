@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "generator": "tools/art/effect_textures.py",
+  "entries": {
+    "fire_core": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\fire_core",
+      "file": "addon/Hearthstone/Textures/Effects/fire_core.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "2522743e408e512fb47f7e9c40172f959bb307d3ce6d0bbed3d3e512abecef02"
+    },
+    "soft_glow": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\soft_glow",
+      "file": "addon/Hearthstone/Textures/Effects/soft_glow.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "a396798d6f27103273facdd77e53719f1bb8bad4a3b55a032d67cb1882560318"
+    },
+    "spark": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\spark",
+      "file": "addon/Hearthstone/Textures/Effects/spark.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "787bc1c20eb69940e23408975f1b43b109c2e5e40f1a36d716522c20a8eae172"
+    },
+    "shockwave": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\shockwave",
+      "file": "addon/Hearthstone/Textures/Effects/shockwave.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "8ce1099c2b08754c597308e94e7a256adc6cb44b0eb9ee0cd366afa89e50b371"
+    },
+    "neutral_core": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\neutral_core",
+      "file": "addon/Hearthstone/Textures/Effects/neutral_core.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "2cf865fbfb8aaa6aabee6fdf8aef876e54ab518750133c218747001aa58b0eed"
+    },
+    "neutral_glow": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\neutral_glow",
+      "file": "addon/Hearthstone/Textures/Effects/neutral_glow.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "d391432b768345a36c63a3b6e87b3aad9a92571b999428db3c24d974221928c9"
+    },
+    "neutral_spark": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\neutral_spark",
+      "file": "addon/Hearthstone/Textures/Effects/neutral_spark.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "cdd5ca12e973b091a7068e3790e96571106a8f156addc40fb74ddafd4a6941ae"
+    },
+    "neutral_ring": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\neutral_ring",
+      "file": "addon/Hearthstone/Textures/Effects/neutral_ring.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "c0b48f292244f70cf6a4b31922b1825f87cf5a24e32c0649127e9c6d756e9ac0"
+    },
+    "frost_shard": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\frost_shard",
+      "file": "addon/Hearthstone/Textures/Effects/frost_shard.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "736efee4c2e66973ea3661bdffce157be51653846f84a3e77e2313871861021b"
+    },
+    "slash_arc": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\slash_arc",
+      "file": "addon/Hearthstone/Textures/Effects/slash_arc.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "679aa2a2e1c72775637ebf0a836a67095234cae3722cc0549754117fe0b176e6"
+    },
+    "lightning_arc": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\lightning_arc",
+      "file": "addon/Hearthstone/Textures/Effects/lightning_arc.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "e7f41b58a34a9c8c234bb712f0e75b0f48c089945ff2fa53d9d3fb11c48fcd46"
+    },
+    "smoke_puff": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\smoke_puff",
+      "file": "addon/Hearthstone/Textures/Effects/smoke_puff.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "05431bc75928c48f63cff35fce821901b864088d463fe057db48f4b0a6acd4be"
+    },
+    "portal_ring": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\portal_ring",
+      "file": "addon/Hearthstone/Textures/Effects/portal_ring.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "e9745fa881e3f7e9916bf39f74aaf06b0d747d6ce56f4eb22c63ecfcb1aece44"
+    },
+    "shield_shell": {
+      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\shield_shell",
+      "file": "addon/Hearthstone/Textures/Effects/shield_shell.blp",
+      "size": [
+        256,
+        256
+      ],
+      "format": "BLP2 DXT5 alpha8",
+      "mipmaps": 9,
+      "bytes": 88580,
+      "sha256": "7649565e2793161edc2d5b12eccd24c154208aef9dfd79c83ee81e58074a8aaf"
+    }
+  }
+}

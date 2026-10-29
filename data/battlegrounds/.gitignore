@@ -1,0 +1,6 @@
+# Card data is Blizzard's: the raw source and everything generated from it are never committed (same policy as
+# data/cards). Rebuild with: python -I tools/battlegrounds/fetch_bg_source.py && python -I tools/battlegrounds/import_bg.py
+# PROVENANCE.md (names and counts only) stays in git.
+/source/cards.enUS.148526.json
+/source/CardDefs.148526.xml
+/bg.normalized.json

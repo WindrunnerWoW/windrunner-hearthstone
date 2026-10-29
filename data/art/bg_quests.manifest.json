@@ -1,0 +1,951 @@
+{
+  "cards": {
+    "BG24_Reward_107": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_107",
+      "file": "art/out/BgQuests/cards/BG24_Reward_107.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "a1e9bf024d966cb4e5bb270592e8e454c2f64344d0ed17f32d7c140904c8cb58",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_109": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_109",
+      "file": "art/out/BgQuests/cards/BG24_Reward_109.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "495585711d340341dd350a1d4ebe83e8d654eeccd62869baf9c79d62322bf716",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_111": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_111",
+      "file": "art/out/BgQuests/cards/BG24_Reward_111.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "c5dfdc0a5a8d1ab50503aead6631dd1b5bdba5953d26ef68581ca86ec8e43133",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_113": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_113",
+      "file": "art/out/BgQuests/cards/BG24_Reward_113.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "880ba3fb604272a38ab35c491be4d6e1432667626de9332d0c02bcd232d9a593",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_115": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_115",
+      "file": "art/out/BgQuests/cards/BG24_Reward_115.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "dd54f31fb7e230265d92ae9fb9f6188d71c31a32659e06a1da303b358024ab9b",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_125": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_125",
+      "file": "art/out/BgQuests/cards/BG24_Reward_125.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "cce4375077e30af2edcd348cb2e8130f9384a55857c70f02f8287fa6b0c3b0d1",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_128": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_128",
+      "file": "art/out/BgQuests/cards/BG24_Reward_128.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "215b48bb08b286e7e254391b177bc67b4a78945768ae600fb9a2c77e34d645a1",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_129": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_129",
+      "file": "art/out/BgQuests/cards/BG24_Reward_129.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "89d17df5a2242094c227fb8481c61e7a032339b6817f6db3843604c9614cea66",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_130": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_130",
+      "file": "art/out/BgQuests/cards/BG24_Reward_130.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "e28bdbbbeb07366525ad4673eb6d298c9c270f6804e06c68711c3856075e0dad",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_131": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_131",
+      "file": "art/out/BgQuests/cards/BG24_Reward_131.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "95f7ba5085670185911d3d7488cd24455fcf0c437a41fbd6eacf6e664a88ad31",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_134": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_134",
+      "file": "art/out/BgQuests/cards/BG24_Reward_134.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "081e434d4d2f3c29ba4febf4ab4d4f731fe0b9834e0b70f8d6807f2ace13760e",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_135": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_135",
+      "file": "art/out/BgQuests/cards/BG24_Reward_135.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "ea4e800aee8342cef7fa7f6b51db1d0e6c598dc767127fb364bffeb874faa450",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_136": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_136",
+      "file": "art/out/BgQuests/cards/BG24_Reward_136.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "cc682c32c27af20f3248cba01378d74fa9ea6a361fcf19f6d3a1da97610c6649",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_138": {
+      "baked": true,
+      "bytes": 175972,
+      "card": "BG24_Reward_138",
+      "file": "art/out/BgQuests/cards/BG24_Reward_138.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "59b58dc24cf15c95e045f73bb50572d60e7cfeeded63de35b7b4245b101a7b86",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_305": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_305",
+      "file": "art/out/BgQuests/cards/BG24_Reward_305.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "301ce0ce09bfd55635f1f1c2da2f91dbfea0aedc3fd2757b21989e4eea524098",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_306": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_306",
+      "file": "art/out/BgQuests/cards/BG24_Reward_306.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "f0220f29a3f29ab75e0d574adbd1e055e363e1b0266d869323b3bcdd38937f07",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_308": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_308",
+      "file": "art/out/BgQuests/cards/BG24_Reward_308.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "92b7430c3bddb8657a0e5996eb3ca91a1dd8b860fe9f440f5fa689af8949180a",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_309": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_309",
+      "file": "art/out/BgQuests/cards/BG24_Reward_309.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "9a5404d26ff8b019c6604125b7c6ef630f108f07cc97344db54bbd2f23314ed3",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_312": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_312",
+      "file": "art/out/BgQuests/cards/BG24_Reward_312.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "d64783e2912117db1cbbb50cfbf9ab42f545abce343cd51fb80e13e807e182b3",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_313": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_313",
+      "file": "art/out/BgQuests/cards/BG24_Reward_313.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "2743d18b377364605cf6872b5d3be0376bd85ecf468a64e359867bbfb41780f8",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_321": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_321",
+      "file": "art/out/BgQuests/cards/BG24_Reward_321.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "b7899b622aa99a0ca3c109a727833cf8f1bc77e503daac6dcaaf53b3d6e01483",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_331": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_331",
+      "file": "art/out/BgQuests/cards/BG24_Reward_331.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "93e4ef6afd64dfd568a63f6c8ecb49f1208bea75f375daad3bd16ec764430b98",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    },
+    "BG24_Reward_350": {
+      "baked": false,
+      "bytes": 175972,
+      "card": "BG24_Reward_350",
+      "file": "art/out/BgQuests/cards/BG24_Reward_350.blp",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "sha256": "854f052a89893bb8644b8615cf39d4654039437082918fd2a77a9056390e9491",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      }
+    }
+  },
+  "cards_note": "The real 256x388 card render of every in-pool reward, padded top-aligned onto a transparent 256x512 canvas (texcoord bottom = `bottom`), in art/out/BgQuests/cards/<id>.blp; deploy-addon.ps1 copies them into the client's Textures\\BgQuests\\Cards\\ and lists them in HS_BgTextures.rewardCards.",
+  "count": 35,
+  "dataset": "bg-148526",
+  "entries": {
+    "BG24_Quest_112": {
+      "bytes": 23044,
+      "card": "BG24_Quest_112",
+      "dbf_id": 89641,
+      "file": "art/out/BgQuests/BG24_Quest_112.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Track the Footprints",
+      "sha256": "e39714b536c9a295e619176fdd07c005de6775d5560f160388ba9fbba46d6441",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_114": {
+      "bytes": 23044,
+      "card": "BG24_Quest_114",
+      "dbf_id": 89643,
+      "file": "art/out/BgQuests/BG24_Quest_114.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Assemble a Lineup",
+      "sha256": "87430001ce845f3f32cf4b9d14654fffe0f91c0ace9b5c460fa593126e95f567",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_120": {
+      "bytes": 23044,
+      "card": "BG24_Quest_120",
+      "dbf_id": 89958,
+      "file": "art/out/BgQuests/BG24_Quest_120.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Unmask the Culprit",
+      "sha256": "cb58dd6ca5d97c62355241df909b0c2ad682beb2fca4fd452be1eb4b1bdc61ea",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_123": {
+      "bytes": 23044,
+      "card": "BG24_Quest_123",
+      "dbf_id": 92548,
+      "file": "art/out/BgQuests/BG24_Quest_123.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Find the Murder Weapon",
+      "sha256": "9b6f984d6b9b22a83b213a559550298ea25c3f5d79006af90cc4a3b5f23bfbc2",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_124": {
+      "bytes": 23044,
+      "card": "BG24_Quest_124",
+      "dbf_id": 92549,
+      "file": "art/out/BgQuests/BG24_Quest_124.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Reenact the Murder",
+      "sha256": "3e799b9970d1ddfadf50f109a984178ab3a0eb3f144407147844546af0600cfb",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_125": {
+      "bytes": 23044,
+      "card": "BG24_Quest_125",
+      "dbf_id": 92550,
+      "file": "art/out/BgQuests/BG24_Quest_125.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Sort It All Out",
+      "sha256": "d3f8b2e6a4576909b7d2872c3f0b7a30746a4752d055fe641eef2e364e331ec8",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_126": {
+      "bytes": 23044,
+      "card": "BG24_Quest_126",
+      "dbf_id": 95940,
+      "file": "art/out/BgQuests/BG24_Quest_126.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Follow the Money",
+      "sha256": "74e4ffd3085dfdb6285c714096b297e7294c5d72169aad41815044527e709b77",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_151": {
+      "bytes": 23044,
+      "card": "BG24_Quest_151",
+      "dbf_id": 90328,
+      "file": "art/out/BgQuests/BG24_Quest_151.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Unlikely Duo",
+      "sha256": "17547205f006abd58a2e9e17218d29eabe0a71372c561fdd15eb0f6893934db7",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_311": {
+      "bytes": 23044,
+      "card": "BG24_Quest_311",
+      "dbf_id": 89011,
+      "file": "art/out/BgQuests/BG24_Quest_311.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Cry for Help",
+      "sha256": "2f720a420e86ab25fd2ca07c2074eee0e10a05ded1039d66873f95756900d1c4",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_313": {
+      "bytes": 23044,
+      "card": "BG24_Quest_313",
+      "dbf_id": 89037,
+      "file": "art/out/BgQuests/BG24_Quest_313.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Invite the Guests",
+      "sha256": "1e4e23ceb102248b235e8fd68f8522c5b0fe43cfd3204b9600f9f3ffa4407f59",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_314": {
+      "bytes": 23044,
+      "card": "BG24_Quest_314",
+      "dbf_id": 89044,
+      "file": "art/out/BgQuests/BG24_Quest_314.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Dust for Prints",
+      "sha256": "3eb92a1b9810c3ccb89ec302a6985bc48be0d154283f15472b93d5887a46dec1",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Quest_320": {
+      "bytes": 23044,
+      "card": "BG24_Quest_320",
+      "dbf_id": 89057,
+      "file": "art/out/BgQuests/BG24_Quest_320.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "quest",
+      "name": "Exhume the Bones",
+      "sha256": "7ff44f2cc544508abb4286afff3e6faf8caaad0613f028463e7f6ec9fbce3d30",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_107": {
+      "bytes": 23044,
+      "card": "BG24_Reward_107",
+      "dbf_id": 89449,
+      "file": "art/out/BgQuests/BG24_Reward_107.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Snicker Snacks",
+      "sha256": "49d96a2c82faed71170a7600b244bad715e84950d36ef35bd375e35ac392f45f",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_109": {
+      "bytes": 23044,
+      "card": "BG24_Reward_109",
+      "dbf_id": 89473,
+      "file": "art/out/BgQuests/BG24_Reward_109.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Stolen Gold",
+      "sha256": "93ca0a9ce18df101b78240dc7544cd1da1a1969601299121076c48f2f455de9e",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_111": {
+      "bytes": 23044,
+      "card": "BG24_Reward_111",
+      "dbf_id": 89481,
+      "file": "art/out/BgQuests/BG24_Reward_111.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Evil Twin",
+      "sha256": "5bbebb1ca2380c00034667af5d017d91a25f5cbf94814ce2e6fe6057b4d7cf85",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_113": {
+      "bytes": 23044,
+      "card": "BG24_Reward_113",
+      "dbf_id": 89483,
+      "file": "art/out/BgQuests/BG24_Reward_113.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Ritual Dagger",
+      "sha256": "cb40c517002e67165fb2fb6e62dfc49c7f193eb6d331db444ae7baf1d32afeda",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_115": {
+      "bytes": 23044,
+      "card": "BG24_Reward_115",
+      "dbf_id": 89947,
+      "file": "art/out/BgQuests/BG24_Reward_115.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Theotar's Parasol",
+      "sha256": "4a53aa82e2aa5b3da83d409ae7a0e6e7af2b2d9593277e6ca988b4d00cdb9d0a",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_125": {
+      "bytes": 23044,
+      "card": "BG24_Reward_125",
+      "dbf_id": 90865,
+      "file": "art/out/BgQuests/BG24_Reward_125.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "The Smoking Gun",
+      "sha256": "196a2c383192a4dd2278a6136cd5b2d4c004472d1ec7df1dde672a71e8a3f634",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_128": {
+      "bytes": 23044,
+      "card": "BG24_Reward_128",
+      "dbf_id": 90914,
+      "file": "art/out/BgQuests/BG24_Reward_128.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Mirror Shield",
+      "sha256": "042580e94acaca848ac037d916ce6b2f2083f4b5d1558131cd8aa9cce637a05f",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_129": {
+      "bytes": 23044,
+      "card": "BG24_Reward_129",
+      "dbf_id": 90916,
+      "file": "art/out/BgQuests/BG24_Reward_129.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Secret Sinstone",
+      "sha256": "d6b56a0ebf6bfdb9fa96d4aea4e2a65ad2fa14e1e39356d07bf862aa5ae051cd",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_130": {
+      "bytes": 23044,
+      "card": "BG24_Reward_130",
+      "dbf_id": 90917,
+      "file": "art/out/BgQuests/BG24_Reward_130.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Ghastly Mask",
+      "sha256": "3e70e99843971b24a9a9ab1e48626eea05517cc118552a23f9162e4d558ca5ed",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_131": {
+      "bytes": 23044,
+      "card": "BG24_Reward_131",
+      "dbf_id": 92542,
+      "file": "art/out/BgQuests/BG24_Reward_131.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Red Hand",
+      "sha256": "4332ba7cd0ecbaf569f005d397284042f34af696ad22e24051a986f33bbb20f8",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_134": {
+      "bytes": 23044,
+      "card": "BG24_Reward_134",
+      "dbf_id": 92551,
+      "file": "art/out/BgQuests/BG24_Reward_134.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "The Friends Along the Way",
+      "sha256": "323c7552e7923b9589ec2eef349db4b1625e1fe9ab05bbace4e79fda2f2ad329",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_135": {
+      "bytes": 23044,
+      "card": "BG24_Reward_135",
+      "dbf_id": 92563,
+      "file": "art/out/BgQuests/BG24_Reward_135.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Yogg-tastic Tasties",
+      "sha256": "10b23ef98ef9d424987e394869db89037f300555149e2598eacece63bf69d963",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_136": {
+      "bytes": 23044,
+      "card": "BG24_Reward_136",
+      "dbf_id": 93069,
+      "file": "art/out/BgQuests/BG24_Reward_136.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Tiny Henchmen",
+      "sha256": "0c4c00690595d7c515b5e42d7c12127b091f0a1c0e0032b90e6b8cf650ee2fa5",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_138": {
+      "bytes": 23044,
+      "card": "BG24_Reward_138",
+      "dbf_id": 93074,
+      "file": "art/out/BgQuests/BG24_Reward_138.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Victim's Specter",
+      "sha256": "362deb91e5c2b59ef8e2deb554a3bd097614fdd2d1a537d4942b34c94a1deed2",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_305": {
+      "bytes": 23044,
+      "card": "BG24_Reward_305",
+      "dbf_id": 89645,
+      "file": "art/out/BgQuests/BG24_Reward_305.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Anima Bribe",
+      "sha256": "3db98cf5c1de865bac6823e1dc4937d436900a743c4fda1e0b73e6c68bb58bf2",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_306": {
+      "bytes": 23044,
+      "card": "BG24_Reward_306",
+      "dbf_id": 89650,
+      "file": "art/out/BgQuests/BG24_Reward_306.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Cooked Book",
+      "sha256": "713ec0409dced96c0112c53a6ca456ffea5a4f1cfbdf7b9b78ad4463e9db57e3",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_308": {
+      "bytes": 23044,
+      "card": "BG24_Reward_308",
+      "dbf_id": 90435,
+      "file": "art/out/BgQuests/BG24_Reward_308.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Teal Tiger Sapphire",
+      "sha256": "34da776de5ab304d262cac88359b8e62078788a2234b15e33d9da44bf0d3614f",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_309": {
+      "bytes": 23044,
+      "card": "BG24_Reward_309",
+      "dbf_id": 90437,
+      "file": "art/out/BgQuests/BG24_Reward_309.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Devils in the Details",
+      "sha256": "e4a4cb8249ff47688c280f3cb947a82f438a611796f2fb9d1147abbcbdd56bd9",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_312": {
+      "bytes": 23044,
+      "card": "BG24_Reward_312",
+      "dbf_id": 92552,
+      "file": "art/out/BgQuests/BG24_Reward_312.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Staff of Origination",
+      "sha256": "4e137e9b6cd1d2dfed61d99a07f5abf1d9388680918dd3a7c50c08d301151b07",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_313": {
+      "bytes": 23044,
+      "card": "BG24_Reward_313",
+      "dbf_id": 92554,
+      "file": "art/out/BgQuests/BG24_Reward_313.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Wondrous Wisdomball",
+      "sha256": "0ff003c5600dc111360fed6329c66b5810c8bfcb37b142d9b84a9755b5afbea0",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_321": {
+      "bytes": 23044,
+      "card": "BG24_Reward_321",
+      "dbf_id": 95149,
+      "file": "art/out/BgQuests/BG24_Reward_321.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Alter Ego",
+      "sha256": "b601d64a3baac9301f82db285608efb7ba52413fc7855c5b62ba4bf53993f95d",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_331": {
+      "bytes": 23044,
+      "card": "BG24_Reward_331",
+      "dbf_id": 95631,
+      "file": "art/out/BgQuests/BG24_Reward_331.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Menagerie Mayhem",
+      "sha256": "eeaafedf535695e37d01ab5439d0a8c78c7cbada009c2d2a3cd60621f6f91142",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    },
+    "BG24_Reward_350": {
+      "bytes": 23044,
+      "card": "BG24_Reward_350",
+      "dbf_id": 95867,
+      "file": "art/out/BgQuests/BG24_Reward_350.blp",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "group": "reward",
+      "name": "Pilfered Lamps",
+      "sha256": "ead5f669528bee4be38476c647873a26bfeee24a5d88f52b614458633c8ccb7f",
+      "size": [
+        128,
+        128
+      ],
+      "source": "api512"
+    }
+  },
+  "generator": "tools/art/bg_quests.py",
+  "note": "One 128x128 round portrait (BLP2 DXT5 with a circular alpha) per in-pool 24.2 quest and quest reward, made by tools/art/bg_quests.py into art/out/BgQuests/<id>.blp through the power_portraits.py round pipeline. The ids are the in_pool entries of data/battlegrounds/quest_values.json (12 quests, 23 rewards) looked up in bg.normalized.json, the same selection the engine plays. deploy-addon.ps1 copies them into the client's Textures\\BgQuests\\ and lists the quest ids in HS_BgTextures.quests and the reward ids in HS_BgTextures.rewards.",
+  "schema": 1
+}

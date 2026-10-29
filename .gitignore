@@ -1,0 +1,49 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Artwork pipeline: downloaded/patched/converted Blizzard art is never committed (rebuild: python tools/art/setup_art.py).
+# The owner's own work that cannot be regenerated is committed: art/source and the
+# BLPs cut from build/assets (art/out/Board, UI, Collection).
+/art/*
+!/art/source/
+!/art/out/
+/art/out/*
+!/art/out/Board/
+!/art/out/UI/
+!/art/out/Collection/
+# The class hero strips are cropped from Blizzard hero renders.
+/art/out/Collection/hero_*.blp
+/tools/art/.venv/
+
+# Card data is Blizzard's: the raw sources and everything generated from them are never committed. Rebuild with
+# python tools/setup_all.py (fetches the pinned sources, regenerates these files; see README "Getting started").
+/data/cards/source/cards.enUS.6024.json
+/data/cards/source/manifest-cards.ff82e0a.csv
+/data/cards/source/CardDefs.xml
+/data/cards/cards.normalized.json
+/data/cards/compat_report.json
+/addon/Hearthstone/CardDB.lua
+/addon/Hearthstone/Battlegrounds/BgCardDB.lua
+/data/sql/world/0001_hearthstone_card_template.sql
+/src/HsDataset.h
+
+# Card textures are Blizzard art: never committed, also not from a stray copy inside the addon folder
+/addon/Hearthstone/Textures/
+# Re-allow this parent solely so Git can reach the checked-in procedural effects below.
+!/addon/Hearthstone/Textures/
+# Keep every sibling texture family ignored; only our own generated BLPs are source assets (effects, Battlegrounds UI).
+/addon/Hearthstone/Textures/*
+!/addon/Hearthstone/Textures/Effects/
+!/addon/Hearthstone/Textures/Effects/*.blp
+!/addon/Hearthstone/Textures/Bg/
+!/addon/Hearthstone/Textures/Bg/*.blp
+/.claude/
+
+# MSVC test-build intermediates (tests/build_tests.ps1 run with -Out inside the repo)
+*.obj
+*.exe
+*.pdb
+*.ilk
+/build/quest-check-tests/
+/build/quest-text-tests/

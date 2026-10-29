@@ -1,0 +1,21 @@
+{
+ "comment": "Quest-unlocked NPC opponents. Input of tools/decks/gen_deck_library.py: npc is the NPC name of the deck archive (its deck npc_<name>), entry the creature_template entry, quest the quest whose turn-in (by any character of the account) unlocks the NPC account-wide. Entries and quests were verified in tw_world; the quests of Rexxar, Dorn Plainstalker, Nathanos Blightcaller and Commander Althea Ebonlocke are owner choices, the others are the last quest of the named chain.",
+ "npcs": [
+  {"npc": "Gryan Stoutmantle", "entry": 234, "quest": 166, "quest_title": "The Defias Brotherhood"},
+  {"npc": "Balthule Shadowstrike", "entry": 3661, "quest": 981, "quest_title": "The Tower of Althalaxx"},
+  {"npc": "Raene Wolfrunner", "entry": 3691, "quest": 1046, "quest_title": "Raene's Cleansing"},
+  {"npc": "Sven Yorgen", "entry": 311, "quest": 55, "quest_title": "Morbent Fel"},
+  {"npc": "Commander Althea Ebonlocke", "entry": 264, "quest": 228, "quest_title": "Mor'Ladim"},
+  {"npc": "Prospector Remtravel", "entry": 2917, "quest": 943, "quest_title": "The Absent Minded Prospector"},
+  {"npc": "Jaina Proudmoore", "entry": 4968, "quest": 1267, "quest_title": "The Missing Diplomat"},
+  {"npc": "Bolvar Fordragon", "entry": 1748, "quest": 6403, "quest_title": "The Great Masquerade"},
+  {"npc": "Neeru Fireblade", "entry": 3216, "quest": 5730, "quest_title": "Hidden Enemies"},
+  {"npc": "Mankrik", "entry": 3432, "quest": 4921, "quest_title": "Lost in Battle"},
+  {"npc": "Senani Thunderheart", "entry": 12696, "quest": 6383, "quest_title": "The Ashenvale Hunt"},
+  {"npc": "High Executor Darthalia", "entry": 2215, "quest": 550, "quest_title": "Battle of Hillsbrad"},
+  {"npc": "Dorn Plainstalker", "entry": 2986, "quest": 1394, "quest_title": "Final Passage"},
+  {"npc": "Master Gadrin", "entry": 3188, "quest": 826, "quest_title": "Zalazane"},
+  {"npc": "Nathanos Blightcaller", "entry": 11878, "quest": 6148, "quest_title": "The Scarlet Oracle, Demetria"},
+  {"npc": "Rexxar", "entry": 10182, "quest": 6602, "quest_title": "Blood of the Black Dragon Champion"}
+ ]
+}

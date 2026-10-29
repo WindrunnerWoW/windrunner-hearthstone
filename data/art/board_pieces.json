@@ -1,0 +1,863 @@
+{
+  "schema": 1,
+  "note": "Crop manifest for tools/art/slice_board.py. Sheets live in build/assets (gitignored, owner artwork). Field meanings are documented in the header of slice_board.py. 'atlas' and 'sprite' are the unlabeled sheets, 'labeled' has baked button/banner text and number gems.",
+  "sheets": {
+    "labeled": "Fantasy-Kartenspiel-UI-Assetsheet.png",
+    "atlas": "Fantasy-Karten-Spiel UI-Atlas.png",
+    "board_arena": "Orcish Warboard with Empty Hero Slots.png",
+    "board_warm": {"file": "Warm Fantasy Game Board Template.png", "alpha": true},
+    "board_slots": {"file": "Orcish Warboard Bare Slots.png", "alpha": true},
+    "deck_thin_src": {"file": "deck_thin.png", "alpha": true},
+    "deck_half_src": {"file": "deck_half.png", "alpha": true},
+    "deck_full_src": {"file": "deck_full.png", "alpha": true},
+    "deck_empty_src": {"file": "deck_empty.png", "alpha": true},
+    "fatigue_src": {"file": "fatigue_card.png", "alpha": true},
+    "arch_gothic": {"file": "Ornate Golden Arched Game Frame.png", "alpha": true},
+    "sprite": "Fantasy-Kartenspiel-UI-Sprite-Atlas.png",
+    "secrets": "secret icons.png",
+    "cloth": "Weathered Blue Cloth Tabletop Runner.png",
+    "mull_banner": {"file": "Starting Hand Fantasy Banner.png", "alpha": true},
+    "mull_x": {"file": "Mulligan Red X.png", "alpha": true},
+    "mull_replaced": {"file": "Mulligan Replaced.png", "alpha": true},
+    "enemy_turn": {"file": "Enemy Turn Stone UI Banner.png", "alpha": true},
+    "end_turn": {"file": "Fantasy Game UI End Turn Button.png", "alpha": true},
+    "taunt": {"file": "Ornate Steel Oval Portrait Frame.png", "alpha": true},
+    "mana": {"file": "Glossy Mana Bar and Crystal Icons.png", "alpha": true},
+    "lock": {"file": "Weathered Hexagonal Lock Emblem.png", "alpha": true},
+    "armor_shield": {"file": "Steel Shield Armor Icon.png", "alpha": true},
+    "gemglow": {"file": "Glowing Blue Faceted Crystal Gem.png", "alpha": true},
+    "shield": {"file": "Divine Shield Bubble.png", "alpha": true},
+    "ice": {"file": "Glowing Icy Crystal Portal Frame.png", "alpha": true},
+    "power_ring": {"file": "Ornate Bronze Fantasy Ring Frame.png", "alpha": true},
+    "power_used": {"file": "Weathered Bronze Spiral Medallion.png", "alpha": true},
+    "silence": {"file": "Glowing Pink Magical Energy Swirl.png", "alpha": true},
+    "skull": {"file": "Polished Skull and Crossbones Emblem.png", "alpha": true},
+    "lightning": {"file": "Golden Lightning Bolt Stone Emblem.png", "alpha": true},
+    "bg_board": "bg_board.png",
+    "bg_upgrade": {"file": "bg_upgrade.png", "alpha": true},
+    "bg_coinsrc": {"file": "bg_coin.png", "alpha": true},
+    "bg_freeze_src": "bg_freeze.png",
+    "bg_refresh_src": "bg_refresh.png",
+    "bg_tier_1_src": {"file": "bg_tier_1.png", "alpha": true},
+    "bg_tier_2_src": {"file": "bg_tier_2.png", "alpha": true},
+    "bg_tier_3_src": {"file": "bg_tier_3.png", "alpha": true},
+    "bg_tier_4_src": {"file": "bg_tier_4.png", "alpha": true},
+    "bg_tier_5_src": {"file": "bg_tier_5.png", "alpha": true},
+    "bg_tier_6_src": {"file": "bg_tier_6.png", "alpha": true},
+    "bg_tier_7_src": {"file": "bg_tier_7.png", "alpha": true}
+  },
+  "pieces": [
+    {
+      "name": "board_field",
+      "sheet": "board_slots",
+      "rect": [0, 0, 1195, 896],
+      "mode": "alpha",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512],
+      "anchors": {
+        "hero_top": {
+          "left": 0.46961,
+          "top": 0.15193,
+          "right": 0.56078,
+          "bottom": 0.30202
+        },
+        "hero_top_safe": {
+          "left": 0.47514,
+          "top": 0.21639,
+          "right": 0.55524,
+          "bottom": 0.30016
+        },
+        "hero_bottom": {
+          "left": 0.46409,
+          "top": 0.68876,
+          "right": 0.56284,
+          "bottom": 0.85451
+        },
+        "hero_bottom_safe": {
+          "left": 0.46823,
+          "top": 0.75322,
+          "right": 0.55870,
+          "bottom": 0.85083
+        },
+        "arch_top_frame": {
+          "left": 0.46133,
+          "top": 0.13628,
+          "right": 0.56768,
+          "bottom": 0.32228
+        },
+        "arch_bottom_frame": {
+          "left": 0.45580,
+          "top": 0.67035,
+          "right": 0.56916,
+          "bottom": 0.86924
+        },
+        "deck_top": {
+          "left": 0.9046,
+          "top": 0.2835,
+          "right": 0.9305,
+          "bottom": 0.4353
+        },
+        "deck_bottom": {
+          "left": 0.9063,
+          "top": 0.5379,
+          "right": 0.9322,
+          "bottom": 0.683
+        }
+      }
+    },
+    {
+      "name": "arch_top",
+      "sheet": "arch_gothic",
+      "rect": [0, 0, 1156, 1360],
+      "mode": "alpha",
+      "trim": true,
+      "size": [256, 256],
+      "anchors": {
+        "opening": {"left": 0.0614, "top": 0.0632, "right": 0.9317, "bottom": 0.9419},
+        "straight": {"left": 0.0614, "top": 0.475, "right": 0.9317, "bottom": 0.9419}
+      }
+    },
+    {
+      "name": "arch_bottom",
+      "sheet": "arch_gothic",
+      "rect": [0, 0, 1156, 1360],
+      "mode": "alpha",
+      "trim": true,
+      "size": [256, 256],
+      "anchors": {
+        "opening": {"left": 0.0614, "top": 0.0632, "right": 0.9317, "bottom": 0.9419},
+        "straight": {"left": 0.0614, "top": 0.475, "right": 0.9317, "bottom": 0.9419}
+      }
+    },
+    {
+      "name": "hero_ring",
+      "sheet": "atlas",
+      "rect": [403, 553, 94, 100],
+      "mode": "flood",
+      "tolerance": 25,
+      "holes": [{"shape": "ellipse", "rect": [24, 29, 69, 74]}],
+      "size": [128, 128],
+      "anchors": {
+        "inner": {
+          "left": 0.254,
+          "top": 0.289,
+          "right": 0.7375,
+          "bottom": 0.742
+        }
+      }
+    },
+    {
+      "name": "hero_ring_armor",
+      "sheet": "atlas",
+      "rect": [401, 652, 99, 103],
+      "mode": "flood",
+      "tolerance": 25,
+      "holes": [{"shape": "ellipse", "rect": [24, 31, 72, 80]}],
+      "size": [128, 128],
+      "anchors": {
+        "inner": {
+          "left": 0.244,
+          "top": 0.305,
+          "right": 0.7317,
+          "bottom": 0.773
+        }
+      }
+    },
+    {
+      "name": "hero_power_ring",
+      "sheet": "power_ring",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256],
+      "anchors_out": {
+        "inner": {"left": 0.178, "top": 0.194, "right": 0.824, "bottom": 0.817},
+        "circle": {"left": 0.178, "top": 0.194, "right": 0.824, "bottom": 0.817}
+      }
+    },
+    {
+      "name": "weapon_ring",
+      "derive": {"from": "hero_power_ring", "saturation": 0.3, "brightness": 1.0, "tint": [150, 165, 195], "tint_amount": 0.7}
+    },
+    {
+      "name": "hero_power_used",
+      "sheet": "power_used",
+      "rect": [0, 0, 1263, 1246],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256]
+    },
+    {
+      "name": "weapon_frame",
+      "sheet": "atlas",
+      "rect": [681, 563, 82, 88],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 128],
+      "anchors": {
+        "inner": {
+          "left": 0.2815,
+          "top": 0.254,
+          "right": 0.769,
+          "bottom": 0.707
+        }
+      }
+    },
+    {
+      "name": "card_back",
+      "sheet": "atlas",
+      "rect": [1248, 720, 91, 154],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 256]
+    },
+    {
+      "name": "deck_stack",
+      "sheet": "atlas",
+      "rect": [763, 570, 133, 166],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 128]
+    },
+    {
+      "name": "deck_thin",
+      "sheet": "deck_thin_src",
+      "rect": [0, 0, 197, 441],
+      "mode": "alpha",
+      "size": [128, 256],
+      "tex": [128, 256]
+    },
+    {
+      "name": "deck_half",
+      "sheet": "deck_half_src",
+      "rect": [0, 0, 197, 441],
+      "mode": "alpha",
+      "size": [128, 256],
+      "tex": [128, 256]
+    },
+    {
+      "name": "deck_full",
+      "sheet": "deck_full_src",
+      "rect": [0, 0, 197, 441],
+      "mode": "alpha",
+      "size": [128, 256],
+      "tex": [128, 256]
+    },
+    {
+      "name": "deck_empty",
+      "sheet": "deck_empty_src",
+      "rect": [0, 0, 144, 486],
+      "mode": "alpha",
+      "trim": true,
+      "size": [56, 230],
+      "halo": {"margin": 13, "sigma": 6, "peak": 1.0},
+      "tex": [128, 256]
+    },
+    {
+      "name": "fatigue_card",
+      "sheet": "fatigue_src",
+      "rect": [0, 0, 396, 629],
+      "mode": "alpha",
+      "size": [320, 512],
+      "tex": [512, 512]
+    },
+    {
+      "name": "banner_your_turn",
+      "sheet": "labeled",
+      "rect": [893, 638, 168, 80],
+      "mode": "luma",
+      "tolerance": 12,
+      "knee": 110,
+      "size": [256, 128]
+    },
+    {
+      "name": "banner_opponent_turn",
+      "sheet": "labeled",
+      "rect": [1064, 640, 150, 76],
+      "mode": "luma",
+      "tolerance": 12,
+      "knee": 110,
+      "size": [256, 128]
+    },
+    {
+      "name": "ribbon_blue",
+      "sheet": "atlas",
+      "rect": [485, 745, 230, 74],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [256, 128]
+    },
+    {
+      "name": "ribbon_red",
+      "sheet": "atlas",
+      "rect": [485, 815, 230, 72],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [256, 128]
+    },
+    {
+      "name": "mana_crystal",
+      "sheet": "atlas",
+      "rect": [779, 744, 45, 56],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [64, 64]
+    },
+    {
+      "name": "mana_crystal_empty",
+      "derive": {
+        "from": "mana_crystal",
+        "saturation": 0.2,
+        "brightness": 0.62
+      }
+    },
+    {
+      "name": "glow_green",
+      "sheet": "atlas",
+      "rect": [940, 947, 78, 57],
+      "mode": "luma",
+      "tolerance": 12,
+      "size": [128, 192],
+      "slice9": [20, 20, 20, 20]
+    },
+    {
+      "name": "glow_yellow",
+      "derive": {"from": "glow_green", "channels": "ggb"}
+    },
+    {
+      "name": "glow_red",
+      "sheet": "atlas",
+      "rect": [942, 898, 78, 53],
+      "mode": "luma",
+      "tolerance": 12,
+      "size": [128, 192],
+      "slice9": [20, 20, 20, 20]
+    },
+    {
+      "name": "glow_round",
+      "procedural": {"kind": "glow", "shape": "ellipse", "inner": [0.1, 0.1, 0.9, 0.9], "sigma": 6, "inside": 3, "peak": 0.9},
+      "size": [128, 128]
+    },
+    {
+      "name": "glow_oval",
+      "procedural": {"kind": "glow", "shape": "ellipse", "inner": [0.1, 0.1, 0.9, 0.9], "sigma": 6, "inside": 3.5, "peak": 0.85},
+      "size": [128, 128]
+    },
+    {
+      "name": "glow_arch",
+      "procedural": {"kind": "glow", "shape": "gothic", "inner": [0.1, 0.1, 0.9, 0.9], "dome": 0.47, "round": 0.7, "sigma": 6, "inside": 3, "peak": 0.9},
+      "size": [128, 128]
+    },
+    {
+      "name": "sparkle_gold",
+      "sheet": "atlas",
+      "rect": [850, 898, 84, 100],
+      "mode": "luma",
+      "tolerance": 12,
+      "size": [128, 128]
+    },
+    {
+      "name": "swirl_blue",
+      "sheet": "atlas",
+      "rect": [760, 895, 90, 112],
+      "mode": "luma",
+      "tolerance": 12,
+      "size": [128, 128]
+    },
+    {
+      "name": "speech_bubble",
+      "procedural": {
+        "kind": "bubble",
+        "body": [6, 6, 186, 100],
+        "radius": 16,
+        "tail": [[36, 94], [66, 94], [22, 124]],
+        "rim": 4,
+        "rim_color": [44, 40, 36],
+        "fill": [246, 244, 238]
+      },
+      "size": [192, 128],
+      "tex": [256, 128]
+    },
+    {
+      "name": "minion_oval",
+      "sheet": "labeled",
+      "rect": [1066, 717, 142, 83],
+      "mirror_bottom": true,
+      "mode": "none",
+      "clip": [
+        {
+          "shape": "ellipse",
+          "rect": [4, 1, 138, 165]
+        }
+      ],
+      "size": [128, 128],
+      "trim": true,
+      "anchors": {
+        "inner": {
+          "left": 0.197,
+          "top": 0.175,
+          "right": 0.803,
+          "bottom": 0.825
+        }
+      },
+      "anchors_out": {
+        "oval": {
+          "left": 0.09,
+          "top": 0.074,
+          "right": 0.9,
+          "bottom": 0.926
+        }
+      }
+    },
+    {
+      "name": "secret_paladin",
+      "sheet": "secrets",
+      "rect": [385, 0, 365, 350],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 128],
+      "trim": true
+    },
+    {
+      "name": "secret_hunter",
+      "sheet": "secrets",
+      "rect": [893, 0, 365, 350],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 128],
+      "trim": true
+    },
+    {
+      "name": "secret_mage",
+      "sheet": "secrets",
+      "rect": [1404, 0, 365, 350],
+      "mode": "flood",
+      "tolerance": 25,
+      "size": [128, 128],
+      "trim": true
+    },
+    {
+      "name": "gem_mana",
+      "sheet": "labeled",
+      "rect": [1022, 720, 62, 58],
+      "mode": "none",
+      "clip_sheet": true,
+      "clip": [
+        {
+          "shape": "polygon",
+          "points": [[1042, 725], [1066, 725], [1079, 750], [1068, 774], [1041, 773], [1027, 751]]
+        }
+      ],
+      "size": [64, 64],
+      "trim": true
+    },
+    {
+      "name": "gem_health",
+      "sheet": "labeled",
+      "rect": [1194, 940, 52, 70],
+      "mode": "none",
+      "clip_sheet": true,
+      "clip": [
+        {
+          "shape": "polygon",
+          "points": [[1220, 944], [1224, 948], [1231, 960], [1237, 970], [1240, 980], [1241, 990], [1238, 999], [1230, 1005], [1220, 1007], [1210, 1005], [1202, 999], [1199, 990], [1199, 980], [1203, 970], [1210, 960], [1216, 948]]
+        }
+      ],
+      "size": [64, 64],
+      "trim": true
+    },
+    {
+      "name": "gem_attack",
+      "sheet": "labeled",
+      "rect": [1022, 930, 66, 78],
+      "mode": "none",
+      "clip_sheet": true,
+      "clip": [
+        {
+          "shape": "ellipse",
+          "rect": [1033, 954, 1084, 1002]
+        },
+        {
+          "shape": "polygon",
+          "points": [[1025, 946], [1030, 938], [1037, 938], [1041, 945], [1047, 951], [1052, 953], [1053, 962], [1046, 969], [1034, 972], [1028, 966], [1034, 958]]
+        },
+        {
+          "shape": "polygon",
+          "points": [[1066, 990], [1074, 990], [1081, 997], [1081, 1003], [1076, 1003], [1068, 998]]
+        }
+      ],
+      "size": [64, 64],
+      "trim": true
+    },
+    {
+      "name": "gem_armor",
+      "sheet": "armor_shield",
+      "rect": [0, 0, 1306, 1204],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "cloth_c0r0",
+      "sheet": "cloth",
+      "rect": [0, 0, 557, 471],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "cloth_c1r0",
+      "sheet": "cloth",
+      "rect": [557, 0, 557, 471],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "cloth_c2r0",
+      "sheet": "cloth",
+      "rect": [1114, 0, 558, 471],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "cloth_c0r1",
+      "sheet": "cloth",
+      "rect": [0, 471, 557, 470],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "cloth_c1r1",
+      "sheet": "cloth",
+      "rect": [557, 471, 557, 470],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "cloth_c2r1",
+      "sheet": "cloth",
+      "rect": [1114, 471, 558, 470],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true
+    },
+    {
+      "name": "banner_starting_hand",
+      "sheet": "mull_banner",
+      "rect": [0, 0, 2172, 724],
+      "mode": "alpha",
+      "size": [512, 256]
+    },
+    {
+      "name": "mull_x",
+      "sheet": "mull_x",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "size": [256, 256]
+    },
+    {
+      "name": "mull_replaced",
+      "sheet": "mull_replaced",
+      "rect": [40, 330, 1475, 385],
+      "mode": "alpha",
+      "size": [512, 256]
+    },
+    {
+      "name": "end_turn_button",
+      "sheet": "end_turn",
+      "rect": [0, 0, 1578, 997],
+      "mode": "alpha",
+      "trim": true,
+      "size": [256, 256]
+    },
+    {
+      "name": "enemy_turn_button",
+      "sheet": "enemy_turn",
+      "rect": [0, 0, 1599, 984],
+      "mode": "alpha",
+      "trim": true,
+      "size": [256, 256]
+    },
+    {
+      "name": "taunt_frame",
+      "sheet": "taunt",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256],
+      "anchors_out": {"inner": {"left": 0.13093, "top": 0.09158, "right": 0.87246, "bottom": 0.81353}}
+    },
+    {
+      "name": "glow_minion_oval",
+      "silhouette": {"from": "minion_oval", "sigma": 5, "inside": 3, "peak": 0.9, "margin": 14}
+    },
+    {
+      "name": "glow_power_ring",
+      "silhouette": {"from": "hero_power_ring", "sigma": 14, "inside": 3, "peak": 0.9, "margin": 40}
+    },
+    {
+      "name": "glow_taunt",
+      "silhouette": {"from": "taunt_frame", "sigma": 6, "inside": 3, "peak": 0.85, "margin": 16}
+    },
+    {
+      "name": "mana_pill",
+      "sheet": "mana",
+      "rect": [56, 171, 1072, 413],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [128, 64]
+    },
+    {
+      "name": "mana_gem_full",
+      "sheet": "mana",
+      "rect": [1170, 163, 458, 424],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "mana_gem_empty",
+      "sheet": "mana",
+      "rect": [1696, 165, 434, 421],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "mana_lock",
+      "sheet": "lock",
+      "rect": [0, 0, 1305, 1206],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "mana_gem_glow",
+      "sheet": "gemglow",
+      "rect": [0, 0, 1267, 1241],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [128, 128]
+    },
+    {
+      "name": "divine_shield",
+      "sheet": "shield",
+      "rect": [0, 0, 512, 512],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256],
+      "anchors_out": {"inner": {"left": 0.131, "top": 0.047, "right": 0.914, "bottom": 0.916}}
+    },
+    {
+      "name": "frozen_ice",
+      "sheet": "ice",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256],
+      "anchors_out": {"inner": {"left": 0.205, "top": 0.164, "right": 0.833, "bottom": 0.793}}
+    },
+    {
+      "name": "silence_swirl",
+      "sheet": "silence",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [256, 256]
+    },
+    {
+      "name": "kw_deathrattle",
+      "sheet": "skull",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "kw_continuous",
+      "sheet": "lightning",
+      "rect": [0, 0, 1254, 1254],
+      "mode": "alpha",
+      "trim": true,
+      "trim_pad": 0,
+      "size": [64, 64]
+    },
+    {
+      "name": "bg_board_c0r0",
+      "sheet": "bg_board",
+      "rect": [20, 0, 580, 444],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_board_c1r0",
+      "sheet": "bg_board",
+      "rect": [600, 0, 580, 444],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_board_c2r0",
+      "sheet": "bg_board",
+      "rect": [1180, 0, 580, 444],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_board_c0r1",
+      "sheet": "bg_board",
+      "rect": [20, 444, 580, 443],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_board_c1r1",
+      "sheet": "bg_board",
+      "rect": [600, 444, 580, 443],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_board_c2r1",
+      "sheet": "bg_board",
+      "rect": [1180, 444, 580, 443],
+      "mode": "none",
+      "size": [512, 512],
+      "stretch": true,
+      "tex": [512, 512]
+    },
+    {
+      "name": "bg_upgrade",
+      "sheet": "bg_upgrade",
+      "rect": [0, 0, 457, 546],
+      "mode": "alpha",
+      "trim": true,
+      "size": [128, 128]
+    },
+    {
+      "name": "bg_refresh",
+      "sheet": "bg_refresh_src",
+      "rect": [0, 0, 1147, 1371],
+      "mode": "flood",
+      "trim": true,
+      "size": [128, 128]
+    },
+    {
+      "name": "bg_freeze",
+      "sheet": "bg_freeze_src",
+      "rect": [0, 0, 1132, 1389],
+      "mode": "flood",
+      "trim": true,
+      "size": [128, 128]
+    },
+    {
+      "name": "glow_bg_upgrade",
+      "silhouette": {"from": "bg_upgrade", "sigma": 7, "inside": 3, "peak": 0.9, "margin": 18}
+    },
+    {
+      "name": "glow_bg_refresh",
+      "silhouette": {"from": "bg_refresh", "sigma": 7, "inside": 3, "peak": 0.9, "margin": 18}
+    },
+    {
+      "name": "glow_bg_freeze",
+      "silhouette": {"from": "bg_freeze", "sigma": 7, "inside": 3, "peak": 0.9, "margin": 18}
+    },
+    {
+      "name": "glow_end_turn",
+      "silhouette": {"from": "end_turn_button", "sigma": 9, "inside": 3, "peak": 0.9, "margin": 22}
+    },
+    {
+      "name": "bg_coin",
+      "sheet": "bg_coinsrc",
+      "rect": [0, 0, 500, 500],
+      "mode": "alpha",
+      "trim": true,
+      "size": [64, 64]
+    },
+    {
+      "name": "bg_tier_1",
+      "sheet": "bg_tier_1_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_2",
+      "sheet": "bg_tier_2_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_3",
+      "sheet": "bg_tier_3_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_4",
+      "sheet": "bg_tier_4_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_5",
+      "sheet": "bg_tier_5_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_6",
+      "sheet": "bg_tier_6_src",
+      "rect": [0, 0, 783, 840],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    },
+    {
+      "name": "bg_tier_7",
+      "sheet": "bg_tier_7_src",
+      "rect": [0, 0, 783, 862],
+      "mode": "alpha",
+      "trim": true,
+      "size": [116, 128]
+    }
+  ]
+}

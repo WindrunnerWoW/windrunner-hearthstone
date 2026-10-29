@@ -1,0 +1,689 @@
+{
+  "note": "Battlegrounds cards whose hover card (the HearthstoneJSON 256x render, art/cache) shows other stats, text or keywords than the pinned 148526 data. The engine and the addon follow the render (owner decision 2026-10-19): stats and keywords as the render shows them, text from build 189017 where the render says the same, else as the render reads. Applied by tools/battlegrounds/bglib.py (apply_render_overrides). Tiers are not on the render and stay.",
+  "render_build": "189017",
+  "cards": {
+    "BG21_003": {
+      "attack": 4,
+      "health": 3,
+      "text": "At the end of your turn, give another friendly Beast <b>Reborn</b>.",
+      "mechanics": [
+        "TRIGGER_VISUAL"
+      ],
+      "golden": {
+        "attack": 8,
+        "health": 6,
+        "text": "At the end of your turn, give 2 other friendly Beasts <b>Reborn</b>.",
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      }
+    },
+    "BG21_005": {
+      "attack": 8,
+      "health": 5,
+      "golden": {
+        "attack": 16,
+        "health": 10
+      }
+    },
+    "BG21_008": {
+      "text": "After you play a Murloc, give two friendly Murlocs +1 Health.",
+      "golden": {
+        "text": "After you play a Murloc, give two friendly Murlocs +2 Health."
+      }
+    },
+    "BG21_013": {
+      "attack": 2,
+      "health": 3,
+      "golden": {
+        "attack": 4,
+        "health": 6
+      }
+    },
+    "BG21_024": {
+      "attack": 1,
+      "health": 4,
+      "text": "<b>Divine Shield</b>\nAfter a friendly minion loses\n<b>Divine Shield</b>, give it\n+2/+2 permanently.",
+      "mechanics": [
+        "DIVINE_SHIELD",
+        "TRIGGER_VISUAL"
+      ],
+      "golden": {
+        "attack": 2,
+        "health": 8,
+        "text": "<b>Divine Shield</b>\nAfter a friendly minion loses\n<b>Divine Shield</b>, give it\n+4/+4 permanently.",
+        "mechanics": [
+          "DIVINE_SHIELD",
+          "TRIGGER_VISUAL"
+        ]
+      }
+    },
+    "BG21_025": {
+      "attack": 6,
+      "health": 6,
+      "text": "<b>Deathrattle:</b> Summon six 1/1 Microbots. For each that doesn't fit, give your Mechs +1/+1.",
+      "golden": {
+        "attack": 12,
+        "health": 12,
+        "text": "<b>Deathrattle:</b> Summon six 2/2 Microbots. For each that doesn't fit, give your Mechs +2/+2."
+      }
+    },
+    "BG22_202": {
+      "attack": 2,
+      "health": 2,
+      "golden": {
+        "attack": 4,
+        "health": 4
+      }
+    },
+    "BG22_401": {
+      "attack": 1,
+      "health": 5,
+      "golden": {
+        "attack": 2,
+        "health": 10
+      }
+    },
+    "BG22_402": {
+      "text": "[x]<b>Venomous</b>. <b>Start of Combat:</b>\nFor each of your minion\ntypes gain +5/+5, <b>Windfury</b>,\n   <b>Reborn</b>, or <b>Taunt</b>.",
+      "mechanics": [
+        "TRIGGER_VISUAL",
+        "VENOMOUS"
+      ],
+      "golden": {
+        "text": "[x]<b>Venomous</b>. <b>Start of Combat:</b>\nFor each of your minion\ntypes gain +5/+5, <b>Windfury</b>,\n   <b>Reborn</b>, or <b>Taunt</b>, twice.",
+        "mechanics": [
+          "TRIGGER_VISUAL",
+          "VENOMOUS"
+        ]
+      }
+    },
+    "BG22_403": {
+      "text": "At the end of your turn, adjacent minions trigger their <b>Battlecries</b>.",
+      "golden": {
+        "text": "[x]At the end of your turn,\nadjacent minions trigger\ntheir <b>Battlecries</b> twice."
+      }
+    },
+    "BG23_350": {
+      "attack": 1,
+      "health": 4,
+      "golden": {
+        "attack": 2,
+        "health": 8
+      }
+    },
+    "BG23_361": {
+      "attack": 4,
+      "health": 2,
+      "text": "Minions in Bob's Tavern have +2/+1.",
+      "golden": {
+        "attack": 8,
+        "health": 4,
+        "text": "Minions in Bob's Tavern have +4/+2."
+      }
+    },
+    "BG24_003": {
+      "attack": 2,
+      "health": 4,
+      "text": "At the end of your turn, give your other Dragons +1 Attack.",
+      "golden": {
+        "attack": 4,
+        "health": 8,
+        "text": "At the end of your turn, give your other Dragons +2 Attack."
+      }
+    },
+    "BG24_020": {
+      "attack": 8,
+      "health": 8,
+      "text": "After you play a minion with no minion type, give 3 friendly minions of different types +4/+4.",
+      "golden": {
+        "attack": 16,
+        "health": 16,
+        "text": "After you play a minion with no minion type, give 3 friendly minions of different types +8/+8."
+      }
+    },
+    "BG24_500": {
+      "golden": {
+        "text": "[x]<b>Start of Combat:</b> Give\ntwo other friendly Dragons\n+3/+3 and <b>Divine Shield</b>."
+      }
+    },
+    "BGS_004": {
+      "attack": 1,
+      "health": 3,
+      "text": "After you play a Demon, deal 1 damage to your hero and gain +2/+1.",
+      "golden": {
+        "attack": 2,
+        "health": 6,
+        "text": "After you play a Demon, deal 1 damage to your hero and gain +2/+1, twice."
+      }
+    },
+    "BGS_009": {
+      "attack": 4,
+      "health": 4,
+      "golden": {
+        "attack": 8,
+        "health": 8
+      }
+    },
+    "BGS_010": {
+      "attack": 3,
+      "health": 1,
+      "text": "<b>Battlecry:</b> Gain +2 Health for each Health your hero is missing.",
+      "golden": {
+        "attack": 6,
+        "health": 2,
+        "text": "<b>Battlecry:</b> Gain +4 Health for each Health your hero is missing."
+      }
+    },
+    "BGS_014": {
+      "attack": 3,
+      "health": 2,
+      "golden": {
+        "attack": 6,
+        "health": 4
+      }
+    },
+    "BGS_018": {
+      "attack": 3,
+      "health": 3,
+      "text": "<b>Deathrattle:</b> For the rest of this combat, your Beasts have +3/+3.",
+      "golden": {
+        "attack": 6,
+        "health": 6,
+        "text": "<b>Deathrattle:</b> For the rest of this combat, your Beasts have +6/+6."
+      }
+    },
+    "BGS_021": {
+      "attack": 3,
+      "health": 3,
+      "text": "Whenever you summon a Beast, give it +3/+3.",
+      "golden": {
+        "attack": 6,
+        "health": 6,
+        "text": "Whenever you summon a Beast, give it +6/+6."
+      }
+    },
+    "BGS_022": {
+      "attack": 11,
+      "health": 22,
+      "golden": {
+        "attack": 22,
+        "health": 44,
+        "text": "[x]<b>Windfury</b>\nThis minion always attacks\nthe enemy minion with\nthe lowest Attack."
+      }
+    },
+    "BGS_030": {
+      "attack": 6,
+      "health": 3,
+      "text": "<b>Battlecry:</b> Give your other Murlocs +3/+3.",
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "golden": {
+        "attack": 12,
+        "health": 6,
+        "text": "<b>Battlecry:</b> Give your other Murlocs +6/+6.",
+        "mechanics": [
+          "BATTLECRY"
+        ]
+      }
+    },
+    "BGS_038": {
+      "attack": 3,
+      "health": 3,
+      "golden": {
+        "attack": 6,
+        "health": 6
+      }
+    },
+    "BGS_056": {
+      "attack": 2,
+      "health": 4,
+      "text": "Whenever a friendly Pirate attacks, give it +3 Attack.",
+      "golden": {
+        "attack": 4,
+        "health": 8,
+        "text": "Whenever a friendly Pirate attacks, give it +6 Attack."
+      }
+    },
+    "BGS_081": {
+      "attack": 5,
+      "health": 5,
+      "text": "Has +1/+1 for each Pirate you've summoned this game <i>(wherever this is)</i>.",
+      "golden": {
+        "attack": 10,
+        "health": 10,
+        "text": "Has +2/+2 for each Pirate you've summoned this game <i>(wherever this is)</i>."
+      }
+    },
+    "BGS_040": {
+      "attack": 8,
+      "health": 4,
+      "text": "<b>Deathrattle:</b> Give 3 friendly Dragons <b>Divine Shield</b>.",
+      "golden": {
+        "attack": 16,
+        "health": 8,
+        "text": "<b>Deathrattle:</b> Give 6 friendly Dragons <b>Divine Shield</b>."
+      }
+    },
+    "BGS_041": {
+      "text": "[x]After you trigger a <b>Battlecry</b>,\ngive your Dragons +1/+1.",
+      "golden": {
+        "text": "[x]After you trigger a <b>Battlecry</b>,\ngive your Dragons +2/+2."
+      }
+    },
+    "BGS_043": {
+      "text": "<b>Battlecry:</b> Get a plain copy of a minion from your last opponent's warband.",
+      "golden": {
+        "text": "[x]<b>Battlecry:</b> Get a plain\ncopy of a minion from\nyour last opponent's\nwarband twice."
+      }
+    },
+    "BGS_078": {
+      "attack": 4,
+      "health": 3
+    },
+    "BGS_120": {
+      "attack": 4,
+      "health": 2,
+      "text": "After you play an Elemental, give a friendly Elemental other than it +1/+2.",
+      "golden": {
+        "attack": 8,
+        "health": 4,
+        "text": "After you play an Elemental, give a friendly Elemental other than it +2/+4."
+      }
+    },
+    "BGS_123": {
+      "attack": 2,
+      "health": 2,
+      "golden": {
+        "attack": 4,
+        "health": 4,
+        "text": "<b>Battlecry:</b> Get two random Elementals."
+      }
+    },
+    "BGS_126": {
+      "attack": 6,
+      "health": 3,
+      "golden": {
+        "attack": 12,
+        "health": 6
+      }
+    },
+    "BGS_127": {
+      "attack": 3,
+      "health": 2,
+      "text": "After you play an Elemental, gain +1 Health.",
+      "mechanics": [
+        "TRIGGER_VISUAL"
+      ],
+      "golden": {
+        "attack": 6,
+        "health": 4,
+        "text": "After you play an Elemental, gain +2 Health.",
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      }
+    },
+    "BG_BOT_312": {
+      "attack": 3,
+      "health": 2,
+      "golden": {
+        "attack": 6,
+        "health": 4
+      }
+    },
+    "BG_BOT_563": {
+      "attack": 6,
+      "health": 5,
+      "golden": {
+        "attack": 12,
+        "health": 10
+      }
+    },
+    "BG23_001": {
+      "attack": 5,
+      "health": 2,
+      "text": "[x]Once per turn,\nwhen you cast a spell,\ngain +2 Health.",
+      "golden": {
+        "attack": 10,
+        "health": 4,
+        "text": "[x]Once per turn,\nwhen you cast a spell,\ngain +4 Health."
+      }
+    },
+    "BG23_002": {
+      "attack": 2,
+      "health": 1,
+      "text": "<b>Battlecry:</b> Get a Gold Coin.",
+      "golden": {
+        "attack": 4,
+        "health": 2,
+        "text": "[x]<b>Battlecry:</b> Get\n2 Gold Coins."
+      }
+    },
+    "BG23_003": {
+      "text": "Whenever you cast a <b>Spellcraft</b> spell on a minion, give it +2/+2.",
+      "golden": {
+        "text": "Whenever you cast a <b>Spellcraft</b> spell on a minion, give it +4/+4."
+      }
+    },
+    "BG23_004": {
+      "text": "[x]<b>Spellcraft:</b> Give a minion\n+4 Health and <b>Taunt</b>\nuntil next turn.",
+      "golden": {
+        "text": "[x]<b>Spellcraft:</b> Give a minion\n+8 Health and <b>Taunt</b>\nuntil next turn."
+      }
+    },
+    "BG23_004t": {
+      "text": "Give a minion +4 Health and <b>Taunt</b> until next turn.",
+      "golden": {
+        "text": "Give a minion +8 Health and <b>Taunt</b> until next turn."
+      }
+    },
+    "BG23_009": {
+      "attack": 2,
+      "health": 5,
+      "text": "[x]The first <b>Spellcraft</b>\n enchantment on this\n each turn is permanent.",
+      "golden": {
+        "attack": 4,
+        "health": 10,
+        "text": "[x]The first two <b>Spellcraft</b>\n enchantments on this\neach turn are permanent."
+      }
+    },
+    "BG23_010": {
+      "attack": 4,
+      "health": 3,
+      "golden": {
+        "attack": 8,
+        "health": 6
+      }
+    },
+    "BG23_013": {
+      "attack": 6,
+      "health": 8,
+      "text": "[x]Whenever you cast a\nspell, give four friendly\nNaga +1/+1.",
+      "golden": {
+        "attack": 12,
+        "health": 16,
+        "text": "[x]Whenever you cast a\nspell, give four friendly\nNaga +2/+2."
+      }
+    },
+    "BGS_200": {
+      "text": "<b>Deathrattle:</b> Get\na Gold Coin.",
+      "golden": {
+        "text": "<b>Deathrattle:</b> Get\n2 Gold Coins."
+      }
+    },
+    "BG23_HERO_304p": {
+      "text": "[x]<b>Discover</b> a <b>Spellcraft</b> spell\nof your Tier or lower.\nIts effect is permanent.",
+      "cost": 1
+    },
+    "BG22_HERO_007p": {
+      "text": "[x]<b>Passive.</b> When your\nwarband reaches 25 total\nAttack, begin your Naga\nConquest.",
+      "cost": 0
+    },
+    "BG20_HERO_283p_t1": {
+      "text": "[x]<b>Passive.</b> In 1 turn, give\nyour left-most minion\n+2/+2. <i>(1 left!)</i>",
+      "cost": 0
+    },
+    "BG20_HERO_283p_t2": {
+      "text": "[x]<b>Passive</b>\nIn 2 turns, gain 2 Gold.\n<i>(2 left!)</i>",
+      "cost": 0
+    },
+    "BG20_HERO_283p_t3": {
+      "text": "[x]<b>Passive.</b> In 3 turns,\n<b>Discover</b> a minion of your\nTavern Tier. <i>(3 left!)</i>",
+      "cost": 0
+    },
+    "BG22_HERO_000p": {
+      "text": "[x]Take aim!\n<b>Start of Combat</b>: Deal 2\ndamage to your target.\n<i>(Doubles every 3 turns!)</i>",
+      "cost": 0
+    },
+    "BG22_HERO_000p_t1": {
+      "text": "[x]<b>Passive. Start of Combat</b>:\nDeal 2 damage to the\nleft-most enemy minion.\n<i>(Doubles in 3 turns!)</i>",
+      "cost": 0
+    },
+    "BG22_HERO_000p_t2": {
+      "text": "[x]<b>Passive. Start of Combat</b>:\nDeal 2 damage to the lowest\nHealth enemy minion.\n<i>(Doubles in 3 turns!)</i>",
+      "cost": 0
+    },
+    "BG22_HERO_000p_t3": {
+      "text": "[x]<b>Passive. Start of Combat</b>:\nDeal 2 damage to the highest\nHealth enemy minion.\n<i>(Doubles in 3 turns!)</i>",
+      "cost": 0
+    },
+    "BG22_HERO_000p_t4": {
+      "text": "[x]<b>Passive. Start of Combat</b>:\nDeal 2 damage to the\nleft-most enemy minion.\n<i>(Doubles in 3 turns!)</i>",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_038": {
+      "text": "[x]<b>Passive</b>\nAt the start of your turn,\n get 2 Bananas and\n give everyone else one.",
+      "cost": 0
+    },
+    "BG23_HERO_303p2": {
+      "text": "[x]Look at 2 minions.\nGuess which one your\nnext opponent had\nlast combat for a Coin.",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_081": {
+      "text": "[x]Guess which player will\nwin their next combat.\nIf you're correct,\nget 3 Gold Coins.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_102": {
+      "text": "[x]If you have two copies of\na minion, find the third.\n<i>(3 Wishes left!)</i>",
+      "cost": 3
+    },
+    "TB_BaconShop_HP_052": {
+      "text": "[x]Replace a minion with a\n random one of the same\nTier. <i>(Twice per turn.)</i>",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_061": {
+      "text": "[x]<b>Passive</b>\n<b>Start of Combat:</b> Give\nALL minions +2 Attack\npermanently.",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_011": {
+      "text": "[x]Choose a minion in the\nTavern. <b>Discover</b> a higher\nTier minion to replace it.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_084": {
+      "text": "[x]Swap a friendly\nnon-Golden minion with a\nrandom one in the Tavern.",
+      "cost": 0
+    },
+    "BG20_HERO_101p": {
+      "text": "[x]Choose a minion in the\nTavern. Set its stats to 2\nand add it to your hand.",
+      "cost": 2
+    },
+    "BG20_HERO_201p": {
+      "text": "Choose two minions. Swap their stats.",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_039": {
+      "text": "[x]Steal a random minion\nfrom the Tavern.\nGive it +1/+1.",
+      "cost": 2
+    },
+    "TB_BaconShop_HP_001": {
+      "text": "[x]Give a minion +1/+1.\nUpgrades after you\nbuy 4 minions. <i>(4 left!)</i>",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_015": {
+      "text": "[x]<b>Passive</b>\nWhenever you summon a\nMech, give it +2 Attack.",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_028": {
+      "text": "[x]<b>Refresh</b> the Tavern.\n Include two minions from\na Tier higher than yours.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_036": {
+      "text": "Choose a friendly Demon. It consumes a minion in the Tavern to gain its stats.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_042": {
+      "text": "[x]<b>Passive.</b> When you buy a\nminion, give it a +1/+1 hat\n that passes to a friendly\nminion when sold.",
+      "cost": 0
+    },
+    "BG20_HERO_102p": {
+      "text": "Give a minion in the\nTavern +2/+1.\n<i>(Doubles every 3 turns!)</i>",
+      "cost": 1
+    },
+    "BG20_HERO_242p": {
+      "text": "Give a friendly minion of\neach Tier +2/+1.",
+      "cost": 1
+    },
+    "BG21_HERO_000p": {
+      "text": "Give 2 friendly minions\n+1/+1. <i>(After you\nupgrade the Tavern,\nchoose an improvement!)</i>"
+    },
+    "BG20_102": {
+      "text": "After a <b>Blood Gem</b> is played on this, gain <b>Divine Shield</b> for the next combat.",
+      "golden": {
+        "text": "After a <b>Blood Gem</b> is played on this, gain\n<b>Divine Shield</b>."
+      }
+    },
+    "BG20_104": {
+      "golden": {
+        "text": "<b>Windfury</b>\nAfter this attacks, get 2 <b>Blood Gems</b>.",
+        "mechanics": [
+          "TRIGGER_VISUAL",
+          "WINDFURY"
+        ]
+      }
+    },
+    "BG20_105": {
+      "attack": 3,
+      "health": 2,
+      "text": "<b>Deathrattle:</b> Get a\n<b>Blood Gem</b>.",
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "golden": {
+        "attack": 6,
+        "health": 4,
+        "text": "<b>Deathrattle:</b> Get 2\n<b>Blood Gems</b>.",
+        "mechanics": [
+          "DEATHRATTLE"
+        ]
+      }
+    },
+    "BG20_106": {
+      "attack": 3,
+      "health": 8,
+      "golden": {
+        "attack": 6,
+        "health": 16
+      }
+    },
+    "BG20_201": {
+      "attack": 3,
+      "health": 5,
+      "golden": {
+        "attack": 6,
+        "health": 10
+      }
+    },
+    "BG20_203": {
+      "attack": 2,
+      "health": 3,
+      "text": "<b>Taunt</b>\nAfter you play a Quilboar, get a <b>Blood Gem</b>.",
+      "mechanics": [
+        "TAUNT",
+        "TRIGGER_VISUAL"
+      ],
+      "golden": {
+        "attack": 4,
+        "health": 6,
+        "text": "<b>Taunt</b>\nAfter you play a Quilboar, get 2 <b>Blood Gems</b>.",
+        "mechanics": [
+          "TAUNT",
+          "TRIGGER_VISUAL"
+        ]
+      }
+    },
+    "BG20_204": {
+      "attack": 6,
+      "health": 9,
+      "text": "<b><b>Windfury</b>. <b>Divine Shield</b>.</b>\nThe first time this\nsurvives damage, gain <b>Divine Shield</b>.",
+      "mechanics": [
+        "DIVINE_SHIELD",
+        "TRIGGER_VISUAL",
+        "WINDFURY"
+      ],
+      "golden": {
+        "attack": 12,
+        "health": 18,
+        "text": "<b><b>Windfury</b>. <b>Divine Shield</b>.</b>\nThe first two times this\nsurvives damage, gain <b>Divine Shield</b>.",
+        "mechanics": [
+          "DIVINE_SHIELD",
+          "TRIGGER_VISUAL",
+          "WINDFURY"
+        ]
+      }
+    },
+    "BG20_302": {
+      "attack": 3,
+      "health": 5,
+      "text": "After a <b>Blood Gem</b> is\nplayed on this, give a\nfriendly minion of each\ntype +2/+1.",
+      "golden": {
+        "attack": 6,
+        "health": 10,
+        "text": "After a <b>Blood Gem</b> is\nplayed on this, give a\nfriendly minion of each\ntype +4/+2."
+      }
+    },
+    "BG20_303": {
+      "text": "At the end of your turn,\nplay a <b>Blood Gem</b> on\nyour other minions.",
+      "golden": {
+        "text": "At the end of your turn,\nplay 2 <b>Blood Gems</b> on\nyour other minions."
+      }
+    },
+    "BG20_HERO_103p": {
+      "text": "[x]Get 2 Blood Gems.\n<i>(Twice per turn.)</i>",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_056": {
+      "text": "[x]<b>Passive.</b> After you sell\n5 minions, get a random\nMurloc. <i>(5 left.)</i>"
+    },
+    "BG22_HERO_200p": {
+      "text": "[x]<b>Passive</b>\nAfter 10 friendly minions\ndie, get a random Mech."
+    },
+    "BG23_HERO_305p": {
+      "text": "Steal all minions in\nBob's Tavern. Each turn,\nyour next Hero Power\ncosts (1) less.",
+      "cost": 10
+    },
+    "TB_BaconShop_HP_037a": {
+      "text": "<b>Passive.</b> <b>Start of Combat:</b>\nGive 3 friendly minions\nof different types stats\nequal to their Tavern Tiers."
+    },
+    "TB_BaconShop_HP_041": {
+      "text": "Discover a minion of a specific\nminion type. Swaps type each turn.",
+      "cost": 2
+    },
+    "TB_BaconShop_HP_104": {
+      "text": "At end of turn, give a\nfriendly minion +1/+1.\nRepeat 0 times.\n<i>(Upgrades each turn!)</i>"
+    },
+    "TB_BaconShop_HP_049": {
+      "text": "[x]Steal a minion from the\n Tavern. Take damage\nequal to its Tier.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_065": {
+      "text": "[x]<b>Passive.</b> After 14 friendly\nminions attack, the first\nminion you buy each\nturn is free. <i>(14 left!)</i>",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_085": {
+      "text": "[x]Give a minion stats\nequal to your Tier.",
+      "cost": 1
+    },
+    "TB_BaconShop_HP_022": {
+      "text": "[x]Trigger a friendly\nminion's <b>Battlecry</b>.",
+      "cost": 0
+    },
+    "TB_BaconShop_HP_105t": {
+      "text": "After a friendly <b>Deathrattle</b>\nminion dies in combat,\ngain its <b>Deathrattle</b>.",
+      "golden": {
+        "text": "After a friendly <b>Deathrattle</b>\nminion dies in combat,\ngain its <b>Deathrattle</b>\ntwice."
+      }
+    },
+    "TB_BaconShop_HP_033t": {
+      "attack": 1,
+      "health": 1,
+      "mechanics": [
+        "VENOMOUS"
+      ]
+    },
+    "TB_BaconShop_HP_080": {
+      "text": "[x]<b>Passive</b>\nAfter another hero dies,\n<b>Discover</b> a minion from\ntheir warband. It keeps\nany enchantments."
+    }
+  }
+}

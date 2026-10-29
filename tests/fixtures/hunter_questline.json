@@ -1,0 +1,299 @@
+[
+  {
+    "teacher": 919582,
+    "helper": 919583,
+    "base": 919871,
+    "credit": 919586,
+    "projection": 919900,
+    "menu": 65100,
+    "text": 9195430,
+    "city": 104,
+    "zone": 1638,
+    "intro": 919704,
+    "mask": 434,
+    "display": 4511,
+    "helperdisplay": 9269,
+    "name": "Boro Softstep",
+    "friend": "Nali Softstep",
+    "texts": {
+      "0": "Come to learn how a Hunter plays Hearthstone? I begin with companions. Nali says I take a long time to begin.",
+      "1": "Uncle Boro can describe a companion for an hour. He can describe why he would not choose it for two.",
+      "2": "We have not finished comparing companions. Shall I go on?",
+      "3": "Nali is nearby. Let us find out what all this was supposed to accomplish.",
+      "5": "What did Nali actually ask for? I would rather hear her words than another of my splendid ideas.",
+      "6": "No more speeches about companions. I have brought the cards.",
+      "7": "Nali says I am allowed to explain my choices after I have made them. This seems fair. Shall we play?",
+      "8": "You won fairly. Your Hunter Deck is ready. I have no further questions about animals.",
+      "9": "Good to see you, $n. Nali has started asking me what my lessons are for. I may have taught her rather too well.",
+      "10": "He finally played. I still like the boar. I like Uncle Boro better when he stops examining everyone.",
+      "11": "He has stopped comparing companions. Now I might finally see the cards.",
+      "12": "I have lost my place. Let us consider those three again.",
+      "13": "It is easy to get carried away. Shall we start that part again?",
+      "14": "Has he reached the accountant? Then you have been here a while.",
+      "15": "I asked to see how he plays his Hunter deck. One game. He said we had to choose the proper companion first.",
+      "16": "I chose the boar. He said it was wrong. Then he put a boar in his own deck and said that was different. I would like him to show me the difference by playing.",
+      "17": "Thank you. If he starts another examination, tell him the boar has already passed mine.",
+      "18": "Well? A grand hunt? A tiger?",
+      "19": "One game. I could have managed that without the accountant.",
+      "20": "Yes. I have been telling her what a Hunter should notice while missing the person standing beside me. No more auditions.",
+      "21": "A bear, a buzzard and a tiger. Which would you choose?",
+      "22": "Wrong. The bear would take you. It would decide you were carrying lunch.",
+      "23": "Wrong. It waits for you to die before becoming helpful. I prefer a companion with a little more urgency.",
+      "24": "Wrong. A magnificent hunter, but it expects the finest cut of everything. Including your blanket.",
+      "25": "A wolf, a boar and a turtle. More modest appetites. Mostly. Which one?",
+      "26": "Wrong. It howls when it finds something. By the time it has finished announcing breakfast, breakfast has left.",
+      "27": "Wrong. It is very good at finding things underground. I was hoping to keep most of the ground where it is.",
+      "28": "Wrong. An excellent companion for yesterday's hunt. We would arrive next week.",
+      "29": "A frog, a chicken and a tauren accountant. Keep an open mind. The accountant is very good at following people.",
+      "30": "Wrong. It could catch a fly, but I doubt it would share.",
+      "31": "Wrong. The chicken would be the bait. I do not like its chances.",
+      "32": "Wrong. He finds every copper you have ever earned, then charges you for the discovery.",
+      "4": "That is a fair question. Nali asked me for a lesson. Somewhere between the bear and the accountant, I stopped asking what she wanted to learn.",
+      "33": "Listen carefully. We shall consider them one at a time.",
+      "34": "One lesson at a time. Even I must finish a sentence eventually."
+    },
+    "quests": [
+      {
+        "entry": 919871,
+        "Title": "A Fine Selection",
+        "Details": "My niece Nali asked for a Hunter lesson. A good lesson begins with a useful companion. I have given the matter considerable thought. $B$BI will describe a few candidates. Tell me which one you would choose. There is more to a companion than teeth, though I find teeth are a reliable place to begin.",
+        "Objectives": "Discuss Boro Softstep's possible companions.",
+        "RequestItemsText": "We still have a set to consider. I assure you, the next one is entirely reasonable.",
+        "OfferRewardText": "Hm. We have learned a great deal about me and rather less about what Nali needs.$B$BPerhaps we should correct that.",
+        "labels": [
+          "Compare Boro's first set",
+          "Compare Boro's second set",
+          "Compare Boro's last set"
+        ],
+        "credits": [
+          919586,
+          919587,
+          919588
+        ]
+      },
+      {
+        "entry": 919872,
+        "Title": "What She Asked For",
+        "Details": "Nali is here on Hunter Rise, probably listening to the hunter trainers. She has been remarkably patient with my lesson. She may have been waiting for me to stop speaking.$B$BAsk her what she wanted when she came to me. I have had enough of listening to myself for one afternoon.",
+        "Objectives": "Ask Nali what she wanted from Boro's lesson, then tell Boro.",
+        "RequestItemsText": "What did Nali actually ask for? I would rather hear her words than another of my splendid ideas.",
+        "OfferRewardText": "I was choosing her companion before I had even heard her question. No wonder every answer seemed wrong.$B$BShe wanted a game. Let us give her one worth watching.",
+        "labels": [
+          "Hear Nali's request",
+          "Tell Boro what Nali asked"
+        ],
+        "credits": [
+          919589,
+          919590
+        ]
+      },
+      {
+        "entry": 919873,
+        "Title": "No More Auditions",
+        "Details": "Nali wanted to see how I play my Hunter deck. You have endured enough of my opinions to deserve the other side of the table.$B$BBring whichever deck you like. Defeat me, and this Hunter Deck is yours. I shall try to make my companions more useful than my questions.",
+        "Objectives": "Defeat Boro Softstep in a game of Hearthstone.",
+        "RequestItemsText": "Another game? At last, a question with a sensible answer.",
+        "OfferRewardText": "Well played, $n. Nali was right to ask for the game first.$B$BTake this Hunter Deck. I will not ask which animal you intend to put in it.",
+        "labels": [
+          "Defeat Boro at Hearthstone"
+        ],
+        "credits": []
+      }
+    ],
+    "animals": [
+      [
+        "Bear",
+        8843
+      ],
+      [
+        "Buzzard",
+        1105
+      ],
+      [
+        "Tiger",
+        320
+      ],
+      [
+        "Wolf",
+        161
+      ],
+      [
+        "Boar",
+        381
+      ],
+      [
+        "Turtle",
+        1244
+      ],
+      [
+        "Frog",
+        901
+      ],
+      [
+        "Chicken",
+        304
+      ],
+      [
+        "Tauren Accountant",
+        4511
+      ]
+    ],
+    "replies": [
+      "What did you ask him to teach you?",
+      "And did you choose one?",
+      "I'll tell him you want a game.",
+      "She asked to watch you play.",
+      "Let her see how you actually play."
+    ],
+    "scale": 1.35,
+    "helperscale": 1.25,
+    "accountantscale": 1.35
+  },
+  {
+    "teacher": 919584,
+    "helper": 919585,
+    "base": 919881,
+    "credit": 919591,
+    "projection": 919909,
+    "menu": 65160,
+    "text": 9195490,
+    "city": 79,
+    "zone": 1657,
+    "intro": 919714,
+    "mask": 589,
+    "display": 7041,
+    "helperdisplay": 2306,
+    "name": "Fenn Coilwhistle",
+    "friend": "Eris Leafshade",
+    "texts": {
+      "0": "I teach Hunter play by describing animals and asking which one a student would take. Eris, who reads her reports over there, says I do it too loudly. I think she needs a companion of her own, something quiet. I am choosing one.",
+      "1": "Fenn is planning another lesson. If he starts one while you are nearby, find somewhere else to sit.",
+      "2": "We have not finished choosing Eris's companion. Shall I go on?",
+      "3": "Eris is nearby in the Cenarion Enclave. Go and ask her what she needs. She is usually very precise about problems.",
+      "5": "What does Eris need? Keep it short. I have done enough talking this week.",
+      "6": "Cards make no noise at all. Eris has approved of them in principle.",
+      "7": "Ready? I have an ordinary Hunter deck. If I lose, that will be my own fault. Eris made me promise to say so out loud.",
+      "8": "You won. Your Hunter Deck is ready. Eris says it was a fair game, which surprised us both.",
+      "9": "Good to see you, $n. The lessons are shorter now, and Eris has stopped complaining. Mostly.",
+      "10": "Cards. No long speeches. I may even finish this report before he offers me a game.",
+      "11": "He listened. That is worth encouraging. Preferably with something that fits in his pocket.",
+      "12": "One moment. I have lost my place.",
+      "13": "Give me a moment. I have lost my train of thought.",
+      "14": "Please tell me he has finished talking.",
+      "15": "Quiet. He describes things so well that I stop reading and listen. I asked him for less talking. He has spent all week choosing me a companion instead.",
+      "16": "No companion. I like Fenn. I would just like to finish one report without a lesson going on beside me.",
+      "17": "Thank you. He is a good friend. He is also a great deal of noise for one gnome.",
+      "18": "Well? What does she need? Did she pick a companion?",
+      "19": "No companion at all? Then what if I keep my voice very low?",
+      "20": "All right. No more lessons at her desk. I spent a week looking for a clever answer to a question she never asked.",
+      "21": "First set: a cat, an owl and a spider. All quiet. Which would you bring her?",
+      "22": "Wrong. Quiet on its paws, but it would sit on Eris's reports. Cats always find the page that matters.",
+      "23": "Wrong. Silent wings, but it would watch Eris read all evening. Nobody finishes a report under that stare.",
+      "24": "Wrong. Quiet, yes, but Eris would find it in her papers by morning, and I would hear about it.",
+      "25": "Second set: a crab, a crocolisk and a rabbit. Which would you bring her?",
+      "26": "Wrong. Those claws click on every stone step. Eris would hear it coming from the far end of the Enclave.",
+      "27": "Wrong. Patient, until it is not, and then it thrashes. The Enclave is meant to be a quiet place.",
+      "28": "Wrong. It bolts at the smallest noise, even a page turning, and knocks something over on the way out.",
+      "29": "Last set: a rat, a sheep and a gnome accountant. Which would you bring her?",
+      "30": "Wrong. It would be inside Eris's report cabinet within the hour.",
+      "31": "Wrong. Calm, until it is left alone. Then it bleats, and Eris would be the one who went to see why.",
+      "32": "Wrong. I have costed that one. Quiet and tidy, but it would audit Eris's reports, and she would never forgive me.",
+      "4": "...No. She asked for quiet, and I decided she needed company. I never asked what she actually wants. Perhaps you should.",
+      "33": "Pay attention. This part takes imagination.",
+      "34": "One lesson at a time. I have only the one pair of pointing hands."
+    },
+    "quests": [
+      {
+        "entry": 919881,
+        "Title": "A Quieter Companion",
+        "Details": "I give Hunter lessons out here, and my friend Eris, a Sentinel, reads her reports nearby. She says my lessons are too loud. I have decided that what she needs is a companion of her own, something quiet to keep her company, so that she will be in a better mood for my teaching.$B$BI will go through three sets of candidates. Tell me which one you would bring her from each, and remember that she needs quiet to read.",
+        "Objectives": "Help Fenn Coilwhistle choose a quiet companion for Eris from his three sets.",
+        "RequestItemsText": "Another set is ready. Surely one of them is quiet enough for Eris.",
+        "OfferRewardText": "I have rejected every one. You chose carefully, I will say that. The trouble is that I never checked what Eris actually wants.$B$BI should have started there.",
+        "labels": [
+          "Compare Fenn's first set",
+          "Compare Fenn's second set",
+          "Compare Fenn's last set"
+        ],
+        "credits": [
+          919591,
+          919592,
+          919593
+        ]
+      },
+      {
+        "entry": 919882,
+        "Title": "Less Wildlife, Please",
+        "Details": "Eris is on duty in the Cenarion Enclave, though I suspect she is also trying to read her reports. I would like to know exactly what she needs.$B$BAsk her, then tell me what she said. Please do not soften it.",
+        "Objectives": "Ask Eris what she needs, then tell Fenn.",
+        "RequestItemsText": "What does Eris need? Keep it short. I have done enough talking this week.",
+        "OfferRewardText": "No lessons at her desk. Plain enough, isn't it?$B$BVery well. If I want Eris to take my lessons seriously, I can begin by noticing when she is trying to read.",
+        "labels": [
+          "Hear Eris's request",
+          "Tell Fenn what Eris needs"
+        ],
+        "credits": [
+          919594,
+          919595
+        ]
+      },
+      {
+        "entry": 919883,
+        "Title": "Keep It on the Cards",
+        "Details": "Eris can read in peace now, and I have had time to think. My lessons are best when I stop trying to impress people.$B$BLet us play Hearthstone. Bring whichever deck you like. Defeat me, and this Hunter Deck is yours. Cards are much quieter than my lessons.",
+        "Objectives": "Defeat Fenn Coilwhistle in a game of Hearthstone.",
+        "RequestItemsText": "Shall we try again? I have resisted making another lesson of it.",
+        "OfferRewardText": "Well played, $n. My lessons improve whenever I stop trying to win people over.$B$BTake this Hunter Deck. Eris, you needn't look up. I lost.",
+        "labels": [
+          "Defeat Fenn at Hearthstone"
+        ],
+        "credits": []
+      }
+    ],
+    "animals": [
+      [
+        "Cat",
+        5554
+      ],
+      [
+        "Owl",
+        4615
+      ],
+      [
+        "Spider",
+        709
+      ],
+      [
+        "Crab",
+        999
+      ],
+      [
+        "Crocolisk",
+        807
+      ],
+      [
+        "Rabbit",
+        328
+      ],
+      [
+        "Rat",
+        1141
+      ],
+      [
+        "Sheep",
+        856
+      ],
+      [
+        "Gnome Accountant",
+        7041
+      ]
+    ],
+    "replies": [
+      "Fenn sent me. What do you need?",
+      "So you don't need a companion?",
+      "I'll tell him to stop.",
+      "She wants to read without interruptions.",
+      "No lessons at her desk, Fenn."
+    ]
+  }
+]

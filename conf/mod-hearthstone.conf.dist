@@ -1,0 +1,407 @@
+[worldserver]
+
+###############################################
+# mod-hearthstone
+###############################################
+#
+# Single-player Hearthstone-style card game: the client <-> server addon
+# protocol, the account-wide card collection, booster packs and decks.
+#
+# Prerequisites:
+#   - Build with modules enabled (-DMODULES=static, or -DMODULE_MOD_HEARTHSTONE=static)
+#   - Keep AddonChannel = 1 in mangosd.conf (otherwise every addon message is dropped)
+#   - Install the client addon (addon/Hearthstone -> Interface/AddOns/Hearthstone)
+#
+# Copy this file to <mangosd.conf directory>/modules/mod-hearthstone.conf.
+# mangosd refuses to start if a module .conf.dist has no matching active file.
+# A normal ".reload config" applies changes to the values below.
+#
+#     Hearthstone.Enable
+#         Description: Master switch. When 0 the module ignores all Hearthstone
+#                      addon traffic except answering HELLO with ERR DISABLED so
+#                      the addon can tell the player.
+#         Default:     1   (write 1 or 0; other spellings are read as false)
+
+Hearthstone.Enable = 1
+
+#     Hearthstone.Debug
+#         Description: Enables debug protocol operations (ECHO) for accounts with
+#                      security level MODERATOR (2) or higher (WELCOME reports
+#                      debug=1). Leave 0 on live realms.
+#         Default:     0
+
+Hearthstone.Debug = 0
+
+#     Hearthstone.Protocol.MaxInboundMessageBytes
+#         Description: Largest reassembled (decoded) client request in bytes.
+#                      Bigger requests are dropped with ERR TOO_LARGE.
+#         Default:     4096
+#         Range:       64 - 65536
+
+Hearthstone.Protocol.MaxInboundMessageBytes = 4096
+
+#     Hearthstone.Protocol.MaxInboundParts
+#         Description: Highest "total" a multi-part client request may declare.
+#         Default:     16
+#         Range:       1 - 99
+
+Hearthstone.Protocol.MaxInboundParts = 16
+
+#     Hearthstone.Protocol.ReassemblyTimeoutMs
+#         Description: An unfinished multi-part request is dropped (ERR TIMEOUT)
+#                      this many milliseconds after its first part arrived.
+#         Default:     10000
+#         Range:       500 - 600000
+
+Hearthstone.Protocol.ReassemblyTimeoutMs = 10000
+
+#     Hearthstone.Protocol.MaxPendingRequests
+#         Description: Unfinished multi-part requests allowed per player at once.
+#                      Further ones are rejected with ERR BUSY.
+#         Default:     4
+#         Range:       1 - 64
+
+Hearthstone.Protocol.MaxPendingRequests = 4
+
+#     Hearthstone.Protocol.RateLimit.PerSecond
+#         Description: Sustained protocol frames per second and player (token
+#                      bucket refill rate). Excess frames are dropped; at most one
+#                      ERR RATE per second is sent back.
+#         Default:     10
+#         Range:       1 - 1000
+
+Hearthstone.Protocol.RateLimit.PerSecond = 10
+
+#     Hearthstone.Protocol.RateLimit.Burst
+#         Description: Token bucket size: frames a player may send at once.
+#         Default:     30
+#         Range:       1 - 1000
+
+Hearthstone.Protocol.RateLimit.Burst = 30
+
+#     Hearthstone.MatchAuraSpellId
+#         Description: Spell id of the custom "In Card Match" aura (a DBC spell the
+#                      realm owner creates, see src/HsMatchGlue.cpp):
+#                      the module applies it for the length of a match (it roots the
+#                      character and makes it immune to damage) and removes it again,
+#                      also from a leftover state at login. 0 = unset, and so is an id
+#                      that does not exist in Spell.dbc (an error is logged): matches
+#                      then start WITHOUT the effect (no root, no damage immunity; the
+#                      server still blocks spells, items, attacks and similar actions
+#                      while a match runs, and Help > Stuck still ends the match).
+#         Default:     61006
+
+Hearthstone.MatchAuraSpellId = 61006
+
+#     Hearthstone.Match.Enable
+#         Description: Switch for card matches. When 0 no gossip option is
+#                      added, WELCOME no longer lists the "match" capability, and a
+#                      running match is ended (reason gm) when the config is reloaded.
+#         Default:     1   (write 1 or 0)
+
+Hearthstone.Match.Enable = 1
+
+#     Hearthstone.Match.Opponents
+#         Description: The development opponents: creature entries that offer "Play a
+#                      game of Hearthstone" in their gossip menu, each with the class
+#                      whose prepared decks the AI plays. Format: <creature entry>:<class>,
+#                      <creature entry>:<class>,... for example "6740:mage,6741:warrior".
+#                      The class is one of the nine (druid, hunter, mage, paladin, priest,
+#                      rogue, shaman, warlock, warrior). Normal difficulty plays the library
+#                      deck normal_<class>, Hard plays hard_<class> (table
+#                      hearthstone_deck_template, see ".hs match decks"); a difficulty whose
+#                      deck is not ready is not offered, and when only one is offered the
+#                      difficulty menu is skipped. The creatures need a gossip menu or no
+#                      other function (an innkeeper or a plain villager works); the module
+#                      marks them as gossip creatures. Real opponents (several decks to pick
+#                      from, boss health and hero power) are rows of the world table
+#                      hearthstone_opponent, which win over this setting for the same creature
+#                      entry. Empty and no rows: no opponent, nobody can start a match.
+#                      The rows and the library are read at startup and on a config reload.
+#         Default:     ""
+
+#     Hearthstone.Match.AiActionDelayMs
+#         Description: Pause between two actions of the AI opponent (and before its
+#                      first one) in milliseconds. The AI plays one action at a time,
+#                      the client animates between them.
+#         Default:     1500
+#         Range:       200 - 10000
+
+Hearthstone.Match.AiActionDelayMs = 1500
+
+#     Hearthstone.Match.History.Enable
+#         Description: Phase 10 match history. When 1 every ended match (win, loss, draw,
+#                      surrender, interrupted, logout) writes one row to the character
+#                      table hearthstone_match_history (who, which opponent and decks, the
+#                      result, turns, duration, the match seed, the engine rules version and
+#                      the card dataset). The row is written asynchronously from the thread
+#                      that ends the match and never changes how the match ends. ".hs match
+#                      history <player|#account> [count]" lists the rows. Needs the character
+#                      migration 0004_hearthstone_match_history.sql; without the table the
+#                      startup warns and nothing is recorded. 0 = record nothing.
+#         Default:     1   (write 1 or 0)
+
+Hearthstone.Match.History.Enable = 1
+
+#     Hearthstone.Pack.Weight.Common
+#     Hearthstone.Pack.Weight.Rare
+#     Hearthstone.Pack.Weight.Epic
+#     Hearthstone.Pack.Weight.Legendary
+#         Description: Relative per-card rarity weights of a booster pack slot.
+#                      Each of the five slots rolls a rarity with these weights,
+#                      then a card uniformly among the standard collectible cards
+#                      of that rarity. Basic (FREE) cards are in the Common pool.
+#                      The defaults are community estimates of the 2014 rates in
+#                      tenths of a percent (71.6 / 22.8 / 4.4 / 1.1 %), not
+#                      official values. A pack whose five slots are all Common
+#                      gets its last slot upgraded to a Rare (at least one Rare or
+#                      better per pack).
+#         Default:     716, 228, 44, 11
+#         Range:       0 - 1000000 each (all 0: the defaults are used)
+
+Hearthstone.Pack.Weight.Common = 716
+Hearthstone.Pack.Weight.Rare = 228
+Hearthstone.Pack.Weight.Epic = 44
+Hearthstone.Pack.Weight.Legendary = 11
+
+#     Hearthstone.Pack.LegendaryPity
+#         Description: Legendary bad-luck protection. The pack opened after this
+#                      many minus one packs in a row without a Legendary contains
+#                      one (default: every 40th pack at the latest). The account-
+#                      wide counter resets whenever a pack contains a Legendary.
+#                      0 turns the guarantee off.
+#         Default:     40
+#         Range:       0 - 1000
+
+Hearthstone.Pack.LegendaryPity = 40
+
+#     Hearthstone.Deck.MaxSaved
+#         Description: Saved decks (drafts included) an account may hold. Creating
+#                      one more is refused with a clear message; deleted decks do
+#                      not count. Later starter deck awards may exceed it up to
+#                      29 live decks, the most the deck list reply can carry.
+#         Default:     20
+#         Range:       1 - 20
+
+Hearthstone.Deck.MaxSaved = 20
+
+#     Hearthstone.Pack.PriceCoins
+#         Description: Phase 11 economy: Hearthstone Coin items (item 919601) one booster
+#                      pack costs at a pack vendor (the vendor window of the Hearthstone
+#                      Masters, world migration 0006: the listing "Hearthstone Booster Pack"
+#                      without a gold price, item 919603). The gold price of the other
+#                      listing is the buy_price of item 919602 (5 gold) in that migration.
+#                      Keep the item text "Costs 10 Hearthstone Coins" of item 919603 in
+#                      step when you change this.
+#         Default:     10
+#         Range:       1 - 1000
+
+Hearthstone.Pack.PriceCoins = 10
+
+#     Hearthstone.Coins.Loss
+#     Hearthstone.Coins.WinNormal
+#     Hearthstone.Coins.WinHard
+#     Hearthstone.Coins.WinBoss
+#         Description: Hearthstone Coin items for a normally completed match against an NPC:
+#                      a loss pays Loss whatever the opponent, a win (and a draw) pays
+#                      by difficulty. A surrender and an interrupted match (Help > Stuck,
+#                      teleport, death, logout, the NPC gone, a GM) pay nothing. The coins
+#                      go into the character's bags (by mail when the bags are full); a
+#                      stack holds 250.
+#         Default:     1, 3, 4, 8
+#         Range:       0 - 1000 each
+
+Hearthstone.Coins.Loss = 1
+Hearthstone.Coins.WinNormal = 3
+Hearthstone.Coins.WinHard = 4
+Hearthstone.Coins.WinBoss = 8
+
+#     Hearthstone.Dust.Scrap.Common
+#     Hearthstone.Dust.Scrap.Rare
+#     Hearthstone.Dust.Scrap.Epic
+#     Hearthstone.Dust.Scrap.Legendary
+#     Hearthstone.Dust.Craft.Common
+#     Hearthstone.Dust.Craft.Rare
+#     Hearthstone.Dust.Craft.Epic
+#     Hearthstone.Dust.Craft.Legendary
+#         Description: Crafting dust (account-wide) per rarity: what scrapping one
+#                      unprotected copy yields and what crafting one copy costs, at a
+#                      crafting NPC (hearthstone_vendor.crafting). Basic cards use the
+#                      Common values. Starter and quest copies are protected and never
+#                      scrapped; the four promo cards can neither be crafted nor
+#                      scrapped. Crafting stops at the copies a deck can use (2, or 1
+#                      for a Legendary). The defaults are the 2014 values.
+#         Default:     5, 20, 100, 400 (scrap) and 40, 100, 400, 1600 (craft)
+#         Range:       1 - 1000000 each (craft at least 2). A scrap value is kept below
+#                      the craft value of its rarity (a higher one is lowered to craft - 1),
+#                      so crafting and scrapping again can never make dust.
+
+Hearthstone.Dust.Scrap.Common = 5
+Hearthstone.Dust.Scrap.Rare = 20
+Hearthstone.Dust.Scrap.Epic = 100
+Hearthstone.Dust.Scrap.Legendary = 400
+Hearthstone.Dust.Craft.Common = 40
+Hearthstone.Dust.Craft.Rare = 100
+Hearthstone.Dust.Craft.Epic = 400
+Hearthstone.Dust.Craft.Legendary = 1600
+
+#     Hearthstone.Trader.SwapTime
+#         Description: Daily card swap time, HH:MM in UTC (no daylight-saving shift).
+#                      One random standard collectible card per day, the same for every trader
+#                      (Sable and future ones), stable across restarts.
+#                      Prices: Basic/Common 5g, Rare 25g, Epic 50g, Legendary 200g.
+#                      One purchase per account per swap, shared across characters/traders.
+#                      The card is added to the account collection (unprotected); no class unlock.
+#         Default:     "04:00"
+#         Reload:      .reload config; changing the swap time changes the daily boundary.
+
+Hearthstone.Trader.SwapTime = "04:00"
+
+#     Hearthstone.Trader.ExcludedCards
+#         Description: Canonical Hearthstone card IDs separated by commas or whitespace.
+#                      Reward-only arena promos, tokens and unreleased cards are always excluded.
+#                      Example: "EX1_298, EX1_110"
+#                      Reloading with a changed list can change today's card.
+#                      Already purchased cards remain usable.
+#         Default:     ""
+
+Hearthstone.Trader.ExcludedCards = ""
+
+#     Hearthstone.Arena.EntryCostCopper
+#         Description: Entry price in WoW money (copper) when the player pays gold.
+#                      150000 copper = 15 gold. Independent of the coin price and of
+#                      the base reward: changing it does not change any prize.
+#         Default:     150000
+#         Range:       1 - 100000000
+
+Hearthstone.Arena.EntryCostCopper = 150000
+
+#     Hearthstone.Arena.EntryCostCoins
+#         Description: Entry price in Hearthstone Coin items (from the paying
+#                      character's bags) when the player pays coins. Either payment
+#                      uses the same one-entry-per-day allowance (reset at
+#                      Hearthstone.Trader.SwapTime) and has the same prizes.
+#         Default:     30
+#         Range:       1 - 1000
+
+Hearthstone.Arena.EntryCostCoins = 30
+
+#     Hearthstone.Arena.BaseRewardPacks
+#         Description: Booster packs paid at 3 to 10 wins. One or two wins always pay
+#                      one pack, none pays nothing; ten wins add one more pack once the
+#                      account owns all four special cards. Not derived from the entry
+#                      price or the vendor pack price.
+#         Default:     3
+#         Range:       1 - 99
+
+Hearthstone.Arena.BaseRewardPacks = 3
+
+#     Hearthstone.Arena.BonusCoins
+#         Description: Hearthstone Coins added to the prize at 6 or more wins (0 = none).
+#         Default:     10
+#         Range:       0 - 1000
+
+Hearthstone.Arena.BonusCoins = 10
+
+#     Hearthstone.Arena.RarityWeights
+#         Description: Relative odds of the rarity rolled for each card of a draft
+#                      offer: Common (Basic counts as Common), Rare, Epic, Legendary,
+#                      four numbers separated by commas. 716,228,44,11 is 71.6%, 22.8%,
+#                      4.4% and 1.1% of the total 999. A rarity without a card falls
+#                      back to the next lower one. A bad value or all zeros uses the
+#                      default.
+#         Default:     "716,228,44,11"
+#         Range:       0 - 1000000 each
+#         Reload:      A run keeps the settings it started with; a reload affects
+#                      new runs only.
+
+Hearthstone.Arena.RarityWeights = "716,228,44,11"
+
+#     Hearthstone.Ladder.Enable
+#         Description: Switch of the World NPC Ladder. When 0 nothing is
+#                      loaded and nothing runs, and the .hs ladder commands say the
+#                      ladder is disabled. When 1 the server reads the finder names
+#                      (hearthstone_finder_npc), gives each a class, a library deck and
+#                      an AI profile once, and keeps ranks, stars and hidden ratings in
+#                      the character database (migration 0015_hearthstone_ladder.sql).
+#                      When no ladder exists yet, the ladder start is simulated in the
+#                      background on the first start: the server is playable meanwhile
+#                      and .hs ladder show reports "updating" until it is done. Needs
+#                      the card data and the deck library (world database).
+#         Default:     0
+#         Reload:      Restart the server.
+
+Hearthstone.Ladder.Enable = 0
+
+#     Hearthstone.Ladder.StartRounds
+#         Description: Rounds of the ladder start. In each round every NPC plays one
+#                      simulated game against a neighbour of similar hidden rating, and
+#                      only hidden ratings change. Afterwards the NPCs are placed on the
+#                      star ladder by that order (the top 10 in Legend). Each round is
+#                      saved, so a start that was interrupted continues at the next
+#                      round. 20 rounds are about 20 games per NPC.
+#         Default:     20
+#         Range:       0 - 200
+#         Reload:      Restart the server. Only used while no ladder exists or its start
+#                      has not finished.
+
+Hearthstone.Ladder.StartRounds = 20
+
+#     Hearthstone.Ladder.Threads
+#         Description: Worker threads that play the games of one NPC round. The
+#                      simulation runs on its own background threads and never touches
+#                      the world or the database, but it takes CPU from the server: keep
+#                      this low on a small machine. A value above the number of
+#                      hardware threads is lowered to it.
+#         Default:     2
+#         Range:       1 - number of hardware threads
+#         Reload:      A reload applies from the next round.
+
+Hearthstone.Ladder.Threads = 2
+
+#     Hearthstone.Ladder.ChairGlowSpellId
+#         Description: Spell shown on a ladder chair while a player stands near it. It
+#                      is cast by a bodiless trigger creature (creature 919101, world
+#                      migration 0057) that stands on the chair when a player comes
+#                      within 8 yards who is not sitting, and goes away when someone
+#                      sits on the chair or nobody is near any more. A spell that
+#                      expires is cast again. 0 shows nothing.
+#         Default:     25824
+#         Range:       0 - 4294967295 (a spell id of the spell data, 0 turns the glow off)
+#         Reload:      Restart the server.
+
+Hearthstone.Ladder.ChairGlowSpellId = 25824
+
+#     Hearthstone.Battlegrounds.Reward.Base
+#         Description: the Hearthstone Coins every finished Warsong Battlegrounds game
+#                      pays, a loss included (as much as a duel win). A game the
+#                      player left before the end pays nothing.
+#         Default:     3
+#     Hearthstone.Battlegrounds.Reward.WinningTeam
+#         Description: the total paid to a human on the WINNING faction (instead of
+#                      the base; never added to it).
+#         Default:     5
+#     Hearthstone.Battlegrounds.Reward.First
+#         Description: the total paid to the overall winner (1st place), instead of
+#                      the base and the winning-team amount.
+#         Default:     7
+#         Range:       0 .. 1000000 (all three)
+#     Booster packs are no longer paid by a win: the Battlegrounds weeklies give them.
+
+Hearthstone.Battlegrounds.Reward.Base = 3
+Hearthstone.Battlegrounds.Reward.WinningTeam = 5
+Hearthstone.Battlegrounds.Reward.First = 7
+
+#     Hearthstone.Battlegrounds.Honor.Base
+#     Hearthstone.Battlegrounds.Honor.WinningTeam
+#     Hearthstone.Battlegrounds.Honor.First
+#         Description: the honor (the core's bonus honor) a finished game pays, on the
+#                      same shape as the coins: totals, never added. Everyone who
+#                      finishes gets the base, a human on the winning faction the
+#                      winning-team amount, the overall winner the first amount.
+#         Default:     10 / 50 / 70
+#         Range:       0 .. 1000000
+
+Hearthstone.Battlegrounds.Honor.Base = 10
+Hearthstone.Battlegrounds.Honor.WinningTeam = 50
+Hearthstone.Battlegrounds.Honor.First = 70

@@ -1,0 +1,2146 @@
+{
+  "note": "w/h = used pixels of the texture, right = w / texture width, bottom = h / texture height (SetTexCoord(0, right, 0, bottom)); anchors are fractions of the used image. Written by tools/art/slice_board.py, read by tools/deploy/deploy-addon.ps1.",
+  "pieces": {
+    "arch_bottom": {
+      "anchors": {
+        "opening": {
+          "bottom": 0.94943,
+          "left": 0.05845,
+          "right": 0.93634,
+          "top": 0.06093
+        },
+        "straight": {
+          "bottom": 0.94943,
+          "left": 0.05845,
+          "right": 0.93634,
+          "top": 0.47732
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "f5a7dea2ebe13e637606b8f2de983ef3124e245c233357740d260da299749e14",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.8515625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1156,
+          1360
+        ],
+        "sheet": "Ornate Golden Arched Game Frame.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 218
+    },
+    "arch_top": {
+      "anchors": {
+        "opening": {
+          "bottom": 0.94943,
+          "left": 0.05845,
+          "right": 0.93634,
+          "top": 0.06093
+        },
+        "straight": {
+          "bottom": 0.94943,
+          "left": 0.05845,
+          "right": 0.93634,
+          "top": 0.47732
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "f5a7dea2ebe13e637606b8f2de983ef3124e245c233357740d260da299749e14",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.8515625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1156,
+          1360
+        ],
+        "sheet": "Ornate Golden Arched Game Frame.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 218
+    },
+    "banner_opponent_turn": {
+      "blp_bytes": 44900,
+      "blp_sha256": "32b5faa164770c5eec8d5d0d64d564152f24f51b3ead7cb8f7936ed714441df3",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 128,
+      "mode": "luma",
+      "right": 0.98828125,
+      "source": {
+        "rect": [
+          1064,
+          640,
+          150,
+          76
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        256,
+        128
+      ],
+      "w": 253
+    },
+    "banner_starting_hand": {
+      "blp_bytes": 175972,
+      "blp_sha256": "c83a67ad1525d721449ae6e30011b97e6d4bf0fcbde9244c969fbabbe3a73b2e",
+      "bottom": 0.66796875,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 171,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "sheet": "Starting Hand Fantasy Banner.png"
+      },
+      "texture_size": [
+        512,
+        256
+      ],
+      "w": 512
+    },
+    "banner_your_turn": {
+      "blp_bytes": 44900,
+      "blp_sha256": "01b096879ff6b77d33250f4499064c637984aa57e0385007f71119f228949eb3",
+      "bottom": 0.953125,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 122,
+      "mode": "luma",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          893,
+          638,
+          168,
+          80
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        256,
+        128
+      ],
+      "w": 256
+    },
+    "bg_board_c0r0": {
+      "aspect": 1.30631,
+      "blp_bytes": 350724,
+      "blp_sha256": "8aaa42b008662bc3217ff863f744cc30a3faec3241bbb0b8aa672ded37085548",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          20,
+          0,
+          580,
+          444
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_board_c0r1": {
+      "aspect": 1.30926,
+      "blp_bytes": 350724,
+      "blp_sha256": "0949c6292847508e12a2ce98accc667afc7fa0194ecf44ddc984f76c99c0f8a1",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          20,
+          444,
+          580,
+          443
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_board_c1r0": {
+      "aspect": 1.30631,
+      "blp_bytes": 350724,
+      "blp_sha256": "f5656a6a6639711f8b01af050b9e4552d503a67aff1ebb381599a6984e9ef2c4",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          600,
+          0,
+          580,
+          444
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_board_c1r1": {
+      "aspect": 1.30926,
+      "blp_bytes": 350724,
+      "blp_sha256": "1b94d33e3e2dae936ffed360cf69f055cf5ecc8f33e7580b4ef4410edf1e78cb",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          600,
+          444,
+          580,
+          443
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_board_c2r0": {
+      "aspect": 1.30631,
+      "blp_bytes": 350724,
+      "blp_sha256": "a0fb010cb5057c44b4828419dc14714d8ce51e14b97fe125b6d45a45ff524f09",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1180,
+          0,
+          580,
+          444
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_board_c2r1": {
+      "aspect": 1.30926,
+      "blp_bytes": 350724,
+      "blp_sha256": "f43a59c00402d4fdf06c374ee6bec2b51645add4a8f9f3481697c091e08be9c0",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1180,
+          444,
+          580,
+          443
+        ],
+        "sheet": "bg_board.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "bg_coin": {
+      "blp_bytes": 6660,
+      "blp_sha256": "c143d210ee8dc7d0039a066a61d9ee9b22032fafd2d75b545619e52f2a3122fa",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "alpha",
+      "right": 0.96875,
+      "source": {
+        "rect": [
+          0,
+          0,
+          500,
+          500
+        ],
+        "sheet": "bg_coin.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 62
+    },
+    "bg_freeze": {
+      "blp_bytes": 23044,
+      "blp_sha256": "e820d191e812dbaa7d1bad99562ad7d63573d2a3774a9dd91727ca1fc65a0b0a",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.6875,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1132,
+          1389
+        ],
+        "sheet": "bg_freeze.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 88
+    },
+    "bg_refresh": {
+      "blp_bytes": 23044,
+      "blp_sha256": "4dce3040c53d8cb2418f1f5cebe624ce82bf6c243dd9095d5181babb02b1422a",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.6875,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1147,
+          1371
+        ],
+        "sheet": "bg_refresh.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 88
+    },
+    "bg_tier_1": {
+      "blp_bytes": 23044,
+      "blp_sha256": "efa157b57f52fd2f127d7c73add54b077bfa94b202eb23bcafe9d77a7d0e44cd",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_1.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_2": {
+      "blp_bytes": 23044,
+      "blp_sha256": "aa1d0f5c49cb2f1aae377f8cf9025ed1bbe7a9a4937585042aa4b039b467f133",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_2.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_3": {
+      "blp_bytes": 23044,
+      "blp_sha256": "2bc4c5bb564a481c6519230907fd06c11a97e7a600df55f6255acfcccbbb61cb",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_3.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_4": {
+      "blp_bytes": 23044,
+      "blp_sha256": "a9762a519428778afebdf2ed3d3e9d0ef7942b2bb11a148d11c471eaeeb164ff",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_4.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_5": {
+      "blp_bytes": 23044,
+      "blp_sha256": "a6acb3acbef038158a47df75dc1d73f05ef0c348dbfa18efc3c249c456c12f84",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_5.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_6": {
+      "blp_bytes": 23044,
+      "blp_sha256": "8ab5cffe76b853bfd4819d0d58f750b9bde479993aee816a7dfb32131d631129",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 124,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          840
+        ],
+        "sheet": "bg_tier_6.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_tier_7": {
+      "blp_bytes": 23044,
+      "blp_sha256": "b110130971d642e0752abaef11222b421166dd712fd7de0db72a781bb7a6d10f",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "alpha",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          783,
+          862
+        ],
+        "sheet": "bg_tier_7.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 116
+    },
+    "bg_upgrade": {
+      "blp_bytes": 23044,
+      "blp_sha256": "2692a7bd795254c1515d8db7e5597b247b7726b2f05ea0e39c3b65e1d8b883be",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "alpha",
+      "right": 0.7109375,
+      "source": {
+        "rect": [
+          0,
+          0,
+          457,
+          546
+        ],
+        "sheet": "bg_upgrade.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 91
+    },
+    "board_field": {
+      "anchors": {
+        "arch_bottom_frame": {
+          "bottom": 0.86924,
+          "left": 0.4558,
+          "right": 0.56916,
+          "top": 0.67035
+        },
+        "arch_top_frame": {
+          "bottom": 0.32228,
+          "left": 0.46133,
+          "right": 0.56768,
+          "top": 0.13628
+        },
+        "deck_bottom": {
+          "bottom": 0.683,
+          "left": 0.9063,
+          "right": 0.9322,
+          "top": 0.5379
+        },
+        "deck_top": {
+          "bottom": 0.4353,
+          "left": 0.9046,
+          "right": 0.9305,
+          "top": 0.2835
+        },
+        "hero_bottom": {
+          "bottom": 0.85451,
+          "left": 0.46409,
+          "right": 0.56284,
+          "top": 0.68876
+        },
+        "hero_bottom_safe": {
+          "bottom": 0.85083,
+          "left": 0.46823,
+          "right": 0.5587,
+          "top": 0.75322
+        },
+        "hero_top": {
+          "bottom": 0.30202,
+          "left": 0.46961,
+          "right": 0.56078,
+          "top": 0.15193
+        },
+        "hero_top_safe": {
+          "bottom": 0.30016,
+          "left": 0.47514,
+          "right": 0.55524,
+          "top": 0.21639
+        }
+      },
+      "aspect": 1.33371,
+      "blp_bytes": 350724,
+      "blp_sha256": "ed49af1ba4876169af87b2069c7346fcc16de0ac702caf99f5e5fa77cfd0cf17",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1195,
+          896
+        ],
+        "sheet": "Orcish Warboard Bare Slots.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "card_back": {
+      "blp_bytes": 44900,
+      "blp_sha256": "acfd230450fc8f023c15938a8d630b132533e7fe97fe445894dd14e61f3a051e",
+      "bottom": 0.84765625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 217,
+      "mode": "flood",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1248,
+          720,
+          91,
+          154
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 128
+    },
+    "cloth_c0r0": {
+      "aspect": 1.18259,
+      "blp_bytes": 350724,
+      "blp_sha256": "ae7c3ac85d28a538360be824492e161f7b1433eec5ed65a1108b6ca66901c0f5",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          557,
+          471
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "cloth_c0r1": {
+      "aspect": 1.18511,
+      "blp_bytes": 350724,
+      "blp_sha256": "b2ccaf617f3c784800715981847c4aa5ecbc69cfa549f9a7f55179199e829003",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          471,
+          557,
+          470
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "cloth_c1r0": {
+      "aspect": 1.18259,
+      "blp_bytes": 350724,
+      "blp_sha256": "53d78a0d1c2782f4f8cba18fb790b0ca6275aa80822c9b272fdceade29c25f24",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          557,
+          0,
+          557,
+          471
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "cloth_c1r1": {
+      "aspect": 1.18511,
+      "blp_bytes": 350724,
+      "blp_sha256": "b286ecba0008698f205d63b4f256dff62bdb8ffe069a18ba41378abf6476758a",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          557,
+          471,
+          557,
+          470
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "cloth_c2r0": {
+      "aspect": 1.18471,
+      "blp_bytes": 350724,
+      "blp_sha256": "b61856b10ea8d51981a403ef16da4e4e5cb9e2f9ffc4c186e8d98a1e60ff434d",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1114,
+          0,
+          558,
+          471
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "cloth_c2r1": {
+      "aspect": 1.18723,
+      "blp_bytes": 350724,
+      "blp_sha256": "b66219514a957e58ca7d4a9bb8a7465782fb77a7c0fb92bc691ad9e7d96c69d2",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 512,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1114,
+          471,
+          558,
+          470
+        ],
+        "sheet": "Weathered Blue Cloth Tabletop Runner.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 512
+    },
+    "deck_empty": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.94882,
+          "left": 0.15854,
+          "right": 0.84146,
+          "top": 0.05118
+        }
+      },
+      "blp_bytes": 44900,
+      "blp_sha256": "627fbfcec281445ec95a70e986332075191c5e231bb7d37732370061d958b2cc",
+      "bottom": 0.9921875,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 254,
+      "mode": "alpha",
+      "right": 0.640625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          144,
+          486
+        ],
+        "sheet": "deck_empty.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 82
+    },
+    "deck_full": {
+      "blp_bytes": 44900,
+      "blp_sha256": "9c16cea68b5c8cdd18707d36eb0b41b3cb372270046f47917942a70772867f5f",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.890625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          197,
+          441
+        ],
+        "sheet": "deck_full.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 114
+    },
+    "deck_half": {
+      "blp_bytes": 44900,
+      "blp_sha256": "b1f2090f176b5ad11b72b2e02d9317e9868dc0e6c2f93c401c2d9e412c799515",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.890625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          197,
+          441
+        ],
+        "sheet": "deck_half.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 114
+    },
+    "deck_stack": {
+      "blp_bytes": 23044,
+      "blp_sha256": "6e8cc10e30af0e5ea33e8e9335403cb6913ceb362475a916fc04f336eedf0f3d",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.8046875,
+      "source": {
+        "rect": [
+          763,
+          570,
+          133,
+          166
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 103
+    },
+    "deck_thin": {
+      "blp_bytes": 44900,
+      "blp_sha256": "fbc2327885b2a787de111f4e256dee7c1d69f78ab4be0cad55c6b311d8490088",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.890625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          197,
+          441
+        ],
+        "sheet": "deck_thin.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 114
+    },
+    "divine_shield": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.916,
+          "left": 0.131,
+          "right": 0.914,
+          "top": 0.047
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "d1d8c4f8cb4453a38fec0ea00d4025a56aadc02503fff5cd872593dcca663bea",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.80859375,
+      "source": {
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "sheet": "Divine Shield Bubble.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 207
+    },
+    "end_turn_button": {
+      "blp_bytes": 88580,
+      "blp_sha256": "fc0dc99144ec0bcf0c912bfdf3942e6a17237c8f666b64d319926ee3a3c1075a",
+      "bottom": 0.52734375,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 135,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1578,
+          997
+        ],
+        "sheet": "Fantasy Game UI End Turn Button.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 256
+    },
+    "enemy_turn_button": {
+      "blp_bytes": 88580,
+      "blp_sha256": "9d50dea5f052badf54c21fd2d7de759452712fa52f9cb4dac401447eb7c53456",
+      "bottom": 0.50390625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 129,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1599,
+          984
+        ],
+        "sheet": "Enemy Turn Stone UI Banner.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 256
+    },
+    "fatigue_card": {
+      "blp_bytes": 350724,
+      "blp_sha256": "816419953bf00d9832ece99e807d55bcb29637f5b82eeddb1dc898a7165bcbc0",
+      "bottom": 0.9921875,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 508,
+      "mode": "alpha",
+      "right": 0.625,
+      "source": {
+        "rect": [
+          0,
+          0,
+          396,
+          629
+        ],
+        "sheet": "fatigue_card.png"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 320
+    },
+    "frozen_ice": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.793,
+          "left": 0.205,
+          "right": 0.833,
+          "top": 0.164
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "8e011e006ac1c0fa1ae9a7c6dc79913eb838261778af87e0ef93a194096c1933",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Glowing Icy Crystal Portal Frame.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 256
+    },
+    "gem_armor": {
+      "blp_bytes": 6660,
+      "blp_sha256": "c32b15ee7920b840e126ff3deefce91f47c5c04cb360f233183da2f50f4bd999",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "alpha",
+      "right": 0.859375,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1306,
+          1204
+        ],
+        "sheet": "Steel Shield Armor Icon.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 55
+    },
+    "gem_attack": {
+      "blp_bytes": 6660,
+      "blp_sha256": "dd6c96e08eeb994cf22fc29b8dd4497b79530be2fa9b2a7565468cc245785274",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "none",
+      "right": 0.90625,
+      "source": {
+        "rect": [
+          1022,
+          930,
+          66,
+          78
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 58
+    },
+    "gem_health": {
+      "blp_bytes": 6660,
+      "blp_sha256": "d4506321186cf449914a2f7bc49951eec4696e51c602206d0eb7e18e0d12da3f",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "none",
+      "right": 0.6875,
+      "source": {
+        "rect": [
+          1194,
+          940,
+          52,
+          70
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 44
+    },
+    "gem_mana": {
+      "blp_bytes": 6660,
+      "blp_sha256": "d9c3fdeef01a2a6e03403b973eb2b8385fb4012c9670c7840fcab509b2bebb8d",
+      "bottom": 0.953125,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 61,
+      "mode": "none",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1022,
+          720,
+          62,
+          58
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 64
+    },
+    "glow_arch": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.9,
+          "left": 0.1,
+          "right": 0.9,
+          "top": 0.1
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "e77f2b5c1ecfa54501fd6c1d862abd73bcdcd8235fa3818be5799cf20141beb8",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "procedural",
+      "right": 1.0,
+      "source": {
+        "procedural": "glow"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 128
+    },
+    "glow_bg_freeze": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.89024,
+          "left": 0.14516,
+          "right": 0.85484,
+          "top": 0.10976
+        }
+      },
+      "blp_bytes": 44900,
+      "blp_sha256": "af19f69c938f1cf54e8a70246ac5d1351feea6cb7f06dad5454216aa5a21740a",
+      "bottom": 0.640625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 164,
+      "mode": "silhouette",
+      "right": 0.96875,
+      "source": {
+        "silhouette_of": "bg_freeze"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 124
+    },
+    "glow_bg_refresh": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.89024,
+          "left": 0.14516,
+          "right": 0.85484,
+          "top": 0.10976
+        }
+      },
+      "blp_bytes": 44900,
+      "blp_sha256": "4f9e90357ca25ef4263df7eac6b11e43452e56e27e6f3d803b239b8f50cd2eab",
+      "bottom": 0.640625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 164,
+      "mode": "silhouette",
+      "right": 0.96875,
+      "source": {
+        "silhouette_of": "bg_refresh"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 124
+    },
+    "glow_bg_upgrade": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.89024,
+          "left": 0.14173,
+          "right": 0.85827,
+          "top": 0.10976
+        }
+      },
+      "blp_bytes": 44900,
+      "blp_sha256": "26659304bf987942dd6c2e419585d964c8f66dffbe55c6cd8362932e560b4995",
+      "bottom": 0.640625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 164,
+      "mode": "silhouette",
+      "right": 0.9921875,
+      "source": {
+        "silhouette_of": "bg_upgrade"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 127
+    },
+    "glow_end_turn": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.87709,
+          "left": 0.07333,
+          "right": 0.92667,
+          "top": 0.12291
+        }
+      },
+      "blp_bytes": 175972,
+      "blp_sha256": "f56fe6f6c4e3f096e9956e66c1a512038ba367abca12a203169e919efa652a70",
+      "bottom": 0.69921875,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 179,
+      "mode": "silhouette",
+      "right": 0.5859375,
+      "source": {
+        "silhouette_of": "end_turn_button"
+      },
+      "texture_size": [
+        512,
+        256
+      ],
+      "w": 300
+    },
+    "glow_green": {
+      "blp_bytes": 44900,
+      "blp_sha256": "bad17105519e035996fa19e705fc29a2a0133eb06ec6a967e14e5680143fcccd",
+      "bottom": 0.75,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 192,
+      "mode": "luma",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          940,
+          947,
+          78,
+          57
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 128
+    },
+    "glow_minion_oval": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.91026,
+          "left": 0.10448,
+          "right": 0.89552,
+          "top": 0.08974
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "7060a5e0b260b64cc9f91ff91453353bc793a552b3f121a8499cbf301b126965",
+      "bottom": 0.609375,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 156,
+      "mode": "silhouette",
+      "right": 0.5234375,
+      "source": {
+        "silhouette_of": "minion_oval"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 134
+    },
+    "glow_oval": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.9,
+          "left": 0.1,
+          "right": 0.9,
+          "top": 0.1
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "17e54801d6042607e808d391a54ac1406b3447bdb6f9c3379beb1f0e510d561d",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "procedural",
+      "right": 1.0,
+      "source": {
+        "procedural": "glow"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 128
+    },
+    "glow_power_ring": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.88095,
+          "left": 0.12232,
+          "right": 0.87768,
+          "top": 0.11905
+        }
+      },
+      "blp_bytes": 350724,
+      "blp_sha256": "fce2214f76dacac876cc57928d6e273e2a143dc279f3a6788b16909f7582d75b",
+      "bottom": 0.65625,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 336,
+      "mode": "silhouette",
+      "right": 0.638671875,
+      "source": {
+        "silhouette_of": "hero_power_ring"
+      },
+      "texture_size": [
+        512,
+        512
+      ],
+      "w": 327
+    },
+    "glow_red": {
+      "blp_bytes": 44900,
+      "blp_sha256": "19a58a301a874ff93f2c0c50c3ea76d0eda970f3f425daa3c9e00e224d7a0b72",
+      "bottom": 0.75,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 192,
+      "mode": "luma",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          942,
+          898,
+          78,
+          53
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 128
+    },
+    "glow_round": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.9,
+          "left": 0.1,
+          "right": 0.9,
+          "top": 0.1
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "51bfec78149e0ef5baff098cae9ebec94c3f3723a46c0cabed679bbab9af6d44",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "procedural",
+      "right": 1.0,
+      "source": {
+        "procedural": "glow"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 128
+    },
+    "glow_taunt": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.94444,
+          "left": 0.07306,
+          "right": 0.92694,
+          "top": 0.05556
+        }
+      },
+      "blp_bytes": 175972,
+      "blp_sha256": "8785e30aec4f1d592bdea6d263c34b5ab3273c6c47a00b98016079cc5c18374d",
+      "bottom": 0.5625,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 288,
+      "mode": "silhouette",
+      "right": 0.85546875,
+      "source": {
+        "silhouette_of": "taunt_frame"
+      },
+      "texture_size": [
+        256,
+        512
+      ],
+      "w": 219
+    },
+    "glow_yellow": {
+      "blp_bytes": 44900,
+      "blp_sha256": "d552684fd0326f394103490d9612e43d793d59727b51060ffa2e53397b753b37",
+      "bottom": 0.75,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 192,
+      "mode": "derive",
+      "right": 1.0,
+      "source": {
+        "derived_from": "glow_green"
+      },
+      "texture_size": [
+        128,
+        256
+      ],
+      "w": 128
+    },
+    "hero_power_ring": {
+      "anchors": {
+        "circle": {
+          "bottom": 0.817,
+          "left": 0.178,
+          "right": 0.824,
+          "top": 0.194
+        },
+        "inner": {
+          "bottom": 0.817,
+          "left": 0.178,
+          "right": 0.824,
+          "top": 0.194
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "3a0c4f5751971b07815735c94f078bf53a6b6007c1096540b7fd757fcc39bad8",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.96484375,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Ornate Bronze Fantasy Ring Frame.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 247
+    },
+    "hero_power_used": {
+      "blp_bytes": 88580,
+      "blp_sha256": "a5526fcdd6769a06eff350276c296e8649f07e2a635557a46e10b0a84eea2343",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.9921875,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1263,
+          1246
+        ],
+        "sheet": "Weathered Bronze Spiral Medallion.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 254
+    },
+    "hero_ring": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.742,
+          "left": 0.254,
+          "right": 0.7375,
+          "top": 0.289
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "8636600ec3cba085a29ed9f993c34726b0bf8790f162111c0b46c5d33a9a3692",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.9375,
+      "source": {
+        "rect": [
+          403,
+          553,
+          94,
+          100
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 120
+    },
+    "hero_ring_armor": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.773,
+          "left": 0.244,
+          "right": 0.7317,
+          "top": 0.305
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "ff1b5183a36a6d0c32e9146e49d9ec17a54b19e3c98da1e1a83cfa732cc08074",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.9609375,
+      "source": {
+        "rect": [
+          401,
+          652,
+          99,
+          103
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 123
+    },
+    "kw_continuous": {
+      "blp_bytes": 6660,
+      "blp_sha256": "f4ebe2ddede552b14ebc5dbc8235e3f4e188a999974ad42f1b7083a85743f6e0",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "alpha",
+      "right": 0.8125,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Golden Lightning Bolt Stone Emblem.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 52
+    },
+    "kw_deathrattle": {
+      "blp_bytes": 6660,
+      "blp_sha256": "b4f1188d0fc1fe919f3c7844170a7282970f0ff731edc726d0c43950e6946c2a",
+      "bottom": 0.78125,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 50,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Polished Skull and Crossbones Emblem.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 64
+    },
+    "mana_crystal": {
+      "blp_bytes": 6660,
+      "blp_sha256": "f93b5e5213d0b046836b414130f11de491e96fe9b9052e3aec3218498b2444ce",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "flood",
+      "right": 0.796875,
+      "source": {
+        "rect": [
+          779,
+          744,
+          45,
+          56
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 51
+    },
+    "mana_crystal_empty": {
+      "blp_bytes": 6660,
+      "blp_sha256": "eec8152d7a70e134b86abfdf0fc4800a2b4fd413b1607446d76f6bb7442637b1",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 64,
+      "mode": "derive",
+      "right": 0.796875,
+      "source": {
+        "derived_from": "mana_crystal"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 51
+    },
+    "mana_gem_empty": {
+      "blp_bytes": 6660,
+      "blp_sha256": "753e80f408179da46220a89725bf72e5a092c539b3476f25b10099a5c310c6d8",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 62,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1696,
+          165,
+          434,
+          421
+        ],
+        "sheet": "Glossy Mana Bar and Crystal Icons.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 64
+    },
+    "mana_gem_full": {
+      "blp_bytes": 6660,
+      "blp_sha256": "c7d831bbde8a74a02e8177f1fc90fe0a4261c22599d2379b4ab733ab416ac5e0",
+      "bottom": 0.921875,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 59,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          1170,
+          163,
+          458,
+          424
+        ],
+        "sheet": "Glossy Mana Bar and Crystal Icons.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 64
+    },
+    "mana_gem_glow": {
+      "blp_bytes": 23044,
+      "blp_sha256": "972ded89bbec5a1a83ce1358a17405311caccbf75b80f4b9a12043b118e388c2",
+      "bottom": 0.9765625,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 125,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1267,
+          1241
+        ],
+        "sheet": "Glowing Blue Faceted Crystal Gem.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 128
+    },
+    "mana_lock": {
+      "blp_bytes": 6660,
+      "blp_sha256": "5107f83df2b5032f68eea5e1fb857a05e8da5c6aaf10be5074d97c79fcdb4b81",
+      "bottom": 0.953125,
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "h": 61,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1305,
+          1206
+        ],
+        "sheet": "Weathered Hexagonal Lock Emblem.png"
+      },
+      "texture_size": [
+        64,
+        64
+      ],
+      "w": 64
+    },
+    "mana_pill": {
+      "blp_bytes": 12132,
+      "blp_sha256": "425efe7cc09da2102a09bfdef8c00758d6045fd5d8df4dee939d8c128d98440c",
+      "bottom": 0.765625,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 49,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          56,
+          171,
+          1072,
+          413
+        ],
+        "sheet": "Glossy Mana Bar and Crystal Icons.png"
+      },
+      "texture_size": [
+        128,
+        64
+      ],
+      "w": 128
+    },
+    "minion_oval": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.825,
+          "left": 0.18229,
+          "right": 0.81041,
+          "top": 0.175
+        },
+        "oval": {
+          "bottom": 0.926,
+          "left": 0.09,
+          "right": 0.9,
+          "top": 0.074
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "c1e10a97d2c396c498c7a3043da0b45fc162ef74fdb80aab2ca8c094092c18c9",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "none",
+      "right": 0.828125,
+      "source": {
+        "rect": [
+          1066,
+          717,
+          142,
+          83
+        ],
+        "sheet": "Fantasy-Kartenspiel-UI-Assetsheet.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 106
+    },
+    "mull_replaced": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e41b97fddbab8a095affbeda6666f1119c3061060fd759107dbc3a6e1b3450b1",
+      "bottom": 0.5234375,
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "h": 134,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          40,
+          330,
+          1475,
+          385
+        ],
+        "sheet": "Mulligan Replaced.png"
+      },
+      "texture_size": [
+        512,
+        256
+      ],
+      "w": 512
+    },
+    "mull_x": {
+      "blp_bytes": 88580,
+      "blp_sha256": "23f1578abb04459f9153fb19659f2fcd85b7e910ef4b03693974248b5975dbde",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.87109375,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Mulligan Red X.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 223
+    },
+    "ribbon_blue": {
+      "blp_bytes": 44900,
+      "blp_sha256": "ad995453b01a7dd3c1b744b8628129afdac799ddcee29be3648d9e18f1ba65cd",
+      "bottom": 0.640625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 82,
+      "mode": "flood",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          485,
+          745,
+          230,
+          74
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        256,
+        128
+      ],
+      "w": 256
+    },
+    "ribbon_red": {
+      "blp_bytes": 44900,
+      "blp_sha256": "97d2374d033d7db572a2ee12f6f39b05704cf9212533fd47192b409c318ea127",
+      "bottom": 0.625,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 80,
+      "mode": "flood",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          485,
+          815,
+          230,
+          72
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        256,
+        128
+      ],
+      "w": 256
+    },
+    "secret_hunter": {
+      "blp_bytes": 23044,
+      "blp_sha256": "cc8f43e34e4e230ca7a9ea400fd0d114f57bbf1516d0ebc607f7545df3f555c4",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          893,
+          0,
+          365,
+          350
+        ],
+        "sheet": "secret icons.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 128
+    },
+    "secret_mage": {
+      "blp_bytes": 23044,
+      "blp_sha256": "8b9a19a10d120b2a4ec1c9e4309fd5f8d139752e1af46f1f3d0841fafe608265",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.984375,
+      "source": {
+        "rect": [
+          1404,
+          0,
+          365,
+          350
+        ],
+        "sheet": "secret icons.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 126
+    },
+    "secret_paladin": {
+      "blp_bytes": 23044,
+      "blp_sha256": "5a7eda18030eb332dfb41a2c9e1eb8b968e55562a660589840b61b11386e0c02",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.984375,
+      "source": {
+        "rect": [
+          385,
+          0,
+          365,
+          350
+        ],
+        "sheet": "secret icons.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 126
+    },
+    "silence_swirl": {
+      "blp_bytes": 88580,
+      "blp_sha256": "3869ca90fc41fba7df8ed9e75f998e29cad17ece78a75f0a503e1068edd29036",
+      "bottom": 0.96875,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 248,
+      "mode": "alpha",
+      "right": 1.0,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Glowing Pink Magical Energy Swirl.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 256
+    },
+    "sparkle_gold": {
+      "blp_bytes": 23044,
+      "blp_sha256": "3487a2562c5f2384b4a4730f76085cf75e86563e14c90ca494dedc2a57338a82",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "luma",
+      "right": 0.84375,
+      "source": {
+        "rect": [
+          850,
+          898,
+          84,
+          100
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 108
+    },
+    "speech_bubble": {
+      "blp_bytes": 44900,
+      "blp_sha256": "5c561e6a003c19cbb10bc8697f64c6ffb9e726556c66202c8893cd0fc7d6e565",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 128,
+      "mode": "procedural",
+      "right": 0.75,
+      "source": {
+        "procedural": "bubble"
+      },
+      "texture_size": [
+        256,
+        128
+      ],
+      "w": 192
+    },
+    "swirl_blue": {
+      "blp_bytes": 23044,
+      "blp_sha256": "16cb91f25fae0394c97694c9fcbe8b5abdb74059a5151ca85017a4bf780928c3",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "luma",
+      "right": 0.8046875,
+      "source": {
+        "rect": [
+          760,
+          895,
+          90,
+          112
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 103
+    },
+    "taunt_frame": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.81353,
+          "left": 0.13093,
+          "right": 0.87246,
+          "top": 0.09158
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "c5ed619343ececa3465cd8bd9ae07f15b1dedad37ef3d20b0f91a4534bc84a1a",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "alpha",
+      "right": 0.73046875,
+      "source": {
+        "rect": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "sheet": "Ornate Steel Oval Portrait Frame.png"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 187
+    },
+    "weapon_frame": {
+      "anchors": {
+        "inner": {
+          "bottom": 0.707,
+          "left": 0.2815,
+          "right": 0.769,
+          "top": 0.254
+        }
+      },
+      "blp_bytes": 23044,
+      "blp_sha256": "6adb67e631002681d33d8c16a6c3543fd489d17018c2e0417919563f87de029f",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "h": 128,
+      "mode": "flood",
+      "right": 0.9296875,
+      "source": {
+        "rect": [
+          681,
+          563,
+          82,
+          88
+        ],
+        "sheet": "Fantasy-Karten-Spiel UI-Atlas.png"
+      },
+      "texture_size": [
+        128,
+        128
+      ],
+      "w": 119
+    },
+    "weapon_ring": {
+      "anchors": {
+        "circle": {
+          "bottom": 0.817,
+          "left": 0.178,
+          "right": 0.824,
+          "top": 0.194
+        },
+        "inner": {
+          "bottom": 0.817,
+          "left": 0.178,
+          "right": 0.824,
+          "top": 0.194
+        }
+      },
+      "blp_bytes": 88580,
+      "blp_sha256": "4e15087d450e3165654fbc248fd6d128fe50181dff55ba1ac3747c19b2bd5700",
+      "bottom": 1.0,
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "h": 256,
+      "mode": "derive",
+      "right": 0.96484375,
+      "source": {
+        "derived_from": "hero_power_ring"
+      },
+      "texture_size": [
+        256,
+        256
+      ],
+      "w": 247
+    }
+  },
+  "schema": 1
+}

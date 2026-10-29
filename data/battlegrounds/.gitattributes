@@ -1,0 +1,4 @@
+# Keep LF: the dataset is compared byte for byte
+*.json text eol=lf
+# Pinned raw input must stay byte-exact (its sha256 is verified)
+source/* -text

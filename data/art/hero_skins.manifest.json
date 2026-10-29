@@ -1,0 +1,1497 @@
+{
+  "entries": {
+    "HERO_01a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "752e72d6bba3fbdb515b721b41665f227c00d4958b7fac951dc649eb87231b79",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_01al_Garrosh": {
+      "blp_bytes": 175972,
+      "blp_sha256": "165651ae6189ef4516ef761cf9e5e5a117f25ff8ec254b94b89b9ce11848bcac",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01al_Garrosh",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_01am_Garrosh": {
+      "blp_bytes": 175972,
+      "blp_sha256": "6312df0d75fd7f3d9f0c516e8ef10e9fae8227c0dc0df221ed5be9a6497f7904",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01am_Garrosh",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_01b": {
+      "blp_bytes": 175972,
+      "blp_sha256": "8638901da8aac7b3566dd8de809cddb07083fc0fb3ace48d3cac1f43e63e8e06",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01b",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_01f": {
+      "blp_bytes": 175972,
+      "blp_sha256": "12e30f816460bad63dd4cf4d9f0260db7d8fd33e502ecdc70d08b2a643a2cc4d",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01f",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_01h": {
+      "blp_bytes": 175972,
+      "blp_sha256": "05cccbc7819969070897bf6cfc77e86369f0ada8b4b81ef758f7e1641b39b258",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_01h",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "a6b9519733f08842cbd377dc1312ec1fd29d9a59ef1d7134812f5fc9ceb07796",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02ap_Thrall": {
+      "blp_bytes": 175972,
+      "blp_sha256": "fca3010e06d3a2f1dee6bb6182afb1353ab0a2f219498a32055d70cebbcc049d",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02ap_Thrall",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02aq_Thrall": {
+      "blp_bytes": 175972,
+      "blp_sha256": "054719bd925242108d20083c7cf58d18563731931c1bee1f65e4e12814840137",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02aq_Thrall",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e8ace9856de3b0b19fe01a264dc8256fb3ace255465dc0cedb00d7d71af497c6",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02ca": {
+      "blp_bytes": 175972,
+      "blp_sha256": "b152a8d7181bb65b6ba9859e140c8b0edfcf334c2e80be658ccb02316d25df7f",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02ca",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02ck": {
+      "blp_bytes": 175972,
+      "blp_sha256": "b292662254f2d8743cf5c4d369ae8afa0414d2ab525c378e25ef01b5fda86439",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02ck",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02d": {
+      "blp_bytes": 175972,
+      "blp_sha256": "c9b46e38c247069fd8076fc5a1f953bda7990e8fae3d89007314daebeb6adca0",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02d",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02f": {
+      "blp_bytes": 175972,
+      "blp_sha256": "9e2d80c9421a1b231e768f5ce818ec3bc0dfc2e4ea0344441e119814c5b5a32a",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02f",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_02k": {
+      "blp_bytes": 175972,
+      "blp_sha256": "fc7af34a5b375464367d64bef826246cc2c39a7e9973e0fc7a8b07c36ca9f569",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_02k",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "ccb9bbd52d9398fcf3b27933208256e2ff3b5530e098312e66b9931fa3057795",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03al_Valeera_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "d932d406f666e72fb2f7f0aed0c7214aac0e9141bee47c6284d61d080b8d97e3",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03al_Valeera_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03am_SlayerValeera_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "325b4a5d1e909e278b4badec6ca814e849e58bd248a9eb79f16658daff6b4fc5",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03am_SlayerValeera_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03b": {
+      "blp_bytes": 175972,
+      "blp_sha256": "5910f30348b8d02466e5a1bbd6ee147dd5d9ba774c237dd40ba8ac63385c4153",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03b",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03bt": {
+      "blp_bytes": 175972,
+      "blp_sha256": "b2af84441803f6bdf586806cd9e9882aff35e26dc46e47e29ad816503a319696",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03bt",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03d": {
+      "blp_bytes": 175972,
+      "blp_sha256": "dc88401be385ede705bff9116a57aece5fee80cf1901c4f42ca80934f245d990",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03d",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_03g": {
+      "blp_bytes": 175972,
+      "blp_sha256": "d9b838122c3b26a3839865290e5a6769d4ce2ba2be0924bae0c87142a09cb979",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_03g",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "390737d40b93845e2af587a3bc35db5305c3ab58fa8d7e32eca9aea4f000feb2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04al_Uther": {
+      "blp_bytes": 175972,
+      "blp_sha256": "3aee1bc351d6dbeb4d0f806bc5e55e41a17f7b85c934e0c2deb1098b53120314",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04al_Uther",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04am_Uther": {
+      "blp_bytes": 175972,
+      "blp_sha256": "d4434f1276b82937af55236f82c011e8bd538a327e4e1b67f32dcde47406307e",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04am_Uther",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04b": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e88d1a0ac8f19873dea0811df2c7fd066652eac22110d0108d385f5a3ae8eab2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04b",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04bv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "1519529a6a69928a576af1169da507d69474eae5a275a990540c965b5c43c4ae",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04bv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "22964d8efe45db1428ad64a57b1fad0df86ba5d872487a0bc482e1d2b6755e1c",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04d": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e2e969c83762ef2c835ed57a6f257349c625f9e57a24ded06379931179b222bd",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04d",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04g": {
+      "blp_bytes": 175972,
+      "blp_sha256": "9822d63f269d9ddf4fdf1fa9a3d24078af80c25af829024e8adf3b3d4c87e552",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04g",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_04i": {
+      "blp_bytes": 175972,
+      "blp_sha256": "332253bd1d8e65a6d36758e7b836704bdf8b9f8a91c36a98856009fb61b88dbd",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_04i",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "c0dcd08d6f5639469dcdc60860b4b247066c4b474e64721b4644aaf68984aafa",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05aj_Rexxar_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "ab839bd72bd8a8cb588801ba5d5c6bef7f1f17122f5e54c7a13a586748feccc8",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05aj_Rexxar_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05ak_Rexxar_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "49ba73b3f8c1bcdc525bbc78a3a997905e42e2dee84143fa8f5e106ec3350be6",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05ak_Rexxar_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05b": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e05b0ce5478c710e0e224415549af8cfef66cbab3965b5fc4cb4f0b0885919a6",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05b",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05bu": {
+      "blp_bytes": 175972,
+      "blp_sha256": "4a8ed4f5d09f68393b8cdd4849994746efa39c3dc9cefda499f298cd828a986b",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05bu",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "1754b15068b1e0a98a076f18389881a8d84492079fedc1f90d253495eaf74f74",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05e": {
+      "blp_bytes": 175972,
+      "blp_sha256": "21e0ce2914dd3768e6b29a4dbe1ac6d1c486a6c21aed13807e79620c59114a6c",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05e",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_05f": {
+      "blp_bytes": 175972,
+      "blp_sha256": "09894f0a83c49eae31660120f7131dac783b159b8e570b3d22876f5c121bb904",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_05f",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "f47857da46e294343ed5edf4d69c8f5058323e44106f7f8e123efdc5cf2f61a1",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06an_Malfurion_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "a7ebfb440bc1488d2bf859ba90a121496b806b7470f83d4c9483fa34e7e8d110",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06an_Malfurion_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06ap_Malfurion_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "239e2311aef691d1a583fa5fcb68aa27a91abf5bee8eaf34fa1077c7bb85b6f9",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06ap_Malfurion_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06bt": {
+      "blp_bytes": 175972,
+      "blp_sha256": "8b693cc5f8ffe9f07ea258f04f70ba2c29fe0c2361ac3c581e7b2c1f159c9474",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06bt",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e571ce70deafb8f6078b7252a4d1cf4e87f961c4b0a680806211f359f6a6816a",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06d": {
+      "blp_bytes": 175972,
+      "blp_sha256": "36375cd29642b6fc957b4abb5f6846a513dec845c3a6172c51f40dee0289599d",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06d",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06e": {
+      "blp_bytes": 175972,
+      "blp_sha256": "8a90d8aa4a5f9c9769bccf1d958d2578d8dff86140d10488e430b44256addb53",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06e",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_06g": {
+      "blp_bytes": 175972,
+      "blp_sha256": "a8106471473904c6fe60bfd324bcb217b39a65507e4ef2cd7e1a3539a4b37e9c",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_06g",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07ak_Guldan": {
+      "blp_bytes": 175972,
+      "blp_sha256": "311fd9291da16c5afe3082f9e368d2c904882f8d1750159e9f2f7fa196787256",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07ak_Guldan",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07al_Guldan": {
+      "blp_bytes": 175972,
+      "blp_sha256": "ef9ad28437376a934aca0a5b37f0f119ec8cead53fd3f9b7f85261407bdb5b78",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07al_Guldan",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07bw": {
+      "blp_bytes": 175972,
+      "blp_sha256": "dc90e827f126adb7329ac947ef011741d3edfc05ab91e8cd43f20154d5403afe",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07bw",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "a870a67f2cc4a5b974f41f98a2bd494ab2af2602036b877f03672a99650c1690",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07cl": {
+      "blp_bytes": 175972,
+      "blp_sha256": "fe703b06041a9b1546c5654afe4b382c06f2ee5a08592005fecd92ebb8ea4d97",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07cl",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07e": {
+      "blp_bytes": 175972,
+      "blp_sha256": "7dc28c646a4c7207f246abe47e8c19816ddd71de22e129030037655c62780bc1",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07e",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_07f": {
+      "blp_bytes": 175972,
+      "blp_sha256": "8141cdb20116a387a74ece28ccbd3d2a679364b084722ae8638d8cb856279be8",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_07f",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "1ea0c2db5f444116e8e8577457cf718ba8d1961363b3fd85646fa5eb28450db8",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08av_Jaina_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "0354add222600e9bf805e0881669c01a6420cc7e0c99ae0419ec63581145b06c",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08av_Jaina_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08aw_Jaina_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e9f5a8f804217c12edcb5ab6637054b135e963e3fd4461c0ce6552e1a1dd94ec",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08aw_Jaina_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08b": {
+      "blp_bytes": 175972,
+      "blp_sha256": "aa4f1f58cdee01c6a229d39725f35650de881341b4d5937ae66cda93c336ab23",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08b",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "89a8017dc5b2c474298c1c800aa3a14542001851993628e1fcfe04cb94bcbc35",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08ck": {
+      "blp_bytes": 175972,
+      "blp_sha256": "20a000bf3463b9622a9f991bf9943916a0c5b2859c2053031216398c9210798a",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08ck",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08cl": {
+      "blp_bytes": 175972,
+      "blp_sha256": "6404645f0ee2d87f10e5f33dc84004d1ad3844f166f364bc2f7a180a50591c32",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08cl",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08g": {
+      "blp_bytes": 175972,
+      "blp_sha256": "c1971eabc4d589171be52359b787b94116a927c46d9ba0fa22b6ec730365ebcd",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08g",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_08k": {
+      "blp_bytes": 175972,
+      "blp_sha256": "dd805d2dbc45cbcba5916e645e8aa9ea15fc4b3d89effe144cc63396ecb40acf",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_08k",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09a": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e5fd154cddad90b2867b3d779dff11ab3ba6b465c14e655255e9ff6a91c6e7e6",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09a",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09am_Anduin_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "65e5c19617bed1de68c4b705cc21664f61a4d9bc6cef0f95eb5aaa4b723c4460",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09am_Anduin_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09an_Anduin_hnv": {
+      "blp_bytes": 175972,
+      "blp_sha256": "21858fb5fbef9973fb7b8eb3881d24736130ce88e0b7d005899d769b53bc3907",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09an_Anduin_hnv",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09bu": {
+      "blp_bytes": 175972,
+      "blp_sha256": "be86063527bafe61a1aae14503567aa2fffda2faf0b1cd870137fa85ec73c782",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09bu",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09c": {
+      "blp_bytes": 175972,
+      "blp_sha256": "3f7be4e20a3a521ee67941b0db6ea1943aabf5c1cf8fde2e6c960a1b30e17c26",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09c",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09cb": {
+      "blp_bytes": 175972,
+      "blp_sha256": "e914243f10066f275f2e2f2351e947a5efb9a13632ff9f0730cfaaec7a11be73",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09cb",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09d": {
+      "blp_bytes": 175972,
+      "blp_sha256": "83433a99058e57191c9725e25d8acba617b9ac30a812ee151aaaa000d5c3ebbf",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09d",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    },
+    "HERO_09g": {
+      "blp_bytes": 175972,
+      "blp_sha256": "a15d0a3643697ee747eb7b34f7f59bc52261bc508c9f8052ab8e5ebf50a9bc55",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "id": "HERO_09g",
+      "source": "render",
+      "source_size": [
+        256,
+        388
+      ],
+      "texcoord": {
+        "bottom": 0.7578125,
+        "left": 0.0,
+        "right": 1.0,
+        "top": 0.0
+      },
+      "texture_size": [
+        256,
+        512
+      ]
+    }
+  },
+  "note": "One 256x512 BLP2 (DXT5, mips) per alternative hero portrait of data/heroes/portraits.json, made by tools/art/hero_skins.py into art/out/Heroes/<id>.blp from the plain HearthstoneJSON render; deploy-addon.ps1 copies them to Textures\\Heroes and lists the ids in HS_HeroTextures.",
+  "schema": 1
+}

@@ -1,0 +1,504 @@
+{
+  "source": "Hearthstone Wiki 'Alternate heroes' (available list), render ids checked against art/cache/cards_latest.json",
+  "classes": {
+    "WARRIOR": [
+      {
+        "name": "Garrosh Hellscream",
+        "wiki_id": "HERO_01",
+        "card_id": "HERO_01",
+        "default": true
+      },
+      {
+        "name": "Corrupt Garrosh",
+        "wiki_id": "HERO_01b",
+        "card_id": "HERO_01b",
+        "default": false
+      },
+      {
+        "name": "Magni Bronzebeard",
+        "wiki_id": "HERO_01a",
+        "card_id": "HERO_01a",
+        "default": false
+      },
+      {
+        "name": "Destroyer Garrosh",
+        "wiki_id": "HERO_01al",
+        "card_id": "HERO_01al_Garrosh",
+        "default": false
+      },
+      {
+        "name": "Garrosh of Might",
+        "wiki_id": "HERO_01f",
+        "card_id": "HERO_01f",
+        "default": false
+      },
+      {
+        "name": "Garrosh of Wrath",
+        "wiki_id": "HERO_01h",
+        "card_id": "HERO_01h",
+        "default": false
+      },
+      {
+        "name": "Onslaught Garrosh",
+        "wiki_id": "HERO_01am",
+        "card_id": "HERO_01am_Garrosh",
+        "default": false
+      }
+    ],
+    "SHAMAN": [
+      {
+        "name": "Thrall",
+        "wiki_id": "HERO_02",
+        "card_id": "HERO_02",
+        "default": true
+      },
+      {
+        "name": "Warchief Thrall",
+        "wiki_id": "HERO_02d",
+        "card_id": "HERO_02d",
+        "default": false
+      },
+      {
+        "name": "Morgl the Oracle",
+        "wiki_id": "HERO_02a",
+        "card_id": "HERO_02a",
+        "default": false
+      },
+      {
+        "name": "The Thunder King",
+        "wiki_id": "HERO_02c",
+        "card_id": "HERO_02c",
+        "default": false
+      },
+      {
+        "name": "Cataclysm Thrall",
+        "wiki_id": "HERO_02ap",
+        "card_id": "HERO_02ap_Thrall",
+        "default": false
+      },
+      {
+        "name": "Earthfury Thrall",
+        "wiki_id": "HERO_02f",
+        "card_id": "HERO_02f",
+        "default": false
+      },
+      {
+        "name": "Jailbird Inzah",
+        "wiki_id": "HERO_02ca",
+        "card_id": "HERO_02ca",
+        "default": false
+      },
+      {
+        "name": "Skyshatter Thrall",
+        "wiki_id": "HERO_02aq",
+        "card_id": "HERO_02aq_Thrall",
+        "default": false
+      },
+      {
+        "name": "Ten Storm Thrall",
+        "wiki_id": "HERO_02k",
+        "card_id": "HERO_02k",
+        "default": false
+      },
+      {
+        "name": "Bulletstorm Al'Akir",
+        "wiki_id": "HERO_02ck",
+        "card_id": "HERO_02ck",
+        "default": false
+      }
+    ],
+    "ROGUE": [
+      {
+        "name": "Valeera Sanguinar",
+        "wiki_id": "HERO_03",
+        "card_id": "HERO_03",
+        "default": true
+      },
+      {
+        "name": "Cap'n Valeera",
+        "wiki_id": "HERO_03b",
+        "card_id": "HERO_03b",
+        "default": false
+      },
+      {
+        "name": "Maiev Shadowsong",
+        "wiki_id": "HERO_03a",
+        "card_id": "HERO_03a",
+        "default": false
+      },
+      {
+        "name": "Bonemantle Valeera",
+        "wiki_id": "HERO_03al",
+        "card_id": "HERO_03al_Valeera_hnv",
+        "default": false
+      },
+      {
+        "name": "Nightslayer Valeera",
+        "wiki_id": "HERO_03d",
+        "card_id": "HERO_03d",
+        "default": false
+      },
+      {
+        "name": "Mastermind Vanessa",
+        "wiki_id": "HERO_03bt",
+        "card_id": "HERO_03bt",
+        "default": false
+      },
+      {
+        "name": "Deathmantle Valeera",
+        "wiki_id": "HERO_03g",
+        "card_id": "HERO_03g",
+        "default": false
+      },
+      {
+        "name": "Slayer Valeera",
+        "wiki_id": "HERO_03am",
+        "card_id": "HERO_03am_SlayerValeera_hnv",
+        "default": false
+      }
+    ],
+    "PALADIN": [
+      {
+        "name": "Uther Lightbringer",
+        "wiki_id": "HERO_04",
+        "card_id": "HERO_04",
+        "default": true
+      },
+      {
+        "name": "Lightforged Uther",
+        "wiki_id": "HERO_04d",
+        "card_id": "HERO_04d",
+        "default": false
+      },
+      {
+        "name": "Sir Annoy-O",
+        "wiki_id": "HERO_04c",
+        "card_id": "HERO_04c",
+        "default": false
+      },
+      {
+        "name": "Crystalforge Uther",
+        "wiki_id": "HERO_04al",
+        "card_id": "HERO_04al_Uther",
+        "default": false
+      },
+      {
+        "name": "Uther Lawbringer",
+        "wiki_id": "HERO_04g",
+        "card_id": "HERO_04g",
+        "default": false
+      },
+      {
+        "name": "Sir Alarm-O",
+        "wiki_id": "HERO_04bv",
+        "card_id": "HERO_04bv",
+        "default": false
+      },
+      {
+        "name": "Judgment Uther",
+        "wiki_id": "HERO_04i",
+        "card_id": "HERO_04i",
+        "default": false
+      },
+      {
+        "name": "Lightbringer Uther",
+        "wiki_id": "HERO_04am",
+        "card_id": "HERO_04am_Uther",
+        "default": false
+      },
+      {
+        "name": "Lady Liadrin",
+        "wiki_id": "HERO_04a",
+        "card_id": "HERO_04a",
+        "default": false
+      },
+      {
+        "name": "Prince Arthas",
+        "wiki_id": "HERO_04b",
+        "card_id": "HERO_04b",
+        "default": false
+      }
+    ],
+    "HUNTER": [
+      {
+        "name": "Rexxar",
+        "wiki_id": "HERO_05",
+        "card_id": "HERO_05",
+        "default": true
+      },
+      {
+        "name": "Wanderer Rexxar",
+        "wiki_id": "HERO_05b",
+        "card_id": "HERO_05b",
+        "default": false
+      },
+      {
+        "name": "Alleria Windrunner",
+        "wiki_id": "HERO_05a",
+        "card_id": "HERO_05a",
+        "default": false
+      },
+      {
+        "name": "Sylvanas Windrunner",
+        "wiki_id": "HERO_05c",
+        "card_id": "HERO_05c",
+        "default": false
+      },
+      {
+        "name": "Giantstalker Rexxar",
+        "wiki_id": "HERO_05e",
+        "card_id": "HERO_05e",
+        "default": false
+      },
+      {
+        "name": "Rift Stalker Rexxar",
+        "wiki_id": "HERO_05aj",
+        "card_id": "HERO_05aj_Rexxar_hnv",
+        "default": false
+      },
+      {
+        "name": "Prison Break Mukla",
+        "wiki_id": "HERO_05bu",
+        "card_id": "HERO_05bu",
+        "default": false
+      },
+      {
+        "name": "Dragonstalker Rexxar",
+        "wiki_id": "HERO_05f",
+        "card_id": "HERO_05f",
+        "default": false
+      },
+      {
+        "name": "Gronnstalker Rexxar",
+        "wiki_id": "HERO_05ak",
+        "card_id": "HERO_05ak_Rexxar_hnv",
+        "default": false
+      }
+    ],
+    "DRUID": [
+      {
+        "name": "Malfurion Stormrage",
+        "wiki_id": "HERO_06",
+        "card_id": "HERO_06",
+        "default": true
+      },
+      {
+        "name": "Shan'do Malfurion",
+        "wiki_id": "HERO_06c",
+        "card_id": "HERO_06c",
+        "default": false
+      },
+      {
+        "name": "Lunara",
+        "wiki_id": "HERO_06a",
+        "card_id": "HERO_06a",
+        "default": false
+      },
+      {
+        "name": "Dame Hazelbark",
+        "wiki_id": "HERO_06d",
+        "card_id": "HERO_06d",
+        "default": false
+      },
+      {
+        "name": "Cenarion Malfurion",
+        "wiki_id": "HERO_06e",
+        "card_id": "HERO_06e",
+        "default": false
+      },
+      {
+        "name": "Nordrassil Malfurion",
+        "wiki_id": "HERO_06ap",
+        "card_id": "HERO_06ap_Malfurion_hnv",
+        "default": false
+      },
+      {
+        "name": "Model Prisoner Faelin",
+        "wiki_id": "HERO_06bt",
+        "card_id": "HERO_06bt",
+        "default": false
+      },
+      {
+        "name": "Storm's Rage Malfurion",
+        "wiki_id": "HERO_06g",
+        "card_id": "HERO_06g",
+        "default": false
+      },
+      {
+        "name": "Thunderheart Malfurion",
+        "wiki_id": "HERO_06an",
+        "card_id": "HERO_06an_Malfurion_hnv",
+        "default": false
+      }
+    ],
+    "WARLOCK": [
+      {
+        "name": "Gul'dan",
+        "wiki_id": "HERO_07",
+        "card_id": "HERO_07",
+        "default": true
+      },
+      {
+        "name": "Shadow Gul'dan",
+        "wiki_id": "HERO_07c",
+        "card_id": "HERO_07c",
+        "default": false
+      },
+      {
+        "name": "Corruptor Gul'dan",
+        "wiki_id": "HERO_07ak",
+        "card_id": "HERO_07ak_Guldan",
+        "default": false
+      },
+      {
+        "name": "Felheart Gul'dan",
+        "wiki_id": "HERO_07e",
+        "card_id": "HERO_07e",
+        "default": false
+      },
+      {
+        "name": "Escapee Zail",
+        "wiki_id": "HERO_07bw",
+        "card_id": "HERO_07bw",
+        "default": false
+      },
+      {
+        "name": "Malefic Gul'dan",
+        "wiki_id": "HERO_07al",
+        "card_id": "HERO_07al_Guldan",
+        "default": false
+      },
+      {
+        "name": "Nemesis Gul'dan",
+        "wiki_id": "HERO_07f",
+        "card_id": "HERO_07f",
+        "default": false
+      },
+      {
+        "name": "Dragonsworn Tamsin",
+        "wiki_id": "HERO_07cl",
+        "card_id": "HERO_07cl",
+        "default": false
+      }
+    ],
+    "MAGE": [
+      {
+        "name": "Jaina Proudmoore",
+        "wiki_id": "HERO_08",
+        "card_id": "HERO_08",
+        "default": true
+      },
+      {
+        "name": "Fire Mage Jaina",
+        "wiki_id": "HERO_08c",
+        "card_id": "HERO_08c",
+        "default": false
+      },
+      {
+        "name": "Khadgar",
+        "wiki_id": "HERO_08b",
+        "card_id": "HERO_08b",
+        "default": false
+      },
+      {
+        "name": "Medivh",
+        "wiki_id": "HERO_08a",
+        "card_id": "HERO_08a",
+        "default": false
+      },
+      {
+        "name": "Arcanist Jaina",
+        "wiki_id": "HERO_08g",
+        "card_id": "HERO_08g",
+        "default": false
+      },
+      {
+        "name": "Tirisfal Jaina",
+        "wiki_id": "HERO_08av",
+        "card_id": "HERO_08av_Jaina_hnv",
+        "default": false
+      },
+      {
+        "name": "Dalaran Aegwynn",
+        "wiki_id": "HERO_08cl",
+        "card_id": "HERO_08cl",
+        "default": false
+      },
+      {
+        "name": "Millhouse Manastorm",
+        "wiki_id": "HERO_08ck",
+        "card_id": "HERO_08ck",
+        "default": false
+      },
+      {
+        "name": "Netherwind Jaina",
+        "wiki_id": "HERO_08k",
+        "card_id": "HERO_08k",
+        "default": false
+      },
+      {
+        "name": "Tempest Jaina",
+        "wiki_id": "HERO_08aw",
+        "card_id": "HERO_08aw_Jaina_hnv",
+        "default": false
+      }
+    ],
+    "PRIEST": [
+      {
+        "name": "Anduin Wrynn",
+        "wiki_id": "HERO_09",
+        "card_id": "HERO_09",
+        "default": true
+      },
+      {
+        "name": "King Anduin",
+        "wiki_id": "HERO_09c",
+        "card_id": "HERO_09c",
+        "default": false
+      },
+      {
+        "name": "Anduin of Prophecy",
+        "wiki_id": "HERO_09d",
+        "card_id": "HERO_09d",
+        "default": false
+      },
+      {
+        "name": "Avatar Anduin",
+        "wiki_id": "HERO_09am",
+        "card_id": "HERO_09am_Anduin_hnv",
+        "default": false
+      },
+      {
+        "name": "Info Broker Lazul",
+        "wiki_id": "HERO_09bu",
+        "card_id": "HERO_09bu",
+        "default": false
+      },
+      {
+        "name": "Absolution Anduin",
+        "wiki_id": "HERO_09an",
+        "card_id": "HERO_09an_Anduin_hnv",
+        "default": false
+      },
+      {
+        "name": "Transcendence Anduin",
+        "wiki_id": "HERO_09g",
+        "card_id": "HERO_09g",
+        "default": false
+      },
+      {
+        "name": "Zek'voz",
+        "wiki_id": "HERO_09cb",
+        "card_id": "HERO_09cb",
+        "default": false
+      },
+      {
+        "name": "Tyrande Whisperwind",
+        "wiki_id": "HERO_09a",
+        "card_id": "HERO_09a",
+        "default": false
+      }
+    ]
+  },
+  "count": 80
+}

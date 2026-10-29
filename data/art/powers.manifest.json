@@ -1,0 +1,366 @@
+{
+  "crop": {
+    "api_radius_of_512": 209.92,
+    "center": [
+      128.0,
+      112.0
+    ],
+    "feather": 2.5,
+    "radius": 44.0,
+    "size": 128
+  },
+  "entries": {
+    "CS1h_001": {
+      "blp_bytes": 23044,
+      "blp_sha256": "432b847f259cfe59e218378b4074a65e21bfb84e6c1c35d279059d7906c1e67b",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS1h_001",
+      "source": "api512"
+    },
+    "CS2_017": {
+      "blp_bytes": 23044,
+      "blp_sha256": "d1770dabd640605b0c4aa290189ddacac297e0ed3a776520cfe0a6ffe45893d3",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_017",
+      "source": "api512"
+    },
+    "CS2_034": {
+      "blp_bytes": 23044,
+      "blp_sha256": "64601257690ae567e89e7946afae3e72c94ad1036450f0650fef4130668e18fe",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_034",
+      "source": "api512"
+    },
+    "CS2_049": {
+      "blp_bytes": 23044,
+      "blp_sha256": "b576bef45a0f88697153363b349472a5981fccc227beee23787cf2c11e70591b",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_049",
+      "source": "api512"
+    },
+    "CS2_056": {
+      "blp_bytes": 23044,
+      "blp_sha256": "56ede8812e1e4a0b179c70f16c3a79ac4f16e3f70260075d688f57e069edf21b",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_056",
+      "source": "api512"
+    },
+    "CS2_080": {
+      "blp_bytes": 23044,
+      "blp_sha256": "57e1e114a66f948950e48822e83c651655fc4f6f606d235d06134ea94d1ada33",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_080",
+      "source": "api512"
+    },
+    "CS2_082": {
+      "blp_bytes": 23044,
+      "blp_sha256": "51037de2bef0f192529e9e5e76cd60509ae2696ba065d80293b77ed281432f39",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_082",
+      "source": "api512"
+    },
+    "CS2_083b": {
+      "blp_bytes": 23044,
+      "blp_sha256": "2c8bd65b547efa8b6a18edbbe96b55f8679d795d8fe6ee7c6f6453b79ceecd3d",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_083b",
+      "source": "api512"
+    },
+    "CS2_091": {
+      "blp_bytes": 23044,
+      "blp_sha256": "cca896f80944baf333056f57c8213775baebffe1ba39c862496a44d976c42422",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_091",
+      "source": "api512"
+    },
+    "CS2_097": {
+      "blp_bytes": 23044,
+      "blp_sha256": "61eb5638560fe99b9e5c0190d918ec9ab40d2a39aa029669cd98163c81b47e9c",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_097",
+      "source": "api512"
+    },
+    "CS2_101": {
+      "blp_bytes": 23044,
+      "blp_sha256": "7538b7e99a307db249c38cab02fd5fc37f6d6eb60a45f561f575cff7ca622391",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_101",
+      "source": "api512"
+    },
+    "CS2_102": {
+      "blp_bytes": 23044,
+      "blp_sha256": "efda682c2d31e8ff6bd690cd2065907d5d8a0819c4bdf8e339a44cdc7d3ee196",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_102",
+      "source": "api512"
+    },
+    "CS2_106": {
+      "blp_bytes": 23044,
+      "blp_sha256": "a46fcf9da6bb18f389285704a83c49a324ea08f8d159cb2d0e87851d772d8cdf",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_106",
+      "source": "api512"
+    },
+    "CS2_112": {
+      "blp_bytes": 23044,
+      "blp_sha256": "42e862c54615c051aa92f3396d49c1d408062f122a28d6f88a1032e9b0e571a8",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "CS2_112",
+      "source": "api512"
+    },
+    "DS1_188": {
+      "blp_bytes": 23044,
+      "blp_sha256": "8bfe0496ed085fd8238a5eab9112f424805ac5ca6bb8c919d84cdc64e21687ad",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "DS1_188",
+      "source": "api512"
+    },
+    "DS1h_292": {
+      "blp_bytes": 23044,
+      "blp_sha256": "e40e341351755e7ff37fa0ca93318f2a6440e98c90c918e8948e56ec57736235",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "DS1h_292",
+      "source": "api512"
+    },
+    "EX1_133": {
+      "blp_bytes": 23044,
+      "blp_sha256": "03df8e18ae4409cc2e0182da38ca7d4338c882d09dab14305355fe2b8402682a",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_133",
+      "source": "api512"
+    },
+    "EX1_247": {
+      "blp_bytes": 23044,
+      "blp_sha256": "dc74f7f0b2a4729e0ee973ebe950fa1084998038f4ccd35a5715b93915b456dc",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_247",
+      "source": "api512"
+    },
+    "EX1_323w": {
+      "blp_bytes": 23044,
+      "blp_sha256": "186b0aabec28e72f0a931a8d3a89953d7adfac1c373d05b39357113e464830af",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_323w",
+      "source": "api512"
+    },
+    "EX1_366": {
+      "blp_bytes": 23044,
+      "blp_sha256": "1730f84e9c31deacaaa633b5d02e3f57a093cd034fc71c71d0b7854b73945e84",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_366",
+      "source": "api512"
+    },
+    "EX1_383t": {
+      "blp_bytes": 23044,
+      "blp_sha256": "16c9717a47b0ac879f50d224902cce06bc5254cfea1bcda6c10e46a132317ce5",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_383t",
+      "source": "api512"
+    },
+    "EX1_398t": {
+      "blp_bytes": 23044,
+      "blp_sha256": "2d21e19b69243b38c1bbbfb94517f6b332e9d3d252f32f80dc36718f64364987",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_398t",
+      "source": "api512"
+    },
+    "EX1_409t": {
+      "blp_bytes": 23044,
+      "blp_sha256": "26cc65da5df06698cfc08e92e14ea7f4be51ac73c8e86013853a81c92a7e5631",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_409t",
+      "source": "api512"
+    },
+    "EX1_411": {
+      "blp_bytes": 23044,
+      "blp_sha256": "b393eced8bb67c76d5757273b4b56e90283a052032116b766cb02856c0f4adb2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_411",
+      "source": "api512"
+    },
+    "EX1_536": {
+      "blp_bytes": 23044,
+      "blp_sha256": "cf60b7fd3f28e1817d57a7b294f873016e37e7de93ff2f8d3e78e54953fdcd22",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_536",
+      "source": "api512"
+    },
+    "EX1_567": {
+      "blp_bytes": 23044,
+      "blp_sha256": "512a7a2a1472a10c373482bbb8f8fd81cd49c4f8f640d9f6e6a2c007326967ad",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_567",
+      "source": "api512"
+    },
+    "EX1_625t": {
+      "blp_bytes": 23044,
+      "blp_sha256": "b07fef0fa3c30f77efa547cf9ba5d23a9408188c8931656b457c770e3319e2e6",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_625t",
+      "source": "api512"
+    },
+    "EX1_625t2": {
+      "blp_bytes": 23044,
+      "blp_sha256": "e27802e3927eecde4147810fd9b9cbceda933cfef8848f7bc35939c60ca4c073",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_625t2",
+      "source": "api512"
+    },
+    "EX1_tk33": {
+      "blp_bytes": 23044,
+      "blp_sha256": "9f936af083a99f0709a92e6809f4523b5e4ccb163f183564ed2dc94c3963fd3e",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "EX1_tk33",
+      "source": "api512"
+    },
+    "FP1_021": {
+      "blp_bytes": 23044,
+      "blp_sha256": "fd3222b1efe9b92b4e625270c04c287115cf03d08f117128249c2f7bf2858715",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "FP1_021",
+      "source": "api512"
+    },
+    "NAX10_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "605e1b3baafa7f7cb9db64167b307a0b9b430b91c35ab3247578d6a068135431",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX10_02",
+      "source": "api512"
+    },
+    "NAX10_03": {
+      "blp_bytes": 23044,
+      "blp_sha256": "13dd7ad66406c387e19fe05259ac963bad54f6b4cff7dbb985d0b6ae4674e8d7",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX10_03",
+      "source": "api512"
+    },
+    "NAX11_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "fc9ad447832c1d1b61ddef1a90f64f43b95443b97b9e81689d9139db4026377d",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX11_02",
+      "source": "api512"
+    },
+    "NAX12_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "5ead5da6b85f19affab83e7b3c45513e47302b54e01c5439919583d5d327fcef",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX12_02",
+      "source": "api512"
+    },
+    "NAX12_03": {
+      "blp_bytes": 23044,
+      "blp_sha256": "a0cecf42186d2a50c16245200a730253f5d6efaeac9c02565e16bc1f46226b35",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX12_03",
+      "source": "api512"
+    },
+    "NAX13_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "8d717e02d53825744b2c6ddb664e5277967197bf81474b4b42f51a728f3d7881",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX13_02",
+      "source": "api512"
+    },
+    "NAX14_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "da05ff88cf2410beec9813af0ad276949c19b570dc0e8649d575ca34a05cb12d",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX14_02",
+      "source": "api512"
+    },
+    "NAX15_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "4ec3ecb906874c528f3c604565f78c7f0513641f69214b182b5af980e0f34bff",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX15_02",
+      "source": "api512"
+    },
+    "NAX15_04": {
+      "blp_bytes": 23044,
+      "blp_sha256": "4baa810e1d540dda5935a75e38337f539397ee88af0e62298a2300ae24c8c776",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX15_04",
+      "source": "api512"
+    },
+    "NAX1_04": {
+      "blp_bytes": 23044,
+      "blp_sha256": "178b32222f6ef84eb10a600a4f69c7042d1224978abb90ca1761a9a19d6cb9ee",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX1_04",
+      "source": "api512"
+    },
+    "NAX2_03": {
+      "blp_bytes": 23044,
+      "blp_sha256": "e5f9a4f087b02f9a25038986807d8e3b0686584fa309faac3ee913c6390e234a",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX2_03",
+      "source": "api512"
+    },
+    "NAX3_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "1444c00bb63caddc76db6396c16a750c08bf56b296ba39e7d6e230f18b3abc7d",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX3_02",
+      "source": "api512"
+    },
+    "NAX4_04": {
+      "blp_bytes": 23044,
+      "blp_sha256": "c53bbed74282947382e3775d200af03704c0df9eb4783edec7eb8d6cf3608c84",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX4_04",
+      "source": "api512"
+    },
+    "NAX5_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "c2619442b40c9f58665bf022f2eac6ef5119c2dcb53c1015465b3535ad071f95",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX5_02",
+      "source": "api512"
+    },
+    "NAX6_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "03407f437209e0570db9cc2ede68a7be40cae7b4834592ec5a2c81d7294f2772",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX6_02",
+      "source": "api512"
+    },
+    "NAX7_03": {
+      "blp_bytes": 23044,
+      "blp_sha256": "9a1a85bd2d7f5437becdb12b2672de3fd2360907060829ffe71395efbce75713",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX7_03",
+      "source": "api512"
+    },
+    "NAX7_04": {
+      "blp_bytes": 23044,
+      "blp_sha256": "1e1b874baa3dfbd0824a85601093b6b0678f3f3d93a2e4840a53910646172a25",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX7_04",
+      "source": "api512"
+    },
+    "NAX8_02": {
+      "blp_bytes": 23044,
+      "blp_sha256": "df29f2a0604b4b45670eb1f444b4d43df6a5fc7f824d2ab6aaf699df63f38fa1",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX8_02",
+      "source": "api512"
+    },
+    "NAX9_05": {
+      "blp_bytes": 23044,
+      "blp_sha256": "8aba6df95b2ab752b31ae3ba713b854764b2b384cf83f49f10c66683ca8ae59c",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX9_05",
+      "source": "api512"
+    },
+    "NAX9_06": {
+      "blp_bytes": 23044,
+      "blp_sha256": "7ca5bff3fddfe413bbd04a61121ae4180b000d6287a217388c58f46ea1857239",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "id": "NAX9_06",
+      "source": "api512"
+    }
+  },
+  "note": "One 128x128 round portrait (BLP2 DXT5 with a circular alpha) per hero power card, made by tools/art/power_portraits.py into art/out/Powers/<id>.blp; deploy-addon.ps1 copies them and lists the ids in HS_PowerTextures (CardTextures.lua of the client copy). The texture fills the 'circle' anchor of hero_power_ring (board_textures.manifest.json).",
+  "schema": 1
+}

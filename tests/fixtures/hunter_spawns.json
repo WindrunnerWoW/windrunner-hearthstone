@@ -1,0 +1,112 @@
+{
+  "captured_on": "2026-10-09",
+  "columns": [
+    "id",
+    "id2",
+    "id3",
+    "id4",
+    "map",
+    "position_x",
+    "position_y",
+    "position_z",
+    "orientation",
+    "spawntimesecsmin",
+    "spawntimesecsmax",
+    "wander_distance",
+    "health_percent",
+    "mana_percent",
+    "movement_type",
+    "spawn_flags",
+    "visibility_mod"
+  ],
+  "spawns": [
+    {
+      "source_guid": 12585263,
+      "fields": {
+        "id": "919582",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "-1386.43994140625",
+        "position_y": "-136.95199584960938",
+        "position_z": "157.48899841308594",
+        "orientation": "2.132970094680786",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    },
+    {
+      "source_guid": 12585264,
+      "fields": {
+        "id": "919583",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "-1461.47998046875",
+        "position_y": "-91.95220184326172",
+        "position_z": "159.01800537109375",
+        "orientation": "3.622730016708374",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    },
+    {
+      "source_guid": 12585261,
+      "fields": {
+        "id": "919584",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "10077.900390625",
+        "position_y": "2565.360107421875",
+        "position_z": "1319.510009765625",
+        "orientation": "2.3577001094818115",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    },
+    {
+      "source_guid": 12585262,
+      "fields": {
+        "id": "919585",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "10156.2001953125",
+        "position_y": "2550.389892578125",
+        "position_z": "1322.27001953125",
+        "orientation": "3.4847500324249268",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    }
+  ]
+}

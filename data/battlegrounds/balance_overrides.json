@@ -1,0 +1,221 @@
+{
+ "note": "Balance (owner, 2026-10-22): every Naga and Murloc pool minion is +2/+1 over the 24.2 data (its golden twin double that), because a faction holding either tribe its opponent lacked won only 42-44% of bg_sim games. Applied after render_overrides.json by tools/battlegrounds/bglib.py (apply_render_overrides); the hover renders are repainted to match by tools/art/bg_minions.py (data/art/fixes.json is constructed-only).",
+ "cards": {
+  "BG21_008": {
+   "attack": 5,
+   "health": 3,
+   "golden": {
+    "attack": 10,
+    "health": 6
+   }
+  },
+  "BG21_010": {
+   "attack": 6,
+   "health": 3,
+   "golden": {
+    "attack": 12,
+    "health": 6
+   }
+  },
+  "BG22_202": {
+   "attack": 4,
+   "health": 3,
+   "golden": {
+    "attack": 8,
+    "health": 6
+   }
+  },
+  "BG22_401": {
+   "attack": 3,
+   "health": 6,
+   "golden": {
+    "attack": 6,
+    "health": 12
+   }
+  },
+  "BG22_403": {
+   "attack": 10,
+   "health": 6,
+   "golden": {
+    "attack": 20,
+    "health": 12
+   }
+  },
+  "BG23_000": {
+   "attack": 3,
+   "health": 4,
+   "golden": {
+    "attack": 6,
+    "health": 8
+   }
+  },
+  "BG23_001": {
+   "attack": 7,
+   "health": 3,
+   "golden": {
+    "attack": 14,
+    "health": 6
+   }
+  },
+  "BG23_002": {
+   "attack": 4,
+   "health": 2,
+   "golden": {
+    "attack": 8,
+    "health": 4
+   }
+  },
+  "BG23_003": {
+   "attack": 7,
+   "health": 8,
+   "golden": {
+    "attack": 14,
+    "health": 16
+   }
+  },
+  "BG23_004": {
+   "attack": 4,
+   "health": 3,
+   "golden": {
+    "attack": 8,
+    "health": 6
+   }
+  },
+  "BG23_006": {
+   "attack": 6,
+   "health": 5,
+   "golden": {
+    "attack": 12,
+    "health": 10
+   }
+  },
+  "BG23_007": {
+   "attack": 4,
+   "health": 9,
+   "golden": {
+    "attack": 8,
+    "health": 18
+   }
+  },
+  "BG23_008": {
+   "attack": 6,
+   "health": 7,
+   "golden": {
+    "attack": 12,
+    "health": 14
+   }
+  },
+  "BG23_009": {
+   "attack": 4,
+   "health": 6,
+   "golden": {
+    "attack": 8,
+    "health": 12
+   }
+  },
+  "BG23_010": {
+   "attack": 6,
+   "health": 4,
+   "golden": {
+    "attack": 12,
+    "health": 8
+   }
+  },
+  "BG23_011": {
+   "attack": 4,
+   "health": 3,
+   "golden": {
+    "attack": 8,
+    "health": 6
+   }
+  },
+  "BG23_012": {
+   "attack": 5,
+   "health": 4,
+   "golden": {
+    "attack": 10,
+    "health": 8
+   }
+  },
+  "BG23_013": {
+   "attack": 8,
+   "health": 9,
+   "golden": {
+    "attack": 16,
+    "health": 18
+   }
+  },
+  "BG23_014": {
+   "attack": 6,
+   "health": 6,
+   "golden": {
+    "attack": 12,
+    "health": 12
+   }
+  },
+  "BGS_020": {
+   "attack": 5,
+   "health": 3,
+   "golden": {
+    "attack": 10,
+    "health": 6
+   }
+  },
+  "BGS_030": {
+   "attack": 8,
+   "health": 4,
+   "golden": {
+    "attack": 16,
+    "health": 8
+   }
+  },
+  "BGS_200": {
+   "attack": 5,
+   "health": 4,
+   "golden": {
+    "attack": 10,
+    "health": 8
+   }
+  },
+  "BG_BT_010": {
+   "attack": 6,
+   "health": 5,
+   "golden": {
+    "attack": 12,
+    "health": 10
+   }
+  },
+  "BG_DAL_077": {
+   "attack": 3,
+   "health": 3,
+   "golden": {
+    "attack": 6,
+    "health": 6
+   }
+  },
+  "BG_EX1_103": {
+   "attack": 4,
+   "health": 4,
+   "golden": {
+    "attack": 8,
+    "health": 8
+   }
+  },
+  "BG_EX1_507": {
+   "attack": 5,
+   "health": 4,
+   "golden": {
+    "attack": 10,
+    "health": 8
+   }
+  },
+  "BG_UNG_073": {
+   "attack": 4,
+   "health": 4,
+   "golden": {
+    "attack": 8,
+    "health": 8
+   }
+  }
+ }
+}

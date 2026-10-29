@@ -1,0 +1,12 @@
+Tool: built-in image_gen (two edits).
+Edit target: art/review/board/board_field.png
+Style reference: user-provided original-game screenshot.
+
+Initial edit prompt:
+Edit image 1, our square 512x512 fantasy game board asset. Image 2 is only a reference for the dimensional carved pale stone lip around its tan playing field; do not copy any characters, cards, UI, or other screenshot details. Keep image 1's exact square composition, silhouette, buildings, roofs, red and blue panels, both EMPTY hero arches and their exact positions and sizes, barrel, cannon, shield, central crack and playing-surface texture. Make only one local change: enhance the existing perimeter edge of the central tan playing field with a relatively THIN warm cream stone bevel, a softly lit top ridge and a narrow darker contact-shadow immediately outside it, giving an integrated physical 3D raised lip that clearly marks where the playable tan surface begins. Follow the existing boundary EXACTLY around the whole field, including the red top-panel slopes, under the top hero arch, inward notches at the sides, bottom slopes and around the lower arch. Width about 3-5 pixels at this 512px size. Natural painterly material, softly rounded chamfer, restrained warm ivory highlight, subtle ochre shadow, same lighting and existing hand-painted game style. No glowing outline, no neon, no thick ornamental frame. Do not move the field boundary or shrink the playing area. Preserve all geometry and surrounding artwork. Output the edited asset alone, same square framing with no extra padding, no text or watermark.
+
+Final transparency edit prompt:
+Preserve this entire board and its beautiful thin warm ivory beveled playing-field perimeter EXACTLY. Only remove the gray checkerboard pixels outside the exterior silhouette and replace them with actual transparent alpha. The dark wooden strips inside the board's top and bottom borders must remain. No changes to artwork, geometry, positions, framing or colors. Same square dimensions, no extra padding. Output game texture board cutout with actual transparency outside the silhouette, NOT a checkerboard drawn into the image. Keep the two empty brown hero arches opaque.
+
+Packaging: normalized the generated RGBA image to the original 806x556 native crop size, then used slice_board.py --only board_field --verify to produce the existing 512x512 game texture. Existing aspect and fractional anchors retained.
+Original preview, BLP and manifests backed up under art/backups/board-field-before-bevel-2026-10-03/.

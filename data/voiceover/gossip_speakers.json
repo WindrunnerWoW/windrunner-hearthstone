@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "description": "Who speaks which npc_text. The C++ scripts pick gossip texts at runtime (SendGossipMenu(textId, ...)) without a gossip_menu link, so the AI VoiceOver generator cannot find these texts through the database. Every npc_text id the module sends has to be listed here exactly once per speaking NPC. A text may be listed for several NPCs. Check coverage with: python main.py check-gossip-manifest (AI_VoiceOver_Generator).",
+  "sql_dir": "data/sql/world",
+  "text_id_range": [9195000, 9195999],
+  "speakers": [
+    { "npc": 919501, "label": "Ezra Chatterton, Horde Hearthstone master (HsIntroGlue)", "texts": ["9195111-9195117", 9195150, "9195700-9195708", 9195900, 9195902] },
+    { "npc": 919502, "label": "Ibelin Redmoore, Alliance Hearthstone master (HsIntroGlue)", "texts": ["9195111-9195117", 9195151, "9195710-9195718", 9195901, 9195903] },
+    { "npc": 919505, "label": "Byron, Card Master (HsIntroGlue)", "texts": ["9195101-9195107"] },
+
+    { "npc": 919506, "label": "Steeg Haskell, Alliance Warrior (HsClassQuestGlue)", "texts": ["9195120-9195126"] },
+    { "npc": 919507, "label": "Veteran Zerok, Horde Warrior", "texts": [9195130] },
+
+    { "npc": 919510, "label": "Marie Cu Rie, Horde Mage (HsHordeMageQuest)", "texts": ["9195140-9195146"] },
+
+    { "npc": 919514, "label": "Kolento Treewatcher, Horde Druid (HsHordeDruidQuest)", "texts": [9195160, 9195164, 9195165] },
+    { "npc": 3017, "label": "Nan, kodo feed vendor (HsHordeDruidQuest)", "texts": ["9195161-9195163"] },
+
+    { "npc": 919517, "label": "Thijs Nightbloom, Alliance Druid (HsAllianceDruidQuest)", "texts": [9195170, "9195172-9195175"] },
+
+    { "npc": 919522, "label": "For'sen, Horde Rogue (HsHordeRogueQuest)", "texts": [9195180, "9195202-9195207", "9195212-9195214"] },
+    { "npc": 919523, "label": "Gora (HsHordeRogueQuest)", "texts": [9195181, "9195193-9195195", 9195209] },
+    { "npc": 919524, "label": "Rikka (HsHordeRogueQuest)", "texts": [9195182, "9195190-9195192", 9195208] },
+    { "npc": 919525, "label": "Zikko (HsHordeRogueQuest)", "texts": [9195183, "9195196-9195198", 9195210] },
+    { "npc": 919526, "label": "Sable (HsHordeRogueQuest)", "texts": [9195184, "9195199-9195201", 9195211] },
+
+    { "npc": 919532, "label": "Operative Matt Dixon (HsAllianceRogueQuest)", "texts": [9195220, 9195222] },
+    { "npc": 919533, "label": "Alex Horley, Alliance Rogue (HsAllianceRogueQuest)", "texts": [9195221, "9195229-9195231", 9195240, 9195241] },
+    { "npc": 1478, "label": "Aedis Brom, clue contact and dice game (HsAllianceRogueQuest)", "texts": ["9195223-9195225", 9195232, 9195235, 9195242, 9195243] },
+    { "npc": 1323, "label": "Osric Strang, clue contact and card (HsAllianceRogueQuest)", "texts": ["9195226-9195228", "9195236-9195238"] },
+
+    { "npc": 919539, "label": "Jeffrey Shih, Horde Priest", "texts": [9195250] },
+
+    { "npc": 919540, "label": "Drin Lia, Horde Paladin (HsHordePaladinQuest)", "texts": ["9195260-9195273"] },
+
+    { "npc": 919545, "label": "Alliance Shaman teacher (HsAllianceShamanQuest)", "texts": ["9195280-9195298"] },
+
+    { "npc": 919552, "label": "Annie Foxstalker (HsHordeShamanQuest)", "texts": ["9195300-9195304", "9195320-9195327"] },
+    { "npc": 3030, "label": "Spirit Rise mentor 1 (HsAnnieMentors[0])", "texts": [9195305, "9195310-9195312"] },
+    { "npc": 3032, "label": "Spirit Rise mentor 2 (HsAnnieMentors[1])", "texts": [9195306, "9195313-9195315"] },
+    { "npc": 3031, "label": "Spirit Rise mentor 3 (HsAnnieMentors[2])", "texts": [9195307, "9195316-9195318"] },
+
+    { "npc": 919559, "label": "Varka, Horde Warlock (HsWarlockQuest)", "texts": [9195330, 9195335, 9195336, 9195342, "9195344-9195349"] },
+    { "npc": 919560, "label": "Skrit, Varka's imp (HsWarlockQuest)", "texts": [9195331, 9195337, "9195350-9195353"] },
+    { "npc": 919561, "label": "Maren, Alliance Warlock (HsWarlockQuest)", "texts": [9195332, "9195338-9195341", 9195343, 9195358, 9195359, 9195364] },
+    { "npc": 919562, "label": "Nib, Maren's imp (HsWarlockQuest)", "texts": [9195333, "9195360-9195363", 9195365] },
+    { "npc": 919563, "label": "Owen Wellwick (HsWarlockQuest)", "texts": [9195334, "9195354-9195357", 9195366] },
+
+    { "npc": 919570, "label": "Sir Rowan, Alliance Paladin (HsAlliancePaladinQuest)", "texts": [9195370, "9195380-9195387"] },
+    { "npc": 919571, "label": "Squire Tess (HsAlliancePaladinQuest)", "texts": ["9195376-9195379", 9195388] },
+    { "npc": 919577, "label": "Ada Sparkplugz (HsAlliancePaladinQuest)", "texts": [9195389, 9195390] },
+
+    { "npc": 919578, "label": "Alenya, Alliance Priest (HsAlliancePriestQuest)", "texts": [9195400, "9195406-9195408", 9195410, 9195411, 9195417, "9195419-9195421"] },
+    { "npc": 919579, "label": "Captain Syrelle Starbough (HsAlliancePriestQuest)", "texts": ["9195401-9195405", "9195412-9195416", 9195418] },
+
+    { "npc": 919582, "label": "Horde Hunter teacher, offsets from 9195430 (HsHunterQuest)",
+      "texts": [9195430, "9195432-9195439", 9195442, 9195443, "9195448-9195464"] },
+    { "npc": 919583, "label": "Horde Hunter helper, offsets from 9195430 (HsHunterQuest)",
+      "texts": [9195431, 9195440, 9195441, "9195444-9195447"] },
+    { "npc": 919584, "label": "Alliance Hunter teacher, offsets from 9195490 (HsHunterQuest)",
+      "texts": [9195490, "9195492-9195499", 9195502, 9195503, "9195508-9195524"] },
+    { "npc": 919585, "label": "Alliance Hunter helper, offsets from 9195490 (HsHunterQuest)",
+      "texts": [9195491, 9195500, 9195501, "9195504-9195507"] },
+
+    { "npc": 919596, "label": "Mitchell Jones, Alliance Mage teacher (HsAllianceMageQuest)",
+      "texts": ["9195600-9195614", "9195620-9195649"] },
+    { "npc": 919597, "label": "Mitchell Jones speaking image, Warrior's Terrace", "texts": ["9195650-9195654"] },
+    { "npc": 919598, "label": "Mitchell Jones speaking image, Craftsmen's Terrace", "texts": ["9195655-9195659"] },
+    { "npc": 919599, "label": "Mitchell Jones speaking image, Temple of the Moon", "texts": ["9195660-9195664"] }
+  ],
+  "narrator": {
+    "9195242": "Aedis turns away... (scene description, not speech)",
+    "9195243": "Hint shown when the player has no dice",
+    "9195271": "Drin Lia waits for your assessment...",
+    "9195272": "Drin Lia looks entirely satisfied...",
+    "9195273": "Drin Lia is absorbed in her research...",
+    "9195300": "Annie watches the teachers...",
+    "9195323": "Annie mouths the sentence once more...",
+    "9195324": "Annie settles beside you..."
+  },
+  "unused": {
+    "9195233": "Alliance Rogue: no code path sends it (the win is 9195235)",
+    "9195239": "Alliance Rogue: no code path sends it"
+  }
+}

@@ -1,0 +1,48 @@
+## Interface: 11200
+## Title: Hearthstone
+## Notes: Single-player card game companion for the Windrunner server (card collection, packs, decks, crafting, the Night Watch Arena and matches against NPCs).
+## Author: Windrunner
+## Version: 0.1.0
+## SavedVariables: HearthstoneDB
+HsProtocol.lua
+CardDB.lua
+CardTextures.lua
+CollectionTextures.lua
+ButtonTextures.lua
+CollectionModel.lua
+Ownership.lua
+Packs.lua
+Wallet.lua
+HeroPortraits.lua
+Heroes.lua
+Arena.lua
+Decks.lua
+Match.lua
+MatchAnimations.lua
+Hearthstone.lua
+CardWidget.lua
+MicroButton.lua
+CollectionUI.lua
+PacksUI.lua
+DecksUI.lua
+CraftUI.lua
+ArenaUI.lua
+HeroesUI.lua
+LadderRankTextures.lua
+LadderUI.lua
+MerchantCoins.lua
+BoardTextures.lua
+MatchUI.lua
+MatchFxProfiles.lua
+MatchFx.lua
+Battlegrounds\BgCardDB.lua
+Battlegrounds\BgProtocol.lua
+Battlegrounds\BgState.lua
+Battlegrounds\BgTextures.lua
+Battlegrounds\BgVisuals.lua
+Battlegrounds\BgShopUI.lua
+Battlegrounds\BgLobbyUI.lua
+Battlegrounds\BgHeroPickUI.lua
+Battlegrounds\BgQuestPickUI.lua
+Battlegrounds\BgCombatUI.lua
+Battlegrounds\BgEndUI.lua

@@ -1,0 +1,10 @@
+# Keep LF everywhere: golden test vectors and dataset hashes are byte-exact
+* text=auto eol=lf
+*.blp binary
+*.png binary
+data/cards/*.json text eol=lf
+data/cards/links/*.json text eol=lf
+data/cards/overrides/*.json text eol=lf
+data/cards/custom/*.json text eol=lf
+# Pinned raw inputs must stay byte-exact (their sha256 is verified)
+data/cards/source/* -text

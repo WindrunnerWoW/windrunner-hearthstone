@@ -1,0 +1,68 @@
+{
+  "captured_on": "2026-10-10",
+  "columns": [
+    "id",
+    "id2",
+    "id3",
+    "id4",
+    "map",
+    "position_x",
+    "position_y",
+    "position_z",
+    "orientation",
+    "spawntimesecsmin",
+    "spawntimesecsmax",
+    "wander_distance",
+    "health_percent",
+    "mana_percent",
+    "movement_type",
+    "spawn_flags",
+    "visibility_mod"
+  ],
+  "spawns": [
+    {
+      "source_guid": 12585269,
+      "fields": {
+        "id": "919578",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "9628.580078125",
+        "position_y": "2569.909912109375",
+        "position_z": "1335.5999755859375",
+        "orientation": "4.8599700927734375",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    },
+    {
+      "source_guid": 12585270,
+      "fields": {
+        "id": "919579",
+        "id2": "0",
+        "id3": "0",
+        "id4": "0",
+        "map": "1",
+        "position_x": "9983.330078125",
+        "position_y": "2548.860107421875",
+        "position_z": "1314.8399658203125",
+        "orientation": "1.0900599956512451",
+        "spawntimesecsmin": "120",
+        "spawntimesecsmax": "120",
+        "wander_distance": "0",
+        "health_percent": "100",
+        "mana_percent": "100",
+        "movement_type": "0",
+        "spawn_flags": "0",
+        "visibility_mod": "0"
+      }
+    }
+  ]
+}

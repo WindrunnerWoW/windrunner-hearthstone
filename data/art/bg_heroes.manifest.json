@@ -1,0 +1,4203 @@
+{
+  "bob": "TB_BaconShopBob",
+  "entries": {
+    "BG20_HERO_100": {
+      "bytes": 6660,
+      "card": "BG20_HERO_100",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Rokara",
+      "sha256": "7a70cb97e7252a9a1c82908e4129980b942d9314f42e3bd1df2a45a87fa2d19e",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_100_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_100",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Rokara",
+      "sha256": "667a270f7364b5c9d5f52a989f487ac1c631c683860f1c9e3c3cba1a599d6bd7",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_101": {
+      "bytes": 6660,
+      "card": "BG20_HERO_101",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Xyrella",
+      "sha256": "6009c3a3ac92d896cb21ecae95c9157c09f89d9ab85210d87c6c75b881220db9",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_101_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_101",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Xyrella",
+      "sha256": "3292dcbcf5df078db8d13040f3866ada6bc7bdcc3f7637036dda5043dd955677",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_102": {
+      "bytes": 6660,
+      "card": "BG20_HERO_102",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Overlord Saurfang",
+      "sha256": "aecd4f52cce3388fce8412823cd5e37dbf487ad509b1bd3f0192a174e2a101c8",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_102_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_102",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Overlord Saurfang",
+      "sha256": "1de86fc6d26c0ae0a75522d86177894443546378ea9ad7a5c78ed4f96dd4bd96",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_103": {
+      "bytes": 6660,
+      "card": "BG20_HERO_103",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Death Speaker Blackthorn",
+      "sha256": "807704724b4b5fe2683e0759eb933e65e006f4d1b9dabe5670af1cf70a65b1f1",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_103_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_103",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Death Speaker Blackthorn",
+      "sha256": "e1a693184d691b495932c760f5a7ef9ea2cde2a87c0914eacd06ff565e8501d9",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_201": {
+      "bytes": 6660,
+      "card": "BG20_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Vol'jin",
+      "sha256": "11526b3d1dacb60e2885fb49e2a6d255d12490cd32c663e65f410104c309377e",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_201_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Vol'jin",
+      "sha256": "db704c272b09baf12894564d491907a081abde626c1fff4de062c23abff47c1e",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_202": {
+      "bytes": 6660,
+      "card": "BG20_HERO_202",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Master Nguyen",
+      "sha256": "aebffb08a5540114ee8d2c30a52bcf3ff95c49f59c164aea85ecc167e8ff7f17",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_202_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_202",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Master Nguyen",
+      "sha256": "38288483cb5662009893c4fa67fd34c579aeeaa10490665ce9b1766c49933cd7",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_242": {
+      "bytes": 6660,
+      "card": "BG20_HERO_242",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Guff Runetotem",
+      "sha256": "309f11978e779e9897996ba02ed63274edefb98fb2a7d32948222317fb70fd6c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_242_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_242",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Guff Runetotem",
+      "sha256": "4a423c391541378f87e70b940b36a01a32a3223e679dffbfb5e682a4945cb459",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_280": {
+      "bytes": 6660,
+      "card": "BG20_HERO_280",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Kurtrus Ashfallen",
+      "sha256": "f0e5624e667d08cb2718708d1c461ca2e555c873e168a5d43ca2cc8edd17d9e2",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_280_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_280",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Kurtrus Ashfallen",
+      "sha256": "c771380c673501b4831599209a134bf9aee9046e05f229cfac2dcfba20a0f578",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_282": {
+      "bytes": 6660,
+      "card": "BG20_HERO_282",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Tamsin Roame",
+      "sha256": "bc37e00ef233839ea821dd3e970ea048451a9d33a277281dc4abc5321da82232",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_282_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_282",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Tamsin Roame",
+      "sha256": "1e6652e1fc2be8698ec26d1df698ea84ce9a0e05e02239bd16da48140e952b99",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_283": {
+      "bytes": 6660,
+      "card": "BG20_HERO_283",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Galewing",
+      "sha256": "e89f76ba2097ab28c4246db007b8817ec1e1e91eba8479c570a81866ca7060c8",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_283_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_283",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Galewing",
+      "sha256": "36f7f74b421dbf7c732a227c916975d0d1e6805cc0ac7fe97d905247fba4e458",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG20_HERO_301": {
+      "bytes": 6660,
+      "card": "BG20_HERO_301",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Mutanus the Devourer",
+      "sha256": "00a7766774440396688a49c2fc01c949d588e6ecf755a02a9599ec403fa92471",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG20_HERO_301_arch": {
+      "bytes": 88580,
+      "card": "BG20_HERO_301",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Mutanus the Devourer",
+      "sha256": "622c6428ecb85e5da70aa31d30fd1715ccfe860fef82ce78a6965f5f097d0096",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG21_HERO_000": {
+      "bytes": 6660,
+      "card": "BG21_HERO_000",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Cariel Roame",
+      "sha256": "31aeb860a8922f06db786e87a2708d38c79e1e56c02a08995daa507919d3a721",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG21_HERO_000_arch": {
+      "bytes": 88580,
+      "card": "BG21_HERO_000",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Cariel Roame",
+      "sha256": "9c087aeb231f233341a450eba258f0bf33de8471238472e3058db9c28d31578d",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG21_HERO_010": {
+      "bytes": 6660,
+      "card": "BG21_HERO_010",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Scabbs Cutterbutter",
+      "sha256": "67ba573f7d9ddd2d2b5450adaabedcdc0e5cd82e7b32e41c158b4d1f17697570",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG21_HERO_010_arch": {
+      "bytes": 88580,
+      "card": "BG21_HERO_010",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Scabbs Cutterbutter",
+      "sha256": "3a076d2717e53bea1d8dd0a6235e5eb2b095ca62dfa41d212257f7cdbbc21647",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG21_HERO_020": {
+      "bytes": 6660,
+      "card": "BG21_HERO_020",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Cookie the Cook",
+      "sha256": "72d57b95222abc17f9c313165a6cdfe13a74f585fbb0f1ee216da2dc24d64886",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG21_HERO_020_arch": {
+      "bytes": 88580,
+      "card": "BG21_HERO_020",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Cookie the Cook",
+      "sha256": "77f6cc5068deec4c425fd59cedf48f369158d4e5d81d5f2aaf0d6fd39b55f46d",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG21_HERO_030": {
+      "bytes": 6660,
+      "card": "BG21_HERO_030",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Sneed",
+      "sha256": "3b403c797c09c665b1b5504328d2469525b839ef931dd4f6b5916cc798829c42",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG21_HERO_030_arch": {
+      "bytes": 88580,
+      "card": "BG21_HERO_030",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Sneed",
+      "sha256": "204fe2396a5524d571109bb4339ffbf25acc417e90206a10bbf90c442f2d11fb",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_000": {
+      "bytes": 6660,
+      "card": "BG22_HERO_000",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Tavish Stormpike",
+      "sha256": "9b20f863de4d7724450cfd2b61bc0d16572b99799fb2023302b2fd5f917d20a6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_000_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_000",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Tavish Stormpike",
+      "sha256": "5bfce619fc7c10d06865a40426cd06ad588142d9108f785cd47d7216b2449919",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_001": {
+      "bytes": 6660,
+      "card": "BG22_HERO_001",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Bru'kan",
+      "sha256": "943fdfd7e181b61519dc6e73cae6f8fb7ad0bcfa3d28240e918013fa334a32cf",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_001_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_001",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Bru'kan",
+      "sha256": "f3cff672c1d7c8480e795848862dd8b156086a407f6e9ee540db3ca16c7bfdff",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_002": {
+      "bytes": 6660,
+      "card": "BG22_HERO_002",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Drek'Thar",
+      "sha256": "a87a74f68272a86dc554299b535953c0a7d8d75aa3a506e8ba27042961252868",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_002_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_002",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Drek'Thar",
+      "sha256": "b9e9050cc33d519ee09c35f0f2372e8fa988ef2c2ed60f9fa9ff13c6db5949f2",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_003": {
+      "bytes": 6660,
+      "card": "BG22_HERO_003",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Vanndar Stormpike",
+      "sha256": "fa70f3fa6b66186d9ac3e977c779e1f86d18e0bdbd1618c2b019fb89689dfac4",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_003_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_003",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Vanndar Stormpike",
+      "sha256": "4e53a7e3a87742e2c350d67c2599413c49acee2c91b60b80da8f07166c5e6b07",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_004": {
+      "bytes": 6660,
+      "card": "BG22_HERO_004",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Varden Dawngrasp",
+      "sha256": "7872c70b978f2b048e72ef380c8ef8c547f9320c434ffbf7cf3363135f842724",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_004_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_004",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Varden Dawngrasp",
+      "sha256": "d4333e8ff71b00f5048ddafce86db51b93cc82c7fe79d164215fab7a4fb1cf76",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_007": {
+      "bytes": 6660,
+      "card": "BG22_HERO_007",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Queen Azshara",
+      "sha256": "771151ce0a13eac2e81fed4e1210402694e7f8e197d9fdb75b4d65cf660f4caf",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_007_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_007",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Queen Azshara",
+      "sha256": "5032d633d5c638f39b0fae99154f317dc496a6e4bfaf567c82528bd2e6172e94",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_200": {
+      "bytes": 6660,
+      "card": "BG22_HERO_200",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Ini Stormcoil",
+      "sha256": "70d32476e155efd0ba233a05296570661c982f05fa06a452494a3f7748012be8",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_200_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_200",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Ini Stormcoil",
+      "sha256": "91c4f66e50d147dd6fa1e3f1cbc4593672ceba562d8cdcb1f35ad1ad28891d57",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_201": {
+      "bytes": 6660,
+      "card": "BG22_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Ambassador Faelin",
+      "sha256": "9029c5b823659f43aa4093367af33be7c52e00a736ecdf97b1656d080cc76bf7",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_201_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Ambassador Faelin",
+      "sha256": "beb12d5c8cb5cf7e56eca5dc313c8348e43451fd7bc80babb5011233715a4990",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG22_HERO_305": {
+      "bytes": 6660,
+      "card": "BG22_HERO_305",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Onyxia",
+      "sha256": "c5f0459a2041e6ac34f66b802914f516fceb305374a4cbb87df81d1c7a224866",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG22_HERO_305_arch": {
+      "bytes": 88580,
+      "card": "BG22_HERO_305",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Onyxia",
+      "sha256": "4ed756c0c313f743e1ad8c3826c487e02a956d4cab60182ea351dbd7cbca1db3",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG23_HERO_201": {
+      "bytes": 6660,
+      "card": "BG23_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Ozumat",
+      "sha256": "d6e35c47dd0c0788b856a6e469438c35c9f52a77f92d10bb12c9d2d5a5469820",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG23_HERO_201_arch": {
+      "bytes": 88580,
+      "card": "BG23_HERO_201",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Ozumat",
+      "sha256": "98c72244bbd6bfe8b7f7e8bcc958e7b4fde74224702a8ccb53ac3e634e4ee6d7",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG23_HERO_303": {
+      "bytes": 6660,
+      "card": "BG23_HERO_303",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Murloc Holmes",
+      "sha256": "68ac67fc51593c36fe40d79c9bcfb77a2f0d39dbf66b5dbeb54643b5073d9a7c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG23_HERO_303_arch": {
+      "bytes": 88580,
+      "card": "BG23_HERO_303",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Murloc Holmes",
+      "sha256": "6ad5e8ed4de7337cd68dd4c4bbf32ac0d83c049eb80687a236fd037195ee2d02",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG23_HERO_304": {
+      "bytes": 6660,
+      "card": "BG23_HERO_304",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Lady Vashj",
+      "sha256": "a0ce6bb01c9d7f9d516ccb56d408b6b82eee4fa16f3c7c05fd43b2015ed17371",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG23_HERO_304_arch": {
+      "bytes": 88580,
+      "card": "BG23_HERO_304",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Lady Vashj",
+      "sha256": "1526e2b96b6a847b782cb1acd1d54e3d39e271f58481b9fc7c9cb5b7d2ecbf6b",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG23_HERO_305": {
+      "bytes": 6660,
+      "card": "BG23_HERO_305",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Heistbaron Togwaggle",
+      "sha256": "065f1b5370d346d0f51ee54419d2d921bcd5a03e3e998ccc978b149c0955a791",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG23_HERO_305_arch": {
+      "bytes": 88580,
+      "card": "BG23_HERO_305",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Heistbaron Togwaggle",
+      "sha256": "b234b859efd47447438a60d57ef9d90a0e71e931b4fb180a227429042963b909",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "BG24_HERO_100": {
+      "bytes": 6660,
+      "card": "BG24_HERO_100",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Sire Denathrius",
+      "sha256": "7a55b7d9ab723dd44ead7076c0c8c162347b7e925db9a3bd267fe32aa8de2713",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "BG24_HERO_100_arch": {
+      "bytes": 88580,
+      "card": "BG24_HERO_100",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Sire Denathrius",
+      "sha256": "035c306708ba713831823da3e162294862e0ae747053327922bfcded6db506b8",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_01": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_01",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Edwin VanCleef",
+      "sha256": "3f6660711e5fba3169a51975d51ba506f64e065ffa83ddf881e6af1563651dfb",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_01_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_01",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Edwin VanCleef",
+      "sha256": "abab957a55365cb2ebef8875fcb00d577e088b18fa942ff013708d098e59a2e1",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_02": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_02",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Galakrond",
+      "sha256": "da105ba4a2ab682f7b0c0b574e0edab75b8b9010c087838c146a06e44fbf5b18",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_02_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_02",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Galakrond",
+      "sha256": "1dfa476c71ff1d7e914cadb68c8d6ce67e1bcb517212724bff8fd22d45e5bc26",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_08": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_08",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Illidan Stormrage",
+      "sha256": "a8acf6b9cd2938f20f4464937ac9dd7cb5fbbdb6f2e4352a544bb195a97903cc",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_08_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_08",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Illidan Stormrage",
+      "sha256": "de6b1e3fa0219f34073b76024f16886e36d7a51bff2117a062ce09cc04a8ed0b",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_10": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_10",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Trade Prince Gallywix",
+      "sha256": "487b4470ccffbc42c34166656256c2ef6866dc97ae33691e302580b693eaed7a",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_10_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_10",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Trade Prince Gallywix",
+      "sha256": "0724e503341965361cd64ca10779ba55672d51b2056e4c4829f210fd22429b75",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_11": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_11",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Ragnaros the Firelord",
+      "sha256": "af686c8d5a8eb523afec0a5879e9ac5ed17835c20531fb4b1ca71c41fdc55c3c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_11_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_11",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Ragnaros the Firelord",
+      "sha256": "c327acbb23ae3b597df4fa996f698def0cae9a8d2de32eaaa09a4c9d99212ebd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_12": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_12",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "The Rat King",
+      "sha256": "2f4423475067cabebc9d4183afaf7e5e307e252008dedd17f534d0c6f3483722",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_12_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_12",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "The Rat King",
+      "sha256": "7e2c206fdc0a28ee9553a853a4dfb5f22b867fcf0c7a2e23ba7c6319ed6fa64d",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_14": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_14",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Queen Wagtoggle",
+      "sha256": "c586c79b56891b96cf3929d5cc740934449f0777f99245580162f85dcbe41a5d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_14_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_14",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Queen Wagtoggle",
+      "sha256": "9087ebceff2cae60df777d1866f98f85290e5a452bf8d082f07c316e9c783ca4",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_15": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_15",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "George the Fallen",
+      "sha256": "7b6b8d55488b43bb89f633101311b50901d50c4a5da4bdb5bd547c1756046d6a",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_15_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_15",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "George the Fallen",
+      "sha256": "a6feb6fa44febc96c7c98fbba47d5e0e6141b825093f7f45b67177f09a03609a",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_16": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_16",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "A. F. Kay",
+      "sha256": "a81b7e3af393f7826bf01bdf2d242f6b5f45c76023178ef736fefc2484152e41",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_16_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_16",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "A. F. Kay",
+      "sha256": "5bdcd485a5c64a2c1d8f3532519f9b63fd6759301307fa348d18aec6ced0c809",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_17": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_17",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Millificent Manastorm",
+      "sha256": "b1b50b6b89e5d830ad4a7b4b4119898d736d7d9856fd9899093fb11f550275e6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_17_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_17",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Millificent Manastorm",
+      "sha256": "8dbd2d7c90a4cdfb5d8e7f4f2339482aee8cb3637c8202bdacd3f4bba6f5c043",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_18": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_18",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Patches the Pirate",
+      "sha256": "67fdc7dea625a4c5ca583e4f69eaa89755a7e51400dc11261c8fa469aed5957c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_18_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_18",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Patches the Pirate",
+      "sha256": "1595e2e2446ab7b6070e883c84edd181e7598191d5952812e345b0cea63ab475",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_21": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_21",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "The Great Akazamzarak",
+      "sha256": "fcf639b5c8aec8fc4f0417a2160233860ddbc84242ee1e6581acd7cc708ccb9e",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_21_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_21",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "The Great Akazamzarak",
+      "sha256": "1b30d56573d0352a8294de47a2d347f5eda6309522d3da8a50e2ef5f5d1cae93",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_22": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_22",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "The Lich King",
+      "sha256": "e0878b3b6ef008dff3f3083481770e45a915e72d20440b5e98f9d2fffdcca4b8",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_22_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_22",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "The Lich King",
+      "sha256": "bc1fc7ac80901b0fdd6c80c7c6cbeb7e38063848eff5d738c6ebe9e48023eb35",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_23": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_23",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Shudderwock",
+      "sha256": "654b58181d51fd393d1119bdabee67bf3c90f4ce704ade1db322d93a2dc87e2c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_23_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_23",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Shudderwock",
+      "sha256": "0172eb66c1b6c1ea233b29dd1abefd650f9500efbbfeb19a18a50dacc4792c97",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_25": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_25",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Lich Baz'hial",
+      "sha256": "d1a1d45a6c66a9159bd505e13e2f8e687c088163007bf4ef60f38ed1581ffba5",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_25_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_25",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Lich Baz'hial",
+      "sha256": "fd0104de768e2bff907ece83cd974e578d1cc590875dd0f6c67a080a0a7710c0",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_27": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_27",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Sindragosa",
+      "sha256": "ae5047b869f07bd1791e69b9c0d00a838f61bf9e15575d9cd3a8caed1dee833b",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_27_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_27",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Sindragosa",
+      "sha256": "19deb59a912fa3073acd3fcb4766707ba5aa1fafa83cac4f50c2918d18ebed00",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_28": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_28",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Infinite Toki",
+      "sha256": "440fec17499a312109070a23e54d2995c4335e202e91778993250f66ac76c892",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_28_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_28",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Infinite Toki",
+      "sha256": "424de794f7b2e50bcf0388a2ea2e035a48f0926ec937f66945e09e128c4a1ebe",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_29": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_29",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "C'Thun",
+      "sha256": "158a0f97f0b0bf4ec481fc07fb4a31c0217c45d5d49ff98e97d19da66cc2a88b",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_29_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_29",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "C'Thun",
+      "sha256": "781019dadbeacd66cd7db6fe645e0f250298e31fc6afa83fd7499997a6314a01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_33": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_33",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "The Curator",
+      "sha256": "b4b585e44405b47f0012505feefd7aa40c8ab42b232c2838e14ad38436c4df2c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_33_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_33",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "The Curator",
+      "sha256": "1bdea24f791eb9a088d896c966c6a2451c0afba676011963f6a01004f1d0aedd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_34": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_34",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Patchwerk",
+      "sha256": "f9d42072eeb84e16abe0fcff6a4dd949c553fa29d8e46c3137288eda600f2eb6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_34_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_34",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Patchwerk",
+      "sha256": "11ec9d24ce5ca5ba60b0e3820604d343c542be8765193245bcfdc6d06ddca471",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_35": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_35",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Yogg-Saron, Hope's End",
+      "sha256": "8f8e765a69d400a1368f032c68a46d825da27558f8c1cb062c7ff26b6c13d586",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_35_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_35",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Yogg-Saron, Hope's End",
+      "sha256": "1a81ba3bc24922f2b156fb7181cdf202fd3f01a0c31647c63d5b32989b28333a",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_36": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_36",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Dancin' Deryl",
+      "sha256": "39b1b1f27cda812e5661895eff5f2252da8c45cb9f362edf07a60fe66cb99d71",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_36_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_36",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Dancin' Deryl",
+      "sha256": "da70cae075e503e3ea974225ef73ac63b5ac03261daac492633799f8acc6a1d9",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_37": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_37",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Lord Jaraxxus",
+      "sha256": "f74487aebd6af7ee02d9403ee8ca4379559484221daa31b617c715197dcf90c3",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_37_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_37",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Lord Jaraxxus",
+      "sha256": "e5573c1b2741fcb4231b9ebfe708acd84ced3fe86ea7a3a487a3faa69e9214e5",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_38": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_38",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "King Mukla",
+      "sha256": "50396821770f65cd0521fb554f739547e44a3ed6803632e6aafab23b95acbdbe",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_38_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_38",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "King Mukla",
+      "sha256": "9bffd28960c7247002470e3590c02bf3449dcf58a1866fc245bbaac3bf00397b",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_39": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_39",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Pyramad",
+      "sha256": "e502a7819a5a96a90f91d7b4ca2037645c9e34c863b22d7095b62c5635764f98",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_39_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_39",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Pyramad",
+      "sha256": "61dead70bd428045df61f25db00924052a0c0871310a8f73c748364a43716c11",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_40": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_40",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Sir Finley Mrrgglton",
+      "sha256": "9d3092d3a97d2bf48f647598fd7687763bc3396c88dcd6bb13897429ea823f08",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_40_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_40",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Sir Finley Mrrgglton",
+      "sha256": "0b2b0a3d3fc19889bc3db52703fdc10a55c1d472b890f5505cdfbdd38a101f14",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_41": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_41",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Reno Jackson",
+      "sha256": "37047c9842ff9e2ed1e225594db036ac630ede94f4928c861297a9c6088e31ba",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_41_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_41",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Reno Jackson",
+      "sha256": "e3cef8ed3cbd36b8eda1f8fe82adc0870d6275e65fe536c3dc766af3862455ac",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_42": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_42",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Elise Starseeker",
+      "sha256": "51fb524e227a129fc583814fedda86715423d8b68fe5377226c9c29b87139afa",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_42_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_42",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Elise Starseeker",
+      "sha256": "a8c4644a67f9e7216bdec1f09fbbfad5ec619dadf7a6667748ca358ad9aaacd1",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_43": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_43",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Dinotamer Brann",
+      "sha256": "6c618d37e8204b4f33d9976d93236ac67114006058d36e7665d0922538edc95d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_43_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_43",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Dinotamer Brann",
+      "sha256": "397cc09f71c3296d3bfa7d6e61e51aa9c61c1bf76d3ac08d83bbfce39461d675",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_45": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_45",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Arch-Villain Rafaam",
+      "sha256": "fa7d30f3a4830e2e927c72cb17d5712c1fc328b7d18378208e54a9371bc5e867",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_45_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_45",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Arch-Villain Rafaam",
+      "sha256": "879a9d40806a414c7bbd8e637d4388287419c945ada4f0570f1fa01882184c77",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_49": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_49",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Millhouse Manastorm",
+      "sha256": "5c44cd8ad843d92e016e85172af2627fc19c3db8836a79ecafda2cd7c8047764",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_49_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_49",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Millhouse Manastorm",
+      "sha256": "14fa4095a917c3bb958c0add805863f21206f50ac13be06dbcedfb3437ffa035",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_50": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_50",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Tess Greymane",
+      "sha256": "f3929469ff294dcab3009498b3cad8040a010b73bb76a23ef68ea64b38b711a7",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_50_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_50",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Tess Greymane",
+      "sha256": "d191b357b668524edcfa2f34e285d622edf930e6e90b2cccdd4563c7b85f0833",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_52": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_52",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Deathwing",
+      "sha256": "d2e8cc2858b71541a3ff21512921364e77ce7b96a4112f919ce21c4bfa18cc43",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_52_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_52",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Deathwing",
+      "sha256": "2d7582b4e3a571504d1d6a8d69afe371e37309a9509628e65dcbc6e4155f1180",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_53": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_53",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Ysera",
+      "sha256": "2aeb64be9b0aef17c2fff1ae04c0cb8fbc2654dcef760b8f5a84dfc531ca2bfa",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_53_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_53",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Ysera",
+      "sha256": "25ab3e3455d144d392fd8ca65beca27749daf358e0dd4e5b6fe439a3292c049c",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_55": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_55",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Fungalmancer Flurgl",
+      "sha256": "aafda4e19a652849a63e134db7a859c7d3aa6729b14f5f0627a1eb5e12e89cb1",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_55_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_55",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Fungalmancer Flurgl",
+      "sha256": "36a7df5e619628c207f17c033f1348528017d3e7d7c55d3ea76f28c701962283",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_56": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_56",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Alexstrasza",
+      "sha256": "1b367f14d4e33ee8f8bb7468c37d136a14492c136259552a3e89d888558fa4a7",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_56_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_56",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Alexstrasza",
+      "sha256": "62b20ab21eb9c4299a22d0309110d9e1438a88c0c39a3e9dbfd14a2558c15cfc",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_57": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_57",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Nozdormu",
+      "sha256": "2523e5c312bd1a64a8c2961cc5f2fe17a45a042921d094c214952e3bcf2f7023",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_57_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_57",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Nozdormu",
+      "sha256": "0438b1c6737cd6067d9694b4f2d5fd70ce7f5cd0789bfca4cacdf332a428454a",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_58": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_58",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Malygos",
+      "sha256": "ca3db4e8ba9269d4ba55c5cdcf5df4443015d8edc28e01185723cdab4c52c935",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_58_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_58",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Malygos",
+      "sha256": "a77f11e42ec50858d4bce90ba028e57d1faf29311d236a30167d9fa1444c0920",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_59": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_59",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Aranna Starseeker",
+      "sha256": "e285e47811176c74917185e8aa1536c870aab0edca59127e760711cfa34ff90d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_59_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_59",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Aranna Starseeker",
+      "sha256": "0e98695a05179c0e5cbe257b54b5abd811fb67fafa77eae1160a5e3b0c5948c8",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_60": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_60",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Kael'thas Sunstrider",
+      "sha256": "fb4cb2b3c6c317e79d31ad07663bd290bc87717a612cd9efad3bb0755a9fccc9",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_60_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_60",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Kael'thas Sunstrider",
+      "sha256": "c7e0222612efcb9e185d7dfb234573578c722762a56c6b70631058c757ece707",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_62": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_62",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Maiev Shadowsong",
+      "sha256": "5ecaa6972b908fc37752c766e3c6558dc15f8298edde15ff6d6b02aee86efc19",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_62_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_62",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Maiev Shadowsong",
+      "sha256": "b1c5e7329ab64c15382567d9c61ad88408303dbe2b0f0d1a701873ac6f90a7c6",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_64": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_64",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Captain Eudora",
+      "sha256": "41504559f2bcebf64de424f31aa6352ee9674f69f440c417adda177115f0e693",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_64_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_64",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Captain Eudora",
+      "sha256": "03c102c6f71fc72ab32e7ccdaaffd547b3cbb12f5228c77feb6a769b04907ca3",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_67": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_67",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Captain Hooktusk",
+      "sha256": "77eb7581a3a9dcd9c195a83290ed6fae4000133c0da61eaa953d830c5f9c4a55",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_67_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_67",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Captain Hooktusk",
+      "sha256": "c8b251c11a32afdb9979b470632f2516e1d5b668ce3784d6279eb46ed78bc860",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_68": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_68",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Skycap'n Kragg",
+      "sha256": "82fe632a4b8782d5544e5220ae4ed80688ef417c6b7522ad5a9ffc309bb75fc6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_68_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_68",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Skycap'n Kragg",
+      "sha256": "85175d9cfdf691eb8df74766a3115c1136851cecbdf6888f45900502b9522d9e",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_70": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_70",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Mr. Bigglesworth",
+      "sha256": "9b3c6cce8cdc5f21dffb435063bedcf094244dd196080db9c490bbf5bf86e26d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_70_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_70",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Mr. Bigglesworth",
+      "sha256": "1ecc02335002c4193cc045b2593b2df2bfcb144491741ff4fd7332950d27d994",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_71": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_71",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Jandice Barov",
+      "sha256": "e39b4f01e5afbc47f6fbb43520628676624ec38e1852513a560c269f59b78719",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_71_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_71",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Jandice Barov",
+      "sha256": "5190d8ecba3e52db7a3d346538c1badf95fec115f1445e4c912cca7c607edae1",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_72": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_72",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Lord Barov",
+      "sha256": "c7aa9b9bdacbc0ca3e8fa42206a158d8351c5b3c3d9ea531928a408d646dc339",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_72_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_72",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Lord Barov",
+      "sha256": "edea1ec577a0d4d6537639fd60ce4a0d2987cdfc7761722b5d670a2d82cd0904",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_74": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_74",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Forest Warden Omu",
+      "sha256": "335a7f1a29f1ba0d6cc8797f198629c904d5600dcc86249768fac9a6f4a6ccb6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_74_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_74",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Forest Warden Omu",
+      "sha256": "836ff70c4c467077a0c507d704d3ccee4485e5b03fc11eee0171281315da7629",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_75": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_75",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Rakanishu",
+      "sha256": "c6da383e1f37d8061e16874046cccc53e2a8102c66d44a3981465cee1746fff6",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_75_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_75",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Rakanishu",
+      "sha256": "e4bb2b6631aae47ddb224a97df61420ffbba26569d7d2c67177a4af71e06ab01",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_76": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_76",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Al'Akir",
+      "sha256": "f90c58f7780025cfa5a2f69300e88a635446ff65710f7b8ed0d5a630ca3becdf",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_76_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_76",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Al'Akir",
+      "sha256": "a2e0695f3f5351aa4e4d6f1c61ac384d6ebfdc8916e703cc552779cd2a0d69e0",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_78": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_78",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Chenvaala",
+      "sha256": "3e2eb0c2e0cc7bd13d60b5d71d4c3e428152ca51ae9042a9a195d0744f281333",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_78_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_78",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Chenvaala",
+      "sha256": "b05575edd2fb7f91d193278e0251e9f0f49b4b663fbdf3710eb79bb25c20fb70",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_90": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_90",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Silas Darkmoon",
+      "sha256": "90cefb090c992975f15ed734851e3b9acbde2998cf689ddb602b5521ae04124e",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_90_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_90",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Silas Darkmoon",
+      "sha256": "26a29b42bcd11a146c354756fb7d2d3eb576a26827afabe3a3b76372700cf27b",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_91": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_91",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Zephrys, the Great",
+      "sha256": "9dc8bba19819b68cf474ccef455cfe58203c1483d08c383120dd7f4435f8697c",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_91_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_91",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Zephrys, the Great",
+      "sha256": "4aa4d505cca12084a642719b27d0686c7ba67cccecc966b8ccc96694179317dd",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_92": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_92",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Y'Shaarj",
+      "sha256": "747457792fa36d28fe6580f7aa45b9a766d4224909633228ccfc6dce66dd9d80",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_92_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_92",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Y'Shaarj",
+      "sha256": "b439ad508bc8282db8694b876846c8522100461afa84fc23f6009c128313865e",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_93": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_93",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "N'Zoth",
+      "sha256": "2e70785e3a35b82c09b849ee2f26494a7b9d763f0b8a939444b65b32e36a417d",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_93_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_93",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "N'Zoth",
+      "sha256": "b72ef5408c0f9a9ba9395b2569da5a3dd21d26c0ed32ab15ba08a4af3b5ebb92",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_94": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_94",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Tickatus",
+      "sha256": "637e44d78e26f4aa6dc5a4e0b4611763435e8ddf61cb1c63596bef265d92e3d7",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_94_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_94",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Tickatus",
+      "sha256": "a17525b85569d3cc956f15c76241126c3541dbc62085acb8088652158dcb6a15",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "TB_BaconShop_HERO_95": {
+      "bytes": 6660,
+      "card": "TB_BaconShop_HERO_95",
+      "format": "BLP2 DXT5 alpha8 mips=7",
+      "name": "Greybough",
+      "sha256": "61ced351a5b8b2c3792cb99316c4c2425e8edcaf4b9d5e52602d247b9321a67b",
+      "size": [
+        64,
+        64
+      ]
+    },
+    "TB_BaconShop_HERO_95_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShop_HERO_95",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Greybough",
+      "sha256": "41598493f1de02b85e54c7cb2423a7f757c25a7593287b3f5f08bc6b91deb239",
+      "size": [
+        256,
+        256
+      ]
+    },
+    "bob": {
+      "bytes": 23044,
+      "card": "TB_BaconShopBob",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Bartender Bob",
+      "sha256": "2bb5a14e2f6ba69c7e092bb1b4c86d1f2d19dba117777205b9312060db093a9d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "bob_arch": {
+      "bytes": 88580,
+      "card": "TB_BaconShopBob",
+      "format": "BLP2 DXT5 alpha8 mips=9",
+      "name": "Bartender Bob",
+      "sha256": "f3e0fa40a287a9b45177b96f8cb840dbd7ed06458d3e6ee42defc64b65ac65c0",
+      "size": [
+        256,
+        256
+      ]
+    }
+  },
+  "generator": "tools/art/bg_heroes.py",
+  "note": "The curated 15C/15E heroes keyed by card id, Bob under `bob`, and their hero powers (including the batch 5b extra powers) under `powers` keyed by power id. Made by tools/art/bg_heroes.py into art/out/BgHeroes/<cardId>.blp (rounded-square) and art/out/BgHeroes/powers/<powerId>.blp (round, power_portraits.py); deploy-addon.ps1 copies them into the client's Textures\\BgHeroes\\ and Textures\\BgHeroes\\Powers\\ and lists both in HS_BgTextures.",
+  "powerCards": {
+    "BG20_HERO_100p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_100p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Glory of Combat",
+      "sha256": "2cad5abdbfa150f6728f8883f6e0ab68e5b1859ea57648c3183639796d73e948",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_101p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_101p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "See the Light",
+      "sha256": "db6a6d5ba489d16b473b7663d5c11c2d6ebe8b0bdda1b882531e284e3da95452",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_102p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_102p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "For the Horde!",
+      "sha256": "a5a31adc2ccfeb41b2df67ae356c22b2b53d392dddd7b64c379ea3b677ae65aa",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_103p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_103p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Bloodbound",
+      "sha256": "4562a2adb66a10f15077bca0ce1777e0eba5a900f92f5222f3161c80b2e4e8b9",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_201p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Spirit Swap",
+      "sha256": "1389f72e4d5e2a63b22ceab397c36ab29aea6832a96fb9f4a8c73f28bde52e11",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_202p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_202p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Power of the Storm",
+      "sha256": "491c3041e687756bf8e64621fa5f2d9accebf8195ac554f26a290898a5fadefb",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_242p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_242p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Natural Balance",
+      "sha256": "9f10d86edc9424f8d360168e6b48928b0f6e8bb15dbc39210a4a911e3da89f13",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_280p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_280p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Final Showdown",
+      "sha256": "e3a633d752c834d14b108328daf7b3d2f5d5e1380792667ec899184a0f5c0a51",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_282p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_282p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Fragrant Phylactery",
+      "sha256": "c33069f757e247efaf622bbd6b1a5259be630652b333d3613f5341fb266e3228",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_283p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_283p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Dungar's Gryphon",
+      "sha256": "60090da082759389e9a6d9154e0d03eb042b44a435e68ea941fbd5ca3dab1c27",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_283p_t1": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_283p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Westfall",
+      "sha256": "213841c0b8391353d80ea3238da9c3585ff53cb5f11ecb75a28d393f7322f43a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_283p_t2": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_283p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Ironforge",
+      "sha256": "e44b5542095deb340b194441173142ec01131ed99dd3d5f4f3999921091220f7",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_283p_t3": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_283p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Eastern Plaguelands",
+      "sha256": "7d65a43503f147fa6a01f0ef01b91cd2d55fa67f2830ec7070397e9e40ced2b9",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG20_HERO_301p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG20_HERO_301p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Devour",
+      "sha256": "ef0417641c6271253aba721be65c6a8330523f0a6ce9438dae9c058d54efc23e",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG21_HERO_000p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG21_HERO_000p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Conviction (Rank 1)",
+      "sha256": "89fb2bb1c9d282aacc01d5bffed7da8cf22c571dc620f7a451b3029bd7777ba3",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG21_HERO_010p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG21_HERO_010p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "I Spy",
+      "sha256": "9bdd571605af01d444cb0db57b245baecf3f345fbd6be97864416aa9521bbd8d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG21_HERO_020p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG21_HERO_020p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Stir the Pot",
+      "sha256": "94cfc999244ec16b57eadd90b87ebfcc2779155675488cc533e3adeed3ff42db",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG21_HERO_030p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG21_HERO_030p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Sneed's Replicator",
+      "sha256": "a12354ce80f1f5c8e0f467eb8db25e2d0a20b69ea9b4e2d98e6034c931e79407",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_000p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_000p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Deadeye",
+      "sha256": "98a5c8adba0e2edc71499d97a92c30d45e160614166ab1050f2925f9dac36955",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_000p_t1": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_000p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Aim Left!",
+      "sha256": "07946e9a9d9d9e0d299753b63dd05a0df9606394357bcc832fbfef4d0a38cdbd",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_000p_t2": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_000p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Aim Low!",
+      "sha256": "e96cc4b3451ea3ad7774cb98c0548885917836d0f6d3955dac43178d2db65a6a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_000p_t3": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_000p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Aim High!",
+      "sha256": "ad924ca5c3a86826a3a1b305f633b998137f5df1d2eb9b7f2d96894085c64ee0",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_000p_t4": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_000p_t4",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Aim Right!",
+      "sha256": "d30570ff0925a80de93d6a4371c9fb704ddda59faa25b54812fddeebb690e173",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_001p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_001p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Embrace the Elements",
+      "sha256": "a77322850868ad0e85e35292146457fa4394ea293f163ce0eecc92a09e4f10d8",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_001p_t1": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_001p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Earth Invocation",
+      "sha256": "1720aaa7b87cf530e63469bfd2c15250f72375ce7ed680ec48cbbdaba276e5f4",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_001p_t2": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_001p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Fire Invocation",
+      "sha256": "960d5bfc91a7a702829652f6594dcf61b666f593685825f4b92215fa1e9bdecc",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_001p_t3": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_001p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Water Invocation",
+      "sha256": "15a9796c5e9bfb30c7dc444bdf82c8aa821c60f008b25958e1267e4bd3b5714f",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_001p_t4": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_001p_t4",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Lightning Invocation",
+      "sha256": "e85a23ec2ffadd01bc62e85ae566a04cc2526ca2d3a6bccc2bf1d46155e0545a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_002p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_002p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Lead the Frostwolves",
+      "sha256": "e81b68cb688e4fe115624e826d012b6360818c142e8b692b9b10ceb2afec2289",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_003p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_003p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Lead the Stormpikes",
+      "sha256": "23cf5c27372303a5b38cbd2e86a50d53d7ff6a02e970be0ee9534ed7950224a7",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_004p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_004p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Twice as Nice",
+      "sha256": "446129c5d136f3bc9a7a7fb7b58eb82abdba30cda5a1a46a3134e970a0786323",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_007p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_007p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Azshara's Ambition",
+      "sha256": "4dbd6df37910449f029f0c72a9db6a395c0e794570032f4b969c602447788ac6",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_007p2": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_007p2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Naga Conquest",
+      "sha256": "32821b32358e737ccb08e271775f09fc32345cf09984870a8681ebffcb5e95f1",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_200p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_200p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "MechGyver",
+      "sha256": "3335e8b69d566a45131a9dbafb8f2450471728a00bacd869c507f2c1a366da67",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_201p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Expedition Plans",
+      "sha256": "9d343fc97c23854c9ac3040ddea9f2ffe6124f2fc1fd7d2d9adab767861dd84d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG22_HERO_305p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG22_HERO_305p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Broodmother",
+      "sha256": "510c7a2fd339db9571a328829ad9118471e3c5f43b4ea9256a320c605e3d80cb",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG23_HERO_201p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG23_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Tentacular",
+      "sha256": "85870331b8f12690ea1bd2f161d7a84eb21e3187291a487d7c137f4519fa4ab7",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG23_HERO_303p2": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG23_HERO_303p2",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Detective for Hire",
+      "sha256": "912b2e8679a26dc22b8c18ae0ccc7963b0c86de1bf0330d0d88764c49303b4d7",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG23_HERO_304p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG23_HERO_304p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Relics of the Deep",
+      "sha256": "e14a9294f8cd5ca64d9983a241be138f68158c5d26130f543b73776c4972502b",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG23_HERO_305p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG23_HERO_305p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "The Perfect Crime",
+      "sha256": "750e00cd4b3654a920eec8c42c15acf7e1871e932766eb737365bf133b1ca296",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "BG24_HERO_100p": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "BG24_HERO_100p",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Whodunit?",
+      "sha256": "d55373f014ae0b0a10a93bf01e4f78d96ee56f8e51a3c3b1d1c0c3479122d3ee",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_001": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_001",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Sharpen Blades",
+      "sha256": "a3bea8afdc2b30923dbf54ea270c1cf20fd0a2218f533063802776a883ee1c2d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_008": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_008",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Smart Savings",
+      "sha256": "ce4fdbc0988abca22ec1b431b85c130068371ef2e2228583e789691a9a1f34c4",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_010": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_010",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Boon of Light",
+      "sha256": "c45b572a8e5ddbeffddd4e31aeef3147a30f1e7c132f6f587ff0ac2826410a11",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_011": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_011",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Galakrond's Greed",
+      "sha256": "17482d5a03b2d972f9d47c02bba78339febfa1b40a703eeb03b3f08e58f3ad68",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_014": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_014",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Stay Frosty",
+      "sha256": "ebfdedfe7e58693d2b3398ed5712172896631cf6938e7909b00bbb9a33e85408",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_015": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_015",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Tinker",
+      "sha256": "5f220a2a1e753a47930b1fe30c8c3e193dc358765705ab77a1b193111891679d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_020": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_020",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Prestidigitation",
+      "sha256": "d8fbdf9490fe2c739c4cab3e2e0410cdaaf41957f7563f2cdaf43b7dd9629320",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_022": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_022",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Snicker-snack",
+      "sha256": "b3609792d2bddd9ba3b763b41e646a2eca04e7015b10a95c41f0db070c5baa22",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_024": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_024",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Reborn Rites",
+      "sha256": "16ec651d7bcd10bcf13742b316b9d5030157dec4d811e46fe01688aa05851d5f",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_028": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_028",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Temporal Tavern",
+      "sha256": "216327f4ffbd39f64d75f2157c0d847574f2bd6420b421e0f420c5cda98fdce5",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_033": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_033",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Menagerist",
+      "sha256": "7f630f5d23e9496416eb8a265a648ca9f512327bb5992a0198485d52a34b0cc5",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_035": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_035",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "All Patched Up",
+      "sha256": "ae785a7c7fe5f9ba7a99f8ef1bdc52240b27c1827ce48861af0c4a6718f0441b",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_036": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_036",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Bloodfury",
+      "sha256": "c41430635e48aab5e7ab5efce5c5ff8610b4acf57631e08109495b21b4c649ad",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_037a": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_037a",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Wax Warband",
+      "sha256": "496744b034667e238922bc3d0750426292cac1d1722e387c31c775ec3f45b83e",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_038": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_038",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Bananarama",
+      "sha256": "eaf01b4793e1f9d45f9c4b269859a4fe43d27681e1fde453c38310a5af26370c",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_039": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_039",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Puzzle Box",
+      "sha256": "2a1be9711ce0b44330ad07714823b561c3e250c52592e520d500b3f3316478bb",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_040": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_040",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Brick by Brick",
+      "sha256": "ff5b203289572367e63d34c376a0b6dfd073e1e947c7fc92ec79b3ee37420f6e",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_041": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_041",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "A Tale of Kings",
+      "sha256": "c6b74ba30c5ae96dda85ad6deb236e0eff527d8ca23146c83b8e2c3ddd64da68",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_042": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_042",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Hat Trick",
+      "sha256": "845ee6bb2c58d37b9907b1d6df182648ef9b0aba222dbd9769d25245c6f01e75",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_044": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_044",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Procrastinate",
+      "sha256": "560cff3bf59eaa53943b58db9e05cfa880b938ac987c50707069ff47c78b58e4",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_046": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_046",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Gonna Be Rich!",
+      "sha256": "6699eccf6acff5dc3b72f7eeb8bfccc4b710bab781f656805bec9d8146e295d2",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_047": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_047",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Lead Explorer",
+      "sha256": "346aa9e96305967d0178a4d773fcc0f91319625d86dd542ae024493e95131d51",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_048": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_048",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Battle Brand",
+      "sha256": "ffc80d3fab02d6f825257685e2e6e5a7d07433772c5d3b82507f68d56c8158ac",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_049": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_049",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Graveyard Shift",
+      "sha256": "5d9b4d6a6e079914ec6563ee89a5a32f73949e18d0b45ded87d502221dc623df",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_052": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_052",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Arcane Alteration",
+      "sha256": "808348922ff6c9583fe76067e09a286c0900bbcaa07bfd5006aa69cff909da83",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_053": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_053",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "I'll Take That!",
+      "sha256": "8de51005dde2cbde162ebd91b3b079508b89e1156e39e6cbd3898e4f0dfaea2a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_054": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_054",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Manastorm",
+      "sha256": "91558cda889b5cc17b629fd911ecf44626c4a916dfcae5e9432653d0a02c89be",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_056": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_056",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Gone Fishing",
+      "sha256": "5dcb7c3b01feb46b0670e9031c8fb1d64519883a073b945aea1eb18f1f4c7084",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_057": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_057",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Adventure!",
+      "sha256": "783d35e15f127ecc08fbd2f43696125b81f884a02ccab768127d88575cf5baff",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_061": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_061",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "ALL Will Burn!",
+      "sha256": "21b66db15f4023b702570fd17137cb071e7a26b9f07af82fb55e0a3c1c37b4ba",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_062": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_062",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Dream Portal",
+      "sha256": "1a005a08bba2e046ad397af67304b77525d0e26a60333758bfb29ee0704547fd",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_063": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_063",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Clairvoyance",
+      "sha256": "3c0b0c39cc5d20c155e021b0109163c6b7091909fcfbe66d3be7e0be3d2d91c8",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_064": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_064",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Queen of Dragons",
+      "sha256": "05a9a2ff788394dea37f9081a0b005048bf41042068a17d2630bc515781b03a1",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_065": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_065",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Demon Hunter Training",
+      "sha256": "8185d7df01dd3f65d3204f19ec8e8c13001b4c0e9c00d15e0b57ab73fda8c8e7",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_066": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_066",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Verdant Spheres",
+      "sha256": "80833eac99a8e16e41a838ab413e2dbb2548615e1515433c74050ef004feaa9a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_068": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_068",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Imprison",
+      "sha256": "3e9680c76b275be93cfe1db02b663a4f8b41aa868fdea6187d2b636d6108038b",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_069": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_069",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Wingmen",
+      "sha256": "f2e907b5d433c1989faa81105cfeeaab784bbe82b09ae17e84b11d7a2422444d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_072": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_072",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Pirate Parrrrty!",
+      "sha256": "70ee9582790799a8cba44c8c9552caa265707f0168c6d67c868ff3ee3d7dbec6",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_074": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_074",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Buried Treasure",
+      "sha256": "e558abb3bb9d13022e8a30c7fab19e4b966679e877edd2bbc0124cddf4ff4c7b",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_075": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_075",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Trash for Treasure",
+      "sha256": "cbdbdad784cfba08a710dd9cce778761f9d2013a34a612fe85562c8e41e4723c",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_076": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_076",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Piggy Bank",
+      "sha256": "b7d429e912a5a2d25e6ed007b400787dd28ab26a2dcea81b36281100e61b03d2",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_077": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_077",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Bob's Burgles",
+      "sha256": "ad1a4c53b992f3ece42ac5ecdffe7754ebb14396ad766a110dcb9497b98d5ab1",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_080": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_080",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Kel'Thuzad's Kitty",
+      "sha256": "c0fe52eb9aec16261de76c8eb3cbf258d6e8bb72ff397b5148190f1160c37ac2",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_081": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_081",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Friendly Wager",
+      "sha256": "bed2e4050e5c2d4fc28df0b76f44581a4355028e0c20d0f897e244fd32ac58ef",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_082": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_082",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Everbloom",
+      "sha256": "33f04dbc286137845e9d2e304902e115ccc298cd07442f85f83cb4fb7351b965",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_084": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_084",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Swap, Lock, & Shop It",
+      "sha256": "9f8f13777448097578510f6f26e5759d14ae5e7d09281f7b3126d89989fb1d42",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_085": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_085",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Tavern Lighting",
+      "sha256": "a6e7d861255ea83056a493e0239cb369a488734127b0b650a602e050fc9bee28",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_086": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_086",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Swatting Insects",
+      "sha256": "7a85688a9a9096b5fbfbbb741f2a8340c3c7a72e5a26d2853f97b9f59ee7a3d0",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_087": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_087",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "DIE, INSECTS!",
+      "sha256": "887b38151e9181aef61a0727f56fc6289cadf7117ec4e8a49cab8ea997ad237d",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_087t": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_087t",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Sulfuras",
+      "sha256": "c43d18e5a745b7363c3c947a9c750427782f4fe433cde7a217ea13cfdba03bed",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_088": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_088",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Avalanche",
+      "sha256": "863315b009122dcc042d38e4ae780d0ab54c3eb841be19e4e3b363b2396f682b",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_101": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_101",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Come One, Come All!",
+      "sha256": "51de4c7255879392202f5419a8a9575eac306e71c3897f1e63899692de9ebcbf",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_102": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_102",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Three Wishes",
+      "sha256": "1006eb36b589f3db12a10746f1de342a90a4717c309d12d3dad8b8e9ef461708",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_103": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_103",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Embrace Your Rage",
+      "sha256": "a1f17a1a43f1bfab857b8527542530473bba0ebe9fde3407ffc5e5631daf9b3a",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_104": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_104",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Saturday C'Thuns!",
+      "sha256": "91881e8316c05288ba04ada917bd6343ae01824f5c83d106180053c5aa50887c",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_105": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_105",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Avatar of N'Zoth",
+      "sha256": "737db2cb3002211027262fb2a5087583495562179c2daa70142558e2e14d5ac8",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_106": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_106",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Prize Wall",
+      "sha256": "0ca1acc0a60d952e750d9115124928dc2f9848aeccde9427946f3e9a1e87bb0f",
+      "size": [
+        256,
+        512
+      ]
+    },
+    "TB_BaconShop_HP_107": {
+      "bottom": 0.7578125,
+      "bytes": 175972,
+      "card": "TB_BaconShop_HP_107",
+      "format": "BLP2 DXT5 alpha8 mips=10",
+      "name": "Sprout It Out!",
+      "sha256": "edd435b27b8a6804a4678c24061064be00901e1ab87617c469f9ccd14f107e39",
+      "size": [
+        256,
+        512
+      ]
+    }
+  },
+  "powers": {
+    "BG20_HERO_100p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_100p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Glory of Combat",
+      "sha256": "7dd19fdf85e5de8de42444e43ce4cb94215456240e29e43aec324f0220799843",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_101p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_101p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "See the Light",
+      "sha256": "4b4c14445355593ae2b9f2e35b8b224a46eb08b5e06ddb4448b5134e79833893",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_102p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_102p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "For the Horde!",
+      "sha256": "f21f06acbd4dcca46bbd51350802fd88db18917ed73c32bed3b6554ef55d5b9c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_103p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_103p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Bloodbound",
+      "sha256": "173136d3770c6bae6206d60a0a39b429fd3f751c0b9fa75837d4cd67e0b62dcc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_201p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Spirit Swap",
+      "sha256": "d222e09f2187a57016c87fac56b493cc1f9dd03c7ab6cf5a3129e82f7a3e860b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_202p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_202p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Power of the Storm",
+      "sha256": "eab3ecbfef318b13dab25161c9c4c3d90326ffbbcf5b3a41e7d5113241ab2965",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_242p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_242p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Natural Balance",
+      "sha256": "31fc242bbeea71d456aec9df98ecee6a77e4b276fedef6cf1c09cf703c42c308",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_280p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_280p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Final Showdown",
+      "sha256": "1b7a075bbab0c874bc6eaed846439ca66eff21e73042f7dab2c77c6fd81245f4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_282p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_282p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Fragrant Phylactery",
+      "sha256": "9cc9194112056e20c90182b4994a787b049b5efdae5c10cc884981dc6cb5675a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_283p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_283p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Dungar's Gryphon",
+      "sha256": "49afa7b90bb19661ccbbac2b420061d7e49ff5e357f65bab60f75046451a6e77",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_283p_t1": {
+      "bytes": 23044,
+      "card": "BG20_HERO_283p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Westfall",
+      "sha256": "6ac9cf3ae49c3171c8043c7f91a663e7447a148169cb5053deb3ee9cca2af099",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_283p_t2": {
+      "bytes": 23044,
+      "card": "BG20_HERO_283p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Ironforge",
+      "sha256": "6185f49c7dfa4132472eb18411c68b9afe4434e6f32f6cd228aa80f5d5fe6d4e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_283p_t3": {
+      "bytes": 23044,
+      "card": "BG20_HERO_283p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Eastern Plaguelands",
+      "sha256": "a383ead7b37a0f1acb4662fab3b9575606fa497a05130c1573284d98a0ea75af",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG20_HERO_301p": {
+      "bytes": 23044,
+      "card": "BG20_HERO_301p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Devour",
+      "sha256": "0a8c1f688da9ceae3f170a6b38c37815347d9e21cb82a435569196c147fbf295",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG21_HERO_000p": {
+      "bytes": 23044,
+      "card": "BG21_HERO_000p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Conviction (Rank 1)",
+      "sha256": "ae0b55ca6b383fd0a9e1d3d95ecfb6b2ac3737bafb8612a1b8a702f4158e3e32",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG21_HERO_010p": {
+      "bytes": 23044,
+      "card": "BG21_HERO_010p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "I Spy",
+      "sha256": "f0e2983b1c382f793414e692f6fe38023d07b4bc784a14189609932885a50dbe",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG21_HERO_020p": {
+      "bytes": 23044,
+      "card": "BG21_HERO_020p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Stir the Pot",
+      "sha256": "016d5be1d8a0af43c19497a27e67829af7931262c9f656552a1243c5b222c4a3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG21_HERO_030p": {
+      "bytes": 23044,
+      "card": "BG21_HERO_030p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Sneed's Replicator",
+      "sha256": "2cd24197fbbccb0788d7195641624b2b0c74a4e6349645126c0e41df8670c982",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_000p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_000p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Deadeye",
+      "sha256": "e5ca890c082f7eae09bd91254087b6696482562791c59ac32cc13f77d3c08e75",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_000p_t1": {
+      "bytes": 23044,
+      "card": "BG22_HERO_000p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Aim Left!",
+      "sha256": "3210d679b753dee68c56f3acb2ea357ca9ac2d3945bc90a901ba8c50e267ca62",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_000p_t2": {
+      "bytes": 23044,
+      "card": "BG22_HERO_000p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Aim Low!",
+      "sha256": "d35be6a67d5be3a821edc386f3d0a0397bac9354f954fc6e1e0311b2abfd6e83",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_000p_t3": {
+      "bytes": 23044,
+      "card": "BG22_HERO_000p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Aim High!",
+      "sha256": "07b7182ccd37105039bafd73e70dfe360772e0e499cd9ff737308fee4e12b449",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_000p_t4": {
+      "bytes": 23044,
+      "card": "BG22_HERO_000p_t4",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Aim Right!",
+      "sha256": "2ee9014261aaa054e9734fab7240fd7bde03cc39b63928aca3361e0009737f6e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_001p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_001p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Embrace the Elements",
+      "sha256": "04a6e1529101a4507ca61e5029cb63c7d817e3a114cf1518eeab6ab54812e4d0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_001p_t1": {
+      "bytes": 23044,
+      "card": "BG22_HERO_001p_t1",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Earth Invocation",
+      "sha256": "00e89f91e9c6b82a34c1db3436b7432adc51b8f69e83fa3de77144e0ab80cda7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_001p_t2": {
+      "bytes": 23044,
+      "card": "BG22_HERO_001p_t2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Fire Invocation",
+      "sha256": "29541a13c59264558eb4deb37d46e524bfb29c08bd1dba9684456374c23ae2d0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_001p_t3": {
+      "bytes": 23044,
+      "card": "BG22_HERO_001p_t3",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Water Invocation",
+      "sha256": "cccb9e6e38ceaa69f9f4cfd1b31efa39758e26e536144348c943aeaa94a4566a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_001p_t4": {
+      "bytes": 23044,
+      "card": "BG22_HERO_001p_t4",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Lightning Invocation",
+      "sha256": "5611a84e6e412b94d634f6e733cf41df9524f16c81e368b17cf0a9c06f509a85",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_002p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_002p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Lead the Frostwolves",
+      "sha256": "067b12bc125005938d80840a8f16569124c5501b2506f0fc88f535ff9e433157",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_003p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_003p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Lead the Stormpikes",
+      "sha256": "5b1956d368ee1f8fe87ccc401dbb448a87926dcfa3210cece34e9119456984ca",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_004p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_004p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Twice as Nice",
+      "sha256": "0452e65f50429bd1635d7cb5df4ccde072626b422b62d28556bc4f4d01977730",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_007p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_007p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Azshara's Ambition",
+      "sha256": "2743cd299de71bebecff718f3057044ab8ae878ca95983c2657a48ccc11c9df7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_007p2": {
+      "bytes": 23044,
+      "card": "BG22_HERO_007p2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Naga Conquest",
+      "sha256": "1cee6381cf11b9d53dc68a319b5be374346a89a94d91bff02db5642b068aafe4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_200p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_200p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "MechGyver",
+      "sha256": "9fc2929470c6743535e3a8a7a37127ae2dcbae453ea0164112c06ce818d21cf5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_201p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Expedition Plans",
+      "sha256": "f98f85ae9cfad756467893c102aec1167258e76a3a2fe3cc7b97da12dd827d40",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG22_HERO_305p": {
+      "bytes": 23044,
+      "card": "BG22_HERO_305p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Broodmother",
+      "sha256": "9dacdbef7fcec78f7650ab8c1a72cbf7b433fb4de48cba0b9bd1cb56d281f2b3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG23_HERO_201p": {
+      "bytes": 23044,
+      "card": "BG23_HERO_201p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Tentacular",
+      "sha256": "742e31250ec4cbe1e9e07fc7982d52a12949e3469f01d19fae8b0ce369c66de4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG23_HERO_303p2": {
+      "bytes": 23044,
+      "card": "BG23_HERO_303p2",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Detective for Hire",
+      "sha256": "18b9a84b057a3fc6e75951500f60bbf5161481f9463eed08f6bd6449862b0434",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG23_HERO_304p": {
+      "bytes": 23044,
+      "card": "BG23_HERO_304p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Relics of the Deep",
+      "sha256": "c6e5e3fcfa4bbc076eef2a3d75b2430d071d3d381580fbb3affc1cf8de13c3b9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG23_HERO_305p": {
+      "bytes": 23044,
+      "card": "BG23_HERO_305p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "The Perfect Crime",
+      "sha256": "74410aa28c8ca9554ad4997b8664611fa6a3d4ed188fc774ca867d8083761fe3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "BG24_HERO_100p": {
+      "bytes": 23044,
+      "card": "BG24_HERO_100p",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Whodunit?",
+      "sha256": "5eda72c3f856a70d37bda6ffe9f88521a90d19919c77dd37943dd6f179074568",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_001": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_001",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Sharpen Blades",
+      "sha256": "32c56f7c6efc151a82aa4fac90a001a9d5eda6d7f9bf15c5c13e942b01d7ef2c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_008": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_008",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Smart Savings",
+      "sha256": "9007785a30c72e350f6d7ab7b9b06fcadfe40b995a45c28b4b48be2f9754cb94",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_010": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_010",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Boon of Light",
+      "sha256": "40d36d5b13cf5a151297fcda63733695c805687a0eeb1fc1e765473d9f2403e9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_011": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_011",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Galakrond's Greed",
+      "sha256": "70f7cfb15ae1197e8bcf1658c76e85a264b3dcda1f51cd2b559e9fc0d2ec8af9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_014": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_014",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Stay Frosty",
+      "sha256": "f5591ed9a4051f26e7bdc3aeb505e753f561de5a75755049bd3e0cdd63a4c027",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_015": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_015",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Tinker",
+      "sha256": "30568a2e8e7b4fa377fa8ff4e39a5eb6f6027e21affc9cbea9a60dadce1749b1",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_020": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_020",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Prestidigitation",
+      "sha256": "c33a3a30339cda0e30f6d32298881e6c244100ef007bc7455830dddb4d4f4a30",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_022": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_022",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Snicker-snack",
+      "sha256": "09d604484fc5de5b83615a629013122742b1c47cb4a12e90f162f7fb5521ba0d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_024": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_024",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Reborn Rites",
+      "sha256": "c53bbed74282947382e3775d200af03704c0df9eb4783edec7eb8d6cf3608c84",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_028": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_028",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Temporal Tavern",
+      "sha256": "b93a2ea21c24e0f0437be86adfd75d61b589fec93292a19fef1112da4acbc238",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_033": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_033",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Menagerist",
+      "sha256": "81a37a1b649b5c41145f3f15e71878903457863d1691c08df8567d9dbf2a6605",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_035": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_035",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "All Patched Up",
+      "sha256": "b37613462b8416c61a0b93724796fc9e4c91f07e123ef51de6a3704d5825e197",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_036": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_036",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Bloodfury",
+      "sha256": "21ff881a83363d4aa4382156b0740e7569892139525d79fa8208a6d79063ab65",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_037a": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_037a",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Wax Warband",
+      "sha256": "b3806e7a6aa8219c19ba8b8637e12ccfdb59651ed829ca1217b4d29590be8b6a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_038": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_038",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Bananarama",
+      "sha256": "2516e19dc35c0adc3e078ae4fcb594a4f23b191991d0473b6768a4d347d219ef",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_039": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_039",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Puzzle Box",
+      "sha256": "aa5cfd3f97d3fd6994f6b16f5e81d999e9d47ffdc0ca045ef3697f2f898da3f3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_040": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_040",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Brick by Brick",
+      "sha256": "07693661215f3f803ff959c1103bccc22239ad428e56ded8262b0eb4d5eebb72",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_041": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_041",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "A Tale of Kings",
+      "sha256": "92542304c5f8027e54b869ef14f966f2cefe4010d81537fc8efa06c8f21591a3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_042": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_042",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Hat Trick",
+      "sha256": "e14b14616cc4a0451de115479590d28816c90e7529cde780d49bd7405c07524f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_044": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_044",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Procrastinate",
+      "sha256": "c9c86abcf90269cebc527981b8507345d7b2eee1ee21d0152913668ccbd55ad0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_046": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_046",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Gonna Be Rich!",
+      "sha256": "4ae68d066240e0394c4237e7a046f181a1aca3744d22b8fc1aea2e402bef87d9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_047": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_047",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Lead Explorer",
+      "sha256": "c92550a31dc9b397bd03865accef90dff135ca6abe490dd0dc7f0073a15c13ef",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_048": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_048",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Battle Brand",
+      "sha256": "765b2f532d93f053ebbf1bc7f7c72e37c1a1d820620a3fed64f372e5f6c0dd06",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_049": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_049",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Graveyard Shift",
+      "sha256": "b19240fc6ffe601c2a6615914d1b0e0481b1855cb350ff8c5fa60f9fa777f840",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_052": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_052",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Arcane Alteration",
+      "sha256": "1b260db922ccd47b887350cf9f45b1dbf935f4f2960c093e23e4f34e99e4f8cf",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_053": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_053",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "I'll Take That!",
+      "sha256": "a05ddbd1a8aa515c826f940e46197e6079068a1f5f0753f641ace9b7f61c462e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_054": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_054",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Manastorm",
+      "sha256": "588691225931865262fad9b6197b841caf32fb8d52d6cdaa97112773002017e8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_056": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_056",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Gone Fishing",
+      "sha256": "9cfb697b33151642b29b559faca5864c5753b6f715c6a91bf13545259fb33019",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_057": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_057",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Adventure!",
+      "sha256": "7550ae5d527056ed8315597de54cecfeaf9a50a270bb0a536ed74fe574ee4a72",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_061": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_061",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "ALL Will Burn!",
+      "sha256": "59bdc7998aacd47b4e37c4492b05f3b630ba2f4706d69b69dfb149f5652d6172",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_062": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_062",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Dream Portal",
+      "sha256": "239f402c4310a64d53f869ca00988684a977862bdbbc68ee31b2ee37dc40b78b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_063": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_063",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Clairvoyance",
+      "sha256": "39aa79892780a045a1e68900783713f69e1d966dcd8a9b9abf55f204782b1dff",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_064": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_064",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Queen of Dragons",
+      "sha256": "8aca6d05e75088fe693f0804c0486009686f351400ab927118ddafd1037b300e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_065": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_065",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Demon Hunter Training",
+      "sha256": "c0ec2e02ce49dcb46feaca82219e9cf9055611fd3af756e756fe0683a48f256a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_066": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_066",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Verdant Spheres",
+      "sha256": "404e2cab0fa313cbda7f6fe8644780ffcd735832f2a71ee081e778be7171bc8f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_068": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_068",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Imprison",
+      "sha256": "4baa810e1d540dda5935a75e38337f539397ee88af0e62298a2300ae24c8c776",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_069": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_069",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Wingmen",
+      "sha256": "03938cef14fadabe5218460bb6f2716f2da62471826dd3b935db7cbd95ca2212",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_072": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_072",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Pirate Parrrrty!",
+      "sha256": "ee770d90d4936ab9fb704982b93633bd8f6fd76449ec258c0726223f0005dccd",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_074": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_074",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Buried Treasure",
+      "sha256": "564897a4a5e328bc7437e73ec84b42541a39dba7684c287f8e9551cfb171279b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_075": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_075",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Trash for Treasure",
+      "sha256": "0b18fc123e5b1cf3259c8a2949c493e7da5e17d6f637e622ab7ef91b3ddc955c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_076": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_076",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Piggy Bank",
+      "sha256": "8425df608d5496e64985b376cbd7bcad169e9e38b68edbcfadf98b1b23730518",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_077": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_077",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Bob's Burgles",
+      "sha256": "42c01f9cbc326c873dc131448fe05f8c6ca12c7f68e4b282db75f882ca7e3234",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_080": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_080",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Kel'Thuzad's Kitty",
+      "sha256": "b0374e21169fadcb0fa58ac9e9157f6b3a9a9ecb1792e76692eeb096bd912e52",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_081": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_081",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Friendly Wager",
+      "sha256": "879c874b75a454e209d5aaa7878e1f0e123eb95a15ccff3c5b72580ecee0272f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_082": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_082",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Everbloom",
+      "sha256": "5d342c25f6fca77b5e600a3a5614f60ea9ea5e67c27c31407752777fa9d85a21",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_084": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_084",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Swap, Lock, & Shop It",
+      "sha256": "7716e88034b8ee746ad9582f0614fd49e9c168ff9c4ee67c148eaa21d3c72a78",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_085": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_085",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Tavern Lighting",
+      "sha256": "66c3d41a92115ddc65d49b8adcdf0ab3450ee481d6fd598bb2913f1b835cc635",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_086": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_086",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Swatting Insects",
+      "sha256": "27825952629dfa648775e6cf4465bbbf367762e3e535fecfb6e867cd4034e75c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_087": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_087",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "DIE, INSECTS!",
+      "sha256": "cc86c0f63a3a832c86b9485be983e0fc5bab38badaca5e880ca0604ae06e3aba",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_087t": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_087t",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Sulfuras",
+      "sha256": "821f5157af4d43c3b44a101e63048705b961e37ef9a0ffc133aae7de5f764d0a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_088": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_088",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Avalanche",
+      "sha256": "87bcfb1684d8bd7e0282a43418b238bcfe855a52f69b9ae81084e6068a765cb0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_101": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_101",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Come One, Come All!",
+      "sha256": "f2b317e895c27d5b161e707c0ecfc5b27947ae031fa72e0a073384d59dda867a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_102": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_102",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Three Wishes",
+      "sha256": "c2a7ea8eeaadefaf32602473dcca55a8706ae55e28f43910765af968813289dc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_103": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_103",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Embrace Your Rage",
+      "sha256": "2663c3dce75d11b55c2f9702ba796c54eb00723cc8f4915cece95f9ead0df6e4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_104": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_104",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Saturday C'Thuns!",
+      "sha256": "3cf49e31dd292e1b7c0ae802b30d24e9fe492e25a2434275ac3a6f411764a58a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_105": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_105",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Avatar of N'Zoth",
+      "sha256": "de6542b20294843d70f069fa52184ea6c2673727077400bdac4cf13f8df1fbfb",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_106": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_106",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Prize Wall",
+      "sha256": "f0ab1233167305007d0d2a2c2922ccf06ff208a19d177c9babc86a0720b11cfc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    "TB_BaconShop_HP_107": {
+      "bytes": 23044,
+      "card": "TB_BaconShop_HP_107",
+      "format": "BLP2 DXT5 alpha8 mips=8",
+      "name": "Sprout It Out!",
+      "sha256": "e790568cd4d0b64c14706f213938074645ae1e908bc3cfeb7f4cdcdc7ebf49e7",
+      "size": [
+        128,
+        128
+      ]
+    }
+  },
+  "schema": 1
+}

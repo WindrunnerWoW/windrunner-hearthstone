@@ -1,0 +1,3760 @@
+{
+  "schema": 1,
+  "note": "Effect profiles for the native WoW spell effects of the match animations. Edit this file, then run python tools/fx/gen_effect_profiles.py to regenerate addon/Hearthstone/MatchFxProfiles.lua. Model paths point into the player's installed WoW data; nothing is redistributed. Every preset starts verified=false: check it in game with /hs fx and only then flip it. source: design = present in the owner's client, client = found in the client data (SpellVisualEffectName.dbc). exists = the file is in the client MPQs (tools/fx/mpq_has.py), verified = it looked right in game. scale = relative size (1 = the on-screen size MatchFx.lua derives from the anchor and the calibration), pos = a small offset in model units on top of the centred placement, ext = natural radius of the model in yards (tools/fx/model_extents.py), size = optional on-screen diameter in design pixels that overrides the derived size. Variant/dependency records and mixed-mode/ambiguous cards stay legacy. Result collisions use first event order.",
+  "presets": [
+    {
+      "key": "fireball",
+      "model": "Spells\\Fireball_Missile_High.mdx",
+      "kind": "missile",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.3,
+      "ext": 0.68,
+      "sound": "Sound\\Spells\\FireBallImpactA.wav",
+      "tint": [
+        1,
+        0.5,
+        0.1
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "fire_impact",
+      "model": "Spells\\FireBlast_Impact_Chest.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.7,
+      "ext": 1.92,
+      "tint": [
+        1,
+        0.5,
+        0.1
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "fire_burst",
+      "model": "Spells\\FireNova_Area.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.9,
+      "ext": 24.24,
+      "sound": "Sound\\Spells\\Flamestrike.wav",
+      "tint": [
+        1,
+        0.5,
+        0.1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "area fire (Flamestrike, Hellfire)"
+    },
+    {
+      "key": "frostbolt",
+      "model": "Spells\\Frostbolt.mdx",
+      "kind": "missile",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.3,
+      "ext": 1.44,
+      "sound": "Sound\\Spells\\Cast\\IceCast.wav",
+      "tint": [
+        0.5,
+        0.8,
+        1
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "frost_impact",
+      "model": "Spells\\Ice_ImpactDD_Med_Chest.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.7,
+      "ext": 1.64,
+      "sound": "Sound\\Spells\\IceNuke_Impact.wav",
+      "tint": [
+        0.5,
+        0.8,
+        1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "frost_burst",
+      "model": "Spells\\Frost_Nova_area.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.9,
+      "ext": 9.53,
+      "sound": "Sound\\Spells\\FrostNova.wav",
+      "tint": [
+        0.5,
+        0.8,
+        1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "area frost (Frost Nova, Blizzard)"
+    },
+    {
+      "key": "lightning",
+      "model": "Spells\\LightningBolt_Missile.mdx",
+      "kind": "missile",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.25,
+      "ext": 0.66,
+      "sound": "Sound\\Spells\\LightningBoltImpact.wav",
+      "tint": [
+        0.4,
+        0.9,
+        0.5
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "lightning_strike",
+      "model": "Spells\\LightningBolt_Impact_Chest.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.5,
+      "ext": 2.13,
+      "tint": [
+        0.4,
+        0.9,
+        0.5
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "holy_impact",
+      "model": "Spells\\HolyLight_Impact_Head.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.8,
+      "ext": 0.98,
+      "sound": "Sound\\Spells\\HolyLight_Low_Head.wav",
+      "tint": [
+        1,
+        0.9,
+        0.5
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "holy_burst",
+      "model": "Spells\\holynova_impact_base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 1.0,
+      "ext": 7.91,
+      "sound": "Sound\\Spells\\Cast\\HolyCast.wav",
+      "tint": [
+        1,
+        0.9,
+        0.5
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "area holy (Consecration, Holy Nova)"
+    },
+    {
+      "key": "heal_glow",
+      "model": "Spells\\Heal_Low_Base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.8,
+      "sound": "Sound\\Spells\\Heal_Low_Base.wav",
+      "tint": [
+        0.3,
+        1,
+        0.4
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "buff_glow",
+      "model": "Spells\\HolyWord_Fortitude_Impact_Base.mdx",
+      "kind": "aura",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.9,
+      "ext": 10.51,
+      "tint": [
+        1,
+        0.85,
+        0.3
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "a glow on a buffed target"
+    },
+    {
+      "key": "shadow_impact",
+      "model": "Spells\\Shadow_ImpactDD_Med_Base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.7,
+      "sound": "Sound\\Spells\\ShadowFormImpact.wav",
+      "tint": [
+        0.45,
+        0.2,
+        0.6
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "shadow_burst",
+      "model": "Spells\\Shadow_ImpactDD_Uber_Chest.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.9,
+      "sound": "Sound\\Spells\\ShadowFormImpact.wav",
+      "tint": [
+        0.45,
+        0.2,
+        0.6
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "area shadow (Twisting Nether)"
+    },
+    {
+      "key": "shadowbolt",
+      "model": "Spells\\DeathBolt_Missile_Low.mdx",
+      "kind": "missile",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.3,
+      "ext": 2.03,
+      "sound": "Sound\\Spells\\Cast\\ShadowCast.wav",
+      "tint": [
+        0.45,
+        0.2,
+        0.6
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "the closest shadow missile in the client data; replace if a better one is found"
+    },
+    {
+      "key": "arcane_missile",
+      "model": "Spells\\Arcane_Missile_Lvl1.mdx",
+      "kind": "missile",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.25,
+      "ext": 0.55,
+      "sound": "Sound\\Spells\\ArcaneMissileImpact1a.wav",
+      "tint": [
+        0.7,
+        0.4,
+        1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false
+    },
+    {
+      "key": "arcane_burst",
+      "model": "Spells\\ArcaneExplosion_Base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.8,
+      "ext": 9.42,
+      "sound": "Sound\\Spells\\ArcaneExplosion.wav",
+      "tint": [
+        0.7,
+        0.4,
+        1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "area arcane (Arcane Explosion)"
+    },
+    {
+      "key": "blood_explosion",
+      "model": "Spells\\BloodyExplosion.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.6,
+      "ext": 2.58,
+      "sound": "Sound\\Spells\\SinisterStrikeImpact.wav",
+      "tint": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "source": "design",
+      "exists": true,
+      "verified": false,
+      "note": "physical hits and kills"
+    },
+    {
+      "key": "polymorph_poof",
+      "model": "Spells\\Polymorph_Impact_Base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.8,
+      "sound": "Sound\\Spells\\PolyMorphTarget.wav",
+      "tint": [
+        0.9,
+        0.5,
+        1
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "transform"
+    },
+    {
+      "key": "summon_poof",
+      "model": "Spells\\SummonPet_Impact_Base.mdx",
+      "kind": "impact",
+      "scale": 1.0,
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "facing": 0,
+      "dur": 0.8,
+      "ext": 3.87,
+      "sound": "Sound\\Spells\\Teleport.wav",
+      "tint": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "source": "client",
+      "exists": true,
+      "verified": false,
+      "note": "summon"
+    }
+  ],
+  "families": {
+    "fire": {
+      "missile": "fireball",
+      "impact": "fire_impact",
+      "area": "fire_burst",
+      "fallback": "flash",
+      "trail": true
+    },
+    "frost": {
+      "missile": "frostbolt",
+      "impact": "frost_impact",
+      "area": "frost_burst",
+      "fallback": "ring",
+      "trail": true
+    },
+    "arcane": {
+      "missile": "arcane_missile",
+      "area": "arcane_burst",
+      "fallback": "burst",
+      "trail": true
+    },
+    "shadow": {
+      "missile": "shadowbolt",
+      "impact": "shadow_impact",
+      "area": "shadow_burst",
+      "fallback": "implode",
+      "trail": true
+    },
+    "holy": {
+      "impact": "holy_impact",
+      "area": "holy_burst",
+      "fallback": "flash"
+    },
+    "nature": {
+      "missile": "lightning",
+      "impact": "lightning_strike",
+      "area": "lightning_strike",
+      "fallback": "flash",
+      "trail": true
+    },
+    "heal": {
+      "impact": "heal_glow",
+      "fallback": "rise"
+    },
+    "area": {
+      "area": "fire_burst",
+      "fallback": "burst"
+    },
+    "buff": {
+      "impact": "buff_glow",
+      "fallback": "ring"
+    },
+    "silence": {
+      "fallback": "ripple",
+      "sound": "Sound\\Spells\\ShadowWordSilence.wav"
+    },
+    "transform": {
+      "impact": "polymorph_poof",
+      "fallback": "burst"
+    },
+    "summon": {
+      "impact": "summon_poof",
+      "fallback": "ring"
+    },
+    "destroy": {
+      "impact": "blood_explosion",
+      "fallback": "implode"
+    },
+    "secret": {
+      "fallback": "ripple"
+    },
+    "generic": {
+      "fallback": "pulse"
+    }
+  },
+  "cards": {
+    "CS2_029": {
+      "name": "Fireball",
+      "family": "fire",
+      "visual": "fireball",
+      "flight": 0.34
+    },
+    "EX1_308": {
+      "name": "Soulfire",
+      "family": "fire",
+      "visual": "fireball",
+      "flight": 0.34,
+      "tint": [
+        0.3,
+        1,
+        0.35
+      ]
+    },
+    "EX1_596": {
+      "name": "Demonfire",
+      "family": "fire",
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact",
+        "buff": "buff"
+      }
+    },
+    "EX1_241": {
+      "name": "Lava Burst",
+      "family": "fire",
+      "visual": "fireball",
+      "flight": 0.28,
+      "fxScale": 0.78
+    },
+    "EX1_279": {
+      "name": "Pyroblast",
+      "family": "fire",
+      "impact": "fire_burst",
+      "visual": "fireball",
+      "flight": 0.52,
+      "fxScale": 1.55
+    },
+    "CS2_032": {
+      "name": "Flamestrike",
+      "family": "fire",
+      "area": "fire_burst",
+      "sound": "Sound\\Spells\\Flamestrike.wav",
+      "visual": "rain",
+      "flight": 0.58,
+      "fxScale": 1.15
+    },
+    "CS2_062": {
+      "name": "Hellfire",
+      "family": "fire",
+      "area": "fire_burst",
+      "visual": "nova",
+      "flight": 0.44
+    },
+    "EX1_303": {
+      "name": "Shadowflame",
+      "family": "shadow",
+      "area": "shadow_burst",
+      "visual": "nova",
+      "flight": 0.42,
+      "resultVisuals": {
+        "dest": "destroy",
+        "dmg": "nova"
+      }
+    },
+    "CS2_024": {
+      "name": "Frostbolt",
+      "family": "frost",
+      "visual": "bolt",
+      "flight": 0.3
+    },
+    "CS2_031": {
+      "name": "Ice Lance",
+      "family": "frost",
+      "visual": "bolt",
+      "flight": 0.26,
+      "fxScale": 0.8
+    },
+    "CS2_037": {
+      "name": "Frost Shock",
+      "family": "frost",
+      "visual": "bolt",
+      "flight": 0.28,
+      "fxScale": 0.85
+    },
+    "EX1_275": {
+      "name": "Cone of Cold",
+      "family": "frost",
+      "visual": "freeze",
+      "flight": 0.42,
+      "resultVisuals": {
+        "frz": "freeze",
+        "dmg": "impact"
+      }
+    },
+    "CS2_026": {
+      "name": "Frost Nova",
+      "family": "frost",
+      "area": "frost_burst",
+      "missile": false,
+      "visual": "nova",
+      "flight": 0.42
+    },
+    "CS2_028": {
+      "name": "Blizzard",
+      "family": "frost",
+      "area": "frost_burst",
+      "missile": false,
+      "sound": "Sound\\Spells\\BlizzardImpact1a.wav",
+      "visual": "rain",
+      "flight": 0.56
+    },
+    "EX1_277": {
+      "name": "Arcane Missiles",
+      "family": "arcane",
+      "visual": "volley",
+      "flight": 0.14,
+      "resultVisuals": {
+        "dmg": "volley"
+      },
+      "tint": [
+        0.48,
+        0.38,
+        0.72
+      ]
+    },
+    "DS1_185": {
+      "name": "Arcane Shot",
+      "family": "arcane",
+      "visual": "bolt",
+      "flight": 0.28,
+      "fxScale": 0.85
+    },
+    "CS2_008": {
+      "name": "Moonfire",
+      "family": "arcane",
+      "visual": "bolt",
+      "flight": 0.24,
+      "fxScale": 0.7
+    },
+    "EX1_173": {
+      "name": "Starfire",
+      "family": "arcane",
+      "visual": "bolt",
+      "flight": 0.38,
+      "fxScale": 1.2
+    },
+    "DS1_183": {
+      "name": "Multi-Shot",
+      "family": "arcane",
+      "visual": "impact",
+      "flight": 0.32,
+      "resultVisuals": {
+        "dmg": "impact"
+      }
+    },
+    "CS2_025": {
+      "name": "Arcane Explosion",
+      "family": "arcane",
+      "missile": false,
+      "area": "arcane_burst",
+      "visual": "nova",
+      "flight": 0.42
+    },
+    "NEW1_007": {
+      "name": "Starfall",
+      "family": "arcane",
+      "visual": "rain",
+      "flight": 0.56,
+      "choices": [
+        "NEW1_007b",
+        "NEW1_007a"
+      ]
+    },
+    "CS2_022": {
+      "name": "Polymorph",
+      "impact": "polymorph_poof",
+      "fallback": "burst",
+      "visual": "transform",
+      "flight": 0.48,
+      "family": "transform"
+    },
+    "EX1_246": {
+      "name": "Hex",
+      "impact": "polymorph_poof",
+      "fallback": "burst",
+      "visual": "transform",
+      "flight": 0.48,
+      "family": "transform"
+    },
+    "CS2_057": {
+      "name": "Shadow Bolt",
+      "family": "shadow",
+      "visual": "bolt",
+      "flight": 0.3
+    },
+    "CS2_061": {
+      "name": "Drain Life",
+      "family": "shadow",
+      "visual": "drain",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "drain",
+        "heal": "heal"
+      }
+    },
+    "EX1_302": {
+      "name": "Mortal Coil",
+      "family": "shadow",
+      "visual": "impact",
+      "flight": 0.26,
+      "fxScale": 0.8
+    },
+    "EX1_320": {
+      "name": "Bane of Doom",
+      "family": "shadow",
+      "visual": "impact",
+      "flight": 0.32,
+      "resultVisuals": {
+        "dmg": "impact",
+        "sum": "summon"
+      }
+    },
+    "DS1_233": {
+      "name": "Mind Blast",
+      "family": "shadow",
+      "missile": false,
+      "visual": "bolt",
+      "flight": 0.32
+    },
+    "CS2_234": {
+      "name": "Shadow Word: Pain",
+      "family": "shadow",
+      "missile": false,
+      "visual": "destroy",
+      "flight": 0.42
+    },
+    "EX1_622": {
+      "name": "Shadow Word: Death",
+      "family": "shadow",
+      "missile": false,
+      "visual": "destroy",
+      "flight": 0.42,
+      "fxScale": 1.15
+    },
+    "EX1_309": {
+      "name": "Siphon Soul",
+      "family": "shadow",
+      "missile": false,
+      "visual": "destroy",
+      "flight": 0.42,
+      "resultVisuals": {
+        "dest": "destroy",
+        "heal": "heal"
+      }
+    },
+    "EX1_312": {
+      "name": "Twisting Nether",
+      "family": "shadow",
+      "area": "shadow_burst",
+      "visual": "destroy",
+      "flight": 0.48
+    },
+    "CS1_130": {
+      "name": "Holy Smite",
+      "family": "holy",
+      "visual": "impact",
+      "flight": 0.24
+    },
+    "EX1_624": {
+      "name": "Holy Fire",
+      "family": "holy",
+      "visual": "impact",
+      "flight": 0.38,
+      "resultVisuals": {
+        "dmg": "impact",
+        "heal": "heal"
+      }
+    },
+    "CS2_094": {
+      "name": "Hammer of Wrath",
+      "family": "holy",
+      "visual": "bolt",
+      "flight": 0.32
+    },
+    "EX1_365": {
+      "name": "Holy Wrath",
+      "family": "holy",
+      "visual": "impact",
+      "flight": 0.38,
+      "resultVisuals": {
+        "dmg": "impact"
+      }
+    },
+    "CS2_093": {
+      "name": "Consecration",
+      "family": "holy",
+      "area": "holy_burst",
+      "visual": "nova",
+      "flight": 0.44,
+      "fxScale": 1.1
+    },
+    "CS1_112": {
+      "name": "Holy Nova",
+      "family": "holy",
+      "area": "holy_burst",
+      "visual": "nova",
+      "flight": 0.48,
+      "resultVisuals": {
+        "dmg": "nova",
+        "heal": "heal"
+      }
+    },
+    "EX1_384": {
+      "name": "Avenging Wrath",
+      "family": "holy",
+      "visual": "volley",
+      "flight": 0.13,
+      "resultVisuals": {
+        "dmg": "volley"
+      },
+      "tint": [
+        1,
+        0.78,
+        0.35
+      ]
+    },
+    "CS2_089": {
+      "name": "Holy Light",
+      "impact": "holy_impact",
+      "visual": "heal",
+      "flight": 0.36,
+      "fxScale": 0.95,
+      "family": "holy"
+    },
+    "EX1_354": {
+      "name": "Lay on Hands",
+      "impact": "holy_impact",
+      "visual": "heal",
+      "flight": 0.52,
+      "fxScale": 1.2,
+      "family": "holy"
+    },
+    "CS2_007": {
+      "name": "Healing Touch",
+      "impact": "heal_glow",
+      "visual": "heal",
+      "flight": 0.4,
+      "family": "nature"
+    },
+    "EX1_238": {
+      "name": "Lightning Bolt",
+      "family": "nature",
+      "visual": "lightning",
+      "flight": 0.22,
+      "fxScale": 0.9
+    },
+    "EX1_154": {
+      "name": "Wrath",
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "family": "nature",
+      "choices": [
+        "EX1_154a",
+        "EX1_154b"
+      ]
+    },
+    "EX1_251": {
+      "name": "Forked Lightning",
+      "family": "nature",
+      "visual": "lightning",
+      "flight": 0.26
+    },
+    "EX1_259": {
+      "name": "Lightning Storm",
+      "family": "nature",
+      "area": "lightning_strike",
+      "visual": "lightning",
+      "flight": 0.36
+    },
+    "CS2_072": {
+      "name": "Backstab",
+      "impact": "blood_explosion",
+      "fallback": "flash",
+      "visual": "slash",
+      "flight": 0.22,
+      "fxScale": 0.8,
+      "family": "shadow"
+    },
+    "CS2_076": {
+      "name": "Assassinate",
+      "impact": "blood_explosion",
+      "fallback": "implode",
+      "visual": "destroy",
+      "flight": 0.42,
+      "fxScale": 1.2,
+      "family": "destroy"
+    },
+    "CS2_108": {
+      "name": "Execute",
+      "impact": "blood_explosion",
+      "fallback": "implode",
+      "sound": "Sound\\Spells\\ExecuteTarget.wav",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy"
+    },
+    "EX1_124": {
+      "name": "Eviscerate",
+      "impact": "blood_explosion",
+      "fallback": "flash",
+      "visual": "slash",
+      "flight": 0.28,
+      "family": "shadow"
+    },
+    "EX1_400": {
+      "name": "Whirlwind",
+      "area": "blood_explosion",
+      "fallback": "burst",
+      "sound": "Sound\\Spells\\WhirlwindShort.wav",
+      "visual": "slash",
+      "flight": 0.3,
+      "fxScale": 1.15,
+      "family": "fire"
+    },
+    "CS2_012": {
+      "name": "Swipe",
+      "area": "blood_explosion",
+      "fallback": "burst",
+      "sound": "Sound\\Spells\\Swipe.wav",
+      "visual": "slash",
+      "flight": 0.26,
+      "family": "nature"
+    },
+    "EX1_129": {
+      "name": "Fan of Knives",
+      "area": "blood_explosion",
+      "fallback": "burst",
+      "visual": "slash",
+      "flight": 0.28,
+      "family": "shadow"
+    },
+    "CS2_114": {
+      "name": "Cleave",
+      "area": "blood_explosion",
+      "fallback": "burst",
+      "visual": "slash",
+      "flight": 0.26,
+      "family": "fire"
+    },
+    "CS2_087": {
+      "name": "Blessing of Might",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "holy"
+    },
+    "CS2_004": {
+      "name": "Power Word: Shield",
+      "visual": "shield",
+      "flight": 0.36,
+      "family": "buff"
+    },
+    "CS2_005": {
+      "name": "Claw",
+      "visual": "buff",
+      "flight": 0.35,
+      "family": "nature"
+    },
+    "CS2_009": {
+      "name": "Mark of the Wild",
+      "visual": "buff",
+      "flight": 0.38,
+      "family": "nature"
+    },
+    "CS2_011": {
+      "name": "Savage Roar",
+      "visual": "buff",
+      "flight": 0.42,
+      "family": "nature"
+    },
+    "CS2_039": {
+      "name": "Windfury",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "nature"
+    },
+    "CS2_045": {
+      "name": "Rockbiter Weapon",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "nature"
+    },
+    "CS2_046": {
+      "name": "Bloodlust",
+      "visual": "buff",
+      "flight": 0.45,
+      "family": "nature"
+    },
+    "CS2_092": {
+      "name": "Blessing of Kings",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "holy"
+    },
+    "CS2_104": {
+      "name": "Rampage",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "fire"
+    },
+    "CS2_105": {
+      "name": "Heroic Strike",
+      "visual": "buff",
+      "flight": 0.38,
+      "family": "fire"
+    },
+    "CS2_236": {
+      "name": "Divine Spirit",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "holy"
+    },
+    "CS2_075": {
+      "name": "Sinister Strike",
+      "visual": "slash",
+      "flight": 0.28,
+      "family": "shadow"
+    },
+    "CS2_034": {
+      "name": "Fireblast",
+      "family": "fire",
+      "missile": false,
+      "impact": "fire_impact"
+    },
+    "DS1h_292": {
+      "name": "Steady Shot",
+      "family": "arcane"
+    },
+    "CS2_056": {
+      "name": "Life Tap",
+      "family": "shadow",
+      "missile": false
+    },
+    "CS1h_001": {
+      "name": "Lesser Heal",
+      "impact": "holy_impact",
+      "family": "holy"
+    },
+    "EX1_332": {
+      "name": "Silence",
+      "visual": "silence",
+      "flight": 0.38,
+      "family": "silence"
+    },
+    "EX1_626": {
+      "name": "Mass Dispel",
+      "visual": "silence",
+      "flight": 0.42,
+      "family": "silence"
+    },
+    "CS2_027": {
+      "name": "Mirror Image",
+      "visual": "summon",
+      "flight": 0.42,
+      "family": "summon"
+    },
+    "EX1_248": {
+      "name": "Feral Spirit",
+      "visual": "summon",
+      "flight": 0.44,
+      "family": "summon"
+    },
+    "EX1_571": {
+      "name": "Force of Nature",
+      "visual": "summon",
+      "flight": 0.48,
+      "family": "summon"
+    },
+    "NEW1_031": {
+      "name": "Animal Companion",
+      "visual": "summon",
+      "flight": 0.38,
+      "family": "summon"
+    },
+    "EX1_345": {
+      "name": "Mindgames",
+      "visual": "summon",
+      "flight": 0.46,
+      "family": "summon"
+    },
+    "EX1_538": {
+      "name": "Unleash the Hounds",
+      "visual": "summon",
+      "flight": 0.46,
+      "family": "summon"
+    },
+    "EX1_161": {
+      "name": "Naturalize",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy"
+    },
+    "EX1_617": {
+      "name": "Deadly Shot",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy"
+    },
+    "EX1_407": {
+      "name": "Brawl",
+      "visual": "destroy",
+      "flight": 0.52,
+      "family": "destroy"
+    },
+    "EX1_371": {
+      "name": "Hand of Protection",
+      "visual": "shield",
+      "flight": 0.38,
+      "family": "holy",
+      "resultVisuals": {
+        "buff": "shield"
+      }
+    },
+    "NEW1_036": {
+      "name": "Commanding Shout",
+      "visual": "shield",
+      "flight": 0.4,
+      "family": "buff"
+    },
+    "EX1_606": {
+      "name": "Shield Block",
+      "visual": "shield",
+      "flight": 0.4,
+      "family": "buff"
+    },
+    "CS2_041": {
+      "name": "Ancestral Healing",
+      "visual": "heal",
+      "flight": 0.4,
+      "family": "heal"
+    },
+    "EX1_621": {
+      "name": "Circle of Healing",
+      "visual": "heal",
+      "flight": 0.46,
+      "family": "heal"
+    },
+    "EX1_278": {
+      "name": "Shiv",
+      "visual": "bolt",
+      "flight": 0.28,
+      "family": "arcane"
+    },
+    "EX1_391": {
+      "name": "Slam",
+      "visual": "impact",
+      "flight": 0.3,
+      "family": "generic"
+    },
+    "EX1_408": {
+      "name": "Mortal Strike",
+      "visual": "impact",
+      "flight": 0.3,
+      "family": "generic"
+    },
+    "EX1_410": {
+      "name": "Shield Slam",
+      "visual": "impact",
+      "flight": 0.3,
+      "family": "generic"
+    },
+    "EX1_537": {
+      "name": "Explosive Shot",
+      "visual": "nova",
+      "flight": 0.4,
+      "family": "fire"
+    },
+    "EX1_539": {
+      "name": "Kill Command",
+      "visual": "bolt",
+      "flight": 0.32,
+      "family": "generic"
+    },
+    "CS2_073": {
+      "name": "Cold Blood",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "buff"
+    },
+    "CS2_103": {
+      "name": "Charge",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "buff"
+    },
+    "EX1_155": {
+      "name": "Mark of Nature",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "buff",
+      "choices": [
+        "EX1_155a",
+        "EX1_155b"
+      ]
+    },
+    "EX1_158": {
+      "name": "Soul of the Forest",
+      "visual": "buff",
+      "flight": 0.42,
+      "family": "buff"
+    },
+    "EX1_244": {
+      "name": "Totemic Might",
+      "visual": "buff",
+      "flight": 0.34,
+      "family": "nature"
+    },
+    "EX1_355": {
+      "name": "Blessed Champion",
+      "visual": "buff",
+      "flight": 0.38,
+      "family": "buff"
+    },
+    "NEW1_003": {
+      "name": "Sacrificial Pact",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "heal": "heal"
+      }
+    },
+    "EX1_160": {
+      "name": "Power of the Wild",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "buff",
+      "resultVisuals": {
+        "sum": "summon",
+        "buff": "buff"
+      },
+      "choices": [
+        "EX1_160b",
+        "EX1_160a"
+      ]
+    },
+    "EX1_126": {
+      "name": "Betrayal",
+      "visual": "slash",
+      "flight": 0.34,
+      "family": "generic",
+      "resultVisuals": {
+        "dmg": "slash"
+      }
+    },
+    "EX1_144": {
+      "name": "Shadowstep",
+      "visual": "bounce",
+      "flight": 0.38,
+      "family": "generic"
+    },
+    "EX1_581": {
+      "name": "Sap",
+      "visual": "bounce",
+      "flight": 0.38,
+      "family": "generic"
+    },
+    "NEW1_004": {
+      "name": "Vanish",
+      "visual": "bounce",
+      "flight": 0.38,
+      "family": "generic"
+    },
+    "CS1_113": {
+      "name": "Mind Control",
+      "visual": "control",
+      "flight": 0.42,
+      "family": "shadow"
+    },
+    "EX1_334": {
+      "name": "Shadow Madness",
+      "visual": "control",
+      "flight": 0.42,
+      "family": "shadow"
+    },
+    "CS2_023": {
+      "name": "Arcane Intellect",
+      "visual": "resource",
+      "flight": 0.34,
+      "family": "arcane"
+    },
+    "CS2_077": {
+      "name": "Sprint",
+      "visual": "resource",
+      "flight": 0.4,
+      "family": "arcane"
+    },
+    "DS1_184": {
+      "name": "Tracking",
+      "visual": "resource",
+      "flight": 0.34,
+      "family": "nature"
+    },
+    "CS2_013": {
+      "name": "Wild Growth",
+      "visual": "resource",
+      "flight": 0.34,
+      "family": "nature"
+    },
+    "EX1_169": {
+      "name": "Innervate",
+      "visual": "resource",
+      "flight": 0.32,
+      "family": "nature"
+    },
+    "CS2_053": {
+      "name": "Far Sight",
+      "visual": "resource",
+      "flight": 0.38,
+      "family": "arcane"
+    },
+    "EX1_130": {
+      "name": "Noble Sacrifice",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_132": {
+      "name": "Eye for an Eye",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_136": {
+      "name": "Redemption",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_287": {
+      "name": "Counterspell",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_289": {
+      "name": "Ice Barrier",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_294": {
+      "name": "Mirror Entity",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_295": {
+      "name": "Ice Block",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_379": {
+      "name": "Repentance",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_533": {
+      "name": "Misdirection",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_554": {
+      "name": "Snake Trap",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_594": {
+      "name": "Vaporize",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_609": {
+      "name": "Snipe",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_610": {
+      "name": "Explosive Trap",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "EX1_611": {
+      "name": "Freezing Trap",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "tt_010": {
+      "name": "Spellbender",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "CS1_129": {
+      "name": "Inner Fire",
+      "visual": "buff",
+      "flight": 0.38,
+      "family": "holy"
+    },
+    "CS2_003": {
+      "name": "Mind Vision",
+      "visual": "resource",
+      "flight": 0.32,
+      "family": "arcane"
+    },
+    "CS2_084": {
+      "name": "Hunter's Mark",
+      "visual": "impact",
+      "flight": 0.34,
+      "family": "generic"
+    },
+    "CS2_233": {
+      "name": "Blade Flurry",
+      "visual": "nova",
+      "flight": 0.42,
+      "family": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "dmg": "nova"
+      }
+    },
+    "EX1_128": {
+      "name": "Conceal",
+      "visual": "stealth",
+      "flight": 0.38,
+      "family": "generic",
+      "resultVisuals": {
+        "buff": "stealth"
+      },
+      "tint": [
+        0.3,
+        0.35,
+        0.45
+      ]
+    },
+    "EX1_137": {
+      "name": "Headcrack",
+      "visual": "impact",
+      "flight": 0.32,
+      "family": "generic",
+      "resultVisuals": {
+        "dmg": "impact",
+        "bnc": "bounce"
+      }
+    },
+    "EX1_145": {
+      "name": "Preparation",
+      "visual": "resource",
+      "flight": 0.32,
+      "family": "arcane"
+    },
+    "EX1_164": {
+      "name": "Nourish",
+      "visual": "resource",
+      "flight": 0.38,
+      "family": "nature",
+      "choices": [
+        "EX1_164a",
+        "EX1_164b"
+      ]
+    },
+    "EX1_245": {
+      "name": "Earth Shock",
+      "visual": "silence",
+      "flight": 0.34,
+      "family": "silence",
+      "resultVisuals": {
+        "sil": "silence",
+        "dmg": "impact"
+      }
+    },
+    "EX1_316": {
+      "name": "Power Overwhelming",
+      "visual": "buff",
+      "flight": 0.4,
+      "family": "buff",
+      "resultVisuals": {
+        "buff": "buff",
+        "dest": "destroy"
+      }
+    },
+    "EX1_317": {
+      "name": "Sense Demons",
+      "visual": "resource",
+      "flight": 0.36,
+      "family": "shadow"
+    },
+    "EX1_339": {
+      "name": "Thoughtsteal",
+      "visual": "resource",
+      "flight": 0.36,
+      "family": "shadow"
+    },
+    "EX1_349": {
+      "name": "Divine Favor",
+      "visual": "resource",
+      "flight": 0.36,
+      "family": "holy"
+    },
+    "EX1_360": {
+      "name": "Humility",
+      "visual": "impact",
+      "flight": 0.34,
+      "family": "holy",
+      "resultVisuals": {
+        "buff": "impact"
+      }
+    },
+    "EX1_363": {
+      "name": "Blessing of Wisdom",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "holy",
+      "resultVisuals": {
+        "buff": "buff"
+      }
+    },
+    "EX1_392": {
+      "name": "Battle Rage",
+      "visual": "resource",
+      "flight": 0.34,
+      "family": "buff"
+    },
+    "EX1_549": {
+      "name": "Bestial Wrath",
+      "visual": "buff",
+      "flight": 0.36,
+      "family": "nature",
+      "resultVisuals": {
+        "buff": "buff"
+      }
+    },
+    "EX1_570": {
+      "name": "Bite",
+      "visual": "shield",
+      "flight": 0.38,
+      "family": "nature",
+      "resultVisuals": {
+        "buff": "buff",
+        "arm": "shield"
+      }
+    },
+    "EX1_578": {
+      "name": "Savagery",
+      "visual": "slash",
+      "flight": 0.3,
+      "family": "nature",
+      "resultVisuals": {
+        "dmg": "slash"
+      }
+    },
+    "EX1_607": {
+      "name": "Inner Rage",
+      "visual": "impact",
+      "flight": 0.32,
+      "family": "buff",
+      "resultVisuals": {
+        "dmg": "impact",
+        "buff": "buff"
+      }
+    },
+    "EX1_619": {
+      "name": "Equality",
+      "visual": "nova",
+      "flight": 0.42,
+      "family": "holy",
+      "resultVisuals": {
+        "buff": "nova"
+      }
+    },
+    "EX1_625": {
+      "name": "Shadowform",
+      "visual": "resource",
+      "flight": 0.34,
+      "family": "shadow"
+    },
+    "CS2_038": {
+      "name": "Ancestral Spirit",
+      "visual": "buff",
+      "flight": 0.38,
+      "family": "nature",
+      "resultVisuals": {
+        "buff": "buff",
+        "sum": "summon"
+      }
+    },
+    "CS2_063": {
+      "name": "Corruption",
+      "visual": "curse",
+      "flight": 0.38,
+      "family": "shadow",
+      "resultVisuals": {
+        "buff": "curse",
+        "dest": "destroy"
+      }
+    },
+    "CS2_074": {
+      "name": "Deadly Poison",
+      "visual": "buff",
+      "flight": 0.32,
+      "family": "nature",
+      "tint": [
+        0.25,
+        1,
+        0.35
+      ],
+      "resultVisuals": {
+        "buff": "buff"
+      }
+    },
+    "EX1_409": {
+      "name": "Upgrade!",
+      "visual": "buff",
+      "flight": 0.32,
+      "family": "generic",
+      "resultVisuals": {
+        "buff": "buff",
+        "eq": "buff"
+      }
+    },
+    "EX1_544": {
+      "name": "Flare",
+      "visual": "resource",
+      "flight": 0.3,
+      "family": "holy",
+      "tint": [
+        1,
+        0.78,
+        0.35
+      ],
+      "resultVisuals": {
+        "stl": "silence",
+        "rev": "silence"
+      }
+    },
+    "FP1_018": {
+      "name": "Duplicate",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "FP1_020": {
+      "name": "Avenge",
+      "visual": "secret",
+      "flight": 0.34,
+      "family": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      }
+    },
+    "FP1_019": {
+      "name": "Poison Seeds",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "sum": "summon"
+      }
+    },
+    "FP1_025": {
+      "name": "Reincarnate",
+      "visual": "destroy",
+      "flight": 0.42,
+      "family": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "sum": "summon"
+      }
+    },
+    "CS2_042": {
+      "visual": "fireball",
+      "resultVisuals": {
+        "dmg": "fireball"
+      },
+      "flight": 0.3,
+      "name": "Fire Elemental",
+      "family": "fire"
+    },
+    "CS2_064": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Dread Infernal",
+      "family": "shadow"
+    },
+    "CS2_088": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Guardian of Kings",
+      "family": "holy"
+    },
+    "CS2_117": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Earthen Ring Farseer",
+      "family": "heal"
+    },
+    "CS2_141": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Ironforge Rifleman",
+      "family": "fire"
+    },
+    "CS2_147": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Gnomish Inventor",
+      "family": "arcane"
+    },
+    "CS2_150": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Stormpike Commando",
+      "family": "fire"
+    },
+    "CS2_188": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Abusive Sergeant",
+      "family": "buff"
+    },
+    "CS2_189": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Elven Archer",
+      "family": "fire"
+    },
+    "CS2_203": {
+      "visual": "silence",
+      "resultVisuals": {
+        "sil": "silence"
+      },
+      "flight": 0.3,
+      "name": "Ironbeak Owl",
+      "family": "silence"
+    },
+    "DS1_055": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Darkscale Healer",
+      "family": "heal"
+    },
+    "DS1_070": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Houndmaster",
+      "family": "nature"
+    },
+    "EX1_002": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "The Black Knight",
+      "family": "destroy"
+    },
+    "EX1_005": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Big Game Hunter",
+      "family": "destroy"
+    },
+    "EX1_007": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Acolyte of Pain",
+      "family": "arcane"
+    },
+    "EX1_011": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Voodoo Doctor",
+      "family": "heal"
+    },
+    "EX1_012": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Bloodmage Thalnos",
+      "family": "arcane"
+    },
+    "EX1_015": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Novice Engineer",
+      "family": "arcane"
+    },
+    "EX1_016": {
+      "visual": "control",
+      "resultVisuals": {
+        "ctl": "control"
+      },
+      "flight": 0.3,
+      "name": "Sylvanas Windrunner",
+      "family": "shadow"
+    },
+    "EX1_019": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Shattered Sun Cleric",
+      "family": "buff"
+    },
+    "EX1_029": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Leper Gnome",
+      "family": "fire"
+    },
+    "EX1_046": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Dark Iron Dwarf",
+      "family": "buff"
+    },
+    "EX1_048": {
+      "visual": "silence",
+      "resultVisuals": {
+        "sil": "silence"
+      },
+      "flight": 0.3,
+      "name": "Spellbreaker",
+      "family": "silence"
+    },
+    "EX1_049": {
+      "visual": "bounce",
+      "resultVisuals": {
+        "bnc": "bounce"
+      },
+      "flight": 0.3,
+      "name": "Youthful Brewmaster",
+      "family": "shadow"
+    },
+    "EX1_050": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Coldlight Oracle",
+      "family": "arcane"
+    },
+    "EX1_057": {
+      "visual": "bounce",
+      "resultVisuals": {
+        "bnc": "bounce"
+      },
+      "flight": 0.3,
+      "name": "Ancient Brewmaster",
+      "family": "shadow"
+    },
+    "EX1_058": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Sunfury Protector",
+      "family": "buff"
+    },
+    "EX1_059": {
+      "visual": "transform",
+      "resultVisuals": {
+        "buff": "transform"
+      },
+      "flight": 0.3,
+      "name": "Crazed Alchemist",
+      "family": "transform"
+    },
+    "EX1_066": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Acidic Swamp Ooze",
+      "family": "destroy"
+    },
+    "EX1_082": {
+      "visual": "volley",
+      "resultVisuals": {
+        "dmg": "volley"
+      },
+      "flight": 0.3,
+      "name": "Mad Bomber",
+      "family": "area"
+    },
+    "EX1_083": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform"
+      },
+      "flight": 0.3,
+      "name": "Tinkmaster Overspark",
+      "family": "transform"
+    },
+    "EX1_085": {
+      "visual": "control",
+      "resultVisuals": {
+        "ctl": "control"
+      },
+      "flight": 0.3,
+      "name": "Mind Control Tech",
+      "family": "shadow"
+    },
+    "EX1_091": {
+      "visual": "control",
+      "resultVisuals": {
+        "ctl": "control"
+      },
+      "flight": 0.3,
+      "name": "Cabal Shadow Priest",
+      "family": "holy"
+    },
+    "EX1_093": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Defender of Argus",
+      "family": "buff"
+    },
+    "EX1_095": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Gadgetzan Auctioneer",
+      "family": "arcane"
+    },
+    "EX1_096": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Loot Hoarder",
+      "family": "arcane"
+    },
+    "EX1_097": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Abomination",
+      "family": "area"
+    },
+    "EX1_103": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Coldlight Seer",
+      "family": "buff"
+    },
+    "EX1_110": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Cairne Bloodhoof",
+      "family": "summon"
+    },
+    "EX1_116": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Leeroy Jenkins",
+      "family": "summon"
+    },
+    "EX1_131": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Defias Ringleader",
+      "family": "shadow"
+    },
+    "EX1_134": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "SI:7 Agent",
+      "family": "shadow"
+    },
+    "EX1_166": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "choices": [
+        "EX1_166a",
+        "EX1_166b"
+      ],
+      "flight": 0.3,
+      "name": "Keeper of the Grove",
+      "family": "nature"
+    },
+    "EX1_283": {
+      "visual": "freeze",
+      "resultVisuals": {
+        "frz": "freeze"
+      },
+      "flight": 0.3,
+      "name": "Frost Elemental",
+      "family": "frost"
+    },
+    "EX1_284": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Azure Drake",
+      "family": "arcane"
+    },
+    "EX1_298": {
+      "visual": "fireball",
+      "resultVisuals": {
+        "dmg": "fireball"
+      },
+      "flight": 0.3,
+      "name": "Ragnaros the Firelord",
+      "family": "fire"
+    },
+    "EX1_304": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Void Terror",
+      "family": "shadow"
+    },
+    "EX1_310": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Doomguard",
+      "family": "shadow"
+    },
+    "EX1_323": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform",
+        "eq": "buff"
+      },
+      "flight": 0.3,
+      "name": "Lord Jaraxxus",
+      "family": "shadow"
+    },
+    "EX1_362": {
+      "visual": "shield",
+      "resultVisuals": {
+        "buff": "shield"
+      },
+      "flight": 0.3,
+      "name": "Argent Protector",
+      "family": "holy"
+    },
+    "EX1_382": {
+      "visual": "curse",
+      "resultVisuals": {
+        "buff": "curse"
+      },
+      "flight": 0.3,
+      "name": "Aldor Peacekeeper",
+      "family": "holy"
+    },
+    "EX1_383": {
+      "visual": "buff",
+      "resultVisuals": {
+        "eq": "buff"
+      },
+      "flight": 0.3,
+      "name": "Tirion Fordring",
+      "family": "holy"
+    },
+    "EX1_398": {
+      "visual": "buff",
+      "resultVisuals": {
+        "eq": "buff"
+      },
+      "flight": 0.3,
+      "name": "Arathi Weaponsmith",
+      "family": "buff"
+    },
+    "EX1_414": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Grommash Hellscream",
+      "family": "fire"
+    },
+    "EX1_506": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Murloc Tidehunter",
+      "family": "summon"
+    },
+    "EX1_522": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Patient Assassin",
+      "family": "shadow"
+    },
+    "EX1_534": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Savannah Highmane",
+      "family": "nature"
+    },
+    "EX1_556": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Harvest Golem",
+      "family": "summon"
+    },
+    "EX1_558": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Harrison Jones",
+      "family": "arcane"
+    },
+    "EX1_559": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Archmage Antonidas",
+      "family": "arcane"
+    },
+    "EX1_561": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Alexstrasza",
+      "family": "holy"
+    },
+    "EX1_562": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Onyxia",
+      "family": "summon"
+    },
+    "EX1_564": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform"
+      },
+      "flight": 0.3,
+      "name": "Faceless Manipulator",
+      "family": "summon"
+    },
+    "EX1_572": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Ysera",
+      "family": "arcane"
+    },
+    "EX1_573": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "choices": [
+        "EX1_573a",
+        "EX1_573b"
+      ],
+      "flight": 0.3,
+      "name": "Cenarius",
+      "family": "nature"
+    },
+    "EX1_583": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Priestess of Elune",
+      "family": "heal"
+    },
+    "EX1_587": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Windspeaker",
+      "family": "nature"
+    },
+    "EX1_590": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Blood Knight",
+      "family": "buff"
+    },
+    "EX1_593": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Nightblade",
+      "family": "fire"
+    },
+    "EX1_595": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Cult Master",
+      "family": "arcane"
+    },
+    "EX1_597": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Imp Master",
+      "family": "summon"
+    },
+    "EX1_603": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact",
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Cruel Taskmaster",
+      "family": "fire"
+    },
+    "EX1_613": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Edwin VanCleef",
+      "family": "shadow"
+    },
+    "EX1_614": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Illidan Stormrage",
+      "family": "summon"
+    },
+    "EX1_623": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Temple Enforcer",
+      "family": "holy"
+    },
+    "FP1_001": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Zombie Chow",
+      "family": "heal"
+    },
+    "FP1_002": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Haunted Creeper",
+      "family": "summon"
+    },
+    "FP1_004": {
+      "visual": "secret",
+      "resultVisuals": {
+        "sec": "secret"
+      },
+      "flight": 0.3,
+      "name": "Mad Scientist",
+      "family": "secret"
+    },
+    "FP1_007": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Nerubian Egg",
+      "family": "summon"
+    },
+    "FP1_009": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Deathlord",
+      "family": "summon"
+    },
+    "FP1_012": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Sludge Belcher",
+      "family": "summon"
+    },
+    "FP1_013": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Kel'Thuzad",
+      "family": "summon"
+    },
+    "FP1_014": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Stalagg",
+      "family": "summon"
+    },
+    "FP1_015": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Feugen",
+      "family": "summon"
+    },
+    "FP1_016": {
+      "visual": "silence",
+      "resultVisuals": {
+        "sil": "silence"
+      },
+      "flight": 0.3,
+      "name": "Wailing Soul",
+      "family": "silence"
+    },
+    "FP1_022": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Voidcaller",
+      "family": "shadow"
+    },
+    "FP1_023": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Dark Cultist",
+      "family": "holy"
+    },
+    "FP1_024": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Unstable Ghoul",
+      "family": "shadow"
+    },
+    "FP1_026": {
+      "visual": "bounce",
+      "resultVisuals": {
+        "bnc": "bounce"
+      },
+      "flight": 0.3,
+      "name": "Anub'ar Ambusher",
+      "family": "shadow"
+    },
+    "FP1_029": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Dancing Swords",
+      "family": "arcane"
+    },
+    "NEW1_005": {
+      "visual": "bounce",
+      "resultVisuals": {
+        "bnc": "bounce"
+      },
+      "flight": 0.3,
+      "name": "Kidnapper",
+      "family": "shadow"
+    },
+    "NEW1_017": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy",
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Hungry Crab",
+      "family": "destroy"
+    },
+    "NEW1_020": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Wild Pyromancer",
+      "family": "area"
+    },
+    "NEW1_021": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Doomsayer",
+      "family": "destroy"
+    },
+    "NEW1_030": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Deathwing",
+      "family": "destroy"
+    },
+    "NEW1_041": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Stampeding Kodo",
+      "family": "destroy"
+    },
+    "EX1_154a": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Wrath",
+      "family": "nature"
+    },
+    "EX1_154b": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Wrath",
+      "family": "nature"
+    },
+    "EX1_155a": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Mark of Nature",
+      "family": "nature"
+    },
+    "EX1_155b": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Mark of Nature",
+      "family": "nature"
+    },
+    "EX1_160a": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Summon a Panther",
+      "family": "nature"
+    },
+    "EX1_160b": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Leader of the Pack",
+      "family": "nature"
+    },
+    "EX1_164a": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Nourish",
+      "family": "nature"
+    },
+    "EX1_164b": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Nourish",
+      "family": "nature"
+    },
+    "EX1_165a": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform"
+      },
+      "flight": 0.3,
+      "name": "Cat Form",
+      "family": "nature"
+    },
+    "EX1_165b": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform"
+      },
+      "flight": 0.3,
+      "name": "Bear Form",
+      "family": "nature"
+    },
+    "EX1_166a": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Moonfire",
+      "family": "nature"
+    },
+    "EX1_166b": {
+      "visual": "silence",
+      "resultVisuals": {
+        "sil": "silence"
+      },
+      "flight": 0.3,
+      "name": "Dispel",
+      "family": "nature"
+    },
+    "EX1_178a": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Rooted",
+      "family": "nature"
+    },
+    "EX1_178b": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Uproot",
+      "family": "nature"
+    },
+    "EX1_573a": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Demigod's Favor",
+      "family": "nature"
+    },
+    "EX1_573b": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Shan'do's Lesson",
+      "family": "nature"
+    },
+    "NEW1_007a": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Starfall",
+      "family": "nature"
+    },
+    "NEW1_007b": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Starfall",
+      "family": "nature"
+    },
+    "NEW1_008a": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Ancient Teachings",
+      "family": "nature"
+    },
+    "NEW1_008b": {
+      "visual": "heal",
+      "flight": 0.3,
+      "name": "Ancient Secrets",
+      "family": "nature",
+      "resultVisuals": {
+        "heal": "heal"
+      }
+    },
+    "CS2_013t": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Excess Mana",
+      "family": "nature"
+    },
+    "DREAM_02": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Ysera Awakens",
+      "family": "nature"
+    },
+    "DREAM_04": {
+      "visual": "bounce",
+      "resultVisuals": {
+        "bnc": "bounce"
+      },
+      "flight": 0.3,
+      "name": "Dream",
+      "family": "shadow"
+    },
+    "DREAM_05": {
+      "visual": "curse",
+      "resultVisuals": {
+        "buff": "curse"
+      },
+      "flight": 0.3,
+      "name": "Nightmare",
+      "family": "shadow"
+    },
+    "EX1_014t": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Bananas",
+      "family": "buff"
+    },
+    "GAME_005": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "The Coin",
+      "family": "arcane"
+    },
+    "NAX11_04": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Mutating Injection",
+      "family": "buff"
+    },
+    "NAX12_04": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Enrage",
+      "family": "buff"
+    },
+    "NAX13_03": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Supercharge",
+      "family": "buff"
+    },
+    "NAX14_04": {
+      "visual": "freeze",
+      "resultVisuals": {
+        "dmg": "impact",
+        "frz": "freeze"
+      },
+      "flight": 0.3,
+      "name": "Pure Cold",
+      "family": "frost"
+    },
+    "NAX1_05": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova",
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Locust Swarm",
+      "family": "nature"
+    },
+    "NAX3_03": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Necrotic Poison",
+      "family": "destroy"
+    },
+    "NAX4_05": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Plague",
+      "family": "destroy"
+    },
+    "NAX5_03": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Mindpocalypse",
+      "family": "arcane"
+    },
+    "NAX6_03": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact",
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Deathbloom",
+      "family": "fire"
+    },
+    "NAX6_04": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova",
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Sporeburst",
+      "family": "nature"
+    },
+    "NAX7_05": {
+      "visual": "control",
+      "resultVisuals": {
+        "ctl": "control"
+      },
+      "flight": 0.3,
+      "name": "Mind Control Crystal",
+      "family": "shadow"
+    },
+    "NAX9_07": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Mark of the Horsemen",
+      "family": "buff"
+    },
+    "PRO_001a": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "I Am Murloc",
+      "family": "summon"
+    },
+    "PRO_001b": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Rogues Do It...",
+      "family": "fire"
+    },
+    "PRO_001c": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Power of the Horde",
+      "family": "buff"
+    },
+    "EX1_tk9": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Treant",
+      "family": "nature"
+    },
+    "FP1_006": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Deathcharger",
+      "family": "fire"
+    },
+    "Mekka1": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Homing Chicken",
+      "family": "arcane",
+      "resultVisuals": {
+        "dest": "destroy"
+      }
+    },
+    "Mekka2": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Repair Bot",
+      "family": "heal"
+    },
+    "Mekka3": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Emboldener 3000",
+      "family": "buff"
+    },
+    "Mekka4": {
+      "visual": "transform",
+      "resultVisuals": {
+        "tf": "transform"
+      },
+      "flight": 0.3,
+      "name": "Poultryizer",
+      "family": "transform"
+    },
+    "NAX6_03t": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Spore",
+      "family": "buff"
+    },
+    "NAX8_03": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Unrelenting Trainee",
+      "family": "summon"
+    },
+    "NAX8_04": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Unrelenting Warrior",
+      "family": "summon"
+    },
+    "NAX8_05": {
+      "visual": "summon",
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "flight": 0.3,
+      "name": "Unrelenting Rider",
+      "family": "summon"
+    },
+    "NAX8_03t": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Spectral Trainee",
+      "family": "fire"
+    },
+    "NAX8_04t": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Spectral Warrior",
+      "family": "fire"
+    },
+    "NAX8_05t": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Spectral Rider",
+      "family": "fire"
+    },
+    "NAXM_001": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Necroknight",
+      "family": "destroy"
+    },
+    "NAXM_002": {
+      "visual": "destroy",
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "flight": 0.3,
+      "name": "Skeletal Smith",
+      "family": "destroy"
+    },
+    "NEW1_009": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Healing Totem",
+      "family": "nature"
+    },
+    "EX1_133": {
+      "visual": "impact",
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "flight": 0.3,
+      "name": "Perdition's Blade",
+      "family": "shadow"
+    },
+    "EX1_366": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Sword of Justice",
+      "family": "holy"
+    },
+    "FP1_021": {
+      "visual": "nova",
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "flight": 0.3,
+      "name": "Death's Bite",
+      "family": "fire"
+    },
+    "CS2_097": {
+      "visual": "heal",
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "flight": 0.3,
+      "name": "Truesilver Champion",
+      "family": "holy"
+    },
+    "NAX10_02": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Hook",
+      "family": "arcane"
+    },
+    "NAX10_02H": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Hook",
+      "family": "arcane"
+    },
+    "NAX12_03": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Jaws",
+      "family": "buff"
+    },
+    "NAX12_03H": {
+      "visual": "buff",
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "flight": 0.3,
+      "name": "Jaws",
+      "family": "buff"
+    },
+    "EX1_165": {
+      "choices": [
+        "EX1_165a",
+        "EX1_165b"
+      ],
+      "name": "Druid of the Claw",
+      "family": "nature"
+    },
+    "EX1_178": {
+      "choices": [
+        "EX1_178b",
+        "EX1_178a"
+      ],
+      "name": "Ancient of War",
+      "family": "nature"
+    },
+    "NEW1_008": {
+      "choices": [
+        "NEW1_008a",
+        "NEW1_008b"
+      ],
+      "name": "Ancient of Lore",
+      "family": "nature"
+    },
+    "CS2_059": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Blood Imp",
+      "family": "shadow"
+    },
+    "CS2_151": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Silver Hand Knight",
+      "family": "summon"
+    },
+    "CS2_181": {
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "name": "Injured Blademaster",
+      "family": "fire"
+    },
+    "CS2_196": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Razorfen Hunter",
+      "family": "summon"
+    },
+    "CS2_226": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Frostwolf Warlord",
+      "family": "buff"
+    },
+    "CS2_235": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Northshire Cleric",
+      "family": "holy"
+    },
+    "CS2_237": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Starving Buzzard",
+      "family": "nature"
+    },
+    "EX1_001": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Lightwarden",
+      "family": "buff"
+    },
+    "EX1_004": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Young Priestess",
+      "family": "buff"
+    },
+    "EX1_009": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Angry Chicken",
+      "family": "buff"
+    },
+    "EX1_014": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "King Mukla",
+      "family": "buff"
+    },
+    "EX1_025": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Dragonling Mechanic",
+      "family": "summon"
+    },
+    "EX1_043": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Twilight Drake",
+      "family": "buff"
+    },
+    "EX1_044": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Questing Adventurer",
+      "family": "buff"
+    },
+    "EX1_055": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Mana Addict",
+      "family": "buff"
+    },
+    "EX1_080": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Secretkeeper",
+      "family": "buff"
+    },
+    "EX1_089": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Arcane Golem",
+      "family": "arcane"
+    },
+    "EX1_102": {
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "name": "Demolisher",
+      "family": "fire"
+    },
+    "EX1_170": {
+      "visual": "destroy",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dest": "destroy"
+      },
+      "name": "Emperor Cobra",
+      "family": "destroy"
+    },
+    "EX1_249": {
+      "visual": "nova",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "nova"
+      },
+      "name": "Baron Geddon",
+      "family": "area"
+    },
+    "EX1_258": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Unbound Elemental",
+      "family": "nature"
+    },
+    "EX1_313": {
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "name": "Pit Lord",
+      "family": "shadow"
+    },
+    "EX1_319": {
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "name": "Flame Imp",
+      "family": "shadow"
+    },
+    "EX1_341": {
+      "visual": "heal",
+      "flight": 0.3,
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "name": "Lightwell",
+      "family": "holy"
+    },
+    "EX1_390": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Tauren Warrior",
+      "family": "buff"
+    },
+    "EX1_393": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Amani Berserker",
+      "family": "buff"
+    },
+    "EX1_399": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Gurubashi Berserker",
+      "family": "buff"
+    },
+    "EX1_402": {
+      "visual": "shield",
+      "flight": 0.3,
+      "resultVisuals": {
+        "arm": "shield"
+      },
+      "name": "Armorsmith",
+      "family": "fire"
+    },
+    "EX1_412": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Raging Worgen",
+      "family": "buff"
+    },
+    "EX1_509": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Murloc Tidecaller",
+      "family": "buff"
+    },
+    "EX1_531": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Scavenging Hyena",
+      "family": "nature"
+    },
+    "EX1_557": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Nat Pagle",
+      "family": "arcane"
+    },
+    "EX1_575": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Mana Tide Totem",
+      "family": "nature"
+    },
+    "EX1_577": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "The Beast",
+      "family": "summon"
+    },
+    "EX1_584": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Ancient Mage",
+      "family": "buff"
+    },
+    "EX1_604": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Frothing Berserker",
+      "family": "fire"
+    },
+    "NEW1_012": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Mana Wyrm",
+      "family": "arcane"
+    },
+    "NEW1_014": {
+      "visual": "stealth",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "stealth"
+      },
+      "name": "Master of Disguise",
+      "family": "shadow"
+    },
+    "NEW1_016": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Captain's Parrot",
+      "family": "arcane"
+    },
+    "NEW1_018": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Bloodsail Raider",
+      "family": "buff"
+    },
+    "NEW1_019": {
+      "visual": "impact",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dmg": "impact"
+      },
+      "name": "Knife Juggler",
+      "family": "fire"
+    },
+    "NEW1_024": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Captain Greenskin",
+      "family": "buff"
+    },
+    "NEW1_026": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Violet Teacher",
+      "family": "summon"
+    },
+    "NEW1_037": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Master Swordsmith",
+      "family": "buff"
+    },
+    "NEW1_038": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Gruul",
+      "family": "buff"
+    },
+    "NEW1_040": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Hogger",
+      "family": "summon"
+    },
+    "tt_004": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Flesheating Ghoul",
+      "family": "buff"
+    },
+    "FP1_003": {
+      "visual": "summon",
+      "flight": 0.3,
+      "resultVisuals": {
+        "sum": "summon"
+      },
+      "name": "Echoing Ooze",
+      "family": "summon"
+    },
+    "FP1_005": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Shade of Naxxramas",
+      "family": "buff"
+    },
+    "FP1_011": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Webspinner",
+      "family": "nature"
+    },
+    "FP1_027": {
+      "visual": "heal",
+      "flight": 0.3,
+      "resultVisuals": {
+        "heal": "heal"
+      },
+      "name": "Stoneskin Gargoyle",
+      "family": "heal"
+    },
+    "FP1_028": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Undertaker",
+      "family": "buff"
+    },
+    "EX1_100": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Lorewalker Cho",
+      "family": "arcane"
+    },
+    "EX1_112": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Gelbin Mekkatorque",
+      "family": "arcane"
+    },
+    "EX1_301": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Felguard",
+      "family": "shadow"
+    },
+    "EX1_306": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Succubus",
+      "family": "shadow"
+    },
+    "PRO_001": {
+      "visual": "resource",
+      "flight": 0.3,
+      "name": "Elite Tauren Chieftain",
+      "family": "arcane"
+    },
+    "EX1_536": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Eaglehorn Bow",
+      "family": "nature"
+    },
+    "NEW1_025": {
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      },
+      "name": "Bloodsail Corsair",
+      "family": "buff"
+    },
+    "EX1_006": {
+      "name": "Alarm-o-Bot",
+      "family": "shadow",
+      "visual": "bounce",
+      "flight": 0.3,
+      "resultVisuals": {
+        "bnc": "bounce",
+        "sum": "summon"
+      }
+    },
+    "FP1_010": {
+      "name": "Maexxna",
+      "family": "destroy",
+      "visual": "destroy",
+      "flight": 0.3,
+      "resultVisuals": {
+        "dest": "destroy"
+      }
+    },
+    "EX1_612": {
+      "name": "Kirin Tor Mage",
+      "family": "arcane",
+      "visual": "buff",
+      "flight": 0.3,
+      "cueOnPlay": true
+    },
+    "NEW1_029": {
+      "name": "Millhouse Manastorm",
+      "family": "arcane",
+      "visual": "buff",
+      "flight": 0.3,
+      "cueOnPlay": true
+    },
+    "FP1_030": {
+      "name": "Loatheb",
+      "family": "arcane",
+      "visual": "buff",
+      "flight": 0.3,
+      "cueOnPlay": true
+    },
+    "EX1_084": {
+      "name": "Warsong Commander",
+      "family": "buff",
+      "visual": "buff",
+      "flight": 0.3,
+      "resultVisuals": {
+        "buff": "buff"
+      }
+    }
+  }
+}

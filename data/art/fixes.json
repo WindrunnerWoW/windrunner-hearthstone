@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "hires_sources": [
+    "CS1_130",
+    "CS2_004",
+    "CS2_007",
+    "CS2_038",
+    "CS2_042",
+    "CS2_046",
+    "CS2_073",
+    "CS2_097",
+    "CS2_118",
+    "CS2_119",
+    "CS2_122",
+    "CS2_125",
+    "CS2_141",
+    "CS2_147",
+    "CS2_161",
+    "CS2_171",
+    "CS2_172",
+    "CS2_189",
+    "CS2_213",
+    "DS1_070",
+    "EX1_007",
+    "EX1_043",
+    "EX1_131",
+    "EX1_132",
+    "EX1_136",
+    "EX1_145",
+    "EX1_158",
+    "EX1_164",
+    "EX1_170",
+    "EX1_284",
+    "EX1_289",
+    "EX1_294",
+    "EX1_301",
+    "EX1_306",
+    "EX1_320",
+    "EX1_339",
+    "EX1_366",
+    "EX1_379",
+    "EX1_382",
+    "EX1_536",
+    "EX1_556",
+    "EX1_595",
+    "EX1_604",
+    "EX1_609",
+    "EX1_619",
+    "NEW1_014",
+    "NEW1_017",
+    "NEW1_027",
+    "NEW1_041"
+  ],
+  "fixes": [
+    {
+      "id": "EX1_366",
+      "mode": "patch",
+      "summary": "text: After -> Whenever",
+      "reason": "5834 text: 'Whenever you summon a minion, give it +1/+1 and this loses 1 Durability.' (VAN render says 'After')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "Whenever you summon a",
+            "minion, give it +1/+1",
+            "and this loses",
+            "1 Durability."
+          ],
+          "donors": [
+            "CS2_097",
+            "EX1_536"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_379",
+      "mode": "patch",
+      "summary": "text: After -> When",
+      "reason": "5834 text: 'Secret: When your opponent plays a minion, reduce its Health to 1.' (VAN render says 'After')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "<b>Secret:</b> When your",
+            "opponent plays a minion,",
+            "reduce its Health to 1."
+          ],
+          "donors": [
+            "EX1_132",
+            "EX1_136",
+            "EX1_294"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_609",
+      "mode": "patch",
+      "summary": "text: After -> When",
+      "reason": "5834 text: 'Secret: When your opponent plays a minion, deal $4 damage to it.' (VAN render says 'After')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "<b>Secret:</b> When your",
+            "opponent plays a minion,",
+            "deal 4 damage to it."
+          ],
+          "donors": [
+            "EX1_132",
+            "EX1_136",
+            "EX1_294"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_595",
+      "mode": "patch",
+      "summary": "text: rewritten to 5834 wording",
+      "reason": "5834 text: 'Whenever one of your other minions dies, draw a card.' (VAN render: 'After a friendly minion dies, draw a card.')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "Whenever one of your",
+            "other minions dies,",
+            "draw a card."
+          ],
+          "donors": [
+            "EX1_007",
+            "CS2_046",
+            "CS2_122",
+            "EX1_301"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_320",
+      "mode": "patch",
+      "summary": "text: 3 -> 2 damage",
+      "reason": "5834 text: 'Deal $2 damage to a character. If that kills it, summon a random Demon.' (VAN render says 3 damage; 'If it dies' wording kept, the word 'kills' exists on no other render)",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "Deal 2 damage to",
+            "a character. If it dies,",
+            "summon a random",
+            "Demon."
+          ],
+          "donors": [
+            "CS1_130"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CS2_038",
+      "mode": "patch",
+      "summary": "text: rewritten to 6024 wording",
+      "reason": "6024 text: 'Give a minion \"Deathrattle: Resummon this minion.\"' (VAN render: 'Choose a minion. When that minion is destroyed, return it to the battlefield.'; \"Resummon\" is Re + summon and the closing quote mark is cut from other words, since neither exists on a render)",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "Give a minion",
+            "\"<b>Deathrattle:</b> Resummon",
+            "this minion.\""
+          ],
+          "donors": [
+            "EX1_158",
+            "CS2_007",
+            "EX1_320",
+            "EX1_366"
+          ],
+          "text_overrides": {
+            "EX1_158": "Give your minions \"<b>Deathrattle:</b> Summon a 2/2 Treant. \""
+          },
+          "compose": {
+            "Resummon": [
+              {
+                "token": "Restore",
+                "first": 2
+              },
+              {
+                "token": "summon",
+                "gap": 0
+              }
+            ],
+            "minion.\"": [
+              {
+                "token": "minion."
+              },
+              {
+                "token": "\"",
+                "gap": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EX1_536",
+      "mode": "patch",
+      "summary": "text: Secret -> friendly Secret",
+      "reason": "6024 text: 'Whenever a friendly Secret is revealed, gain +1 Durability.' (VAN render: 'Whenever a Secret is revealed, ...')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "Whenever a friendly",
+            "<b>Secret</b> is revealed,",
+            "gain +1 Durability."
+          ],
+          "donors": [
+            "EX1_595",
+            "DS1_070"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_289",
+      "mode": "patch",
+      "summary": "text: As soon as -> When",
+      "reason": "6024 text: 'Secret: When your hero is attacked, gain 8 Armor.' (VAN render says 'As soon as')",
+      "ops": [
+        {
+          "op": "text",
+          "lines": [
+            "<b>Secret:</b> When your",
+            "hero is attacked,",
+            "gain 8 Armor."
+          ],
+          "donors": [
+            "EX1_132",
+            "EX1_136",
+            "EX1_294"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_131",
+      "mode": "patch",
+      "summary": "attack gem: 3 -> 2",
+      "reason": "5834 data: Defias Ringleader is a 2/2 (cost 2); the VAN render prints 3 attack",
+      "ops": [
+        {
+          "op": "gem",
+          "gem": "attack",
+          "value": 2,
+          "donor": "CS2_121"
+        }
+      ]
+    },
+    {
+      "id": "EX1_306",
+      "mode": "patch",
+      "summary": "name: Felstalker -> Succubus",
+      "reason": "5834 data: name is 'Succubus'; the VAN render shows the later name 'Felstalker'",
+      "ops": [
+        {
+          "op": "title",
+          "name": "Succubus",
+          "glyphs": {
+            "S": "CS2_171",
+            "b": "NEW1_017",
+            "c": "CS2_213",
+            "s": "DS1_070",
+            "u": "NEW1_014"
+          },
+          "donors": [
+            "CS2_171",
+            "CS2_213",
+            "DS1_070",
+            "NEW1_014",
+            "NEW1_017"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EX1_614t",
+      "mode": "generate",
+      "template": "CS2_118",
+      "summary": "no correct render: Magma Rager frame + real art",
+      "reason": "5834 data: Flame of Azzinoth, neutral token, cost 1, 2/1, no text; the only render now reads 'Xavian Satyr', so the frame of CS2_118 gets a new title, cost 1, attack 2 and the real art from art.hearthstonejson.com (512x/EX1_614t.jpg)",
+      "ops": [
+        {
+          "op": "art",
+          "image": "EX1_614t",
+          "size": 178,
+          "offset": [
+            38,
+            38
+          ]
+        },
+        {
+          "op": "title",
+          "name": "Flame of Azzinoth",
+          "glyphs": {
+            "A": "CS2_161",
+            "F": "EX1_604",
+            "a": "CS2_119",
+            "e": "EX1_170",
+            "f": "CS2_141",
+            "h": "NEW1_027",
+            "i": "EX1_043",
+            "l": "EX1_301",
+            "m": "CS2_042",
+            "n": "CS2_147",
+            "o": "EX1_382",
+            "t": "CS2_171",
+            "z": "CS2_125"
+          },
+          "donors": [
+            "CS2_042",
+            "CS2_119",
+            "CS2_125",
+            "CS2_141",
+            "CS2_147",
+            "CS2_161",
+            "CS2_171",
+            "EX1_043",
+            "EX1_170",
+            "EX1_301",
+            "EX1_382",
+            "EX1_604",
+            "NEW1_027"
+          ]
+        },
+        {
+          "op": "gem",
+          "gem": "cost",
+          "value": 1,
+          "donor": "EX1_010"
+        },
+        {
+          "op": "gem",
+          "gem": "attack",
+          "value": 2,
+          "donor": "EX1_010"
+        }
+      ]
+    },
+    {
+      "id": "PRO_001at",
+      "mode": "patch",
+      "summary": "cost gem: 0 -> 1",
+      "reason": "5834 data: the Murloc token of I Am Murloc costs 1 (HearthstoneJSON build 5834); the current render prints 0",
+      "ops": [
+        {
+          "op": "gem",
+          "gem": "cost",
+          "value": 1,
+          "donor": "CS2_168"
+        }
+      ]
+    },
+    {
+      "id": "FP1_012",
+      "mode": "patch",
+      "summary": "health gem: 6 -> 5",
+      "reason": "6024 data: Sludge Belcher is a 3/5 (cost 5); the current render prints 6 health (donor: Anub'ar Ambusher, 5 health)",
+      "ops": [
+        {
+          "op": "gem",
+          "gem": "health",
+          "value": 5,
+          "donor": "FP1_026"
+        }
+      ]
+    },
+    {
+      "id": "FP1_025",
+      "mode": "patch",
+      "summary": "cost gem: 1 -> 2",
+      "reason": "6024 data: Reincarnate costs 2; the current render prints 1 (donor: Haunted Creeper, cost 2)",
+      "ops": [
+        {
+          "op": "gem",
+          "gem": "cost",
+          "value": 2,
+          "donor": "FP1_002"
+        }
+      ]
+    },
+    {
+      "id": "FP1_007t",
+      "mode": "patch",
+      "summary": "cost gem: 4 -> 3",
+      "reason": "6024 data: the Nerubian token of Nerubian Egg is a 4/4 with cost 3; the current render prints 4 (donor: Shade of Naxxramas, cost 3)",
+      "ops": [
+        {
+          "op": "gem",
+          "gem": "cost",
+          "value": 3,
+          "donor": "FP1_005"
+        }
+      ]
+    }
+  ],
+  "art_sources": [
+    "EX1_614t"
+  ],
+  "plain_render_ok": {
+    "FP1_012t": "Slime token of Sludge Belcher: the dataset name 'Slime' differs from the current data name 'Putrid Slime' (a later rename), but the render itself reads 'Slime' (checked by eye), cost 1, 1/2, Taunt, which is the 6024 card"
+  }
+}

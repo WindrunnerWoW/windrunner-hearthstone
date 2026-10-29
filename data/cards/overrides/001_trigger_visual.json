@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "card_id": "CS2_059",
+      "fields": {
+        "mechanics": [
+          "STEALTH",
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": [
+          "STEALTH"
+        ]
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Blood Imp has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "CS2_235",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Northshire Cleric has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "CS2_237",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Starving Buzzard has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_001",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Lightwarden has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_004",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Young Priestess has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_006",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Alarm-o-Bot has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_007",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Acolyte of Pain has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_044",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Questing Adventurer has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_055",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Mana Addict has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_080",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Secretkeeper has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_084",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Warsong Commander has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_095",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Gadgetzan Auctioneer has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_100",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Lorewalker Cho has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_102",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Demolisher has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_249",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Baron Geddon has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_258",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Unbound Elemental has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_274",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Ethereal Arcanist has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_298",
+      "fields": {
+        "mechanics": [
+          "CANT_ATTACK",
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": [
+          "CANT_ATTACK"
+        ]
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Ragnaros the Firelord has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_341",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Lightwell has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_399",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Gurubashi Berserker has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_402",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Armorsmith has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_509",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Murloc Tidecaller has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_531",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Scavenging Hyena has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_557",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Nat Pagle has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_559",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Archmage Antonidas has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_572",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Ysera has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_575",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Mana Tide Totem has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_595",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Cult Master has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_597",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Imp Master has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_604",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Frothing Berserker has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_614",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Illidan Stormrage has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "EX1_tk9",
+      "fields": {
+        "mechanics": [
+          "CHARGE",
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": [
+          "CHARGE"
+        ]
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Treant has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "FP1_005",
+      "fields": {
+        "mechanics": [
+          "STEALTH",
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": [
+          "STEALTH"
+        ]
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Shade of Naxxramas has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "FP1_013",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Kel'Thuzad has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "FP1_027",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Stoneskin Gargoyle has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "FP1_028",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Undertaker has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "Mekka1",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Homing Chicken has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "Mekka2",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Repair Bot has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "Mekka3",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Emboldener 3000 has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "Mekka4",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Poultryizer has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NAX8_03t",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Spectral Trainee has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NAX8_04t",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Spectral Warrior has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NAX8_05t",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Spectral Rider has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_009",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Healing Totem has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_012",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Mana Wyrm has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_019",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Knife Juggler has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_020",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Wild Pyromancer has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_021",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Doomsayer has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_026",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Violet Teacher has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_037",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Master Swordsmith has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_038",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Gruul has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "NEW1_040",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Hogger has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    },
+    {
+      "card_id": "tt_004",
+      "fields": {
+        "mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      "expect": {
+        "mechanics": []
+      },
+      "source_url": "https://hearthstonejson.com/",
+      "reason": "Display tag: Flesheating Ghoul has a triggered effect, which later builds tag TRIGGER_VISUAL (build 6024 has no such tag). The board shows the lightning bolt on it. Added by the owner's request, 2026-10-13; the rules text and the engine are not affected."
+    }
+  ]
+}
