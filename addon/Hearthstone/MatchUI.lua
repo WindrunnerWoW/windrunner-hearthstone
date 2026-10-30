@@ -322,7 +322,7 @@ local RESULT_COLORS = { win = { 1, 0.82, 0 }, loss = { 1, 0.25, 0.25 }, draw = {
 --   strips  the portrait in horizontal bands that follow the round top of the arch (x1, y1, x2, y2 as fractions of the
 --   arch box, a little wider than the opening so the frame hides the edges; a plain rectangle would stick out at the top).
 -- Without the textures the old dialog box is shown.
-MU.EMBLEM_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\"
+MU.EMBLEM_PATH = "Interface\\Hearthstone\\Textures\\UI\\"
 MU.EMBLEM_H = 380             -- height of the emblem on screen
 MU.EMBLEM_BOX_W = 460         -- width of the result block (the emblem, the reason, the summary, Leave)
 MU.EMBLEM_MAX_STRIPS = 24     -- portrait strips that can be created (the emblems use 21)
@@ -626,7 +626,7 @@ function MU.PieceAnchor(piece, name)
 end
 
 -- ---- oval minion portraits (made by tools/art/minion_portraits.py, listed in HS_MinionTextures)
-MU.MINION_TEXTURE_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\Minions\\"
+MU.MINION_TEXTURE_PATH = "Interface\\Hearthstone\\Textures\\Minions\\"
 
 -- True when the pre-cut oval portrait of a card is installed.
 function MU.HasMinionTexture(cardId)
@@ -635,7 +635,7 @@ function MU.HasMinionTexture(cardId)
 end
 
 -- ---- round hero power portraits (made by tools/art/power_portraits.py, listed in HS_PowerTextures)
-MU.POWER_TEXTURE_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\Powers\\"
+MU.POWER_TEXTURE_PATH = "Interface\\Hearthstone\\Textures\\Powers\\"
 
 -- True when the pre-cut round portrait of a hero power card is installed.
 function MU.HasPowerTexture(cardId)
@@ -826,7 +826,7 @@ function MU.SetHeroArt(hero, cardId)
     for i = 1, table.getn(hero.slices or {}) do
         local sl = hero.slices[i]
         if has then
-            sl.tex:SetTexture(altPath or ((H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. cardId))
+            sl.tex:SetTexture(altPath or ((H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. cardId))
             local bl = hero.bleed or 0
             sl.tex:SetTexCoord(u1 + (u2 - u1) * (sl.x1 + bl) / (w + 2 * bl), u1 + (u2 - u1) * (sl.x2 + bl) / (w + 2 * bl),
                 v1 + (v2 - v1) * (sl.y1 + bl) / (h + 2 * bl), v1 + (v2 - v1) * (sl.y2 + bl) / (h + 2 * bl))
@@ -1107,7 +1107,7 @@ function MU.SetArt(tex, cardId, crop)
         if H.CardBottom then
             bottom = H.CardBottom(cardId)
         end
-        tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. cardId)
+        tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. cardId)
         tex:SetTexCoord(crop[1], crop[2], crop[3] * bottom, crop[4] * bottom)
         tex:SetVertexColor(1, 1, 1)
         return true
@@ -3516,7 +3516,7 @@ local function cardEmblemPic(e, cardId)
     end
     -- the card's art window, with the aspect of the arch box (a 256 x 388 card image)
     local vh = c.w * 256 / MU.EmblemBoxAspect(e) / 388
-    return { path = altPath or ((H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. tostring(cardId)),
+    return { path = altPath or ((H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. tostring(cardId)),
         u1 = c.cx - c.w / 2, u2 = c.cx + c.w / 2, v1 = (c.cy - vh / 2) * bottom, v2 = (c.cy + vh / 2) * bottom }
 end
 

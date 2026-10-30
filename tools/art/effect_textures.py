@@ -215,7 +215,7 @@ def build():
         with open(path, "wb") as f:
             f.write(blp)
         records[name] = {
-            "path": "Interface\\AddOns\\Hearthstone\\Textures\\Effects\\" + name,
+            "path": "Interface\\Hearthstone\\Textures\\Effects\\" + name,
             "file": "addon/Hearthstone/Textures/Effects/" + name + ".blp",
             "size": [SIZE, SIZE], "format": "BLP2 DXT5 alpha8",
             "mipmaps": mip_count, "bytes": len(blp),

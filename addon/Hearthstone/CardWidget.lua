@@ -19,7 +19,7 @@ local H = Hearthstone
 H.CardWidget = H.CardWidget or {}
 local W = H.CardWidget
 
-H.CARD_TEXTURE_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\"
+H.CARD_TEXTURE_PATH = "Interface\\Hearthstone\\Textures\\Cards\\"
 H.CARD_DEFAULT_BOTTOM = 388 / 512    -- the BLP canvas is 256x512, the card sits at the top
 
 -- Bottom texture coordinate of a card: from CardTextures.lua, else 388/512.
@@ -292,7 +292,7 @@ function W.ApplyTilt(w)
     local src = W.TILT_SRC
     local rect = { l = src.left * k, t = src.top * k, r = src.right * k, b = src.bottom * k }
     local px, py = (rect.l + rect.r) / 2, (rect.t + rect.b) / 2      -- pivot: the middle of the card
-    local path = (H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. tostring(w.id)
+    local path = (H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. tostring(w.id)
     w.strips = w.strips or {}
     tex:Hide()
     W.PlaceStrips(w.strips, w.frame, "ARTWORK", path, rect, px, py,
@@ -331,7 +331,7 @@ function W.SetCard(w, id, forceTexture)
             bottom = H.CardBottom(id)
         end
         if w.texId ~= id then
-            w.tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. id)
+            w.tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. id)
             w.texId = id
         end
         w.bottom = bottom

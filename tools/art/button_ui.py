@@ -60,10 +60,10 @@ def main():
     for piece, src, out in PLATES:
         build(src, out)
         bs = chr(92) * 2    # a doubled backslash inside the Lua string
-        path = bs.join(["Interface", "AddOns", "Hearthstone", "Textures", "UI", out])
+        path = bs.join(["Interface", "Hearthstone", "Textures", "UI", out])
         lines.append('    %s = { path = "%s", right = 1, bottom = 1 },' % (piece, path))
     build_glow()
-    path = bs.join(["Interface", "AddOns", "Hearthstone", "Textures", "UI", "ButtonGlow"])
+    path = bs.join(["Interface", "Hearthstone", "Textures", "UI", "ButtonGlow"])
     lines.append('    btn_glow = { path = "%s", right = 1, bottom = 1 },' % path)
     lines.extend(["}", ""])
     with open(os.path.join(A.ROOT, "addon", "Hearthstone", "ButtonTextures.lua"), "w", encoding="utf-8", newline="\n") as fh:

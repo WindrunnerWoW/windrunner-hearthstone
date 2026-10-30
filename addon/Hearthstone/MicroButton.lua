@@ -12,7 +12,7 @@ local H = Hearthstone
 H.MicroButton = H.MicroButton or {}
 local MB = H.MicroButton
 
-MB.ICON = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\MicroIcon"
+MB.ICON = "Interface\\Hearthstone\\Textures\\UI\\MicroIcon"
 MB.ICON_RIGHT = 0.671875     -- the card's width on the 128x128 texture (tools/art/ui_icons.py prints it)
 MB.ICON_FALLBACK = "Interface\\Icons\\INV_Misc_Ticket_Tarot_Stack_01"
 MB.iconPath = nil            -- the icon in use (MB.ICON or the fallback)

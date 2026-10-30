@@ -3,7 +3,7 @@
   "generator": "tools/art/bg_textures.py",
   "entries": {
     "coin": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\coin",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\coin",
       "file": "addon/Hearthstone/Textures/Bg/coin.blp",
       "size": [
         32,
@@ -15,7 +15,7 @@
       "sha256": "6f7e45ce56ba4962f2ec743a39725fd2e8d551ef9feaba19e0ee0358247a0e61"
     },
     "golden_ring": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\golden_ring",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\golden_ring",
       "file": "addon/Hearthstone/Textures/Bg/golden_ring.blp",
       "size": [
         128,
@@ -27,7 +27,7 @@
       "sha256": "bb5d5ffa04eb90d843e6ad423d6dd543b32d2921cd3ff1575d55544bd483224e"
     },
     "hero_frame": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\hero_frame",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\hero_frame",
       "file": "addon/Hearthstone/Textures/Bg/hero_frame.blp",
       "size": [
         64,
@@ -39,7 +39,7 @@
       "sha256": "90e474f8e8b841214571b3e84de9d47ca7663db68c6e4bba4b0ae3b7cea134b3"
     },
     "hero_glow": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\hero_glow",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\hero_glow",
       "file": "addon/Hearthstone/Textures/Bg/hero_glow.blp",
       "size": [
         128,
@@ -51,7 +51,7 @@
       "sha256": "67e24f639d50af6147e00397057530b18857b9f91255f747521dd12b21394a7b"
     },
     "quest_frame": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\quest_frame",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\quest_frame",
       "file": "addon/Hearthstone/Textures/Bg/quest_frame.blp",
       "size": [
         512,
@@ -63,7 +63,7 @@
       "sha256": "00a4a4d581ea4fe469a28d593415e12b864ea44159dd60727dcbd3c7d0385a0b"
     },
     "quest_glow": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\quest_glow",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\quest_glow",
       "file": "addon/Hearthstone/Textures/Bg/quest_glow.blp",
       "size": [
         512,
@@ -75,7 +75,7 @@
       "sha256": "de39bb8e8982ab251cb3bcd021ed864bafc2a49aedcaf902d4134479d974ba37"
     },
     "reward_card": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\reward_card",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\reward_card",
       "file": "addon/Hearthstone/Textures/Bg/reward_card.blp",
       "size": [
         256,
@@ -87,7 +87,7 @@
       "sha256": "442407e7318627d9d8cb315f038549222e9ca84ab2965e26b47d30d14ef4efe9"
     },
     "tier_pip": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\tier_pip",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\tier_pip",
       "file": "addon/Hearthstone/Textures/Bg/tier_pip.blp",
       "size": [
         32,
@@ -99,7 +99,7 @@
       "sha256": "25d6f812424dbc014498b59bca0bd123d048d1b5c2d35e4a3eac79b4328447b6"
     },
     "yogg_glow": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\yogg_glow",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\yogg_glow",
       "file": "addon/Hearthstone/Textures/Bg/yogg_glow.blp",
       "size": [
         128,
@@ -111,7 +111,7 @@
       "sha256": "b57d97b5fd9006f68f4c56412d0c098be8f7d4a03910d666d72a16d520fac13a"
     },
     "yogg_pointer": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\yogg_pointer",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\yogg_pointer",
       "file": "addon/Hearthstone/Textures/Bg/yogg_pointer.blp",
       "size": [
         128,
@@ -123,7 +123,7 @@
       "sha256": "94c2516528dce36364231ad1301d3d8dd106eddd33b63ae676a0c6f97828b86d"
     },
     "yogg_wheel": {
-      "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\yogg_wheel",
+      "path": "Interface\\Hearthstone\\Textures\\Bg\\yogg_wheel",
       "file": "addon/Hearthstone/Textures/Bg/yogg_wheel.blp",
       "size": [
         256,

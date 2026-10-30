@@ -19,7 +19,7 @@ E.dismissed = false          -- Leave was pressed: the screen stays away until t
 
 local WHITE = "Interface\\Buttons\\WHITE8X8"
 local NUMBER_FONT = "Fonts\\FRIZQT__.TTF"
-local HERO_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\BgHeroes\\"
+local HERO_PATH = "Interface\\Hearthstone\\Textures\\BgHeroes\\"
 
 E.EMBLEM_H = 340             -- height of the emblem on screen
 E.LEFT_X, E.LEFT_W = 70, 460 -- the emblem block (x from the window's left, width)

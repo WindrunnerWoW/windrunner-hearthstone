@@ -1,4 +1,4 @@
-# mod-hearthstone
+/# mod-hearthstone
 
 Single-player Hearthstone-style card game for the Windrunner (TurtleWoW 1.12 era) server: a
 server module plus a client addon. You collect Basic and Classic cards, build decks, and play
@@ -141,7 +141,7 @@ file must exist either way (see below).
    your build script only auto-creates the active conf for some modules by name, add
    `mod-hearthstone` to its list.
 2. Set `AddonChannel = 1` in `mangosd.conf`.
-3. Copy `addon/Hearthstone` to `<client>/Interface/AddOns/Hearthstone`.
+3. Copy `addon/Hearthstone` (without `Textures`) to `<client>/Interface/AddOns/Hearthstone`, and `addon/Hearthstone/Textures` to `<client>/Interface/Hearthstone/Textures`.
 4. Restart the server. The log shows `Hearthstone: enabled ...` and the dataset line at startup.
 
 `.reload config` re-reads the `Hearthstone.*` keys.

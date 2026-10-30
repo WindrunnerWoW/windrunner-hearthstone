@@ -242,7 +242,7 @@ def build():
         with open(os.path.join(OUT, name + ".blp"), "wb") as f:
             f.write(blp)
         records[name] = {
-            "path": "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\" + name,
+            "path": "Interface\\Hearthstone\\Textures\\Bg\\" + name,
             "file": "addon/Hearthstone/Textures/Bg/" + name + ".blp",
             "size": list(image.size), "format": "BLP2 DXT5 alpha8",
             "mipmaps": mip_count, "bytes": len(blp),

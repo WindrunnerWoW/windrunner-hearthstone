@@ -41,7 +41,7 @@ local CM = HsCollection
 H.ArenaUI = H.ArenaUI or {}
 local AU = H.ArenaUI
 
-AU.TEXTURE_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\"
+AU.TEXTURE_PATH = "Interface\\Hearthstone\\Textures\\UI\\"
 AU.ART = {   -- printed by tools/art/arena_ui.py
     bg = { cols = 3, rows = 2, w = 1536, h = 829, tile = 512, srcW = 1672, srcH = 902 },
     ArenaPlay = { right = 0.99609, bottom = 1.00000, aspect = 0.99654 },
@@ -887,7 +887,7 @@ function AU.SetHeroArt(hero, class, portraitId)
     if H.MatchUI and H.MatchUI.ClassColor and defaultId then
         col = H.MatchUI.ClassColor(defaultId) or col
     end
-    local path = altPath or (H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. tostring(cardId)
+    local path = altPath or (H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. tostring(cardId)
     for i = 1, table.getn(hero.strips) do
         local tex = hero.strips[i]
         local st = strips[i]

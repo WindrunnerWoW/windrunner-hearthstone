@@ -5,7 +5,7 @@ local H, P, AU, CM = Hearthstone, HsProtocol, Hearthstone.ArenaUI, HsCollection
 local LU = { W = 1104, H = 644, K = 1104 / 1536, elapsed = 0, page = 1 }
 H.LadderUI = LU
 local WHITE = "Interface\\Buttons\\WHITE8X8"
-local PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\"
+local PATH = "Interface\\Hearthstone\\Textures\\UI\\"
 -- The badge itself fits in the upper left; stars arch over it as in the owner's references.
 LU.BADGE = { cx = 114, y = 82, h = 176, starW = 34, pitch = 33 }
 

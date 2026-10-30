@@ -61,7 +61,7 @@ return function(ctx)
     check(E.ArtFor("EX1_323h", true) == "EX1_323h" and E.ArtFor("HERO_08c", true) == "HERO_08c", "Jaraxxus and non-defaults never substituted")
     check(E.ArtFor("HERO_01", true) == "HERO_01", "a class without a choice keeps the default")
     local path, bottom = E.Texture("HERO_08c")
-    check(path == "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c" and bottom == 0.75, "texture path and texcoord")
+    check(path == "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c" and bottom == 0.75, "texture path and texcoord")
     check(E.Texture("HERO_08") == nil and E.Texture("HERO_08b") == nil, "no texture for a default or a missing file")
     E.state = "loading"
     check(E.PortraitFor("MAGE") == "HERO_08", "not ready: defaults")

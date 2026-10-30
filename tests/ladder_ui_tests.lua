@@ -36,7 +36,7 @@ return function(check)
     local f = LU.frame
     check(f and f:IsShown() and f.opponents[3]:IsShown(), "chair push opens three rivals")
     local badge = f.rankBadge
-    check(badge:IsShown() and badge.icon:GetTexture() == "Interface\\AddOns\\Hearthstone\\Textures\\UI\\LadderRank_12",
+    check(badge:IsShown() and badge.icon:GetTexture() == "Interface\\Hearthstone\\Textures\\UI\\LadderRank_12",
         "top-left badge uses the actual rank artwork")
     check(badge.stars[3]:IsShown() and not badge.stars[4]:IsShown(), "rank 12 has three star slots")
     check(string.find(badge.stars[2]:GetTexture(), "LadderStar_full", 1, true)
@@ -97,7 +97,7 @@ return function(check)
         check(LU.standing.rank == rank and LU.standing.maxStars == max, "rank " .. rank .. " parses its server capacity")
         check(badge.stars[max]:IsShown() and (max == 5 or not badge.stars[max+1]:IsShown()), "rank " .. rank .. " shows exactly its slots")
         check(badge.icon:IsShown() and not badge.fallback:IsShown()
-            and badge.icon:GetTexture() == "Interface\\AddOns\\Hearthstone\\Textures\\UI\\LadderRank_" .. rank,
+            and badge.icon:GetTexture() == "Interface\\Hearthstone\\Textures\\UI\\LadderRank_" .. rank,
             "rank " .. rank .. " uses its own artwork")
     end
     local legend = string.gsub(payload, "rank=12", "rank=0")
@@ -112,7 +112,7 @@ return function(check)
     check(badge.number:GetText() == "12345" and badge.number:IsShown(), "five-digit Legend position is shown")
     check(not LU.Parse(string.gsub(payload, "maxstars=3", "maxstars=1")), "standing with too many stars is rejected")
     check(not LU.Parse(string.gsub(payload, "rank=12", "rank=26")), "rank above the supported range is rejected")
-    F.missingTextures = { ["Interface\\AddOns\\Hearthstone\\Textures\\UI\\LadderRank_12"] = true }
+    F.missingTextures = { ["Interface\\Hearthstone\\Textures\\UI\\LadderRank_12"] = true }
     H.Dispatch({op = "LADDER_OPEN", reqId = "0", payload = payload})
     check(badge.fallback:IsShown() and badge.fallback.label:GetText() == "Rank 12", "missing deployed artwork has a readable rank fallback")
     F.missingTextures = nil

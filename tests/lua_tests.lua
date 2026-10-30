@@ -1215,7 +1215,7 @@ local function testCollectionUI()
     HS_CardTextures = { generated = true, order = { id1 }, bottom = {} }
     UI.RefreshPage()
     check(w1.usingTexture == true and w1.tex:IsShown() and not w1.fb:IsShown(), "deployed texture is used")
-    check(w1.tex._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\" .. id1, "texture path: " .. tostring(w1.tex._.texture))
+    check(w1.tex._.texture == "Interface\\Hearthstone\\Textures\\Cards\\" .. id1, "texture path: " .. tostring(w1.tex._.texture))
     check(w1.tex._.texcoord[1] == 0 and w1.tex._.texcoord[2] == 1 and w1.tex._.texcoord[3] == 0 and w1.tex._.texcoord[4] == 388 / 512, "texcoord crops the 256x512 canvas")
     check(UI.slots[2].widget.usingTexture == false, "a card without texture next to it still falls back")
     HS_CardTextures = savedTextures
@@ -5424,7 +5424,7 @@ local function testCollectionArt()
     local function pieces(names)
         local t = { generated = true, pieces = {} }
         for i = 1, table.getn(names) do
-            t.pieces[names[i]] = { path = "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\" .. names[i], w = 40, h = 30, right = 0.625, bottom = 0.5 }
+            t.pieces[names[i]] = { path = "Interface\\Hearthstone\\Textures\\Collection\\" .. names[i], w = 40, h = 30, right = 0.625, bottom = 0.5 }
         end
         return t
     end
@@ -5469,19 +5469,19 @@ local function testCollectionArt()
         local tex = main.bookTiles[i]
         local _, _, c, r = string.find(UI.BOOK_TILES[i], "_c(%d+)r(%d+)")
         local pt = tex._.points[1]
-        check(tex:IsShown() and tex._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\" .. UI.BOOK_TILES[i] and pt.x == tonumber(c) * 512 and pt.y == UI.PAGES_TOP - tonumber(r) * 256, "book tile " .. i .. " at its place")
+        check(tex:IsShown() and tex._.texture == "Interface\\Hearthstone\\Textures\\Collection\\" .. UI.BOOK_TILES[i] and pt.x == tonumber(c) * 512 and pt.y == UI.PAGES_TOP - tonumber(r) * 256, "book tile " .. i .. " at its place")
         check(tex._.texcoord[2] == 0.625 and tex._.texcoord[4] == 0.5, "book tile " .. i .. " uses right / bottom of its piece")
     end
 
     -- class tabs: the sheet's icons, the checked tab glows
     local t3 = UI.classTabs[3]
-    check(t3.textured and t3.button:GetNormalTexture()._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\tab_mage" and t3.button:GetWidth() == UI.TAB_W, "mage tab uses its piece")
+    check(t3.textured and t3.button:GetNormalTexture()._.texture == "Interface\\Hearthstone\\Textures\\Collection\\tab_mage" and t3.button:GetWidth() == UI.TAB_W, "mage tab uses its piece")
     check(t3.button:GetCheckedTexture()._.blend == "ADD" and t3.button:GetChecked() == 1 and t3.button:GetNormalTexture()._.vertex[1] == 1, "the selected tab is bright and glows")
     check(UI.classTabs[4].button:GetNormalTexture()._.vertex[1] < 1 and UI.classTabs[4].button:GetChecked() == nil, "other tabs are dimmer")
     check(t3.button._.points[1].y == UI.TAB_Y_UP and UI.classTabs[4].button._.points[1].y == UI.TAB_Y and UI.TAB_Y_UP > UI.TAB_Y, "the selected tab is raised, the others sit lower")
 
     -- mana gems
-    check(UI.manaButtons[3].textured and UI.manaButtons[3]:GetNormalTexture()._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\mana_3", "gem 3 piece")
+    check(UI.manaButtons[3].textured and UI.manaButtons[3]:GetNormalTexture()._.texture == "Interface\\Hearthstone\\Textures\\Collection\\mana_3", "gem 3 piece")
     check(UI.manaAll.textured and UI.manaAll._.locked == true and UI.manaAll:GetNormalTexture()._.vertex[1] == 1, "the all gem glows while no mana filter is set")
     F.fire(UI.manaButtons[3], "OnClick")
     check(UI.manaButtons[3]._.locked == true and UI.manaButtons[3]:GetNormalTexture()._.vertex[1] == 1 and UI.manaButtons[2]:GetNormalTexture()._.vertex[1] < 1, "a selected gem is bright, the others dim")
@@ -5499,7 +5499,7 @@ local function testCollectionArt()
     check(main.barTiles and table.getn(main.barTiles) == 2 and main.bar == main.barTiles[1], "the bar is two tiles")
     for i = 1, 2 do
         local pt = main.barTiles[i]._.points[1]
-        check(main.barTiles[i]._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\" .. UI.BAR_TILES[i] and pt.x == (i - 1) * 512 and pt.y == UI.BAR_TOP, "bar tile " .. i .. " below the book")
+        check(main.barTiles[i]._.texture == "Interface\\Hearthstone\\Textures\\Collection\\" .. UI.BAR_TILES[i] and pt.x == (i - 1) * 512 and pt.y == UI.BAR_TOP, "bar tile " .. i .. " below the book")
     end
     check(F.globals.HearthstoneSearchBoxLeft:IsShown() == false and F.globals.HearthstoneSearchBoxMiddle:IsShown() == false, "the search art replaces the template's pieces")
 
@@ -5511,8 +5511,8 @@ local function testCollectionArt()
     O.SetReady(res)
     UI.Requery(true)
     local sa, sb, sc = slotOf(A), slotOf(B), slotOf(C)
-    check(sa.banner:IsShown() and not sa.badge:IsShown() and sa.bannerTex._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\banner_x2", "x2 banner under a card owned twice")
-    check(sb.banner:IsShown() and sb.bannerTex._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\banner_x1", "x1 banner")
+    check(sa.banner:IsShown() and not sa.badge:IsShown() and sa.bannerTex._.texture == "Interface\\Hearthstone\\Textures\\Collection\\banner_x2", "x2 banner under a card owned twice")
+    check(sb.banner:IsShown() and sb.bannerTex._.texture == "Interface\\Hearthstone\\Textures\\Collection\\banner_x1", "x1 banner")
     local function glyphString(banner)
         local out = ""
         for i = 1, table.getn(banner.hsGlyphs or {}) do
@@ -5592,14 +5592,14 @@ local function testCollectionArt()
     check(pnl.artTiles and table.getn(pnl.artTiles) == 4 and pnl._.backdrop == nil, "deck panel frame art: four tiles")
     for i = 1, 4 do
         local pt = pnl.artTiles[i]._.points[1]
-        check(pnl.artTiles[i]._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\" .. DU.PANEL_TILES[i] and pt.x == 0 and pt.y == -(i - 1) * 256, "deck panel tile " .. i .. " below the previous one")
+        check(pnl.artTiles[i]._.texture == "Interface\\Hearthstone\\Textures\\Collection\\" .. DU.PANEL_TILES[i] and pt.x == 0 and pt.y == -(i - 1) * 256, "deck panel tile " .. i .. " below the previous one")
     end
     local br = pnl.browse
-    check(br.newButton.textured and br.newButton:GetNormalTexture()._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\deck_new", "New Deck is the sheet's button")
+    check(br.newButton.textured and br.newButton:GetNormalTexture()._.texture == "Interface\\Hearthstone\\Textures\\Collection\\deck_new", "New Deck is the sheet's button")
     check(table.getn(DU.empties) == DU.ROWS and DU.empties[1]:IsShown(), "empty slots fill the free positions")
     local x0, y0 = DU.tiles[1]._.points[1].x, DU.tiles[1]._.points[1].y
     check(x0 == DU.TILE_X and y0 == -(DU.TILE_Y0 + DU.TILE_PITCH) and DU.empties[1]._.points[1].x == x0 and DU.empties[1]._.points[1].y == y0, "empty slots sit where the tiles go")
-    check(br.counter._.regions[1]._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\plate_blue", "counter plate")
+    check(br.counter._.regions[1]._.texture == "Interface\\Hearthstone\\Textures\\Collection\\plate_blue", "counter plate")
     check(br.title._.textColor[1] == 0.25, "My Decks in dark ink on the plate")
     check(pnl.edit.nameBox._.textColor ~= nil and F.globals.HearthstoneDeckNameBoxLeft:IsShown() == false, "the name sits on the plate of the panel art")
     local nbp = pnl.edit.nameBox._.points[1]
@@ -5621,13 +5621,13 @@ local function testCollectionArt()
     check(DU.tiles[1]:IsShown() and not DU.empties[1]:IsShown() and DU.empties[2]:IsShown(), "a deck replaces its empty slot")
     local frameTex = nil
     for _, rg in ipairs(DU.tiles[1]._.regions) do
-        if rg._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\deck_tile" then frameTex = rg end
+        if rg._.texture == "Interface\\Hearthstone\\Textures\\Collection\\deck_tile" then frameTex = rg end
     end
     check(frameTex ~= nil and frameTex._.layer == "ARTWORK" and DU.tiles[1].art._.layer == "BACKGROUND", "the tile frame is over the hero art")
     -- the class picker uses the tab icons and the parchment
     F.fire(br.newButton, "OnClick")
-    check(DU.picker:IsShown() and DU.picker._.regions[1]._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\parch_tall", "picker on the parchment")
-    check(DU.pickButtons[3].icon._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Collection\\tab_mage", "picker icon is the class tab piece")
+    check(DU.picker:IsShown() and DU.picker._.regions[1]._.texture == "Interface\\Hearthstone\\Textures\\Collection\\parch_tall", "picker on the parchment")
+    check(DU.pickButtons[3].icon._.texture == "Interface\\Hearthstone\\Textures\\Collection\\tab_mage", "picker icon is the class tab piece")
     F.fire(DU.picker.cancelButton, "OnClick")
 
     -- /hs bookart off: the plain page, but the other pieces stay
@@ -5711,7 +5711,7 @@ local function testCollectionFixes()
     local savedPieces = HS_CollectionTextures
     local savedCardTextures = HS_CardTextures
     local BS = string.char(92)
-    local PATH = "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Collection" .. BS
+    local PATH = "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Collection" .. BS
     local function near(a, b) return math.abs(a - b) < 0.0001 end
 
     local function resetUI()
@@ -5915,7 +5915,7 @@ local function testCollectionFixes()
     HS_CollectionTextures = pieces(noStrips)
     HS_CardTextures = { generated = true, order = { "HERO_08", "EX1_116" }, bottom = { HERO_08 = 388 / 512 } }
     local tex = main:CreateTexture(nil, "ARTWORK")
-    check(DU.SetTileArt(tex, "MAGE") == "crop" and tex._.texture == "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Cards" .. BS .. "HERO_08", "no strip: the crop of the HERO_08 texture")
+    check(DU.SetTileArt(tex, "MAGE") == "crop" and tex._.texture == "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Cards" .. BS .. "HERO_08", "no strip: the crop of the HERO_08 texture")
     local c = DU.TILE_CROP
     local bottom = 388 / 512
     check(near(tex._.texcoord[1], c[1]) and near(tex._.texcoord[2], c[2]) and near(tex._.texcoord[3], c[3] * bottom) and near(tex._.texcoord[4], c[4] * bottom), "the crop's texcoords follow DU.TILE_CROP")
@@ -5976,8 +5976,8 @@ local function testPacksArt()
     local savedPieces = HS_CollectionTextures
     local savedBoard = HS_BoardTextures
     local BS = string.char(92)
-    local PATH = "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Collection" .. BS
-    local BOARD = "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
+    local PATH = "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Collection" .. BS
+    local BOARD = "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
 
     local function resetUI()
         UI.frame, UI.preview, UI.hover, UI.layoutMode, UI.tabsFrame = nil, nil, nil, nil, nil
@@ -6969,8 +6969,8 @@ local function testMatchUI()
     -- the highlight with art: strips, tinted, turned like the card, sized by glowx / glowy
     local oldPieces = HS_BoardTextures
     HS_BoardTextures = { generated = true, pieces = {
-        glow_green = { path = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\glow_green", w = 128, h = 192, right = 1, bottom = 0.75 },
-        glow_red = { path = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\glow_red", w = 128, h = 192, right = 1, bottom = 0.75 } } }
+        glow_green = { path = "Interface\\Hearthstone\\Textures\\Board\\glow_green", w = 128, h = 192, right = 1, bottom = 0.75 },
+        glow_red = { path = "Interface\\Hearthstone\\Textures\\Board\\glow_red", w = 128, h = 192, right = 1, bottom = 0.75 } } }
     local host = CreateFrame("Frame", nil, MU.board)
     host:SetFrameLevel(50)
     host:SetWidth(MU.HAND_W)
@@ -7202,7 +7202,7 @@ local function testMatchUI()
 
     -- board pieces: a generated BoardTextures.lua is used where present
     local savedBT = HS_BoardTextures
-    HS_BoardTextures = { generated = true, pieces = { card_back = { path = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\card_back", w = 64, h = 128, right = 0.9, bottom = 0.7 } } }
+    HS_BoardTextures = { generated = true, pieces = { card_back = { path = "Interface\\Hearthstone\\Textures\\Board\\card_back", w = 64, h = 128, right = 0.9, bottom = 0.7 } } }
     check(MU.Piece("card_back") ~= nil and MU.Piece("gem_attack") == nil, "pieces")
     local tex = f:CreateTexture(nil, "ARTWORK")
     check(MU.SetPiece(tex, "card_back") and tex._.texture == HS_BoardTextures.pieces.card_back.path, "SetPiece")
@@ -7272,7 +7272,7 @@ local function testMatchArch()
         check(b.y1 > a.y1 or a.tex == hero.art, "strips go down")
         check(a.tex == hero.art or (b.x2 - b.x1) >= (a.x2 - a.x1), "lower dome strips are wider")
     end
-    check(hero.art._.texture == "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\HERO_08", "portrait texture: " .. tostring(hero.art._.texture))
+    check(hero.art._.texture == "Interface\\Hearthstone\\Textures\\Cards\\HERO_08", "portrait texture: " .. tostring(hero.art._.texture))
     local top = hero.slices[table.getn(hero.slices)]
     check(top.tex._.texture == hero.art._.texture, "dome strips show the same portrait")
 

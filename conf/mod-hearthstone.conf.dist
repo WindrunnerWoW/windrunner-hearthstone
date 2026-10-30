@@ -10,7 +10,7 @@
 # Prerequisites:
 #   - Build with modules enabled (-DMODULES=static, or -DMODULE_MOD_HEARTHSTONE=static)
 #   - Keep AddonChannel = 1 in mangosd.conf (otherwise every addon message is dropped)
-#   - Install the client addon (addon/Hearthstone -> Interface/AddOns/Hearthstone)
+#   - Install the client addon (addon/Hearthstone -> Interface/AddOns/Hearthstone; textures -> Interface/Hearthstone/Textures)
 #
 # Copy this file to <mangosd.conf directory>/modules/mod-hearthstone.conf.
 # mangosd refuses to start if a module .conf.dist has no matching active file.

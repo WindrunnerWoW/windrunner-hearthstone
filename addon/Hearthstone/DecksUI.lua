@@ -64,7 +64,7 @@ DU.PANEL_TILES = { "deck_panel_c0r0", "deck_panel_c0r1", "deck_panel_c0r2", "dec
 local WHITE = "Interface\\Buttons\\WHITE8X8"
 local TOOLTIP_EDGE = "Interface\\Tooltips\\UI-Tooltip-Border"
 local HILITE = "Interface\\QuestFrame\\UI-QuestTitleHighlight"
-local LADDER_STAR = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\LadderStar_full"
+local LADDER_STAR = "Interface\\Hearthstone\\Textures\\UI\\LadderStar_full"
 local STAR ="Interface\\TargetingFrame\\UI-RaidTargetingIcons"      -- the first icon of the sheet is the yellow star
 local INK = { 0.25, 0.14, 0.04 }
 DU.HINT = "Decks are shared by all characters of your account. Talk to a Hearthstone opponent to play a complete deck."
@@ -164,7 +164,7 @@ function DU.SetArt(tex, cardId, crop, class)
         if H.CardBottom then
             bottom = H.CardBottom(cardId)
         end
-        tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\AddOns\\Hearthstone\\Textures\\Cards\\") .. cardId)
+        tex:SetTexture((H.CARD_TEXTURE_PATH or "Interface\\Hearthstone\\Textures\\Cards\\") .. cardId)
         tex:SetTexCoord(crop[1], crop[2], crop[3] * bottom, crop[4] * bottom)
         tex:SetVertexColor(1, 1, 1)
         return true

@@ -21,8 +21,8 @@ local V = HsBgVis
 V.WHITE = "Interface\\Buttons\\WHITE8X8"
 V.EDGE = "Interface\\Tooltips\\UI-Tooltip-Border"
 V.NUMBER_FONT = "Fonts\\FRIZQT__.TTF"
-V.CARD_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\BgMinions\\Cards\\"
-V.HERO_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\BgHeroes\\"
+V.CARD_PATH = "Interface\\Hearthstone\\Textures\\BgMinions\\Cards\\"
+V.HERO_PATH = "Interface\\Hearthstone\\Textures\\BgHeroes\\"
 V.CARD_W, V.CARD_H = 256, 388           -- the card part of the 256x512 card texture
 V.CARD_SCALE = 0.72                     -- the hover card is shown at this share of its 256x388
 V.HP_GEM, V.HP_FONT = 38, 20            -- the hero's health gem (MatchUI HERO_HP_GEM / HERO_HP_FONT)
@@ -332,7 +332,7 @@ function V.MakeHero(parent, name, w)
     else
         h.open = { l = 4, t = 4, r = w - 4, b = hh - 4 }
         h.ring = b:CreateTexture(nil, "ARTWORK")
-        h.ring:SetTexture("Interface\\AddOns\\Hearthstone\\Textures\\Bg\\hero_frame")
+        h.ring:SetTexture("Interface\\Hearthstone\\Textures\\Bg\\hero_frame")
         h.ring:SetVertexColor(1, 0.82, 0.3)
         h.ring:SetAllPoints(b)
     end
@@ -600,8 +600,8 @@ local function cardFrame()
     f.needs:SetBackdropColor(0, 0, 0, 0.85)
     f.needs:SetBackdropBorderColor(0.3, 0.65, 0.4, 1)
     f.np = {}
-    local lobbyPath = (HsBgLobbyUI and HsBgLobbyUI.BG_PATH) or "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\"
-    local heroPath = (HsBgLobbyUI and HsBgLobbyUI.HERO_PATH) or "Interface\\AddOns\\Hearthstone\\Textures\\BgHeroes\\"
+    local lobbyPath = (HsBgLobbyUI and HsBgLobbyUI.BG_PATH) or "Interface\\Hearthstone\\Textures\\Bg\\"
+    local heroPath = (HsBgLobbyUI and HsBgLobbyUI.HERO_PATH) or "Interface\\Hearthstone\\Textures\\BgHeroes\\"
     for i = 1, 3 do
         local p = CreateFrame("Frame", nil, f.needs)
         p:SetWidth(62)

@@ -20,8 +20,8 @@ L.ROW_GAP = 4
 L.CELL = 50                            -- the portrait column: frame size, bar height and the pitch
 L.BAR_H = 7
 L.PITCH = 57
-L.BG_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\Bg\\"
-L.HERO_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\BgHeroes\\"
+L.BG_PATH = "Interface\\Hearthstone\\Textures\\Bg\\"
+L.HERO_PATH = "Interface\\Hearthstone\\Textures\\BgHeroes\\"
 L.FRAME_COLOR = { me = { 1, 0.82, 0.3 }, ally = { 0.35, 0.62, 1 }, foe = { 0.85, 0.22, 0.18 } }
 L.GLOW_COLOR = { 1, 0.15, 0.1 }
 

@@ -3,7 +3,7 @@
   Deploys the Hearthstone addon and its card textures to a WoW 1.12-family client.
 
 .DESCRIPTION
-  1. Mirrors addon/Hearthstone into <ClientDir>\Interface\AddOns\Hearthstone (copies new and changed files,
+  1. Mirrors addon/Hearthstone into <ClientDir>\Interface\AddOns\Hearthstone, with its Textures\ folder going to <ClientDir>\Interface\Hearthstone\Textures (copies new and changed files,
      removes files in that addon folder that are not part of the deployment; nothing outside it is touched).
   2. Copies card textures from art/out/Cards/<id>.blp (Blizzard art, gitignored, made by `python tools/art/setup_art.py`) into
      <addon>\Textures\Cards\ - either the prototype set or all of them.
@@ -127,6 +127,8 @@ $CollectionManifest = Join-Path $Module 'data\art\collection_textures.manifest.j
 $UiDir = [IO.Path]::GetFullPath((Join-Path $Module 'art\out\UI'))
 $Client   = [IO.Path]::GetFullPath($ClientDir)
 $Target   = [IO.Path]::GetFullPath((Join-Path $Client 'Interface\AddOns\Hearthstone'))
+$TexRoot  = [IO.Path]::GetFullPath((Join-Path $Client 'Interface\Hearthstone'))   # Textures\* go here, not into the addon folder
+function Get-Dest([string]$rel) { if ($rel -like 'Textures\*') { Join-Path $TexRoot $rel } else { Join-Path $Target $rel } }
 
 # ---- sanity checks (this script deletes files in $Target, so be strict about what it is)
 if (-not (Test-Path -LiteralPath $AddonSrc -PathType Container)) { throw "addon source not found: $AddonSrc" }
@@ -404,7 +406,7 @@ if ($Board -eq 'All' -and (Test-Path -LiteralPath $BoardDir -PathType Container)
         [void]$bsb.Append("HS_BoardTextures = {`n    generated = true,`n    pieces = {`n")
         foreach ($n in $boardNames) {
             $e = $boardEntries[$n]
-            $line = "        $n = { path = `"Interface\\AddOns\\Hearthstone\\Textures\\Board\\$n`", w = $($e.w), h = $($e.h), right = " +
+            $line = "        $n = { path = `"Interface\\Hearthstone\\Textures\\Board\\$n`", w = $($e.w), h = $($e.h), right = " +
                 ([double]$e.right).ToString('R', $inv) + ', bottom = ' + ([double]$e.bottom).ToString('R', $inv)
             if ($e.aspect) { $line += ', aspect = ' + ([double]$e.aspect).ToString('R', $inv) }
             if ($e.anchors) {
@@ -448,7 +450,7 @@ if ($Collection -eq 'All' -and (Test-Path -LiteralPath $CollectionDir -PathType 
         [void]$csb.Append("HS_CollectionTextures = {`n    generated = true,`n    pieces = {`n")
         foreach ($n in $collNames) {
             $e = $collEntries[$n]
-            $line = "        $n = { path = `"Interface\\AddOns\\Hearthstone\\Textures\\Collection\\$n`", w = $($e.w), h = $($e.h), right = " +
+            $line = "        $n = { path = `"Interface\\Hearthstone\\Textures\\Collection\\$n`", w = $($e.w), h = $($e.h), right = " +
                 ([double]$e.right).ToString('R', $inv) + ', bottom = ' + ([double]$e.bottom).ToString('R', $inv)
             [void]$csb.Append($line + " },`n")
         }
@@ -549,15 +551,22 @@ function Get-Sha([string]$path, [byte[]]$bytes) {
 
 # ---- plan
 $have = @{}
+$legacy = @()   # textures an older deploy left inside the addon folder
 if (Test-Path -LiteralPath $Target -PathType Container) {
     Get-ChildItem -LiteralPath $Target -Recurse -File | ForEach-Object {
-        $have[$_.FullName.Substring($Target.Length).TrimStart('\')] = $_.FullName
+        $r = $_.FullName.Substring($Target.Length).TrimStart('\')
+        if ($r -like 'Textures\*') { $legacy += $r } else { $have[$r] = $_.FullName }
+    }
+}
+if (Test-Path -LiteralPath (Join-Path $TexRoot 'Textures') -PathType Container) {
+    Get-ChildItem -LiteralPath (Join-Path $TexRoot 'Textures') -Recurse -File | ForEach-Object {
+        $have[$_.FullName.Substring($TexRoot.Length).TrimStart('\')] = $_.FullName
     }
 }
 $toCopy = @(); $unchanged = 0; $toRemove = @()
 foreach ($rel in ($want.Keys | Sort-Object)) {
     $w = $want[$rel]
-    $dst = Join-Path $Target $rel
+    $dst = Get-Dest $rel
     if ($have.ContainsKey($rel)) {
         $same = ((Get-Item -LiteralPath $dst).Length -eq $w.Length) -and ((Get-Sha $dst $null) -eq (Get-Sha $w.Src $w.Bytes))
         if ($same) { $unchanged++; continue }
@@ -565,11 +574,13 @@ foreach ($rel in ($want.Keys | Sort-Object)) {
     $toCopy += $rel
 }
 foreach ($rel in ($have.Keys | Sort-Object)) { if (-not $want.ContainsKey($rel)) { $toRemove += $rel } }
+foreach ($rel in $legacy) { $toRemove += "AddOns\Hearthstone\$rel" }
 
 # ---- apply
 $prefix = if ($apply) { '' } else { '[dry run] would ' }
 Write-Host "Source : $AddonSrc"
 Write-Host "Target : $Target"
+Write-Host "Textures: $TexRoot\Textures"
 Write-Host "Cards  : $Cards ($($ids.Count) textures)"
 Write-Host "Board  : $Board ($($boardNames.Count) pieces)"
 Write-Host "Minions: $Minions ($($minionIds.Count) oval portraits)"
@@ -579,18 +590,23 @@ Write-Host "Heroes : $Heroes ($($heroIds.Count) alternative portraits)"
 Write-Host "Collection: $Collection ($($collNames.Count) pieces)"
 Write-Host "UI icons: $($uiNames.Count)"
 if ($apply) {
-    foreach ($rel in $toRemove) { Remove-Item -LiteralPath (Join-Path $Target $rel) -Force }
+    foreach ($rel in $toRemove) {
+        $victim = if ($rel -like 'AddOns\Hearthstone\*') { Join-Path $Client "Interface\$rel" } else { Get-Dest $rel }
+        Remove-Item -LiteralPath $victim -Force
+    }
     foreach ($rel in $toCopy) {
         $w = $want[$rel]
-        $dst = Join-Path $Target $rel
+        $dst = Get-Dest $rel
         New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dst) | Out-Null
         if ($w.Src) { Copy-Item -LiteralPath $w.Src -Destination $dst -Force }
         else { [IO.File]::WriteAllBytes($dst, $w.Bytes) }
     }
     # drop folders that became empty (deepest first), never the addon folder itself
-    if (Test-Path -LiteralPath $Target) {
-        Get-ChildItem -LiteralPath $Target -Recurse -Directory | Sort-Object { $_.FullName.Length } -Descending | ForEach-Object {
-            if (-not (Get-ChildItem -LiteralPath $_.FullName -Force)) { Remove-Item -LiteralPath $_.FullName -Force }
+    foreach ($root in @($Target, $TexRoot)) {
+        if (Test-Path -LiteralPath $root) {
+            Get-ChildItem -LiteralPath $root -Recurse -Directory | Sort-Object { $_.FullName.Length } -Descending | ForEach-Object {
+                if (-not (Get-ChildItem -LiteralPath $_.FullName -Force)) { Remove-Item -LiteralPath $_.FullName -Force }
+            }
         }
     }
 }

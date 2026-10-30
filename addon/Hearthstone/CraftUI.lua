@@ -33,7 +33,7 @@ CU.BANNER_W, CU.BANNER_H = 64, 48      -- the ownership banner under the card (t
 CU.BANNER_OVERLAP = 10                 -- its top is tucked this far behind the card's bottom edge
 -- The crystal status panel: its image (1774 x 887 in the source, 512 x 256 as texture, the whole image) and the
 -- rectangles the addon lays over it, in source pixels { left, top, right, bottom }, measured by hand on the art.
-CU.PANEL_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\CraftPanel"
+CU.PANEL_PATH = "Interface\\Hearthstone\\Textures\\UI\\CraftPanel"
 CU.PANEL_W = 430
 CU.PANEL_SRC_W, CU.PANEL_SRC_H = 1774, 887
 CU.PANEL_H = math.floor(CU.PANEL_W * CU.PANEL_SRC_H / CU.PANEL_SRC_W + 0.5)
@@ -46,8 +46,8 @@ CU.RECTS = {
 }
 -- The blue outline of a slot that can be used and the dimming of one that cannot (ui_icons.py --only glow): both are
 -- one 512 x 256 texture with the arched slot shape inset GLOW_INSET px on every side of a shape of 464 x 208 px.
-CU.GLOW_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\SlotGlow"
-CU.SHADE_PATH = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\SlotShade"
+CU.GLOW_PATH = "Interface\\Hearthstone\\Textures\\UI\\SlotGlow"
+CU.SHADE_PATH = "Interface\\Hearthstone\\Textures\\UI\\SlotShade"
 CU.GLOW_INSET, CU.GLOW_SHAPE_W, CU.GLOW_SHAPE_H = 24, 464, 208
 CU.GLOW_COLOR = { 0.35, 0.75, 1 }
 CU.SHADE_ALPHA = 0.5          -- how much the book is dimmed while the panel is open

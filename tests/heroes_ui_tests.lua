@@ -129,7 +129,7 @@ return function(ctx)
         and string.find(HU.cells[2].status:GetText(), "Selected", 1, true) ~= nil, "the choice is marked")
     local strip = HU.cells[2].hero.strips[1]
     local tex = strip.GetTexture and strip:GetTexture()
-    check(tex == "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c", "the alternative's texture is drawn: " .. tostring(tex))
+    check(tex == "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c", "the alternative's texture is drawn: " .. tostring(tex))
     F.fire(HU.cells[1].button, "OnClick", {})
     local sq2 = T.queuedOps("HERO_SELECT")
     check(sq2[table.getn(sq2)].payload == "class=MAGE;id=default", "back to the default sends 'default'")
@@ -160,19 +160,19 @@ return function(ctx)
     T.frame("HEROES", H.heroes.reqId, "credits=0;own=HERO_08c;sel=MAGE.HERO_08c")
     local probe = HU.cells[1].hero.strips[1]
     local DU = H.DecksUI
-    check(DU.SetTileArt(probe, "MAGE") == "crop" and probe:GetTexture() == "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c",
+    check(DU.SetTileArt(probe, "MAGE") == "crop" and probe:GetTexture() == "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c",
         "deck tile: the selected portrait, cropped")
-    check(DU.SetTileArt(probe, "WARRIOR") ~= "crop" or probe:GetTexture() ~= "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c",
+    check(DU.SetTileArt(probe, "WARRIOR") ~= "crop" or probe:GetTexture() ~= "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c",
         "deck tile: another class keeps its own art")
     H.ArenaUI.SetHeroArt(probe and HU.cells[1].hero, "MAGE", E.PortraitFor("MAGE"))
-    check(HU.cells[1].hero.strips[1]:GetTexture() == "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c", "arena hero art: the portrait")
+    check(HU.cells[1].hero.strips[1]:GetTexture() == "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c", "arena hero art: the portrait")
     H.ArenaUI.SetHeroArt(HU.cells[1].hero, "MAGE")
-    check(HU.cells[1].hero.strips[1]:GetTexture() ~= "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c", "arena hero art without a portrait id: the default")
+    check(HU.cells[1].hero.strips[1]:GetTexture() ~= "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c", "arena hero art without a portrait id: the default")
     -- the match: only the own hero, only a class default
     check(E.ArtFor("HERO_08", true) == "HERO_08c" and E.ArtFor("HERO_08", false) == "HERO_08", "match: own hero only")
     local hero = { archW = 100, archH = 150, bleed = 0, slices = { { tex = probe, x1 = 0, y1 = 0, x2 = 100, y2 = 150 } } }
     H.MatchUI.SetHeroArt(hero, "HERO_08c")
-    check(probe:GetTexture() == "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\HERO_08c", "MatchUI.SetHeroArt draws an alternative texture")
+    check(probe:GetTexture() == "Interface\\Hearthstone\\Textures\\Heroes\\HERO_08c", "MatchUI.SetHeroArt draws an alternative texture")
 
     H.db = savedDb
     HS_HeroTextures = savedTextures

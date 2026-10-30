@@ -96,7 +96,7 @@ UI.LIMIT_FOOT_GAP = 4          -- the bar ends this far above the card's bottom 
 UI.BANNER_OVERLAP = 8         -- the x1 / x2 banner starts this far above the card's bottom edge, under the card
 -- The same banner without its text (ui_icons.py --only banner), for the counts the sheet has no banner for: the
 -- count is written on it as text. Same canvas and plate as the sheet's banners.
-UI.BANNER_BLANK = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\BannerBlank"
+UI.BANNER_BLANK = "Interface\\Hearthstone\\Textures\\UI\\BannerBlank"
 UI.BANNER_BLANK_RIGHT, UI.BANNER_BLANK_BOTTOM = 0.9375, 0.703125
 UI.BANNER_FONT = "Fonts\\FRIZQT__.TTF"
 UI.BANNER_INK = { 0.2, 0.12, 0.05 }
@@ -104,7 +104,7 @@ UI.BANNER_INK = { 0.2, 0.12, 0.05 }
 -- of the digits and the x (ui_icons.py --only digits writes the table below). The font above is only the fallback for
 -- a client without the atlas. Boxes are pixels { x0, y0, x1, y1 } of the 512 x 64 atlas; the digits are 34 px high
 -- with their baseline at row 40, the x sits on the same baseline.
-UI.BANNER_DIGITS = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\BannerDigits"
+UI.BANNER_DIGITS = "Interface\\Hearthstone\\Textures\\UI\\BannerDigits"
 UI.GLYPH_ATLAS_W, UI.GLYPH_ATLAS_H = 512, 64
 UI.GLYPH_DIGIT_H, UI.GLYPH_BASELINE, UI.GLYPH_GAP = 34, 40, 2
 UI.GLYPHS = {
@@ -146,7 +146,7 @@ UI.GLOW_LINE = {
 UI.WALLET_X, UI.WALLET_W = 28, 90
 UI.WALLET_DY = 20                -- the dust sits this far below the middle of the header strip
 UI.DUST_ICON = "Interface\\Icons\\INV_Enchant_DustDream"
-UI.DUST_BOTTLE = "Interface\\AddOns\\Hearthstone\\Textures\\UI\\DustBottle"
+UI.DUST_BOTTLE = "Interface\\Hearthstone\\Textures\\UI\\DustBottle"
 UI.BOTTLE_RIGHT = 0.609375     -- width / height of the bottle on its 256 x 256 texture (ui_icons.py prints it)
 UI.BOTTLE_H = 26               -- height of the bottle in the header strip
 UI.PREVIEW_W = 272

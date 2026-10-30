@@ -24,7 +24,7 @@ local E = HsHeroes
 
 E.MAX_ATTEMPTS = 3            -- sends of one unlock (same key) before the addon gives up and resyncs
 E.MAX_CREDITS = 99999
-E.TEXTURE_DIR = "Interface\\AddOns\\Hearthstone\\Textures\\Heroes\\"
+E.TEXTURE_DIR = "Interface\\Hearthstone\\Textures\\Heroes\\"
 E.CLASSES = { "DRUID", "HUNTER", "MAGE", "PALADIN", "PRIEST", "ROGUE", "SHAMAN", "WARLOCK", "WARRIOR" }
 
 -- REFUSED why=<code> -> the tab's line.

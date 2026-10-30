@@ -820,7 +820,7 @@ return function(ctx)
     -- shields and the End Turn stone (every piece falls back to the plain look, which the tests above cover).
     local function testBoardArt()
         local saved = HS_BoardTextures
-        local B = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\"
+        local B = "Interface\\Hearthstone\\Textures\\Board\\"
         local pieces = {}
         local names = { "minion_oval", "taunt_frame", "divine_shield", "gem_attack", "gem_health", "end_turn_button",
             "bg_upgrade", "bg_refresh", "bg_freeze", "bg_coin" }
@@ -913,7 +913,7 @@ return function(ctx)
     -- ------------------------------------------------------------------ hero pick, hero, power, send, gift
     local function setArt()
         local savedB, savedT = HS_BoardTextures, HS_BgTextures
-        local B = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\"
+        local B = "Interface\\Hearthstone\\Textures\\Board\\"
         local pieces = {}
         local names = { "minion_oval", "taunt_frame", "divine_shield", "gem_attack", "gem_health" }
         for c = 0, 2 do
@@ -1112,7 +1112,7 @@ return function(ctx)
 
     local function testDarkmoonTicket()
         local saved = HS_BoardTextures
-        HS_BoardTextures = { generated = true, pieces = { bg_coin = { path = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\bg_coin" } } }
+        HS_BoardTextures = { generated = true, pieces = { bg_coin = { path = "Interface\\Hearthstone\\Textures\\Board\\bg_coin" } } }
         boot()
         feed("BG_STATE", "0", statePayload({ oft = "10" }))
         tick(0.1)
@@ -1160,7 +1160,7 @@ return function(ctx)
     -- The lobby cell tooltip names the seat's quest and reward (the tooltip lives on the portrait column).
     local function testLobbyQuestTooltip()
         local savedB, savedT = HS_BoardTextures, HS_BgTextures
-        local B = "Interface\\AddOns\\Hearthstone\\Textures\\Board\\"
+        local B = "Interface\\Hearthstone\\Textures\\Board\\"
         local pieces = {}
         for c = 0, 2 do
             for r = 0, 1 do
@@ -1212,7 +1212,7 @@ return function(ctx)
     local function testHeroArch()
         local savedB, savedT = HS_BoardTextures, HS_BgTextures
         local BS = string.char(92)
-        local B = "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
+        local B = "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
         local pieces = {}
         local names = { "arch_top", "hero_power_ring", "bg_coin" }
         for i = 1, table.getn(names) do
@@ -1250,7 +1250,7 @@ return function(ctx)
     local function testArtMode()
         local savedB, savedT = HS_BoardTextures, HS_BgTextures
         local BS = string.char(92)
-        local B = "Interface" .. BS .. "AddOns" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
+        local B = "Interface" .. BS .. "Hearthstone" .. BS .. "Textures" .. BS .. "Board" .. BS
         local pieces = {}
         local names = { "bg_board_c0r0", "bg_board_c1r0", "bg_board_c2r0", "bg_board_c0r1", "bg_board_c1r1",
             "bg_board_c2r1", "minion_oval", "gem_attack", "gem_health", "gem_armor", "taunt_frame", "divine_shield",
