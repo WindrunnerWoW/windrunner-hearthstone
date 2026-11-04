@@ -297,8 +297,8 @@ namespace
         return player && player->GetSession() ? player->GetSession()->GetAccountId() : 0;
     }
 
-    // Unlocks the quest NPCs whose quest is in completed for the player's account and tells the player about each
-    // new one. source: login:<guid>, reward:<guid> or talk:<guid>.
+    // Unlocks the quest NPCs whose quest is in completed for the player's account (silent: the unlocks are logged,
+    // not announced in chat). source: login:<guid>, reward:<guid> or talk:<guid>.
     void ReconcileUnlocks(Player* player, Hs::OpponentRegistry const& registry, std::set<uint32_t> const& completed,
                           char const* how)
     {
@@ -313,9 +313,6 @@ namespace
         for (uint32 entry : added)
         {
             std::string const name = CreatureName(entry);
-            SysMessage(player, Hs::ClassQuestOpponentOf(entry)
-                ? name + " has joined your account's random-opponent roster."
-                : name + " will now play Hearthstone with you (and your other characters).");
             sLog.outString("Hearthstone: account %u unlocked the quest NPC %s (%u), %s", accountId, name.c_str(), entry,
                 source.c_str());
         }

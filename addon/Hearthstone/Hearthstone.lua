@@ -1412,15 +1412,9 @@ function H.OnCraftAccess(msg)
     if open == nil then
         return
     end
-    local was = W.craftOpen
     W.SetAccess(open, npc)
-    if open then
-        H.Print("Crafting with " .. tostring(npc or "a Hearthstone Master") .. ": click a card in your collection to craft or scrap it.")
-        if H.ShowCraft then
-            H.ShowCraft()
-        end
-    elseif was then
-        H.Print("You walked away from the Hearthstone Master: crafting is closed.")
+    if open and H.ShowCraft then
+        H.ShowCraft()
     end
     H.NotifyWallet()
 end

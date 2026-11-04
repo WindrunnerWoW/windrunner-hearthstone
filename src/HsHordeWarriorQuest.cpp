@@ -55,11 +55,6 @@ namespace
         explicit DeckPickupInteraction(GameObject* go) : HsQuestPickupAI(go, kHsHordeVeteranDeckItem) {}
     protected:
         bool IsEligible(Player const* player) const override { return NeedsDeck(player); }
-        void OnCollected(Player* player) override
-        {
-            ChatHandler(player->GetSession()).SendSysMessage("Several cards have circular ale stains. "
-                "Return the deck to the veteran.");
-        }
     };
 
     class HordeDeckPickupScript final : public AllGameObjectScript

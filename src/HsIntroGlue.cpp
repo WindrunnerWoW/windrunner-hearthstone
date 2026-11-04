@@ -279,8 +279,9 @@ bool HsIntroHandleOpenItem(Player* player, WorldPacket const& packet)
     // The starter deck: the cards and the deck of this character's class (a class is never unlocked by it). A class
     // deck: the class for the whole account, then its starter deck. Both are idempotent; a failure keeps the item.
     bool const ok = starter ? HsAwardStarter(accountId, cls, source, text) : HsUnlockClass(accountId, cls, source, text);
-    SysMessage(player, text + (ok ? " Open your collection with /hs collection." : ""));
-    if (ok)
+    if (!ok)
+        SysMessage(player, text);  // a success is silent: the item is used up and the class shows in the collection
+    else
     {
         uint32 one = 1;
         player->DestroyItemCount(item, one, true);
@@ -441,10 +442,7 @@ void HsIntroAfterTurnIn(WorldSession* session, WorldPacket const& packet)
         HsPushIntroDone(accountId);  // the addon now shows its micro menu button
     }
     else if (quest == kHsIntroTradeHorde || quest == kHsIntroTradeAlliance)
-    {
         SetMasterDone(player->GetSession()->GetAccountId());
-        SysMessage(player, "Byron now offers to craft and scrap cards for you.");
-    }
     else
         GrantIntroPack(player, quest);
 }

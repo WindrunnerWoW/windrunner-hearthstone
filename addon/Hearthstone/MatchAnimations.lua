@@ -20,6 +20,8 @@
 --   weapon_break  id (the weapon entity), cardId: a weapon breaks (the wbrk event, or a weapon that is on the
 --            presented board and gone from the new game). The old weapon stays during the beat, which cracks it
 --            and lets it fall apart (AN.WEAPON_BREAK); the new game is committed after it. No effect beat.
+--   discard  side, items { { id (hand card entity), cardId }, ... } (at most AN.MAX_DISCARDS): cards discarded from a
+--            hand (disc events with amount 0) slide out of the hand upwards and fade; the hand is redrawn at the commit
 --   effect   family (see AN.FAMILIES), cardId (of the cause), causeType ("play"|"hp"|"trig"|"dr"|nil), source
 --            (entity id of the cause; a hand card id for a play), sourceOnBoard, aim (target of the play /
 --            hp event, 0 = none), targets (entity ids the results land on, at most AN.MAX_TARGETS), sides
@@ -67,6 +69,8 @@ AN.FIZZLE = 0.27               -- ANTICIPATE + FIZZLE_STRIKE + FIZZLE_RETURN
 AN.IMPACT = 0.25               -- grouped damage / healing that is not an attack
 AN.DEATH = 0.40                -- fade of the dying minions
 AN.WEAPON_BREAK = 0.50         -- a weapon breaks: crack flash, then shrinks, falls and fades
+AN.DISCARD = 0.60              -- discarded hand cards slide up and fade
+AN.MAX_DISCARDS = 5            -- cards shown by one discard beat (the rest just leave with the commit)
 AN.EFFECT = 0.35               -- generic effect pulse
 AN.REVEAL_IN, AN.REVEAL_HOLD, AN.REVEAL_OUT = 0.15, 1.3, 0.2
 AN.REVEAL = 1.65               -- opponent card reveal: in + hold + out
@@ -793,6 +797,36 @@ function AN.Build(events, prev, game)
                         side = e.side }, e)
                 end
                 i = i + 1
+            elseif t == "disc" and e.amount == 0 and e.target ~= 0 and e.cardId and prev then
+                -- cards discarded from a hand: one beat for the run of the same side. Only cards that are in the
+                -- presented hand count (the opponent's hand is just a number); a card that was drawn and discarded
+                -- within the transition has nothing to slide out of.
+                local items = {}
+                local j = i
+                local hand = e.side == "m" and prev.hand or nil
+                while j <= to and events[j].type == "disc" and events[j].side == e.side and not consumed[j] do
+                    local x = events[j]
+                    if x.amount == 0 and x.target ~= 0 and x.cardId and table.getn(items) < AN.MAX_DISCARDS then
+                        local present = false
+                        if hand then
+                            for k = 1, table.getn(hand) do
+                                if hand[k].id == x.target then
+                                    present = true
+                                end
+                            end
+                        else
+                            present = e.side == "o" and prev.opp and (prev.opp.handCount or 0) > table.getn(items)
+                        end
+                        if present then
+                            table.insert(items, { id = x.target, cardId = x.cardId })
+                        end
+                    end
+                    j = j + 1
+                end
+                if table.getn(items) > 0 then
+                    add({ kind = "discard", dur = AN.DISCARD, items = items, side = e.side }, e)
+                end
+                i = j
             elseif matchesSpecialResult(e) and not covered[i] then
                 -- Explicit source/side/card-result match recovers only the five whitelisted cast markers.
                 local idxs = {}
@@ -819,7 +853,7 @@ function AN.Build(events, prev, game)
                     resultCause = activePlay
                 end
                 while j <= to and RESULTS[events[j].type] and events[j].type ~= "wbrk" and not covered[j]
-                    and not consumed[j] do
+                    and not consumed[j] and not (events[j].type == "disc" and events[j].amount == 0) do
                     local x = events[j]
                     if matchesSpecialResult(x) then
                         break

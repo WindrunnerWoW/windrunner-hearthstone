@@ -3126,6 +3126,7 @@ local function refreshHand(g)
                 color = "combo"
             end
             setGlow(slot.glow, color)
+            slot.frame:SetAlpha(MU.discardHidden[card.id] and 0 or 1)   -- a discarded card stays hidden until the commit
             slot.frame:Show()
         else
             MU.HandUnpop(i)
@@ -4146,6 +4147,11 @@ MU.FX_LEVEL = 150             -- frame level of the Fx layer above the board (ov
 MU.SHAKE_PX, MU.SHAKE_TIME = 4, 0.22
 MU.FLASH_TIME = 0.28
 MU.DEATH_DRIFT = 12           -- pixels a dying minion sinks
+MU.DISCARD_RISE = 90          -- pixels a discarded hand card slides up
+MU.DISCARD_FADE_AT = 0.35     -- share of the discard beat after which the card fades
+MU.DISCARD_OPP_SCALE = 0.6    -- the opponent's discarded card (it starts as a small card back)
+MU.discards = nil             -- the ghost cards of a discard beat: { { frame, widget } }
+MU.discardHidden = {}         -- hand card entity ids whose slot is hidden until the plan commits
 MU.WBREAK_CRACK = 0.25        -- share of the weapon break that is the crack (flash, tremble) before the fall
 MU.WBREAK_FALL, MU.WBREAK_DRIFT, MU.WBREAK_SHRINK = 12, 3, 0.2   -- pixels down, pixels aside, share of the size lost
 MU.POOL_TEXTURES, MU.POOL_TEXTS, MU.MAX_FX = 24, 16, 48
@@ -4411,6 +4417,23 @@ local function buildFx(board)
     caption:SetPoint("BOTTOM", widget.frame, "TOP", 0, 4)
     rf:Hide()
     MU.reveal = { frame = rf, widget = widget, caption = caption }
+    -- the cards of a discard: a few hand-sized copies that slide out of the hand and fade (MU.BeatStart "discard")
+    MU.discards = {}
+    for k = 1, AN.MAX_DISCARDS do
+        local gf = CreateFrame("Frame", "HearthstoneMatchDiscard" .. k, board)
+        gf:SetWidth(MU.HAND_W)
+        gf:SetHeight(MU.HAND_H)
+        gf:SetFrameLevel(board:GetFrameLevel() + MU.FX_LEVEL - 6)
+        gf:EnableMouse(false)
+        local gw = H.CardWidget.Create(gf, "HearthstoneMatchDiscardCard" .. k, MU.HAND_W, false)
+        gw.frame:EnableMouse(false)
+        if gw.fb then
+            gw.fb:EnableMouse(false)
+        end
+        gw.frame:SetPoint("CENTER", gf, "CENTER", 0, 0)
+        gf:Hide()
+        MU.discards[k] = { frame = gf, widget = gw }
+    end
     -- the Fatigue card: art with the damage text on its parchment panel (only when the fatigue_card piece is installed)
     local fp = MU.Piece("fatigue_card")
     if fp and type(fp.w) == "number" and type(fp.h) == "number" and fp.h > 0 then
@@ -4891,6 +4914,74 @@ local function startFatigue(beat, rt)
     rt.fatigue = true
 end
 
+-- Discarded hand cards: a ghost copy of each card starts where the card stood (the opponent's: where his card backs
+-- stand, smaller) and slides up while it fades; the real hand slot is hidden until the plan commits and the hand is
+-- redrawn without the card.
+local function discardPlace(gh, t, p)
+    local rise = MU.DISCARD_RISE * (1 - (1 - p) * (1 - p))
+    local a = 1
+    if p > MU.DISCARD_FADE_AT then
+        a = 1 - (p - MU.DISCARD_FADE_AT) / (1 - MU.DISCARD_FADE_AT)
+    end
+    gh.frame:SetAlpha(a)
+    gh.frame:ClearAllPoints()
+    gh.frame:SetPoint("CENTER", MU.board, "TOPLEFT", gh.cx / gh.s, -(gh.cy - rise * gh.s) / gh.s)
+end
+
+local function startDiscard(beat, rt)
+    local ghosts = MU.discards
+    local g = game()
+    rt.ghosts = {}
+    if not ghosts or not MU.ui or not MU.board or not g then
+        beat.dur = 0.01
+        return
+    end
+    local n = table.getn(beat.items)
+    local xs = nil
+    if beat.side ~= "m" then
+        local count = g.opp.handCount
+        if count > MU.MAX_HAND then
+            count = MU.MAX_HAND
+        end
+        xs = MU.RowPositions(count, MU.BACK_W, -8, MU.geom.bw, MU.CenterX(MU.geom.bw))
+    end
+    for k = 1, n do
+        local item = beat.items[k]
+        local gh = ghosts[table.getn(rt.ghosts) + 1]
+        if not gh then
+            break
+        end
+        local cx, cy, s = nil, nil, 1
+        if beat.side == "m" then
+            for i = 1, MU.MAX_HAND do
+                local slot = MU.ui.hand[i]
+                if slot.entity == item.id and slot.pos then
+                    cx, cy = slot.pos.x + MU.HAND_W / 2, slot.pos.y + MU.HAND_H / 2
+                    MU.HandUnpop(i)
+                    MU.discardHidden[item.id] = true
+                    slot.frame:SetAlpha(0)
+                end
+            end
+        else
+            local i = table.getn(xs) - (k - 1)
+            if xs[i] then
+                cx, cy, s = xs[i] + MU.BACK_W / 2, 2 + MU.BACK_H / 2, MU.DISCARD_OPP_SCALE
+            end
+        end
+        if cx then
+            H.CardWidget.SetCard(gh.widget, item.cardId)
+            gh.cx, gh.cy, gh.s = cx, cy, s
+            gh.frame:SetScale(s)
+            discardPlace(gh, 0, 0)
+            gh.frame:Show()
+            table.insert(rt.ghosts, gh)
+        end
+    end
+    if table.getn(rt.ghosts) == 0 then
+        beat.dur = 0.02              -- the cards are not on screen: nothing to slide
+    end
+end
+
 local function startAttack(beat, rt)
     local a = MU.AnchorOf(beat.source)
     local t = MU.AnchorOf(beat.target)
@@ -4985,6 +5076,8 @@ function MU.BeatStart(beat)
         startReveal(beat, rt)
     elseif k == "fatigue" then
         startFatigue(beat, rt)
+    elseif k == "discard" then
+        startDiscard(beat, rt)
     elseif k == "impact" then
         if MU.ShowHits(beat.hits, nil) == 0 then
             beat.dur = 0.02
@@ -5042,6 +5135,14 @@ function MU.BeatTick(beat, t)
             end
             MU.fatigue.frame:SetAlpha(a)
         end
+    elseif k == "discard" then
+        local p = t / beat.dur
+        if p > 1 then
+            p = 1
+        end
+        for i = 1, table.getn(rt.ghosts or {}) do
+            discardPlace(rt.ghosts[i], t, p)
+        end
     elseif k == "death" then
         local p = t / beat.dur
         if p > 1 then
@@ -5093,6 +5194,10 @@ function MU.BeatEnd(beat)
             MU.fatigue.frame:Hide()
             MU.fatigue.frame:SetAlpha(1)
         end
+    elseif k == "discard" then
+        for i = 1, table.getn(rt.ghosts or {}) do
+            rt.ghosts[i].frame:Hide()      -- the hand slots stay hidden until the plan commits
+        end
     end
 end
 
@@ -5113,6 +5218,23 @@ function MU.AnimCleanup()
     if MU.fatigue then
         MU.fatigue.frame:Hide()
         MU.fatigue.frame:SetAlpha(1)
+    end
+    MU.EndDiscards()
+end
+
+-- The discard ghosts end and the hand slots that were hidden for them show again (the hand is redrawn after this).
+function MU.EndDiscards()
+    MU.discardHidden = {}
+    for k = 1, table.getn(MU.discards or {}) do
+        MU.discards[k].frame:Hide()
+        MU.discards[k].frame:SetAlpha(1)
+    end
+    if MU.ui and MU.ui.hand then
+        for i = 1, MU.MAX_HAND do
+            if MU.ui.hand[i] then
+                MU.ui.hand[i].frame:SetAlpha(1)
+            end
+        end
     end
 end
 
@@ -5543,6 +5665,7 @@ MU.AnimListener = {
     OnPlanEnd = function(plan)
         finishShakes()
         MU.RestoreAll()
+        MU.EndDiscards()
         if MU.frame and MU.frame:IsShown() then
             MU.Refresh()
         end

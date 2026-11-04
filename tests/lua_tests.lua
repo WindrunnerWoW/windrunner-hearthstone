@@ -4853,7 +4853,7 @@ local function testWalletFlow()
     check(why2 == W.WHY_TEXT.npc, "no NPC: " .. tostring(why2))
     T.frame("CRAFT_ACCESS", "0", "open=1;npc=Ezra Chatterton")
     check(W.craftOpen and W.craftNpc == "Ezra Chatterton" and shown == 1, "access opens the window")
-    check(string.find(lastPrinted(), "Crafting with Ezra Chatterton", 1, true) ~= nil, "access announced")
+    check(table.getn(printed) == 0, "access is silent: " .. tostring(lastPrinted()))
 
     -- client checks first: nothing is sent for a craft the server would refuse
     local _, why3 = H.CraftCard("EX1_116")
@@ -4961,12 +4961,12 @@ local function testWalletFlow()
     T.frame("ERR", s.reqId, "code=REFUSED;msg=no;why=nothing")
     check(W.op == nil and W.message == W.WHY_TEXT.nothing and not W.IsBusy(), "nothing refusal: " .. tostring(W.message))
 
-    -- leaving the NPC
+    -- leaving the NPC is as silent as arriving
     printed = {}
     T.frame("CRAFT_ACCESS", "0", "open=0")
-    check(not W.craftOpen and printed[1] == "You walked away from the Hearthstone Master: crafting is closed.", "access closed")
+    check(not W.craftOpen and table.getn(printed) == 0, "access closed silently: " .. tostring(lastPrinted()))
     T.frame("CRAFT_ACCESS", "0", "open=0")
-    check(table.getn(printed) == 1, "a second close is silent")
+    check(table.getn(printed) == 0, "a second close is silent")
 
     -- status, disconnect
     printed = {}
@@ -10113,6 +10113,27 @@ local function testWeaponBreak()
     apply(ag({ mw = "9.CS2_106.2.2" }))
     p = AN.Plan(apply(agE(2, 1, { "end.m.0.0.4.-", "turn.o.0.0.5.-" }, { mw = "9.CS2_106.2.1", turn = "5", act = "o" })))
     check(AN.Kinds(p) == "", "a weapon that survives does not break")
+
+    -- discards from a hand: one beat per run of the same side, only for cards that stood in the presented hand
+    resetMatch(); AN.SetMode("on")
+    apply(ag({ mc = "12.CS2_029.4.0.0,15.CS2_168.1.2.1,18.CS2_025.2.0.0" }))
+    p = AN.Plan(apply(agE(2, 1, { "disc.m.0.15.0.CS2_168", "disc.m.0.18.0.CS2_025" },
+        { mc = "12.CS2_029.4.0.0", mk = "1.20.0" })))
+    check(AN.Kinds(p) == "discard" and p.beats[1].side == "m" and table.getn(p.beats[1].items) == 2
+        and p.beats[1].items[1].id == 15 and p.beats[1].items[1].cardId == "CS2_168" and p.beats[1].items[2].id == 18
+        and p.beats[1].dur == AN.DISCARD, "my discards slide out together: " .. AN.Kinds(p) .. tostring(p.reason))
+    resetMatch(); AN.SetMode("on")
+    apply(ag({}))
+    p = AN.Plan(apply(agE(2, 1, { "disc.m.0.99.0.CS2_168" }, {})))
+    check(AN.Kinds(p) == "", "a card that was not in the hand has nothing to slide out of: " .. AN.Kinds(p))
+    resetMatch(); AN.SetMode("on")
+    apply(ag({}))
+    p = AN.Plan(apply(agE(2, 1, { "disc.o.0.77.0.CS2_168" }, { ok = "4.22.0" })))
+    check(AN.Kinds(p) == "discard" and p.beats[1].side == "o" and p.beats[1].items[1].id == 77, "an opponent discard: " .. AN.Kinds(p))
+    resetMatch(); AN.SetMode("on")
+    apply(ag({}))
+    p = AN.Plan(apply(agE(2, 1, { "disc.m.0.15.1.CS2_168" }, {})))
+    check(AN.Kinds(p) == "", "a card discarded from the deck is no hand animation: " .. AN.Kinds(p))
 
     -- the window
     local F, MU, X = animSetup({ board = visualBoard() })
