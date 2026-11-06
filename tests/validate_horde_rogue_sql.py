@@ -55,8 +55,9 @@ def main():
          'JOIN hs_rogue_seed_creature_template b ON b.entry=919501 WHERE t.entry BETWEEN 919522 AND 919526 AND ' + baseline),
         ('friendly stationary actors without scripts', 'SELECT COUNT(*)=5 FROM creature_template '
          "WHERE entry BETWEEN 919522 AND 919526 AND faction=85 AND movement_type=0 AND script_name=''"),
-        ('unspawned objective credits', 'SELECT COUNT(*)=5 FROM creature_template '
-         'WHERE entry BETWEEN 919527 AND 919531 AND npc_flags=0 AND unit_flags=33554434'),
+        ('unspawned objective credits', 'SELECT COUNT(*)=4 FROM creature_template '
+         'WHERE entry BETWEEN 919527 AND 919530 AND npc_flags=0 AND unit_flags=33554434'),
+        ('no confrontation counter template', 'SELECT COUNT(*)=0 FROM creature_template WHERE entry=919531'),
         ('quest restrictions and XP', 'SELECT COUNT(*)=3 FROM quest_template WHERE entry BETWEEN 919771 AND 919773 '
          'AND MinLevel=10 AND RequiredRaces=434 AND RequiredClasses=0 AND QuestLevel=0 AND ZoneOrSort=-9100 '
          'AND RewXP=500 AND RewOrReqMoney=0 AND RewMoneyMaxLevel=0 AND QuestFlags=0'),
@@ -75,8 +76,11 @@ def main():
          "AND max_count=1 AND stackable=1 AND bonding=4 AND flags=0 AND script_name=''"),
         ('required evidence and saved confrontation', 'SELECT COUNT(*)=1 FROM quest_template WHERE entry=919772 '
          'AND PrevQuestId=919771 AND NextQuestInChain=919773 AND SpecialFlags=0 '
-         'AND ReqItemId1=919636 AND ReqItemCount1=1 AND ReqCreatureOrGOId1=919531 '
-         'AND ReqCreatureOrGOCount1=1 AND RewItemId1=0'),
+         'AND ReqItemId1=919636 AND ReqItemCount1=1 AND ReqItemId2=919648 AND ReqItemCount2=1 '
+         'AND ReqCreatureOrGOId1=0 AND ReqCreatureOrGOCount1=0 AND RewItemId1=0'),
+        ('native confrontation objective item', "SELECT COUNT(*)=1 FROM item_template WHERE entry=919648 "
+         "AND name='Confront For''sen about the theft' AND class=12 AND buy_price=0 AND sell_price=0 "
+         "AND max_count=1 AND stackable=1 AND bonding=4 AND flags=0 AND script_name=''"),
         ('native duel event and Rogue reward', 'SELECT COUNT(*)=1 FROM quest_template WHERE entry=919773 '
          'AND PrevQuestId=919772 AND NextQuestInChain=0 AND SpecialFlags=2 AND RewItemId1=919623 AND RewItemCount1=1'),
         ('three teacher starts and turn-ins', 'SELECT '

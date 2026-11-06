@@ -4,7 +4,7 @@
 -- Zikko 12585218, Sable 12585219. Allocate destination GUIDs locally.
 -- Preserve full stored float precision and every non-GUID spawn field.
 -- Source actors have no creature_addon, waypoint, group or linking records.
--- Reruns leave one of each actor; never spawn objective credits 919527-919531.
+-- Reruns leave one of each actor; never spawn objective credits 919527-919530.
 DELETE FROM `creature` WHERE `id` IN (919522,919523,919524,919525,919526);
 INSERT INTO `creature`
   (`id`, `id2`, `id3`, `id4`, `map`,

@@ -1,5 +1,7 @@
 -- Horde Rogue: No Honor Among Cards. All five actors are manually placed by the owner.
--- No creature or gameobject spawns. Objective-only templates 919527-919531 must never be placed.
+-- No creature or gameobject spawns. Objective-only templates 919527-919530 must never be placed.
+-- A quest never mixes counter and item objectives: the core writes an item counter into the wrong quest
+-- log slot then, and the client shows the item progress twice. Possession Is Nine-Tenths is items only.
 -- For'sen 919522 and Gora 919523 are supplied by migration 0022.
 UPDATE `creature_template` SET `gossip_menu_id`=65012 WHERE `entry`=919522;
 UPDATE `creature_template` SET `gossip_menu_id`=65013 WHERE `entry`=919523;
@@ -25,8 +27,7 @@ VALUES
   (919527, 4070, 'Question Rikka about the deck', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, ''),
   (919528, 4070, 'Question Gora about the deck', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, ''),
   (919529, 4070, 'Question Zikko about the deck', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, ''),
-  (919530, 4070, 'Question Sable about the deck', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, ''),
-  (919531, 4070, 'Confront For''sen about the theft', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, '');
+  (919530, 4070, 'Question Sable about the deck', 1, 1, 1, 1, 85, 0, 33554434, 7, 3, 0, '');
 
 DELETE FROM `gossip_menu` WHERE `entry` BETWEEN 65012 AND 65016;
 -- After Possession Is Nine-Tenths is turned in, Sable greets the buyer with her trading (highest satisfied condition wins).
@@ -76,13 +77,15 @@ INSERT INTO `npc_text` (`ID`, `BroadcastTextID0`, `Probability0`)
 SELECT `entry`, `entry`, 1 FROM `broadcast_text`
 WHERE `entry` BETWEEN 9195180 AND 9195184 OR `entry` BETWEEN 9195190 AND 9195215;
 
-DELETE FROM `item_template` WHERE `entry` IN (919636,919637);
+DELETE FROM `item_template` WHERE `entry` IN (919636,919637,919648);
 INSERT INTO `item_template`
   (`entry`, `class`, `subclass`, `name`, `description`, `display_id`, `quality`,
    `buy_count`, `buy_price`, `sell_price`, `max_count`, `stackable`, `bonding`, `material`, `other_team_entry`, `script_name`)
 VALUES (919636,12,0,'Recovered Card Deck','A well-traveled case with a crooked dagger scratched into its lid.',
   69179,1,1,300,0,1,1,4,1,0,''),
   (919637,12,0,'Report to For''sen','For''sen has heard where the deck ended up and what Sable wants for it.',
+  69179,1,1,0,0,1,1,4,1,0,''),
+  (919648,12,0,'Confront For''sen about the theft','You know who took the deck, and so does For''sen.',
   69179,1,1,0,0,1,1,4,1,0,'');
 
 DELETE FROM `quest_template` WHERE `entry` IN (919771,919772,919773);
@@ -93,12 +96,12 @@ INSERT INTO `quest_template`
    `PrevQuestId`, `NextQuestInChain`,
    `ReqCreatureOrGOId1`, `ReqCreatureOrGOCount1`, `ReqCreatureOrGOId2`, `ReqCreatureOrGOCount2`,
    `ReqCreatureOrGOId3`, `ReqCreatureOrGOCount3`, `ReqCreatureOrGOId4`, `ReqCreatureOrGOCount4`,
-   `ReqItemId1`, `ReqItemCount1`, `RewXP`, `RewOrReqMoney`, `RewMoneyMaxLevel`, `RewItemId1`, `RewItemCount1`,
+   `ReqItemId1`, `ReqItemCount1`, `ReqItemId2`, `ReqItemCount2`, `RewXP`, `RewOrReqMoney`, `RewMoneyMaxLevel`, `RewItemId1`, `RewItemCount1`,
    `Title`, `Details`, `Objectives`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`,
    `RequestItemsText`, `OfferRewardText`)
 VALUES
   (919771,2,-9100,10,0,434,0,0,919704,919772,
-   919527,1,919528,1,919529,1,919530,1,919637,1,500,0,0,0,0,
+   919527,1,919528,1,919529,1,919530,1,919637,1,0,0,500,0,0,0,0,
    'A Deck Goes Missing',
    'Me deck''s gone missin''. Good cards, too. Got it from me cousin, and I want it back before somebody starts askin'' da wrong questions.$B$BRikka knows plenty about things changin'' hands without much fuss. She does her business below da bridge in da Valley of Strength. Me can''t ask her meself, mon. Too many people know me face. Dat is where ya come in.$B$BHelp me out, and we talk about lessons. Keep this between us, yeah?',
    'Talk to Rikka about the missing deck.',
@@ -106,15 +109,15 @@ VALUES
    'Find da deck, mon. Quietly. Me face is too well known for dis.',
    'So Sable''s got da deck. Figures, mon. Everybody on da trail found a way to make a little coin.$B$BMe still want da cards. Go and buy dem from her.'),
   (919772,2,-9100,10,0,434,0,0,919771,919773,
-   919531,1,0,0,0,0,0,0,919636,1,500,0,0,0,0,
+   0,0,0,0,0,0,0,0,919636,1,919648,1,500,0,0,0,0,
    'Possession Is Nine-Tenths',
    'Sable is a card trader, mon. If da price is right, she sells, and da price is a steal. Lil'' joke.$B$BGo back to her in da Drag, buy da cards, and bring dem here. Me want dat deck back.$B$BThen we sit down for a proper talk. Ya got questions, and me got answers. Some of dem even true.',
    'Buy the Recovered Card Deck and return it to For''sen.',
-   'Confront For''sen about the theft','','','',
+   '','','','',
    'Ya got da deck, mon? Bring it here, and we talk. Me can see da questions on ya face.',
    'Da cards are back, and now ya know how dey went missin''. Ya followed da whole trail, mon.$B$BOne more thing before we are done...'),
   (919773,2,-9100,10,0,434,0,2,919772,0,
-   0,0,0,0,0,0,0,0,0,0,500,0,0,919623,1,
+   0,0,0,0,0,0,0,0,0,0,0,0,500,0,0,919623,1,
    'No Honor Among Cards',
    'Ya know da story now. Everybody on da trail took a little somethin'', and me took da most. Now read da table, mon.$B$BMe use Rogue. Beat me, and we call it even. More or less.',
    'Defeat For''sen in a Hearthstone duel.',

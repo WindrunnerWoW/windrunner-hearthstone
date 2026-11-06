@@ -19,12 +19,15 @@ namespace
     thread_local bool g_sendingQuestView = false;
     constexpr uint32 kContactFirst = 0x485300b0u;
     constexpr uint32 kActionsPerContact = 4; // Start, then three successive replies.
-    constexpr uint32 kReportFirst = kContactFirst + 16;
+    // 0x485300c0-0x485300c8 belong to Byron's class hints (HsIntroGlue.cpp), which are dispatched first.
+    constexpr uint32 kReportFirst = 0x485300d0u;
     constexpr uint32 kReportLast = kReportFirst + 5;
     constexpr uint32 kDirectionsFirst = kReportLast + 1;
     constexpr uint32 kDirectionsLast = kDirectionsFirst + 3;
     constexpr uint32 kReturnFirst = kDirectionsLast + 1;
     constexpr uint32 kReturnLast = kReturnFirst + 2;
+    static_assert(kContactFirst + 4 * kActionsPerContact <= 0x485300c0u, "contact actions overlap the class hints");
+    static_assert(kReturnLast < 0x485300e0u, "Horde Rogue actions overlap the card trader");
     char const* const kDirections[4] = {
         "Where can I find Gora?", "Where can I find Zikko?",
         "Where does Sable trade?", "What should I tell For'sen?",
@@ -80,11 +83,10 @@ namespace
     {
         if (!player)
             return false;
-        QuestStatusData const* status = player->GetQuestStatusData(kHsHordeRogueRecovery);
         return HsHordeRogueReportAllowed(player->GetTeam() == HORDE,
             player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE,
             player->GetItemCount(kHsHordeRogueEvidence, false) != 0,
-            status && status->m_creatureOrGOcount[0] != 0);
+            player->GetItemCount(kHsHordeRogueConfrontation, true) != 0);
     }
 
     bool ReturnOpen(Player* player)
@@ -96,22 +98,22 @@ namespace
             Counters(player), player->GetItemCount(kHsHordeRogueInvestigationReport, true) != 0);
     }
 
-    void FinishReturn(Player* player, Creature* creature)
+    // Grants a native objective item at the end of a talk with For'sen, then shows the quest menu.
+    void FinishWithItem(Player* player, Creature* creature, uint32 item, uint32 text)
     {
         ItemPosCountVec destination;
-        InventoryResult const result = player->CanStoreNewItem(NULL_BAG, NULL_SLOT, destination,
-            kHsHordeRogueInvestigationReport, 1);
+        InventoryResult const result = player->CanStoreNewItem(NULL_BAG, NULL_SLOT, destination, item, 1);
         if (result != EQUIP_ERR_OK)
         {
-            player->SendEquipError(result, nullptr, nullptr, kHsHordeRogueInvestigationReport);
+            player->SendEquipError(result, nullptr, nullptr, item);
             return; // Keep the current final reply available to retry when a bag slot is free.
         }
-        if (!player->StoreNewItem(destination, kHsHordeRogueInvestigationReport, true))
+        if (!player->StoreNewItem(destination, item, true))
             return;
         HsHordeRogueRefreshObjectives(player);
         player->PlayerTalkClass->ClearMenus();
         player->PrepareQuestMenu(creature->GetObjectGuid());
-        player->PlayerTalkClass->SendGossipMenu(9195214, creature->GetObjectGuid());
+        player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
     }
 
     uint32 ContactIndex(uint32 entry)
@@ -248,7 +250,8 @@ bool HsHordeRogueCanVendorPacket(Player* player, WorldPacket const& packet)
 
 bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t action, uint32_t sender)
 {
-    if (action < kContactFirst || action > kReturnLast)
+    if (action < kContactFirst || action > kReturnLast ||
+        (action >= kContactFirst + 4 * kActionsPerContact && action < kReportFirst))
         return false;
     if (!player || !player->PlayerTalkClass)
         return true;
@@ -275,7 +278,7 @@ bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t actio
         if (creature->GetEntry() != kHsHordeRogue || !ReturnOpen(player))
             player->PlayerTalkClass->CloseGossip();
         else if (action == kReturnLast)
-            FinishReturn(player, creature);
+            FinishWithItem(player, creature, kHsHordeRogueInvestigationReport, 9195214);
         else
             Exchange(player, creature, 9195212 + action - kReturnFirst,
                 action == kReturnFirst ? "Sable has it. She'll sell it for three silver." :
@@ -313,7 +316,7 @@ bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t actio
     if (creature->GetEntry() != kHsHordeRogue || !ReportOpen(player))
         player->PlayerTalkClass->CloseGossip();
     else if (action == kReportLast)
-        Finish(player, creature, kHsHordeRogueReportCredit, 9195207);
+        FinishWithItem(player, creature, kHsHordeRogueConfrontation, 9195207);
     else
     {
         uint32 const page = action - kReportFirst;
@@ -328,6 +331,11 @@ void HsHordeRogueAfterQuestChange(Player* player)
     {
         uint32 const count = player->GetItemCount(kHsHordeRogueInvestigationReport, true);
         if (count) player->DestroyItemCount(kHsHordeRogueInvestigationReport, count, true, false, true);
+    }
+    if (player && player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_NONE)
+    {
+        uint32 const count = player->GetItemCount(kHsHordeRogueConfrontation, true);
+        if (count) player->DestroyItemCount(kHsHordeRogueConfrontation, count, true, false, true);
     }
 }
 

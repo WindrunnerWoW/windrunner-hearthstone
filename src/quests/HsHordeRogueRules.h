@@ -14,7 +14,8 @@ constexpr uint32_t kHsHordeRogueRecovery = 919772;
 constexpr uint32_t kHsHordeRogueDuel = 919773;
 constexpr uint32_t kHsHordeRogueEvidence = 919636;
 constexpr uint32_t kHsHordeRogueInvestigationReport = 919637;
-constexpr uint32_t kHsHordeRogueReportCredit = 919531;
+// Item objective, not a counter: a quest that mixes counters and items shows item progress twice.
+constexpr uint32_t kHsHordeRogueConfrontation = 919648;
 constexpr std::array<uint32_t, 4> kHsHordeRogueContacts = {
     kHsHordeRogueRikka, kHsHordeRogueGora, kHsHordeRogueZikko, kHsHordeRogueSable };
 constexpr std::array<uint32_t, 4> kHsHordeRogueCredits = { 919527, 919528, 919529, 919530 };
