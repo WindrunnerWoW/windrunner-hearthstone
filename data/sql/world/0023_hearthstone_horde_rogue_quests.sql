@@ -3,8 +3,8 @@
 -- A quest never mixes two objectives in the same slot: the client then draws both lines from one packed
 -- counter and repeats the item progress. Possession Is Nine-Tenths keeps one objective per slot:
 -- objective 1 is the vendored deck (item), objective 2 is the report conversation (native speak-to credit).
--- The core's item push for the deck is dropped by HsHordeRogueCanSendQuest: the client already draws that
--- line itself when the deck is bought, so the push would print the purchase line twice.
+-- The core's item push for these vendored items is dropped by HsTraderQuestCanSendPacket: the client
+-- already draws the purchase line itself, so the push would print it twice.
 -- For'sen 919522 and Gora 919523 are supplied by migration 0022.
 UPDATE `creature_template` SET `gossip_menu_id`=65012 WHERE `entry`=919522;
 UPDATE `creature_template` SET `gossip_menu_id`=65013 WHERE `entry`=919523;

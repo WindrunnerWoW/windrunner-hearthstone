@@ -377,16 +377,9 @@ void HsHordeRogueForgetObjectives(uint32_t guid)
 
 bool HsHordeRogueCanSendQuest(Player* player, WorldPacket const& packet)
 {
-    if (!player || !player->GetSession() || packet.size() < 4) return true;
-    uint32 const opcode = packet.GetOpcode();
-    uint32 const first = packet.read<uint32>(0);
-    // Buying the deck already makes the client draw the deck's objective line itself, so the core's
-    // item push would print the same purchase line a second time. Only that display packet is dropped;
-    // the saved item count and the turn-in requirement stay untouched.
-    if (opcode == SMSG_QUESTUPDATE_ADD_ITEM && first == kHsHordeRogueEvidence &&
-        player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE) return false;
-    if (g_sendingQuestView || opcode != SMSG_QUEST_QUERY_RESPONSE || first != kHsHordeRogueInvestigation)
-        return true;
+    if (g_sendingQuestView || !player || !player->GetSession() ||
+        packet.GetOpcode() != SMSG_QUEST_QUERY_RESPONSE || packet.size() < 4 ||
+        packet.read<uint32>(0) != kHsHordeRogueInvestigation) return true;
     std::vector<uint8_t> native(packet.contents(), packet.contents() + packet.size()), view;
     if (!HsHordeRogueQuestView(native, VisibleStage(player), view)) return true;
     WorldPacket response(SMSG_QUEST_QUERY_RESPONSE, view.size());

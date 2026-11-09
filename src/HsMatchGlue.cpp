@@ -78,6 +78,7 @@
 #include "HsHordeRogueQuest.h"
 #include "HsAllianceRogueQuest.h"
 #include "HsCardTrader.h"
+#include "HsTraderQuest.h"
 #include "HsAllianceDruidQuest.h"
 #include "HsArenaGlue.h"
 #include "HsArenaHost.h"
@@ -2369,7 +2370,7 @@ public:
     bool CanPacketSend(WorldSession* session, WorldPacket const& packet) override
     {
         Player* player = session ? session->GetPlayer() : nullptr;
-        return HsHordeRogueCanSendQuest(player, packet);
+        return HsHordeRogueCanSendQuest(player, packet) && HsTraderQuestCanSendPacket(player, packet);
     }
 
     void OnPacketHandled(WorldSession* session, WorldPacket const& packet) override

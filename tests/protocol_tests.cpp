@@ -41,6 +41,7 @@
 #include "../src/quests/HsAllianceRogueRules.h"
 #include "../src/quests/HsHordeRogueQuestView.h"
 #include "../src/quests/HsNaxxQuestRules.h"
+#include "../src/quests/HsTraderQuestRules.h"
 #include "match_test_cards.h"
 #include "match_all_cards.h"
 #include "../src/match/HsMatchInternal.h"
@@ -8351,6 +8352,19 @@ static void TestQuestAcquisition()
     CHECK(w.decks.CheckForMatch(5, 1, "WARRIOR").Text() == "locked");
 }
 
+static void TestTraderQuestRules()
+{
+    // Every vendored objective item resolves to its quest; anything else passes the packet through.
+    for (HsTraderQuestItem const& entry : kHsTraderQuestItems)
+        CHECK(HsTraderQuestForItem(entry.item) == entry.quest);
+    for (uint32_t item : { 1u, 160u, 2594u, 919600u, 919632u, 919643u })
+        CHECK(HsTraderQuestForItem(item) == 0);
+    // One item belongs to one quest: an ambiguous entry would hide another quest's progress line.
+    for (std::size_t i = 0; i < kHsTraderQuestItems.size(); ++i)
+        for (std::size_t j = i + 1; j < kHsTraderQuestItems.size(); ++j)
+            CHECK(kHsTraderQuestItems[i].item != kHsTraderQuestItems[j].item);
+}
+
 static void TestHordeRogueQuestView()
 {
     // Fixture matches the core encoder: fixed fields, four strings, interleaved
@@ -9337,6 +9351,7 @@ int main(int argc, char** argv)
     RUN(TestAllianceMageQuestRules);
     RUN(TestWarlockQuestRules);
     RUN(TestHordeRogueQuestRules);
+    RUN(TestTraderQuestRules);
     RUN(TestAllianceRogueQuestRules);
     RUN(TestHordeRogueQuestView);
     RUN(TestTraderRules);
