@@ -2,6 +2,9 @@
 -- No creature or gameobject spawns. Objective-only templates 919527-919530 must never be placed.
 -- A quest never mixes counter and item objectives: the core writes an item counter into the wrong quest
 -- log slot then, and the client shows the item progress twice. Possession Is Nine-Tenths is items only.
+-- It also keeps a single item objective: with two item requirements the client repeats the deck's
+-- purchase line when the vendored deck is bought. The report conversation is the quest's event
+-- objective (SpecialFlags 2), so holding the deck alone never completes the quest.
 -- For'sen 919522 and Gora 919523 are supplied by migration 0022.
 UPDATE `creature_template` SET `gossip_menu_id`=65012 WHERE `entry`=919522;
 UPDATE `creature_template` SET `gossip_menu_id`=65013 WHERE `entry`=919523;
@@ -85,6 +88,8 @@ VALUES (919636,12,0,'Recovered Card Deck','A well-traveled case with a crooked d
   69179,1,1,300,0,1,1,4,1,0,''),
   (919637,12,0,'Report to For''sen','For''sen has heard where the deck ended up and what Sable wants for it.',
   69179,1,1,0,0,1,1,4,1,0,''),
+-- Legacy objective item from the first recovery build. It is no longer a quest requirement; the row is
+-- kept so copies left in bags keep a prototype, and HsHordeRogueAfterQuestChange destroys them.
   (919648,12,0,'Confront For''sen about the theft','You know who took the deck, and so does For''sen.',
   69179,1,1,0,0,1,1,4,1,0,'');
 
@@ -108,8 +113,8 @@ VALUES
    'Talk to Rikka','Talk to Gora','Talk to Zikko','Talk to Sable',
    'Find da deck, mon. Quietly. Me face is too well known for dis.',
    'So Sable''s got da deck. Figures, mon. Everybody on da trail found a way to make a little coin.$B$BMe still want da cards. Go and buy dem from her.'),
-  (919772,2,-9100,10,0,434,0,0,919771,919773,
-   0,0,0,0,0,0,0,0,919636,1,919648,1,500,0,0,0,0,
+  (919772,2,-9100,10,0,434,0,2,919771,919773,
+   0,0,0,0,0,0,0,0,919636,1,0,0,500,0,0,0,0,
    'Possession Is Nine-Tenths',
    'Sable is a card trader, mon. If da price is right, she sells, and da price is a steal. Lil'' joke.$B$BGo back to her in da Drag, buy da cards, and bring dem here. Me want dat deck back.$B$BThen we sit down for a proper talk. Ya got questions, and me got answers. Some of dem even true.',
    'Buy the Recovered Card Deck and return it to For''sen.',

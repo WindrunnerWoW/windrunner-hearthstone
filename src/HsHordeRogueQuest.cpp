@@ -85,8 +85,7 @@ namespace
             return false;
         return HsHordeRogueReportAllowed(player->GetTeam() == HORDE,
             player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE,
-            player->GetItemCount(kHsHordeRogueEvidence, false) != 0,
-            player->GetItemCount(kHsHordeRogueConfrontation, true) != 0);
+            player->GetItemCount(kHsHordeRogueEvidence, false) != 0);
     }
 
     bool ReturnOpen(Player* player)
@@ -153,6 +152,17 @@ namespace
     {
         player->PlayerTalkClass->ClearMenus();
         AddOption(player->PlayerTalkClass->GetGossipMenu(), reply, sender, action);
+        player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
+    }
+
+    // The report is the quest's event objective. The deck stays the only item requirement: a second item
+    // requirement makes the client repeat the deck's purchase line, and the event flag keeps buying the
+    // deck from completing the quest on its own.
+    void FinishRecovery(Player* player, Creature* creature, uint32 text)
+    {
+        player->AreaExploredOrEventHappens(kHsHordeRogueRecovery);
+        player->PlayerTalkClass->ClearMenus();
+        player->PrepareQuestMenu(creature->GetObjectGuid());
         player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
     }
 
@@ -316,7 +326,7 @@ bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t actio
     if (creature->GetEntry() != kHsHordeRogue || !ReportOpen(player))
         player->PlayerTalkClass->CloseGossip();
     else if (action == kReportLast)
-        FinishWithItem(player, creature, kHsHordeRogueConfrontation, 9195207);
+        FinishRecovery(player, creature, 9195207);
     else
     {
         uint32 const page = action - kReportFirst;
@@ -334,6 +344,7 @@ void HsHordeRogueAfterQuestChange(Player* player)
     }
     if (player && player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_NONE)
     {
+        // Legacy copies of the retired confrontation item; nothing grants it anymore.
         uint32 const count = player->GetItemCount(kHsHordeRogueConfrontation, true);
         if (count) player->DestroyItemCount(kHsHordeRogueConfrontation, count, true, false, true);
     }
