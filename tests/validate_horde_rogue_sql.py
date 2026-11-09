@@ -74,11 +74,11 @@ def main():
         ('unique native return objective item', "SELECT COUNT(*)=1 FROM item_template WHERE entry=919637 "
          "AND name='Report to For''sen' AND class=12 AND buy_price=0 AND sell_price=0 "
          "AND max_count=1 AND stackable=1 AND bonding=4 AND flags=0 AND script_name=''"),
-        ('single evidence objective and report event', 'SELECT COUNT(*)=1 FROM quest_template WHERE entry=919772 '
-         'AND PrevQuestId=919771 AND NextQuestInChain=919773 AND SpecialFlags=2 '
-         'AND ReqItemId1=919636 AND ReqItemCount1=1 AND ReqItemId2=0 AND ReqItemCount2=0 '
+        ('required evidence and saved confrontation', 'SELECT COUNT(*)=1 FROM quest_template WHERE entry=919772 '
+         'AND PrevQuestId=919771 AND NextQuestInChain=919773 AND SpecialFlags=0 '
+         'AND ReqItemId1=919636 AND ReqItemCount1=1 AND ReqItemId2=919648 AND ReqItemCount2=1 '
          'AND ReqCreatureOrGOId1=0 AND ReqCreatureOrGOCount1=0 AND RewItemId1=0'),
-        ('legacy confrontation item kept for bag cleanup', "SELECT COUNT(*)=1 FROM item_template WHERE entry=919648 "
+        ('native confrontation objective item', "SELECT COUNT(*)=1 FROM item_template WHERE entry=919648 "
          "AND name='Confront For''sen about the theft' AND class=12 AND buy_price=0 AND sell_price=0 "
          "AND max_count=1 AND stackable=1 AND bonding=4 AND flags=0 AND script_name=''"),
         ('native duel event and Rogue reward', 'SELECT COUNT(*)=1 FROM quest_template WHERE entry=919773 '
@@ -89,7 +89,7 @@ def main():
          '(SELECT COUNT(*) FROM creature_involvedrelation)=3 AND '
          '(SELECT COUNT(*) FROM creature_involvedrelation WHERE id=919522 AND quest BETWEEN 919771 AND 919773)=3'),
         ('unique native evidence and three silver', 'SELECT COUNT(*)=1 FROM item_template WHERE entry=919636 '
-         "AND class=12 AND display_id=69179 AND buy_price=300 AND sell_price=0 AND max_count=1 "
+         "AND class=12 AND display_id=31755 AND buy_price=300 AND sell_price=0 AND max_count=1 "
          "AND stackable=1 AND bonding=4 AND flags=0 AND script_name=''"),
         ('native vendor gated to incomplete recovery quest', 'SELECT COUNT(*)=1 FROM npc_vendor v '
          'JOIN conditions c ON c.condition_entry=v.condition_id WHERE v.entry=919526 AND v.item=919636 '
@@ -125,7 +125,7 @@ def main():
          "AND male_text='Three silver. For the case, the cards, and my remarkable restraint.')=1 AND "
          "(SELECT COUNT(*) FROM broadcast_text WHERE entry=9195199 AND male_text LIKE 'I trade cards.%')=1 AND "
          "(SELECT COUNT(*) FROM quest_template WHERE entry=919772 AND Details LIKE '%she sells.%' "
-         "AND Details NOT LIKE '%recovery fee%' AND OfferRewardText LIKE '%Da cards are back%')=1"),
+         "AND Details NOT LIKE '%recovery fee%' AND OfferRewardText LIKE '%card trade is open%')=1"),
         ('Sable knows theft but not thief', "SELECT "
          "(SELECT COUNT(*) FROM broadcast_text WHERE entry=9195200 AND male_text LIKE '%Didn''t see the theft coming%')=1 AND "
          "(SELECT COUNT(*) FROM broadcast_text WHERE entry=9195201 AND male_text LIKE 'No. Whoever it was%' "

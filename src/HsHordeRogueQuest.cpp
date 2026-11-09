@@ -85,7 +85,8 @@ namespace
             return false;
         return HsHordeRogueReportAllowed(player->GetTeam() == HORDE,
             player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE,
-            player->GetItemCount(kHsHordeRogueEvidence, false) != 0);
+            player->GetItemCount(kHsHordeRogueEvidence, false) != 0,
+            player->GetItemCount(kHsHordeRogueConfrontation, true) != 0);
     }
 
     bool ReturnOpen(Player* player)
@@ -152,17 +153,6 @@ namespace
     {
         player->PlayerTalkClass->ClearMenus();
         AddOption(player->PlayerTalkClass->GetGossipMenu(), reply, sender, action);
-        player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
-    }
-
-    // The report is the quest's event objective. The deck stays the only item requirement: a second item
-    // requirement makes the client repeat the deck's purchase line, and the event flag keeps buying the
-    // deck from completing the quest on its own.
-    void FinishRecovery(Player* player, Creature* creature, uint32 text)
-    {
-        player->AreaExploredOrEventHappens(kHsHordeRogueRecovery);
-        player->PlayerTalkClass->ClearMenus();
-        player->PrepareQuestMenu(creature->GetObjectGuid());
         player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
     }
 
@@ -326,7 +316,7 @@ bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t actio
     if (creature->GetEntry() != kHsHordeRogue || !ReportOpen(player))
         player->PlayerTalkClass->CloseGossip();
     else if (action == kReportLast)
-        FinishRecovery(player, creature, 9195207);
+        FinishWithItem(player, creature, kHsHordeRogueConfrontation, 9195207);
     else
     {
         uint32 const page = action - kReportFirst;
@@ -344,7 +334,6 @@ void HsHordeRogueAfterQuestChange(Player* player)
     }
     if (player && player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_NONE)
     {
-        // Legacy copies of the retired confrontation item; nothing grants it anymore.
         uint32 const count = player->GetItemCount(kHsHordeRogueConfrontation, true);
         if (count) player->DestroyItemCount(kHsHordeRogueConfrontation, count, true, false, true);
     }
@@ -374,9 +363,17 @@ void HsHordeRogueForgetObjectives(uint32_t guid)
 
 bool HsHordeRogueCanSendQuest(Player* player, WorldPacket const& packet)
 {
-    if (g_sendingQuestView || !player || !player->GetSession() ||
-        packet.GetOpcode() != SMSG_QUEST_QUERY_RESPONSE || packet.size() < 4 ||
-        packet.read<uint32>(0) != kHsHordeRogueInvestigation) return true;
+    if (!player || !player->GetSession() || packet.size() < 4) return true;
+    uint32 const opcode = packet.GetOpcode();
+    uint32 const first = packet.read<uint32>(0);
+    // The vendor purchase already makes the client draw the deck's objective line itself, so the core's
+    // item push is a second copy of the same line. Only the display packet is dropped: the saved item
+    // count, CanCompleteQuest and the turn-in requirement stay untouched, and item lines are rebuilt
+    // from the bags whenever the quest log is redrawn.
+    if (opcode == SMSG_QUESTUPDATE_ADD_ITEM && first == kHsHordeRogueEvidence &&
+        player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE) return false;
+    if (g_sendingQuestView || opcode != SMSG_QUEST_QUERY_RESPONSE || first != kHsHordeRogueInvestigation)
+        return true;
     std::vector<uint8_t> native(packet.contents(), packet.contents() + packet.size()), view;
     if (!HsHordeRogueQuestView(native, VisibleStage(player), view)) return true;
     WorldPacket response(SMSG_QUEST_QUERY_RESPONSE, view.size());
