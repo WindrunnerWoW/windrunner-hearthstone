@@ -8459,10 +8459,10 @@ static void TestHordeRogueQuestRules()
             CHECK(HsHordeRogueReturnAllowed((flags & 1) != 0, (flags & 2) != 0,
                 counters, (flags & 4) != 0) == (expected == 4 && flags == 3));
     }
-    // Losing/destroying/banking evidence suspends the report; saved report credit never offers it again.
-    for (uint32_t flags = 0; flags < 16; ++flags)
+    // Losing/destroying/banking evidence suspends the report; a completed quest never offers it again.
+    for (uint32_t flags = 0; flags < 8; ++flags)
         CHECK(HsHordeRogueReportAllowed((flags & 1) != 0, (flags & 2) != 0,
-            (flags & 4) != 0, (flags & 8) != 0) == (flags == 7));
+            (flags & 4) != 0) == (flags == 7));
     // The quest-deck vendor requires the investigation turn-in and the open recovery quest.
     for (uint32_t flags = 0; flags < 8; ++flags)
         CHECK(HsHordeRogueTradeAllowed((flags & 1) != 0, (flags & 2) != 0, (flags & 4) != 0) == (flags == 7));

@@ -14,7 +14,9 @@ constexpr uint32_t kHsHordeRogueRecovery = 919772;
 constexpr uint32_t kHsHordeRogueDuel = 919773;
 constexpr uint32_t kHsHordeRogueEvidence = 919636;
 constexpr uint32_t kHsHordeRogueInvestigationReport = 919637;
-// Item objective, not a counter: a quest that mixes counters and items shows item progress twice.
+// The recovery's speak-to credit: objective 2 of the quest, granted by the report conversation.
+constexpr uint32_t kHsHordeRogueRecoveryCredit = 919531;
+// Legacy objective item from the first recovery build. Never granted again; only destroyed from bags.
 constexpr uint32_t kHsHordeRogueConfrontation = 919648;
 constexpr std::array<uint32_t, 4> kHsHordeRogueContacts = {
     kHsHordeRogueRikka, kHsHordeRogueGora, kHsHordeRogueZikko, kHsHordeRogueSable };
@@ -37,9 +39,9 @@ inline bool HsHordeRogueContactAllowed(bool horde, bool questIncomplete,
 }
 
 inline bool HsHordeRogueReportAllowed(bool horde, bool questIncomplete,
-    bool hasEvidenceInBags, bool reportDone)
+    bool hasEvidenceInBags)
 {
-    return horde && questIncomplete && hasEvidenceInBags && !reportDone;
+    return horde && questIncomplete && hasEvidenceInBags;
 }
 
 inline bool HsHordeRogueReturnAllowed(bool horde, bool investigationOpen,

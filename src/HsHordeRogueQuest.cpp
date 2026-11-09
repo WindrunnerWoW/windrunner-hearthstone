@@ -85,8 +85,7 @@ namespace
             return false;
         return HsHordeRogueReportAllowed(player->GetTeam() == HORDE,
             player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE,
-            player->GetItemCount(kHsHordeRogueEvidence, false) != 0,
-            player->GetItemCount(kHsHordeRogueConfrontation, true) != 0);
+            player->GetItemCount(kHsHordeRogueEvidence, false) != 0);
     }
 
     bool ReturnOpen(Player* player)
@@ -153,6 +152,17 @@ namespace
     {
         player->PlayerTalkClass->ClearMenus();
         AddOption(player->PlayerTalkClass->GetGossipMenu(), reply, sender, action);
+        player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
+    }
+
+    // Objective 2 is the report itself: a native speak-to credit, never an item handed over for talking.
+    // The deck stays objective 1 and is consumed by the turn-in like any required quest item.
+    void FinishRecovery(Player* player, Creature* creature, uint32 text)
+    {
+        player->KilledMonsterCredit(kHsHordeRogueRecoveryCredit);
+        HsHordeRogueRefreshObjectives(player);
+        player->PlayerTalkClass->ClearMenus();
+        player->PrepareQuestMenu(creature->GetObjectGuid());
         player->PlayerTalkClass->SendGossipMenu(text, creature->GetObjectGuid());
     }
 
@@ -316,7 +326,7 @@ bool HsHordeRogueHandleSelect(Player* player, Creature* creature, uint32_t actio
     if (creature->GetEntry() != kHsHordeRogue || !ReportOpen(player))
         player->PlayerTalkClass->CloseGossip();
     else if (action == kReportLast)
-        FinishWithItem(player, creature, kHsHordeRogueConfrontation, 9195207);
+        FinishRecovery(player, creature, 9195207);
     else
     {
         uint32 const page = action - kReportFirst;
@@ -334,6 +344,10 @@ void HsHordeRogueAfterQuestChange(Player* player)
     }
     if (player && player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_NONE)
     {
+        // The deck is a quest-only vendor item and must not outlive an abandoned recovery.
+        uint32 const deck = player->GetItemCount(kHsHordeRogueEvidence, true);
+        if (deck) player->DestroyItemCount(kHsHordeRogueEvidence, deck, true, false, true);
+        // Legacy copies of the retired confrontation item; nothing grants it anymore.
         uint32 const count = player->GetItemCount(kHsHordeRogueConfrontation, true);
         if (count) player->DestroyItemCount(kHsHordeRogueConfrontation, count, true, false, true);
     }
@@ -366,10 +380,9 @@ bool HsHordeRogueCanSendQuest(Player* player, WorldPacket const& packet)
     if (!player || !player->GetSession() || packet.size() < 4) return true;
     uint32 const opcode = packet.GetOpcode();
     uint32 const first = packet.read<uint32>(0);
-    // The vendor purchase already makes the client draw the deck's objective line itself, so the core's
-    // item push is a second copy of the same line. Only the display packet is dropped: the saved item
-    // count, CanCompleteQuest and the turn-in requirement stay untouched, and item lines are rebuilt
-    // from the bags whenever the quest log is redrawn.
+    // Buying the deck already makes the client draw the deck's objective line itself, so the core's
+    // item push would print the same purchase line a second time. Only that display packet is dropped;
+    // the saved item count and the turn-in requirement stay untouched.
     if (opcode == SMSG_QUESTUPDATE_ADD_ITEM && first == kHsHordeRogueEvidence &&
         player->GetQuestStatus(kHsHordeRogueRecovery) == QUEST_STATUS_INCOMPLETE) return false;
     if (g_sendingQuestView || opcode != SMSG_QUEST_QUERY_RESPONSE || first != kHsHordeRogueInvestigation)
