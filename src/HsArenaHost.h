@@ -6,7 +6,7 @@
  * THE INTRODUCTION QUEST (quests 919921 Horde / 919931 Alliance, world migration 0044; rules in
  * src/quests/HsArenaIntroRules.h). A plain event quest (SpecialFlags 2, no objective rows) that has NO start relation:
  * it is offered through the arena page of the host's gossip while the ACCOUNT has all nine classes unlocked and owns
- * at least 120 different collectible cards. The module sends the quest details and takes the accept packet of these
+ * at least 140 different collectible cards. The module sends the quest details and takes the accept packet of these
  * two quests itself (HsArenaHostHandleAccept), because a start relation cannot hold that rule. While the quest is in
  * the log (and the account has had no free run) the arena page offers "start my free run" (HsArenaEnter, pay free).
  * The quest is completed (AreaExploredOrEventHappens) when the newest run of the account is a free run that has ended,

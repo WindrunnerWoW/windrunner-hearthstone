@@ -3199,11 +3199,11 @@ static void TestSessionGamePause()
 
 static void TestArenaIntroRules()
 {
-    // The gate: all nine classes AND at least 120 different cards.
-    static_assert(kArenaIntroMinCards == 120 && kArenaIntroClasses == 9, "owner decision 2026-10-10");
-    CHECK(ArenaIntroGate(9, 120));
+    // The gate: all nine classes AND at least 140 different cards.
+    static_assert(kArenaIntroMinCards == 140 && kArenaIntroClasses == 9, "owner decision 2026-10-10");
+    CHECK(ArenaIntroGate(9, 140));
     CHECK(ArenaIntroGate(9, 382));
-    CHECK(!ArenaIntroGate(9, 119));
+    CHECK(!ArenaIntroGate(9, 139));
     CHECK(!ArenaIntroGate(8, 382));
     CHECK(!ArenaIntroGate(0, 0));
     // The hosts and their quests.

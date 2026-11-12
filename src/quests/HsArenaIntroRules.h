@@ -20,7 +20,7 @@ namespace Hs
     constexpr uint32_t kArenaIntroQuestHorde = 919921;    // "Nothing but the Draw" (Ezra Chatterton 919501)
     constexpr uint32_t kArenaIntroQuestAlliance = 919931; // "The Luck of the Draw" (Ibelin Redmoore 919502)
     constexpr uint32_t kArenaIntroClasses = 9;            // every class unlocked for the account
-    constexpr uint32_t kArenaIntroMinCards = 120;         // different collectible cards owned by the account
+    constexpr uint32_t kArenaIntroMinCards = 140;         // different collectible cards owned by the account
 
     // Whether the account may be offered the quest.
     constexpr bool ArenaIntroGate(uint32_t unlockedClasses, uint32_t distinctCards)

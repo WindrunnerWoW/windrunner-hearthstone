@@ -5,7 +5,7 @@
 -- (SpecialFlags 2, no objective rows, like the lesson 919704 / 919714): the module completes them when the account's
 -- free arena run ends, whatever its result (src/HsArenaHost.cpp). The turn-in is the creature's involved relation.
 -- There is NO start relation on purpose: the quest is offered only through the arena gossip while the ACCOUNT has all
--- nine classes unlocked and owns at least 120 different cards (kHsArenaIntroMinCards), which a start relation cannot
+-- nine classes unlocked and owns at least 140 different cards (kHsArenaIntroMinCards), which a start relation cannot
 -- express. The module sends the quest details and takes the accept packet for these two quests itself. XP only, no
 -- money or reputation (D11). MinLevel 10 like the other quests, QuestLevel 0 = the level of the character.
 --
